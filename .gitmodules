@@ -1,0 +1,3 @@
+[submodule "cmake-haskell"]
+	path = cmake-haskell
+	url = https://github.com/donkeybonks/cmake-haskell.git

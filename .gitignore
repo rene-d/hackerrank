@@ -1,0 +1,7 @@
+build/
+debug/
+work/
+.vscode/.ropeproject/
+statements/
+testcases/
+testcases2/
