@@ -9,7 +9,7 @@ HackerRank is a great site to learn, improve, play with your programming skills.
 * [Mathematics](math/)
 * [Algorithms](algo/)
 * [Data Structures](data/)
-* [ProjectEuler+](projecteuler/) (See [here](https://github.com/rene-d/math/tree/master/projecteuler) my solutions to [Project Euler](https://projecteuler.net/))
+* [ProjectEuler+](projecteuler/) (See [here](https://github.com/rene-d/math/tree/master/projecteuler) my solutions of [Project Euler](https://projecteuler.net/))
 
 ## Usage and tools
 
@@ -17,7 +17,8 @@ HackerRank is a great site to learn, improve, play with your programming skills.
 
 - [Python 3.6](https://www.python.org) and some libraries ([numpy](http://www.numpy.org), [requests](http://html.python-requests.org))
 - [CMake](https://cmake.org)
-- Modern gcc or clang
+- Modern gcc or clang that come with macOS or Linux. Under Windows, use [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) or [MinGW](http://www.mingw.org).
+- [Haskell](https://www.haskell.org)  
 
 ### Compilation
 
@@ -33,9 +34,11 @@ HackerRank is a great site to learn, improve, play with your programming skills.
 
 It will download the challenge testcases and run solution programs.
 
+A solution can be tested solely with `runtest.sh -t challenge-name [-n test-number]` in its build subdirectory.
+
 ### Tools
 
-- `init.py` creates a new file for a given challenge based on the HackerRank template
+- `init.py` creates a new file for a given challenge based on the HackerRank template. Default language is Python.
 
 - `runtest.sh` is the script used by CTest to run the solution.
 
@@ -43,5 +46,10 @@ It will download the challenge testcases and run solution programs.
 
 - `tc2.py` can be used to download bought testcases. Copy and paste the download link.
 
-- `hackos.py` lists the free testcases. It requires a webbrowser. Follow instructions in the source code.
+- `hackos.py` lists the free testcases. It should be used in conjunction with a webbrowser. Follow instructions in the source code.
+
+### IDE
+
+[Visual Studio Code](https://code.visualstudio.com) is a great free IDE. Some configuration file are provided.
+
 
