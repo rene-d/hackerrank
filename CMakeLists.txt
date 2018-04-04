@@ -1,4 +1,5 @@
 # build and test HackerRank solutions
+#
 
 cmake_minimum_required(VERSION 3.5)
 
@@ -9,6 +10,18 @@ project(hackerrank)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wconversion")
 set(CMAKE_C_FLAGS "-std=c99 -Wall -Wextra -Wconversion")
+
+if (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+    # clang n'a pas le fichier pratique de gcc de précompilation des headers de la STL
+    configure_file(stdc++.h.in bits/stdc++.h COPYONLY)
+    include_directories(${CMAKE_CURRENT_BINARY_DIR})
+endif()
+
+# installe un fichier .nosync pour éviter la synchro iCloud ou autre
+if (NOT EXISTS "${CMAKE_CURRENT_BINARY_DIR}/iCloud.nosync")
+  file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/iCloud.nosync" "build dir: ${CMAKE_SYSTEM}\n")
+endif()
+
 
 enable_testing()
 
@@ -49,3 +62,4 @@ add_subdirectory("data")
 add_subdirectory("projecteuler")
 
 add_subdirectory("fp")
+add_subdirectory("tutorials")

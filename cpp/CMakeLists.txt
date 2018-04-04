@@ -1,4 +1,3 @@
-
 add_hackerrank(cpp-hello-world cpp-hello-world.cpp)
 add_hackerrank(cpp-input-and-output cpp-input-and-output.cpp)
 add_hackerrank(c-tutorial-basic-data-types c-tutorial-basic-data-types.cpp)

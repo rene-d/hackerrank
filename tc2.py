@@ -1,5 +1,9 @@
 #! /usr/bin/env python3
 
+"""
+HackerRank testcases downloader
+"""
+
 import argparse
 import zipfile
 import os
@@ -14,7 +18,9 @@ parser.add_argument('url', nargs='*', help="test case url")
 args = parser.parse_args()
 
 
-zip = os.path.join(os.path.dirname(__file__), "testcases2", args.name + "-testcases2.zip")
+name = re.sub(r'^.*\.hackerrank\.com/challenges/([\w\d\-].*)/.*$', r'\1', args.name)
+
+zip = os.path.join(os.path.dirname(__file__), "testcases2", name + "-testcases2.zip")
 
 if not os.path.exists(zip):
     print("create", zip)

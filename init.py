@@ -122,7 +122,7 @@ class HackerRankParser(HTMLParser):
         #pprint.pprint(v)
 
 
-    def gen_stub(self, lang, overwrite=False):
+    def gen_stub(self, lang, overwrite=False, hpp=False):
 
         EXTENSIONS = {"cpp": "cpp",
                       "cpp14": "cpp",
@@ -143,14 +143,19 @@ class HackerRankParser(HTMLParser):
                     print("Cannot choose a language:", ' '.join(languages))
                     return
 
-        filename = os.path.join(os.path.dirname(__file__), DOMAINS[self.domain], self.key + "." + EXTENSIONS[lang])
+        domain = DOMAINS.get(self.domain, self.domain)
+        extension = EXTENSIONS.get(lang, lang)
+
+        os.makedirs(os.path.join(os.path.dirname(__file__), domain), exist_ok=True)
+
+        filename = os.path.join(os.path.dirname(__file__), domain, self.key + "." + extension)
         if not overwrite and os.path.exists(filename):
             print("File exists:", filename)
             return
-        cmake = os.path.join(os.path.dirname(__file__), DOMAINS[self.domain], "CMakeLists.txt")
+        cmake = os.path.join(os.path.dirname(__file__), domain, "CMakeLists.txt")
 
 
-        def write_header(f, comment):
+        def write_header(f, comment, add_skeliton=True):
 
             def line(text=None):
                 if text is None:
@@ -181,13 +186,27 @@ class HackerRankParser(HTMLParser):
             line('')
             line()
 
-            skeliton("skeliton_head") or skeliton("template_head")
-            skeliton("template")
-            skeliton("skeliton_tail") or skeliton("template_tail")
+            if add_skeliton:
+                skeliton("skeliton_head") or skeliton("template_head")
+                skeliton("template")
+                skeliton("skeliton_tail") or skeliton("template_tail")
 
         if lang == "cpp" or lang == "cpp14" or lang == "c":
-            with open(filename, "wt") as f:
-                write_header(f, '// ')
+
+            if hpp:
+                filename_hpp = os.path.splitext(filename)[0] + ".hpp"
+
+                with open(filename, "wt") as f:
+                    write_header(f, '// ', add_skeliton=False)
+                    f.write('\n')
+                    f.write('#include "{}"\n'.format(os.path.basename(filename_hpp)))
+                with open(filename_hpp, "wt") as f:
+                    write_header(f, '// ', add_skeliton=True)
+
+            else:
+                with open(filename, "wt") as f:
+                    write_header(f, '// ')
+
             with open(cmake, "at") as f:
                 f.write("add_hackerrank({} {}.{})\n".format(self.key, self.key, lang[:3]))
 
@@ -207,7 +226,7 @@ class HackerRankParser(HTMLParser):
             print("Unknown language:", lang)
             return
 
-        print("File created. Use code « {} » to edit it.".format(filename))
+        print("File created. Use « code {} » to edit it.".format(filename))
         if 'VSCODE_PID' in os.environ:
             if platform.system() == 'Windows':
                 subprocess.check_call(["code.cmd", filename])
@@ -235,13 +254,14 @@ def main():
     parser.add_argument('-d', '--debug', help="Debug mode", action='store_true')
     parser.add_argument('-f', '--force', help="Force overwrite", action='store_true')
     parser.add_argument('-X', dest="force_cpp", help="Force C++", action='store_true')
+    parser.add_argument('-H', dest="force_hpp", help="Force C++ with include", action='store_true')
     parser.add_argument('-C', dest="force_c", help="Force C", action='store_true')
     parser.add_argument('-l', dest="lang", metavar="LANG", help="Language selection", default="*")
 
     args = parser.parse_args()
     #print(args)
 
-    if args.force_cpp: args.lang = "cpp14"
+    if args.force_cpp or args.force_hpp: args.lang = "cpp14"
     if args.force_c: args.lang = "c"
 
     data = ""
@@ -259,7 +279,7 @@ def main():
     parser.info()
     if args.verbose:
         parser.info2()
-    parser.gen_stub(args.lang, args.force)
+    parser.gen_stub(args.lang, args.force, args.force_hpp)
 
 
 if __name__ == '__main__':

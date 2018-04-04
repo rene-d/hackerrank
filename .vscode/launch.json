@@ -1,0 +1,32 @@
+{
+    // Utilisez IntelliSense pour en savoir plus sur les attributs possibles.
+    // Pointez pour afficher la description des attributs existants.
+    // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(lldb) algo/hamming-distance",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug/algo/hamming-distance",
+            "args": [ "tests/hamming-distance/input/input25.txt" ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build/algo",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "(lldb) cpp/deque-stl",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug/cpp/deque-stl",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb"
+        }
+    ]
+}

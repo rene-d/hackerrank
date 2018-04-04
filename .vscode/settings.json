@@ -1,0 +1,52 @@
+{
+    "files.associations": {
+        "cstdlib": "cpp",
+        "ios": "cpp",
+        "queue": "cpp",
+        "stack": "cpp",
+        "__bit_reference": "cpp",
+        "__hash_table": "cpp",
+        "__split_buffer": "cpp",
+        "__tree": "cpp",
+        "deque": "cpp",
+        "initializer_list": "cpp",
+        "iterator": "cpp",
+        "list": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "ostream": "cpp",
+        "istream": "cpp",
+        "__string": "cpp",
+        "algorithm": "cpp",
+        "exception": "cpp",
+        "iosfwd": "cpp",
+        "__locale": "cpp",
+        "__config": "cpp",
+        "__nullptr": "cpp",
+        "new": "cpp",
+        "stdexcept": "cpp",
+        "typeinfo": "cpp",
+        "stdc++.h.in": "cpp",
+        "cstddef": "cpp",
+        "type_traits": "cpp"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/build/": true
+    },
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.env.osx": {
+        "PATH": "$PATH:${workspaceFolder}"
+    },
+    "terminal.integrated.env.linux": {
+        "PATH": "$PATH:${workspaceFolder}"
+    }
+}

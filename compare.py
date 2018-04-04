@@ -9,6 +9,7 @@ taking into account up to DECIMALS digits (and ignoring the following).
 from __future__ import print_function
 import sys
 import re
+import itertools
 
 
 DECIMALS = 5
@@ -24,9 +25,10 @@ def main():
         g = open(sys.argv[2], "r")
 
         float_pattern = re.compile(r'^(\d+\.\d{' + str(DECIMALS) + r'})\d*$')
+        zero_pattern = re.compile(r'(\d+)\.0*')
 
         n = 0
-        for i, j in zip(f, g):
+        for i, j in itertools.zip_longest(f, g, fillvalue=''):
             n += 1
 
             # ignore line endings
@@ -36,6 +38,10 @@ def main():
             # when a decimal number is found, truncate unwanted digits
             i = float_pattern.sub(r'\1', i)
             j = float_pattern.sub(r'\1', j)
+
+            # remove 0 decimals
+            i = zero_pattern.sub(r'\1', i)
+            j = zero_pattern.sub(r'\1', j)
 
             if i.strip() != j.strip():
                 # a difference is found

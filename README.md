@@ -10,6 +10,7 @@ HackerRank is a great site to learn, improve, play with your programming skills.
 * [Algorithms](algo/)
 * [Data Structures](data/)
 * [ProjectEuler+](projecteuler/) (See [here](https://github.com/rene-d/math/tree/master/projecteuler) my solutions of [Project Euler](https://projecteuler.net/))
+* [Tutorials](tutorials/)
 
 ## Usage and tools
 
@@ -18,7 +19,7 @@ HackerRank is a great site to learn, improve, play with your programming skills.
 - [Python 3.6](https://www.python.org) and some libraries ([numpy](http://www.numpy.org), [requests](http://html.python-requests.org))
 - [CMake](https://cmake.org)
 - Modern gcc or clang that come with macOS or Linux. Under Windows, use [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) or [MinGW](http://www.mingw.org).
-- [Haskell](https://www.haskell.org)  
+- [Haskell](https://www.haskell.org)
 
 ### Compilation
 
@@ -51,5 +52,3 @@ A solution can be tested solely with `runtest.sh -t challenge-name [-n test-numb
 ### IDE
 
 [Visual Studio Code](https://code.visualstudio.com) is a great free IDE. Some configuration file are provided.
-
-

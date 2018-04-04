@@ -20,10 +20,30 @@ usage()
     exit $1
 }
 
+
+set_colors()
+{
+    if [ -t 1 -a -t 0 ]; then
+        COLOR_RED="\033[91m"
+        COLOR_GREEN="\033[92m"
+        COLOR_YELLOW="\033[93m"
+        COLOR_LIGHT_PURPLE="\033[94m"
+        COLOR_PURPLE="\033[95m"
+        COLOR_END="\033[0m"
+    else
+        COLOR_RED=
+        COLOR_GREEN=
+        COLOR_YELLOW=
+        COLOR_LIGHT_PURPLE=
+        COLOR_PURPLE=
+        COLOR_END=
+    fi
+}
+
 # compare command
 compare()
 {
-    python "${rootdir}/compare.py" "$1" "$2"
+    python3 "${rootdir}/compare.py" "$1" "$2"
 }
 
 close_std()
@@ -93,6 +113,8 @@ for i ; do
     esac
 done
 
+set_colors
+
 # alternate syntax
 if [ -z "${testname}" ]; then
     testname=$1
@@ -137,7 +159,7 @@ if [ $verbose ]; then
     /bin/ls -ogTp tests/${testname}/input/
 fi
 
-rc=0
+failure=0
 for input in tests/${testname}/input/input*.txt; do
     n=${input##*input}
 
@@ -147,16 +169,24 @@ for input in tests/${testname}/input/input*.txt; do
         fi
     fi
 
-    if [ $verbose ]; then
-        echo "${exe} < ${input}"
-        $exe < ${input}
+    echo -e "${COLOR_YELLOW}${exe} < ${input}${COLOR_END}"
+    ${exe} < ${input} | tee tests/$testname/result${n}
+    echo -ne "${COLOR_PURPLE}"
+    compare tests/$testname/result${n} tests/$testname/output/output${n}
+    rc=$?
+    echo -ne "${COLOR_END}"
+    [ $rc -ne 0 ] && failure=1
+    if [ $rc -eq 0 ] ; then
+        echo -e "${COLOR_YELLOW}TESTCASE ${n%%.txt} : ${COLOR_GREEN}SUCCESS${COLOR_END}"
     else
-        echo "${exe} < ${input}"
-        ${exe} < ${input} | tee tests/$testname/result${n}
-        compare tests/$testname/result${n} tests/$testname/output/output${n}
-        [ $? -ne 0 ] && rc=1
+        echo -e "${COLOR_YELLOW}TESTCASE ${n%%.txt} : ${COLOR_RED}FAILURE${COLOR_END}"
     fi
+    echo
 done
 
-[ $rc -eq 0 ] && echo OK
-exit $rc
+if [ $failure -eq 0 ] ; then
+    echo -e "${COLOR_GREEN}SUCCESS${COLOR_END}"
+else
+    echo -e "${COLOR_RED}FAILURE${COLOR_END}"
+fi
+exit $failure

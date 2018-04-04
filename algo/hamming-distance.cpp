@@ -5,11 +5,7 @@
 // https://www.hackerrank.com/challenges/hamming-distance/problem
 // 
 
-#include <vector>
-#include <string>
-#include <iostream>
-#include <iomanip>
-#include <algorithm>
+#include <bits/stdc++.h>
 
 using namespace std;
 
