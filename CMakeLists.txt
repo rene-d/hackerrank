@@ -17,18 +17,18 @@ if (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
     include_directories(${CMAKE_CURRENT_BINARY_DIR})
 endif()
 
-# installe un fichier .nosync pour éviter la synchro iCloud ou autre
+# installe un fichier .nosync pour éviter la synchro iCloud Drive
 if (NOT EXISTS "${CMAKE_CURRENT_BINARY_DIR}/iCloud.nosync")
-  file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/iCloud.nosync" "build dir: ${CMAKE_SYSTEM}\n")
+  file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/iCloud.nosync" "build dir\n${CMAKE_SYSTEM}\n${CMAKE_SYSTEM_PROCESSOR}\n")
 endif()
 
 
 enable_testing()
 
-set(HACKERRANK_MASTER)
+set(HACKERRANK_CONTEST_SLUG master)
 macro(add_test_hackerrank name)
     add_test(NAME ${name}
-             COMMAND ${CMAKE_SOURCE_DIR}/runtest.sh ${name} ${HACKERRANK_MASTER}
+             COMMAND ${CMAKE_SOURCE_DIR}/runtest.sh -t ${name} -c ${HACKERRANK_CONTEST_SLUG}
              WORKING_DIRECTORY ${CURRENT_BINARY_DIR})
 endmacro()
 

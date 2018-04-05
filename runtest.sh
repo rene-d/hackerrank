@@ -16,7 +16,6 @@ usage()
     echo "  -h,--help       : help"
     echo "  -t,--testcase   : testcase name"
     echo "  -n,--number     : testcase number"
-    echo "error $1"
     exit $1
 }
 
@@ -94,9 +93,9 @@ download_zip()
 
 # read the options
 if [ "$(uname)" = "Darwin" ]; then
-    ARGS=`getopt hvn:t: $*`
+    ARGS=`getopt hvn:t:c: $*`
 else
-    ARGS=`getopt -o hvn:t: --long help,verbose,contest:,number:,test: -n 'runtest.sh' -- "$@"`
+    ARGS=`getopt -o hvn:t:c: --long help,verbose,contest:,number:,test: -n 'runtest.sh' -- "$@"`
 fi
 eval set -- "$ARGS"
 [ $? != 0 ] && usage 2
@@ -108,7 +107,7 @@ for i ; do
         -v|--verbose) verbose=1 ; shift ;;
         -t|--test) testname=$2 ; shift 2 ;;
         -n|--num) number=$2 ; shift 2 ;;
-        --contest) contest_slug=$2; shift 2 ;;
+        -c|--contest) contest_slug=$2; shift 2 ;;
         --) shift ; break ;;
     esac
 done
