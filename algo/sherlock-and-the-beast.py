@@ -4,7 +4,6 @@
 # https://www.hackerrank.com/challenges/sherlock-and-the-beast/problem
 #
 
-
 t = int(input())
 for _ in range(t):
     n = int(input())

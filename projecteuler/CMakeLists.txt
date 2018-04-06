@@ -4,6 +4,6 @@ add_hackerrank_py(euler001.py)
 add_hackerrank_py(euler028.py)
 #add_hackerrank_py(euler079.py)
 add_hackerrank_py(euler031.py)
-
-
-#set(HACKERRANK_CONTEST_SLUG master)
+add_hackerrank(euler081 euler081.cpp)
+add_hackerrank(euler074 euler074.cpp)
+add_hackerrank_py(euler016.py)

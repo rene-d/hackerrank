@@ -317,3 +317,12 @@ if __name__ == '__main__':
             }
         },
 """
+
+"""
+
+https://www.hackerrank.com/rest/contests/projecteuler/challenges/euler016
+https://www.hackerrank.com/rest/contests/master/challenges/the-birthday-bar
+
+
+https://www.hackerrank.com/rest/contests/master/
+"""

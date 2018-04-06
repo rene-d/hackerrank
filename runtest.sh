@@ -66,7 +66,9 @@ download_pdf()
     pdf="${rootdir}/statements/$testname.pdf"
     [ -s "$pdf" ] && return
 
-    mkdir -p "${rootdir}/statements"
+    # download only if directory statements exists
+    [ -d "${rootdir}/statements" ] || return
+    #mkdir -p "${rootdir}/statements"
 
     url="https://www.hackerrank.com/rest/contests/${contest_slug}/challenges/$testname/download_pdf?language=English"
     curl -s -L -o "${pdf}" "${url}"
@@ -80,22 +82,25 @@ download_pdf()
 
 download_zip()
 {
+    [ -f "${testcases%%.zip}.err" ] && return
     [ -s "${testcases}" ] && return
 
     url="https://www.hackerrank.com/rest/contests/${contest_slug}/challenges/${testname}/download_testcases"
-    curl -s -L -o "${testcases}" "${url}"
-    if [ ! -s "${testcases}" ]; then
-        rm -f "${testcases}"
+    http_code=$(curl --write-out %{http_code} -s -L -o "${testcases}" "${url}")
+
+    if [ $http_code -ne 200 ]; then
+        if [ -f "${testcases}" ]; then
+            mv -f "${testcases}" "${testcases%%.zip}.err"
+        fi
         echo "Download problem: ${url}"
-        exit 2
     fi
 }
 
 # read the options
 if [ "$(uname)" = "Darwin" ]; then
-    ARGS=`getopt hvn:t:c: $*`
+    ARGS=`getopt hvn:t:c:a $*`
 else
-    ARGS=`getopt -o hvn:t:c: --long help,verbose,contest:,number:,test: -n 'runtest.sh' -- "$@"`
+    ARGS=`getopt -o hvn:t:c:a --long help,verbose,contest:,number:,test:,all -n 'runtest.sh' -- "$@"`
 fi
 eval set -- "$ARGS"
 [ $? != 0 ] && usage 2
@@ -107,12 +112,11 @@ for i ; do
         -v|--verbose) verbose=1 ; shift ;;
         -t|--test) testname=$2 ; shift 2 ;;
         -n|--num) number=$2 ; shift 2 ;;
+        -a|--all) number=a ; shift ;;
         -c|--contest) contest_slug=$2; shift 2 ;;
         --) shift ; break ;;
     esac
 done
-
-set_colors
 
 # alternate syntax
 if [ -z "${testname}" ]; then
@@ -123,7 +127,8 @@ fi
 # testcase file must exist
 [ -f "${testname}" ] || usage 4
 
-# for batch processing
+# for batch/interactive processing
+set_colors
 close_std
 
 # extract the extension
@@ -142,16 +147,21 @@ download_pdf
 download_zip
 
 mkdir -p tests
-unzip -q -o -d tests/${testname} "${testcases}" 2>/dev/null
-if [ $? -ne 0 ]; then
-    grep -q "testcases are not available for download"  "${testcases}" && {
-        echo SKIPPED
-        exit 0
-    }
+
+if [ -f  "${testcases}" ]; then
+    unzip -q -o -d tests/${testname} "${testcases}"
+    missing_testcases=0
+else
+    missing_testcases=1
 fi
 
-if [ ! -z "$number" -a -s "${testcases2}" ]; then
+if [ \( ! -z "$number" -o $missing_testcases -eq 1 \) -a -s "${testcases2}" ]; then
     unzip -q -o -d tests/${testname} "${testcases2}"
+fi
+
+if [ ! -d tests/${testname}/input ]; then
+    echo -e "${COLOR_RED}NO TEST${COLOR_END}"
+    exit 1
 fi
 
 if [ $verbose ]; then
@@ -162,7 +172,7 @@ failure=0
 for input in tests/${testname}/input/input*.txt; do
     n=${input##*input}
 
-    if [ ! -z "$number" ]; then
+    if [ ! -z "$number" -a "$number" != "a" ]; then
         if [ "$number" -ne "${n%%.txt}" ]; then
             continue
         fi

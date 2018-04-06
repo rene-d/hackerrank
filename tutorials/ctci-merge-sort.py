@@ -4,7 +4,7 @@
 # https://www.hackerrank.com/challenges/ctci-merge-sort/problem
 #
 
-#TODO
+#TODO à exécuter en PyPy3 sur HackerRank, sinon timeout
 
 def sort_pair(arr0, arr1):
     if len(arr0) > len(arr1):
