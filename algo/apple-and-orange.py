@@ -1,8 +1,8 @@
 # Apple and Orange
 # Find the respective numbers of apples and oranges that fall on Sam's house.
-# 
+#
 # https://www.hackerrank.com/challenges/apple-and-orange/problem
-# 
+#
 
 def countApplesAndOranges(s, t, a, b, apples, oranges):
     # Complete this function
