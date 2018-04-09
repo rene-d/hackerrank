@@ -39,7 +39,7 @@ A solution can be tested solely with `runtest.sh -t challenge-name [-n test-numb
 
 ### Tools
 
-- `init.py` creates a new file for a given challenge based on the HackerRank template. Default language is Python.
+- `hrinit.py` creates a new file for a given challenge based on the HackerRank model. Default language is Python.
 
 - `runtest.sh` is the script used by CTest to run the solution.
 

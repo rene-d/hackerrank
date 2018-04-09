@@ -21,10 +21,13 @@ DOMAINS = {'algorithms': 'algo',
 
 class HackerRankParser():
 
-    def __init__(self, debug=False):
+    def __init__(self, debug=False, rootdir=None):
         self.debug = debug
 
-        self.rootdir = os.path.dirname(__file__)
+        if rootdir is None:
+            self.rootdir = os.path.dirname(__file__)
+        else:
+            self.rootdir = rootdir
 
         self.model = None
 
@@ -32,40 +35,46 @@ class HackerRankParser():
         self.contest = None
         self.key = None
 
+
     def feed(self, data):
         if self.debug:
             with open("model.json", "w") as f:
                 f.write(data)
             print("DEBUG: write initialData.json")
+
         data = json.loads(data)
+
         if data['status'] is True:
             self.model = data['model']
 
+            if self.model['track'] is None:
+                domain = self.model['primary_contest']['slug']
+            else:
+                domain = self.model['track']['track_slug']
+            self.domain = DOMAINS.get(domain, domain)
+
+            self.contest = self.model['contest_slug']
+            self.key = self.model['slug']
+
+            if self.model['contest_slug'] == "master":
+                self.link = "https://www.hackerrank.com/challenges/{}/problem".format(self.key)
+            else:
+                self.link = "https://www.hackerrank.com/contests/{}/challenges/{}".format(self.contest, self.key)
+
+
     def info(self):
-        print("name    :", self.model['name'])
         print("key     :", self.model['slug'])
+        print("name    :", self.model['name'])
         if self.model['track'] is None:
             print("domain  :", self.model['primary_contest']['name'])
-            print("domain  :", self.model['primary_contest']['slug'])
-            self.domain = self.model['primary_contest']['slug']
-
+            #print("domain  :", self.model['primary_contest']['slug'])
         else:
             print("domain  :", self.model['track']['track_name'], ">", self.model['track']['name'])
-            print("domain  :", self.model['track']['track_slug'], "/", self.model['track']['slug'])
-            self.domain = self.model['track']['track_slug']
-
+            #print("domain  :", self.model['track']['track_slug'], "/", self.model['track']['slug'])
         print("preview :", self.model['preview'])
 
-        self.contest = self.model['contest_slug']
-        self.key = self.model['slug']
 
-        if self.model['contest_slug'] == "master":
-            self.link = "https://www.hackerrank.com/challenges/{}/problem".format(self.key)
-        else:
-            self.link = "https://www.hackerrank.com/contests/{}/challenges/{}".format(self.contest, self.key)
-
-
-    def gen_stub(self, lang, overwrite=False, hpp=False):
+    def gen_stub(self, lang, overwrite=False, hpp=False, editor=True):
 
         EXTENSIONS = {"cpp": "cpp",
                       "cpp14": "cpp",
@@ -87,17 +96,16 @@ class HackerRankParser():
                     print("Cannot choose a language:", ' '.join(languages))
                     return
 
-        domain = DOMAINS.get(self.domain, self.domain)
         extension = EXTENSIONS.get(lang, lang)
 
-        os.makedirs(os.path.join(self.rootdir, domain), exist_ok=True)
+        os.makedirs(os.path.join(self.rootdir, self.domain), exist_ok=True)
 
-        filename = os.path.join(self.rootdir, domain, self.key + "." + extension)
+        filename = os.path.join(self.rootdir, self.domain, self.key + "." + extension)
         if not overwrite and os.path.exists(filename):
             print("File exists:", filename)
             return
 
-        cmake = os.path.join(self.rootdir, domain, "CMakeLists.txt")
+        cmake = os.path.join(self.rootdir, self.domain, "CMakeLists.txt")
 
 
         def write_header(f, comment, add_skeliton=True):
@@ -171,11 +179,13 @@ class HackerRankParser():
             return
 
         print("File created. Use « code {} » to edit it.".format(filename))
-        if 'VSCODE_PID' in os.environ:
-            if platform.system() == 'Windows':
-                subprocess.check_call(["code.cmd", filename])
-            else:
-                subprocess.check_call(["code", filename])
+
+        if editor:
+            if 'VSCODE_PID' in os.environ:
+                if platform.system() == 'Windows':
+                    subprocess.check_call(["code.cmd", filename])
+                else:
+                    subprocess.check_call(["code", filename])
 
 
     def download(self, overwrite=False):
@@ -220,7 +230,6 @@ class HackerRankParser():
             url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}/download_pdf?language=English".format(self.contest, self.key)
             r = requests.get(url, allow_redirects=True)
             if r.status_code == 200:
-                print(r.headers['content-type'])
                 if r.headers['content-type'] == 'application/pdf':
                     with open(statement_file, "wb") as f:
                         f.write(r.content)
