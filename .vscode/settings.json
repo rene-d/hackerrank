@@ -32,7 +32,9 @@
         "typeinfo": "cpp",
         "stdc++.h.in": "cpp",
         "cstddef": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "bitset": "cpp",
+        "utility": "cpp"
     },
     "files.exclude": {
         "**/.git": true,

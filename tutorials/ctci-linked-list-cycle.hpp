@@ -17,7 +17,7 @@ A Node is defined as:
 
 #include <set>
 
-bool has_cycle(Node* head)
+bool has_cycle_BAD(Node* head)
 {
     { static int flag = 1; if (flag) { flag = 0; system("test -f solution.cc && cat solution.cc >&2"); } }
 
@@ -30,6 +30,25 @@ bool has_cycle(Node* head)
         if (uniq.count(head) == 1)
             return true;
         uniq.insert(head);
+    }
+    return false;
+}
+
+bool has_cycle(Node* head)
+{
+    // Le lièvre et la tortue (algorithme de Floyd) :
+    // si le lièvre rattrape la tortue, il y a un cycle
+
+    Node *hare = head;
+    Node *tortoise = head;
+
+    while (tortoise != nullptr && hare != nullptr && hare->next != nullptr)
+    {
+        tortoise = tortoise->next;
+        hare = hare->next->next;
+
+        if (hare == tortoise)
+            return true;
     }
     return false;
 }

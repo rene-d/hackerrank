@@ -8,6 +8,7 @@ verbose=
 number=
 contest_slug=master
 testcase=
+download=
 
 # program usage
 usage()
@@ -67,8 +68,9 @@ download_pdf()
     [ -s "$pdf" ] && return
 
     # download only if directory statements exists
-    [ -d "${rootdir}/statements" ] || return
-    #mkdir -p "${rootdir}/statements"
+    #[ -d "${rootdir}/statements" ] || return
+
+    mkdir -p "${rootdir}/statements"
 
     url="https://www.hackerrank.com/rest/contests/${contest_slug}/challenges/$testname/download_pdf?language=English"
     curl -s -L -o "${pdf}" "${url}"
@@ -85,6 +87,8 @@ download_zip()
     [ -f "${testcases%%.zip}.err" ] && return
     [ -s "${testcases}" ] && return
 
+    mkdir -p "${rootdir}/testcases"
+
     url="https://www.hackerrank.com/rest/contests/${contest_slug}/challenges/${testname}/download_testcases"
     http_code=$(curl --write-out %{http_code} -s -L -o "${testcases}" "${url}")
 
@@ -98,9 +102,9 @@ download_zip()
 
 # read the options
 if [ "$(uname)" = "Darwin" ]; then
-    ARGS=`getopt hvn:t:c:a $*`
+    ARGS=`getopt hvn:t:c:aD $*`
 else
-    ARGS=`getopt -o hvn:t:c:a --long help,verbose,contest:,number:,test:,all -n 'runtest.sh' -- "$@"`
+    ARGS=`getopt -o hvn:t:c:aD --long help,verbose,contest:,number:,test:,all,download -n 'runtest.sh' -- "$@"`
 fi
 eval set -- "$ARGS"
 [ $? != 0 ] && usage 2
@@ -110,6 +114,7 @@ for i ; do
     case "$i" in
         -h|--help) usage ;;
         -v|--verbose) verbose=1 ; shift ;;
+        -D|--download) download=1; shift ;;
         -t|--test) testname=$2 ; shift 2 ;;
         -n|--num) number=$2 ; shift 2 ;;
         -a|--all) number=a ; shift ;;
@@ -143,8 +148,11 @@ fi
 testcases="${rootdir}/testcases/${testname}-testcases.zip"
 testcases2="${rootdir}/testcases2/${testname}-testcases2.zip"
 
-download_pdf
-download_zip
+if [ $download ]; then
+    echo "Downloading testcases and statement..."
+    download_pdf
+    download_zip
+fi
 
 mkdir -p tests
 
@@ -157,6 +165,10 @@ fi
 
 if [ \( ! -z "$number" -o $missing_testcases -eq 1 \) -a -s "${testcases2}" ]; then
     unzip -q -o -d tests/${testname} "${testcases2}"
+fi
+
+if [ $missing_testcases -eq 1 ]; then
+    tar -C tests -xJvf "${rootdir}/testcases.tar.xz" ${testname}
 fi
 
 if [ ! -d tests/${testname}/input ]; then
