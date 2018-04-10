@@ -2,10 +2,10 @@
 #
 # https://www.hackerrank.com/challenges/reverse-game/problem
 
-t = int(input().strip())
+t = int(input())
 for _ in range(t):
-    n,k = input().strip().split(' ')
-    n,k = [int(n),int(k)]
+    n, k = map(int, input().split())
+
 
     # il faut calculer uniquement la position de k
     for i in range(n):

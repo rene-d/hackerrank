@@ -1,0 +1,8 @@
+add_hackerrank(box-it box-it.cpp)
+add_hackerrank(c-tutorial-class c-tutorial-class.cpp)
+add_hackerrank(classes-objects classes-objects.cpp)
+add_hackerrank(c-tutorial-struct c-tutorial-struct.cpp)
+add_hackerrank(abstract-classes-polymorphism abstract-classes-polymorphism.cpp)
+add_hackerrank(virtual-functions virtual-functions.cpp)
+add_hackerrank(inherited-code inherited-code.cpp)
+add_hackerrank(exceptional-server exceptional-server.cpp)

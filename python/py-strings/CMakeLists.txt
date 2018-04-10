@@ -1,0 +1,8 @@
+add_hackerrank_py(whats-your-name.py)
+add_hackerrank_py(alphabet-rangoli.py)
+add_hackerrank_py(python-string-split-and-join.py)
+add_hackerrank_py(merge-the-tools.py)
+add_hackerrank_py(swap-case.py)
+add_hackerrank_py(python-string-formatting.py)
+add_hackerrank_py(the-minion-game.py)
+add_hackerrank_py(capitalize.py)

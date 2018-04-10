@@ -42,24 +42,11 @@ macro(add_hackerrank_py name)
     add_test_hackerrank(${name})
 endmacro(add_hackerrank_py nae)
 
-
-# C++
 add_subdirectory("cpp")
-
-# Python
 add_subdirectory("python")
-
-# Mathematics
-add_subdirectory("math")
-
-# Algo
-add_subdirectory("algo")
-
-# Data Structures
-add_subdirectory("data")
-
-# Project Euler+
+add_subdirectory("mathematics")
+add_subdirectory("algorithms")
+add_subdirectory("data-structures")
 add_subdirectory("projecteuler")
-
 add_subdirectory("fp")
 add_subdirectory("tutorials")

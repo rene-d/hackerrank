@@ -1,0 +1,7 @@
+add_hackerrank_py(python-division.py)
+add_hackerrank_py(python-loops.py)
+add_hackerrank_py(python-print.py)
+add_hackerrank_py(py-hello-world.py)
+add_hackerrank_py(py-if-else.py)
+add_hackerrank_py(write-a-function.py)
+add_hackerrank_py(python-arithmetic-operators.py)

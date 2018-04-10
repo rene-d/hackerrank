@@ -1,0 +1,5 @@
+add_hackerrank_py(marcs-cakewalk.py)
+add_hackerrank_py(grid-challenge.py)
+add_hackerrank_py(beautiful-pairs.py)
+add_hackerrank(maximum-perimeter-triangle maximum-perimeter-triangle.cpp)
+add_hackerrank_py(sherlock-and-the-beast.py)
