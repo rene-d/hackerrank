@@ -1,4 +1,4 @@
-# [![HackeRank](https://hrcdn.net/hackerrank/assets/brand/h_mark_sm-30dc0e0cbd2dded63b294819ff853a90.svg)](https://www.hackerrank.com) HackerRank
+# [![HackerRank](https://hrcdn.net/hackerrank/assets/brand/h_mark_sm-30dc0e0cbd2dded63b294819ff853a90.svg)](https://www.hackerrank.com) HackerRank
 
 HackerRank is a great site to learn, improve, play with your programming skills.
 
@@ -6,9 +6,9 @@ HackerRank is a great site to learn, improve, play with your programming skills.
 
 * [C++](cpp/)
 * [Python](python/)
-* [Mathematics](math/)
-* [Algorithms](algo/)
-* [Data Structures](data/)
+* [Mathematics](mathematics/)
+* [Algorithms](algorithms/)
+* [Data Structures](data-structures/)
 * [ProjectEuler+](projecteuler/) (See [here](https://github.com/rene-d/math/tree/master/projecteuler) my solutions of [Project Euler](https://projecteuler.net/))
 * [Tutorials](tutorials/)
 
