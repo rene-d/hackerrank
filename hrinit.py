@@ -14,11 +14,6 @@ import email.utils
 import datetime
 
 
-DOMAINS = {'algorithms': 'algo',
-           'mathematics': 'math',
-           'data-structures': 'data'}
-
-
 class HackerRankParser():
 
     def __init__(self, debug=False, rootdir=None):
@@ -31,7 +26,7 @@ class HackerRankParser():
 
         self.model = None
 
-        self.domain = None
+        self.path = None
         self.contest = None
         self.key = None
 
@@ -45,18 +40,23 @@ class HackerRankParser():
         data = json.loads(data)
 
         if data['status'] is True:
-            self.model = data['model']
+            self.model = m = data['model']
 
-            if self.model['track'] is None:
-                domain = self.model['primary_contest']['slug']
+            if m['track'] is None:
+                if "primary_contest" in m:
+                    self.path = os.path.join(m["contest_slug"], m["primary_contest"]["slug"])
+                    self.path_name = "{} > {}".format(m['contest_name'], m["primary_contest"]["name"])
+                else:
+                    self.path =  os.path.join(m["contest_slug"])
+                    self.path_name = m['contest_name']
             else:
-                domain = self.model['track']['track_slug']
-            self.domain = DOMAINS.get(domain, domain)
+                self.path = os.path.join(m["track"]["track_slug"], m["track"]["slug"])
+                self.path_name = "{} > {}".format(m["track"]["track_name"], m["track"]["name"])
 
-            self.contest = self.model['contest_slug']
-            self.key = self.model['slug']
+            self.contest = m['contest_slug']
+            self.key = m['slug']
 
-            if self.model['contest_slug'] == "master":
+            if m['contest_slug'] == "master":
                 self.link = "https://www.hackerrank.com/challenges/{}/problem".format(self.key)
             else:
                 self.link = "https://www.hackerrank.com/contests/{}/challenges/{}".format(self.contest, self.key)
@@ -65,12 +65,7 @@ class HackerRankParser():
     def info(self):
         print("key     :", self.model['slug'])
         print("name    :", self.model['name'])
-        if self.model['track'] is None:
-            print("domain  :", self.model['primary_contest']['name'])
-            #print("domain  :", self.model['primary_contest']['slug'])
-        else:
-            print("domain  :", self.model['track']['track_name'], ">", self.model['track']['name'])
-            #print("domain  :", self.model['track']['track_slug'], "/", self.model['track']['slug'])
+        print("domain  :", self.path_name)
         print("preview :", self.model['preview'])
 
 
@@ -98,14 +93,14 @@ class HackerRankParser():
 
         extension = EXTENSIONS.get(lang, lang)
 
-        os.makedirs(os.path.join(self.rootdir, self.domain), exist_ok=True)
+        os.makedirs(os.path.join(self.rootdir, self.path), exist_ok=True)
 
-        filename = os.path.join(self.rootdir, self.domain, self.key + "." + extension)
+        filename = os.path.join(self.rootdir, self.path, self.key + "." + extension)
         if not overwrite and os.path.exists(filename):
             print("File exists:", filename)
             return
 
-        cmake = os.path.join(self.rootdir, self.domain, "CMakeLists.txt")
+        cmake = os.path.join(self.rootdir, self.path, "CMakeLists.txt")
 
 
         def write_header(f, comment, add_skeliton=True):
@@ -130,9 +125,10 @@ class HackerRankParser():
                 else:
                     return False
 
-            line(self.model['name'])
+            line(self.path_name + " > " + self.model['name'])
             if 'preview' in self.model:
                 line(self.model['preview'])
+
             line('')
             line('{}'.format(self.link))
             line('')
@@ -202,7 +198,7 @@ class HackerRankParser():
         testcase_file = os.path.join(testcases_dir, self.key + "-testcases.zip")
         statement_file = os.path.join(statements_dir, self.key + ".pdf")
 
-        if overwrite or not os.path.exists(testcase_file):
+        if overwrite or (not os.path.exists(testcase_file) and not os.path.exists(testcase_file + ".404")):
 
             url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}/download_testcases".format(self.contest, self.key)
             r = requests.get(url, allow_redirects=True)
@@ -218,7 +214,10 @@ class HackerRankParser():
 
                     print("Testcase: {} bytes".format(len(r.content)))
             else:
-                print("Testcase: download error", url, r)
+                print("Testcase: download error", self.key, r, r.text)
+                if r.status_code == 404:
+                    with open(testcase_file + ".404", "w"):
+                        pass
 
 
         if overwrite or not os.path.exists(statement_file):
@@ -241,7 +240,7 @@ class HackerRankParser():
 
                     print("Statement: {} bytes".format(len(r.content)))
             else:
-                print("Statement: download error", url, r)
+                print("Statement: download error", self.key, r)
 
 
 def main():

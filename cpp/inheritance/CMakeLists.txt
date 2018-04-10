@@ -1,0 +1,5 @@
+add_hackerrank(rectangle-area rectangle-area.cpp)
+add_hackerrank(inheritance-introduction inheritance-introduction.cpp)
+add_hackerrank(accessing-inherited-functions accessing-inherited-functions.cpp)
+add_hackerrank(magic-spells magic-spells.cpp)
+add_hackerrank(multi-level-inheritance-cpp multi-level-inheritance-cpp.cpp)

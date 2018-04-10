@@ -1,0 +1,6 @@
+add_hackerrank_py(python-tuples.py)
+add_hackerrank_py(finding-the-percentage.py)
+add_hackerrank_py(nested-list.py)
+add_hackerrank_py(python-lists.py)
+add_hackerrank_py(list-comprehensions.py)
+add_hackerrank_py(find-second-maximum-number-in-a-list.py)
