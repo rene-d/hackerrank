@@ -44,8 +44,8 @@ class HackerRankParser():
 
             if m['track'] is None:
                 if "primary_contest" in m:
-                    self.path = os.path.join(m["contest_slug"], m["primary_contest"]["slug"])
-                    self.path_name = "{} > {}".format(m['contest_name'], m["primary_contest"]["name"])
+                    self.path = os.path.join(m["primary_contest"]["slug"])
+                    self.path_name = "{}".format(m["primary_contest"]["name"])
                 else:
                     self.path =  os.path.join(m["contest_slug"])
                     self.path_name = m['contest_name']
@@ -67,6 +67,7 @@ class HackerRankParser():
         print("name    :", self.model['name'])
         print("domain  :", self.path_name)
         print("preview :", self.model['preview'])
+        print("lang    :", ','.join(self.model['languages']))
 
 
     def gen_stub(self, lang, overwrite=False, hpp=False, editor=True):
@@ -75,7 +76,8 @@ class HackerRankParser():
                       "cpp14": "cpp",
                       "c": "c",
                       "python3": "py",
-                      "haskell": "hs"}
+                      "haskell": "hs",
+                      "bash": "sh"}
 
         # auto choose the language
         if lang == "*":
@@ -87,6 +89,8 @@ class HackerRankParser():
                     lang = 'cpp14'
                 elif 'haskell' in languages:
                     lang = 'haskell'
+                elif 'bash' in languages:
+                    lang = 'bash'
                 else:
                     print("Cannot choose a language:", ' '.join(languages))
                     return
@@ -169,6 +173,12 @@ class HackerRankParser():
                 write_header(f, '-- ')
             with open(cmake, "at") as f:
                 f.write("#add_hackerrank_hs({}.hs)\n".format(self.key))
+
+        elif lang == "bash":
+            with open(filename, "wt") as f:
+                write_header(f, '# ')
+            with open(cmake, "at") as f:
+                f.write("add_hackerrank_shell({}.sh)\n".format(self.key))
 
         else:
             print("Unknown language:", lang)

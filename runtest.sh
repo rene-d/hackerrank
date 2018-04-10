@@ -141,6 +141,9 @@ extension="${testname##*.}"
 if [ "${extension}" == "py" ]; then
     exe="python3 ${testname}"
     testname="${testname%.*}"
+elif [ "${extension}" == "sh" ]; then
+    exe="bash ${testname}"
+    testname="${testname%.*}"
 else
     exe=./${testname}
 fi
