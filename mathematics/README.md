@@ -12,7 +12,7 @@ Name | Preview | Code | Difficulty
 [Maximum Draws](https://www.hackerrank.com/challenges/maximum-draws)|Count the minimum Draws|[Python](mathematics/fundamentals/maximum-draws.py)|Easy
 [Special Multiple](https://www.hackerrank.com/challenges/special-multiple)|Can you find the least positive integer that is made of only 0s and 9s? - 30 Points|[Python](mathematics/fundamentals/special-multiple.py) [C](mathematics/fundamentals/special-multiple.c)|Medium
 [Minimum Height Triangle](https://www.hackerrank.com/challenges/lowest-triangle)|Find the smallest height of a triangle preserving the given constraints.|[Python](mathematics/fundamentals/lowest-triangle.py)|Easy
-[Sumar and the Floating Rocks](https://www.hackerrank.com/challenges/harry-potter-and-the-floating-rocks)|Count the number of integral rocks between Harry and Hermoine |[Python](mathematics/fundamentals/harry-potter-and-the-floating-rocks.py)|Easy
+[Sumar and the Floating Rocks](https://www.hackerrank.com/challenges/harry-potter-and-the-floating-rocks)|Count the number of integral rocks between Harry and Hermoine|[Python](mathematics/fundamentals/harry-potter-and-the-floating-rocks.py)|Easy
 [Sherlock and Divisors](https://www.hackerrank.com/challenges/sherlock-and-divisors)|Help Sherlock in Counting Divisors.|[Python](mathematics/fundamentals/sherlock-and-divisors.py)|Easy
 [Find the Point](https://www.hackerrank.com/challenges/find-point)|Given two points P and Q, output the symmetric point of point P about Q.|[C++](mathematics/fundamentals/find-point.cpp)|Easy
 [Summing the N series ](https://www.hackerrank.com/challenges/summing-the-n-series)|Sum the N series.|[Python](mathematics/fundamentals/summing-the-n-series.py)|Medium

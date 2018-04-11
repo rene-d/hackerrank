@@ -25,7 +25,7 @@ Name | Preview | Code | Difficulty
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
-[Contacts](https://www.hackerrank.com/challenges/contacts)|Create a Contacts application with the two basic operations: add and find. |[Python](data-structures/trie/contacts.py)|Medium
+[Contacts](https://www.hackerrank.com/challenges/contacts)|Create a Contacts application with the two basic operations: add and find.|[Python](data-structures/trie/contacts.py)|Medium
 [No Prefix Set](https://www.hackerrank.com/challenges/no-prefix-set)|Given N strings, find if a string is a prefix of another string.|[Python](data-structures/trie/no-prefix-set.py)|Hard
 ### [Heap](https://www.hackerrank.com/domains/data-structures/heap)
 
@@ -38,7 +38,7 @@ Name | Preview | Code | Difficulty
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
-[Sparse Arrays](https://www.hackerrank.com/challenges/sparse-arrays)|Determine the number of times a string has previously appeared. |[Python](data-structures/arrays/sparse-arrays.py)|Medium
+[Sparse Arrays](https://www.hackerrank.com/challenges/sparse-arrays)|Determine the number of times a string has previously appeared.|[Python](data-structures/arrays/sparse-arrays.py)|Medium
 [2D Array - DS](https://www.hackerrank.com/challenges/2d-array)|How to access and use 2d-arrays.|[Python](data-structures/arrays/2d-array.py)|Easy
 [Array Manipulation](https://www.hackerrank.com/challenges/crush)|Perform m operations on an array and print the maximum of the values.|[Python](data-structures/arrays/crush.py)|Hard
 [Left Rotation](https://www.hackerrank.com/challenges/array-left-rotation)|Given an array and a number, d, perform d left rotations on the array.|[Python](data-structures/arrays/array-left-rotation.py)|Easy

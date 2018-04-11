@@ -7,22 +7,21 @@
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Box It!](https://www.hackerrank.com/challenges/box-it)|Design a class named Box with overloaded operators.|[C++](cpp/classes/box-it.cpp)|Easy
-[Class](https://www.hackerrank.com/challenges/c-tutorial-class)|Learn how to create and use classes. |[C++](cpp/classes/c-tutorial-class.cpp)|Easy
-[Classes and Objects](https://www.hackerrank.com/challenges/classes-objects)|Familiarize yourself with classes and objects. |[C++](cpp/classes/classes-objects.cpp)|Easy
+[Class](https://www.hackerrank.com/challenges/c-tutorial-class)|Learn how to create and use classes.|[C++](cpp/classes/c-tutorial-class.cpp)|Easy
+[Classes and Objects](https://www.hackerrank.com/challenges/classes-objects)|Familiarize yourself with classes and objects.|[C++](cpp/classes/classes-objects.cpp)|Easy
 [Structs](https://www.hackerrank.com/challenges/c-tutorial-struct)|Learn how to create and use structures.|[C++](cpp/classes/c-tutorial-struct.cpp)|Easy
 [Abstract Classes - Polymorphism](https://www.hackerrank.com/challenges/abstract-classes-polymorphism)|Given an abstract class Cache, write a class LRUCache which extends the class Cache and implement an LRU cache.|[C++](cpp/classes/abstract-classes-polymorphism.cpp)|Hard
 [Virtual Functions](https://www.hackerrank.com/challenges/virtual-functions)|Learn how to use virtual functions and solve the given problem.|[C++](cpp/classes/virtual-functions.cpp)|Medium
-[Inherited Code](https://www.hackerrank.com/challenges/inherited-code)|Handle errors that can occur in the existing code.
-|[C++](cpp/classes/inherited-code.cpp)|Medium
+[Inherited Code](https://www.hackerrank.com/challenges/inherited-code)|Handle errors that can occur in the existing code.|[C++](cpp/classes/inherited-code.cpp)|Medium
 [Exceptional Server](https://www.hackerrank.com/challenges/exceptional-server)|Handle server errors.|[C++](cpp/classes/exceptional-server.cpp)|Medium
 ### [Other Concepts](https://www.hackerrank.com/domains/cpp/other-concepts)
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
-[Attending Workshops](https://www.hackerrank.com/challenges/attending-workshops)|Define a structure for the workshop and find the number of workshops that the student can attend. |[C++](cpp/other-concepts/attending-workshops.cpp)|Medium
+[Attending Workshops](https://www.hackerrank.com/challenges/attending-workshops)|Define a structure for the workshop and find the number of workshops that the student can attend.|[C++](cpp/other-concepts/attending-workshops.cpp)|Medium
 [C++ Class Templates](https://www.hackerrank.com/challenges/c-class-templates)|Learn to use class templates. You are given a problem, solve that using class templates.|[C++](cpp/other-concepts/c-class-templates.cpp)|Easy
 [Preprocessor Solution](https://www.hackerrank.com/challenges/preprocessor-solution)|Create preprocessor macros to make the existing code work.|[C++](cpp/other-concepts/preprocessor-solution.cpp)|Easy
-[Bit Array](https://www.hackerrank.com/challenges/bitset-1)|Calculate the number of distinct integers created from the given code. |[C++](cpp/other-concepts/bitset-1.cpp)|Hard
+[Bit Array](https://www.hackerrank.com/challenges/bitset-1)|Calculate the number of distinct integers created from the given code.|[C++](cpp/other-concepts/bitset-1.cpp)|Hard
 [C++ Variadics](https://www.hackerrank.com/challenges/cpp-variadics)|Create a function that takes an arbitrary number of binary digits as template parameters in reverse order and returns the value.|[C++](cpp/other-concepts/cpp-variadics.cpp)|Hard
 [C++ Class Template Specialization](https://www.hackerrank.com/challenges/cpp-class-template-specialization)|Class templates in C++ create specializations for certain types.  These can be used when difficult to provide a generic implementation.|[C++](cpp/other-concepts/cpp-class-template-specialization.cpp)|Medium
 [Overload Operators](https://www.hackerrank.com/challenges/overload-operators)|Operator Overloading in C++.|[C++](cpp/other-concepts/overload-operators.cpp)|Easy

@@ -18,7 +18,7 @@ Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Python: Division](https://www.hackerrank.com/challenges/python-division)|Division using __future__ module.|[Python](python/py-introduction/python-division.py)|Easy
 [Loops](https://www.hackerrank.com/challenges/python-loops)|Practice using "for" and "while" loops in Python.|[Python](python/py-introduction/python-loops.py)|Easy
-[Print Function](https://www.hackerrank.com/challenges/python-print)|Learn to use print as a function |[Python](python/py-introduction/python-print.py)|Easy
+[Print Function](https://www.hackerrank.com/challenges/python-print)|Learn to use print as a function|[Python](python/py-introduction/python-print.py)|Easy
 [Say "Hello, World!" With Python](https://www.hackerrank.com/challenges/py-hello-world)|Get started with Python by printing to stdout.|[Python](python/py-introduction/py-hello-world.py)|Easy
 [Python If-Else](https://www.hackerrank.com/challenges/py-if-else)|Practice using if-else conditional statements!|[Python](python/py-introduction/py-if-else.py)|Easy
 [Write a function](https://www.hackerrank.com/challenges/write-a-function)|Write a function to check if the given year is leap or not|[Python](python/py-introduction/write-a-function.py)|Medium
@@ -39,7 +39,7 @@ Name | Preview | Code | Difficulty
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Concatenate](https://www.hackerrank.com/challenges/np-concatenate)|Use the concatenate function on 2 arrays.|[Python](python/numpy/np-concatenate.py)|Easy
-[Arrays](https://www.hackerrank.com/challenges/np-arrays)|Convert a list to an array using the NumPy package. |[Python](python/numpy/np-arrays.py)|Easy
+[Arrays](https://www.hackerrank.com/challenges/np-arrays)|Convert a list to an array using the NumPy package.|[Python](python/numpy/np-arrays.py)|Easy
 ### [XML](https://www.hackerrank.com/domains/python/xml)
 
 Name | Preview | Code | Difficulty
@@ -57,9 +57,9 @@ Name | Preview | Code | Difficulty
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
-[Compress the String! ](https://www.hackerrank.com/challenges/compress-the-string)| groupby()|[Python](python/py-itertools/compress-the-string.py)|Medium
+[Compress the String! ](https://www.hackerrank.com/challenges/compress-the-string)|groupby()|[Python](python/py-itertools/compress-the-string.py)|Medium
 [Maximize It!](https://www.hackerrank.com/challenges/maximize-it)|Find the maximum possible value out of the equation provided.|[Python](python/py-itertools/maximize-it.py)|Hard
-[Iterables and Iterators](https://www.hackerrank.com/challenges/iterables-and-iterators)| Find the probability using itertools.|[Python](python/py-itertools/iterables-and-iterators.py)|Medium
+[Iterables and Iterators](https://www.hackerrank.com/challenges/iterables-and-iterators)|Find the probability using itertools.|[Python](python/py-itertools/iterables-and-iterators.py)|Medium
 ### [Math](https://www.hackerrank.com/domains/python/py-math)
 
 Name | Preview | Code | Difficulty
@@ -72,8 +72,8 @@ Name | Preview | Code | Difficulty
 [What's Your Name?](https://www.hackerrank.com/challenges/whats-your-name)|Python string practice: Print your name in the console.|[Python](python/py-strings/whats-your-name.py)|Easy
 [Alphabet Rangoli](https://www.hackerrank.com/challenges/alphabet-rangoli)|Let's draw rangoli.|[Python](python/py-strings/alphabet-rangoli.py)|Easy
 [String Split and Join](https://www.hackerrank.com/challenges/python-string-split-and-join)|Use Python's split and join methods on the input string.|[Python](python/py-strings/python-string-split-and-join.py)|Easy
-[Merge the Tools!](https://www.hackerrank.com/challenges/merge-the-tools)| Split a string into subsegments of length $k$, then print each subsegment with any duplicate characters stripped out.|[Python](python/py-strings/merge-the-tools.py)|Medium
-[sWAP cASE](https://www.hackerrank.com/challenges/swap-case)|Swap the letter cases of a given string. |[Python](python/py-strings/swap-case.py)|Easy
+[Merge the Tools!](https://www.hackerrank.com/challenges/merge-the-tools)|Split a string into subsegments of length $k$, then print each subsegment with any duplicate characters stripped out.|[Python](python/py-strings/merge-the-tools.py)|Medium
+[sWAP cASE](https://www.hackerrank.com/challenges/swap-case)|Swap the letter cases of a given string.|[Python](python/py-strings/swap-case.py)|Easy
 [String Formatting](https://www.hackerrank.com/challenges/python-string-formatting)|Print the formatted decimal, octal, hexadecimal, and binary values for $n$ integers.|[Python](python/py-strings/python-string-formatting.py)|Easy
 [The Minion Game](https://www.hackerrank.com/challenges/the-minion-game)|Given a string, judge the winner of the minion game.|[Python](python/py-strings/the-minion-game.py)|Medium
 [Capitalize!](https://www.hackerrank.com/challenges/capitalize)|Capitalize Each Word.|[Python](python/py-strings/capitalize.py)|Easy
