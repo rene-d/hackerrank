@@ -5,7 +5,7 @@
 ### [Fundamentals](https://www.hackerrank.com/domains/mathematics/fundamentals)
 
 Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
+---- | ---------------------------------------------------------------- | ------------- | ----------
 [Handshake](https://www.hackerrank.com/challenges/handshake)|Count the number of Handshakes in a board meeting.|[Python](mathematics/fundamentals/handshake.py)|Easy
 [Connecting Towns](https://www.hackerrank.com/challenges/connecting-towns)|Find the Number of ways to in which one can travel from one town to another.|[Python](mathematics/fundamentals/connecting-towns.py)|Easy
 [Russian Peasant Exponentiation](https://www.hackerrank.com/challenges/russian-peasant-exponentiation)|The only correct way to raise numbers in powers.|[Python](mathematics/fundamentals/russian-peasant-exponentiation.py)|Easy
@@ -34,14 +34,14 @@ Name | Preview | Code | Difficulty
 ### [Number Theory](https://www.hackerrank.com/domains/mathematics/number-theory)
 
 Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
+---- | ---------------------------------------------------------------- | ------------- | ----------
 [Sherlock and GCD](https://www.hackerrank.com/challenges/sherlock-and-gcd)|Help Sherlock in finding the subset.|[Python](mathematics/number-theory/sherlock-and-gcd.py)|Easy
 [Identify Smith Numbers](https://www.hackerrank.com/challenges/identify-smith-numbers)|Write a program to check whether a given integer is a Smith number.|[Python](mathematics/number-theory/identify-smith-numbers.py)|Easy
 [Minimal Distance to Pi](https://www.hackerrank.com/challenges/minimal-distance-to-pi)|Given a range of denominators, find the common fraction that best approximates Pi.|[Python](mathematics/number-theory/minimal-distance-to-pi.py)|Hard
 ### [Combinatorics](https://www.hackerrank.com/domains/mathematics/combinatorics)
 
 Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
+---- | ---------------------------------------------------------------- | ------------- | ----------
 [Merge List](https://www.hackerrank.com/challenges/merge-list)|Help Shashank in merging two list.|[Python](mathematics/combinatorics/merge-list.py)|Medium
 [A Chocolate Fiesta](https://www.hackerrank.com/challenges/a-chocolate-fiesta)|Find the number of even subsets in the given set of numbers.|[Python](mathematics/combinatorics/a-chocolate-fiesta.py)|Easy
 [nCr table](https://www.hackerrank.com/challenges/ncr-table)|Help Jim calculating nCr values|[Python](mathematics/combinatorics/ncr-table.py)|Medium

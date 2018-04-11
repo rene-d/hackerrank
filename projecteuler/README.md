@@ -4,7 +4,7 @@
 
 
 Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
+---- | ---------------------------------------------------------------- | ------------- | ----------
 [Project Euler #74: Digit factorial chains](https://www.hackerrank.com/challenges/euler074)||[C++](projecteuler/euler074.cpp)|Easy
 [Project Euler #28: Number spiral diagonals](https://www.hackerrank.com/challenges/euler028)|Running around a matrix.|[Python](projecteuler/euler028.py)|Easy
 [Project Euler #16: Power digit sum](https://www.hackerrank.com/challenges/euler016)|With more power comes more responsibility.|[Python](projecteuler/euler016.py)|Easy
