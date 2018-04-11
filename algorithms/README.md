@@ -5,7 +5,7 @@
 ### [Strings](https://www.hackerrank.com/domains/algorithms/strings)
 
 Name | Preview | Code | Difficulty
----- | ---------------------------------------------------------------- | ------------- | ----------
+---- | ------- | ---- | ----------
 [Sherlock and the Valid String](https://www.hackerrank.com/challenges/sherlock-and-valid-string)|Remove some characters from the string such that the new string's characters have the same frequency.|[Python](algorithms/strings/sherlock-and-valid-string.py)|Medium
 [Making Anagrams](https://www.hackerrank.com/challenges/making-anagrams)|How many characters should one delete to make two given strings anagrams of each other?|[Python](algorithms/strings/making-anagrams.py)|Easy
 [Game of Thrones - I](https://www.hackerrank.com/challenges/game-of-thrones)|Check whether any anagram of a string can be a palindrome or not.|[Python](algorithms/strings/game-of-thrones.py)|Easy
@@ -34,7 +34,7 @@ Name | Preview | Code | Difficulty
 ### [Sorting](https://www.hackerrank.com/domains/algorithms/arrays-and-sorting)
 
 Name | Preview | Code | Difficulty
----- | ---------------------------------------------------------------- | ------------- | ----------
+---- | ------- | ---- | ----------
 [Big Sorting](https://www.hackerrank.com/challenges/big-sorting)|Sort an array of very long numeric strings.|[Python](algorithms/arrays-and-sorting/big-sorting.py)|Easy
 [Find the Median](https://www.hackerrank.com/challenges/find-the-median)|Find the Median in a list of numbers.|[Python](algorithms/arrays-and-sorting/find-the-median.py)|Easy
 [Insertion Sort Advanced Analysis](https://www.hackerrank.com/challenges/insertion-sort)|How many shifts will it take Insertion Sort to sort an array?|[Python](algorithms/arrays-and-sorting/insertion-sort.py) [C++](algorithms/arrays-and-sorting/insertion-sort.cpp)|Advanced
@@ -50,18 +50,18 @@ Name | Preview | Code | Difficulty
 ### [Search](https://www.hackerrank.com/domains/algorithms/search)
 
 Name | Preview | Code | Difficulty
----- | ---------------------------------------------------------------- | ------------- | ----------
+---- | ------- | ---- | ----------
 [Pairs](https://www.hackerrank.com/challenges/pairs)|Given N numbers, count the total pairs of numbers that have a difference of K.|[Python](algorithms/search/pairs.py)|Medium
 [Ice Cream Parlor](https://www.hackerrank.com/challenges/icecream-parlor)|Help Sunny and Johnny spend all their money during each trip to the Ice Cream Parlor.|[Python](algorithms/search/icecream-parlor.py)|Easy
 ### [Dynamic Programming](https://www.hackerrank.com/domains/algorithms/dynamic-programming)
 
 Name | Preview | Code | Difficulty
----- | ---------------------------------------------------------------- | ------------- | ----------
+---- | ------- | ---- | ----------
 [The Longest Increasing Subsequence](https://www.hackerrank.com/challenges/longest-increasing-subsequent)|Find the length of the longest increase subsequence in a given array.|[C++](algorithms/dynamic-programming/longest-increasing-subsequent.cpp)|Advanced
 ### [Implementation](https://www.hackerrank.com/domains/algorithms/implementation)
 
 Name | Preview | Code | Difficulty
----- | ---------------------------------------------------------------- | ------------- | ----------
+---- | ------- | ---- | ----------
 [Library Fine](https://www.hackerrank.com/challenges/library-fine)|Help your library calculate fees for late books!|[Python](algorithms/implementation/library-fine.py)|Easy
 [Cut the sticks](https://www.hackerrank.com/challenges/cut-the-sticks)|Given the lengths of n sticks, print the number of sticks that are left before each cut operation.|[Python](algorithms/implementation/cut-the-sticks.py)|Easy
 [Climbing the Leaderboard](https://www.hackerrank.com/challenges/climbing-the-leaderboard)|Help Alice track her progress toward the top of the leaderboard!|[Python](algorithms/implementation/climbing-the-leaderboard.py)|Medium
@@ -127,7 +127,7 @@ Name | Preview | Code | Difficulty
 ### [Greedy](https://www.hackerrank.com/domains/algorithms/greedy)
 
 Name | Preview | Code | Difficulty
----- | ---------------------------------------------------------------- | ------------- | ----------
+---- | ------- | ---- | ----------
 [Marc's Cakewalk](https://www.hackerrank.com/challenges/marcs-cakewalk)|Find the minimum number of miles Marc must walk to burn the calories consumed from eating cupcakes.|[Python](algorithms/greedy/marcs-cakewalk.py)|Easy
 [Minimum Absolute Difference in an Array](https://www.hackerrank.com/challenges/minimum-absolute-difference-in-an-array)|Given a list of integers, calculate their differences and find the difference with the smallest absolute value.|[Python](algorithms/greedy/minimum-absolute-difference-in-an-array.py)|Easy
 [Grid Challenge](https://www.hackerrank.com/challenges/grid-challenge)|Find if it is possible to rearrange a square grid such that every  row and every column is lexicographically sorted.|[Python](algorithms/greedy/grid-challenge.py)|Easy
@@ -137,18 +137,18 @@ Name | Preview | Code | Difficulty
 ### [Game Theory](https://www.hackerrank.com/domains/algorithms/game-theory)
 
 Name | Preview | Code | Difficulty
----- | ---------------------------------------------------------------- | ------------- | ----------
+---- | ------- | ---- | ----------
 [Game of Stones](https://www.hackerrank.com/challenges/game-of-stones-1)|A Game of Stones|[Python](algorithms/game-theory/game-of-stones-1.py)|Easy
 ### [Bit Manipulation](https://www.hackerrank.com/domains/algorithms/bit-manipulation)
 
 Name | Preview | Code | Difficulty
----- | ---------------------------------------------------------------- | ------------- | ----------
+---- | ------- | ---- | ----------
 [Lonely Integer](https://www.hackerrank.com/challenges/lonely-integer)|Find the unique element in an array of integer pairs.|[Python](algorithms/bit-manipulation/lonely-integer.py)|Easy
 [Hamming Distance](https://www.hackerrank.com/challenges/hamming-distance)|You are given a string S, consisting of N small latin letters 'a'  and 'b'. Process the given M queries.|[C++](algorithms/bit-manipulation/hamming-distance.cpp)|Expert
 ### [Warmup](https://www.hackerrank.com/domains/algorithms/warmup)
 
 Name | Preview | Code | Difficulty
----- | ---------------------------------------------------------------- | ------------- | ----------
+---- | ------- | ---- | ----------
 [Solve Me First](https://www.hackerrank.com/challenges/solve-me-first)|This is an easy challenge to help you start coding in your favorite languages!|[C++](algorithms/warmup/solve-me-first.cpp)|Easy
 [Mini-Max Sum](https://www.hackerrank.com/challenges/mini-max-sum)|Find the maximum and minimum values obtained by summing four of five integers.|[Python](algorithms/warmup/mini-max-sum.py)|Easy
 [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum)|Calculate the sum of integers in an array.|[C++](algorithms/warmup/simple-array-sum.cpp)|Easy

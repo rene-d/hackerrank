@@ -5,7 +5,7 @@
 ### [Classes](https://www.hackerrank.com/domains/cpp/classes)
 
 Name | Preview | Code | Difficulty
----- | ---------------------------------------------------------------- | ------------- | ----------
+---- | ------- | ---- | ----------
 [Box It!](https://www.hackerrank.com/challenges/box-it)|Design a class named Box with overloaded operators.|[C++](cpp/classes/box-it.cpp)|Easy
 [Class](https://www.hackerrank.com/challenges/c-tutorial-class)|Learn how to create and use classes.|[C++](cpp/classes/c-tutorial-class.cpp)|Easy
 [Classes and Objects](https://www.hackerrank.com/challenges/classes-objects)|Familiarize yourself with classes and objects.|[C++](cpp/classes/classes-objects.cpp)|Easy
@@ -17,7 +17,7 @@ Name | Preview | Code | Difficulty
 ### [Other Concepts](https://www.hackerrank.com/domains/cpp/other-concepts)
 
 Name | Preview | Code | Difficulty
----- | ---------------------------------------------------------------- | ------------- | ----------
+---- | ------- | ---- | ----------
 [Attending Workshops](https://www.hackerrank.com/challenges/attending-workshops)|Define a structure for the workshop and find the number of workshops that the student can attend.|[C++](cpp/other-concepts/attending-workshops.cpp)|Medium
 [C++ Class Templates](https://www.hackerrank.com/challenges/c-class-templates)|Learn to use class templates. You are given a problem, solve that using class templates.|[C++](cpp/other-concepts/c-class-templates.cpp)|Easy
 [Preprocessor Solution](https://www.hackerrank.com/challenges/preprocessor-solution)|Create preprocessor macros to make the existing code work.|[C++](cpp/other-concepts/preprocessor-solution.cpp)|Easy
@@ -29,7 +29,7 @@ Name | Preview | Code | Difficulty
 ### [STL](https://www.hackerrank.com/domains/cpp/stl)
 
 Name | Preview | Code | Difficulty
----- | ---------------------------------------------------------------- | ------------- | ----------
+---- | ------- | ---- | ----------
 [Vector-Erase](https://www.hackerrank.com/challenges/vector-erase)|Erasing an element from a vector.|[C++](cpp/stl/vector-erase.cpp)|Easy
 [Sets-STL](https://www.hackerrank.com/challenges/cpp-sets)|Learn about the set container. Given a problem with 3 queries, try to answer the queries using the set container.|[C++](cpp/stl/cpp-sets.cpp)|Easy
 [Lower Bound-STL](https://www.hackerrank.com/challenges/cpp-lower-bound)|Given N numbers, you have to find the smallest integer greater than the given number and print the index of that number.|[C++](cpp/stl/cpp-lower-bound.cpp)|Easy
@@ -40,7 +40,7 @@ Name | Preview | Code | Difficulty
 ### [Inheritance](https://www.hackerrank.com/domains/cpp/inheritance)
 
 Name | Preview | Code | Difficulty
----- | ---------------------------------------------------------------- | ------------- | ----------
+---- | ------- | ---- | ----------
 [Rectangle Area](https://www.hackerrank.com/challenges/rectangle-area)|Find out the area of a rectangle. You are given the objects to the class and you have to implement these classes.|[C++](cpp/inheritance/rectangle-area.cpp)|Easy
 [Inheritance Introduction](https://www.hackerrank.com/challenges/inheritance-introduction)|Learn how to inherit classes from other classes.|[C++](cpp/inheritance/inheritance-introduction.cpp)|Easy
 [Accessing Inherited Functions](https://www.hackerrank.com/challenges/accessing-inherited-functions)|Access inherited functions with the same name.|[C++](cpp/inheritance/accessing-inherited-functions.cpp)|Medium
@@ -49,14 +49,14 @@ Name | Preview | Code | Difficulty
 ### [Strings](https://www.hackerrank.com/domains/cpp/cpp-strings)
 
 Name | Preview | Code | Difficulty
----- | ---------------------------------------------------------------- | ------------- | ----------
+---- | ------- | ---- | ----------
 [Attribute Parser](https://www.hackerrank.com/challenges/attribute-parser)|Parse the values within various tags.|[C++](cpp/cpp-strings/attribute-parser.cpp)|Medium
 [StringStream](https://www.hackerrank.com/challenges/c-tutorial-stringstream)|Learn how to use stringstreams.|[C++](cpp/cpp-strings/c-tutorial-stringstream.cpp)|Easy
 [Strings](https://www.hackerrank.com/challenges/c-tutorial-strings)|Learn how to input and output strings.|[C++](cpp/cpp-strings/c-tutorial-strings.cpp)|Easy
 ### [Introduction](https://www.hackerrank.com/domains/cpp/cpp-introduction)
 
 Name | Preview | Code | Difficulty
----- | ---------------------------------------------------------------- | ------------- | ----------
+---- | ------- | ---- | ----------
 [For Loop](https://www.hackerrank.com/challenges/c-tutorial-for-loop)|Learn how to use for loop and print the output as per the given conditions|[C++](cpp/cpp-introduction/c-tutorial-for-loop.cpp)|Easy
 [Input and Output](https://www.hackerrank.com/challenges/cpp-input-and-output)|Learn to take in the input and print the output. Take three number as input and print their sum as output.|[C++](cpp/cpp-introduction/cpp-input-and-output.cpp)|Easy
 [Say "Hello, World!" With C++](https://www.hackerrank.com/challenges/cpp-hello-world)|Practice printing to stdout.|[C++](cpp/cpp-introduction/cpp-hello-world.cpp)|Easy
