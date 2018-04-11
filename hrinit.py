@@ -184,6 +184,8 @@ class HackerRankParser():
             print("Unknown language:", lang)
             return
 
+        filename = os.path.relpath(filename)
+
         print("File created. Use « code {} » to edit it.".format(filename))
 
         if editor:
