@@ -1,5 +1,3 @@
-# [HackerRank](https://www.hackerrank.com/) solutions
-
 ## [ProjectEuler+](https://www.hackerrank.com/contests/projecteuler)
 
 

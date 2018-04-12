@@ -1,5 +1,3 @@
-# [HackerRank](https://www.hackerrank.com/) solutions
-
 ## [Algorithms](https://www.hackerrank.com/domains/algorithms)
 
 ### [Strings](https://www.hackerrank.com/domains/algorithms/strings)

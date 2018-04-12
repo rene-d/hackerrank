@@ -1,0 +1,1 @@
+../data-structures/stacks/equal-stacks.py

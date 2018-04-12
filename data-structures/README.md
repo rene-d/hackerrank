@@ -1,11 +1,10 @@
-# [HackerRank](https://www.hackerrank.com/) solutions
-
 ## [Data Structures](https://www.hackerrank.com/domains/data-structures)
 
 ### [Stacks](https://www.hackerrank.com/domains/data-structures/stacks)
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
+[Equal Stacks](https://www.hackerrank.com/challenges/equal-stacks)|Equalize the piles!|[Python](stacks/equal-stacks.py)|Easy
 [Maximum Element](https://www.hackerrank.com/challenges/maximum-element)|Given three types of queries, insert an element, delete an element or find the maximum element in a stack.|[C++](stacks/maximum-element.cpp)|Easy
 [Balanced Brackets](https://www.hackerrank.com/challenges/balanced-brackets)|Given a string containing three types of brackets, determine if it is balanced.|[Python](stacks/balanced-brackets.py)|Medium
 ### [Trees](https://www.hackerrank.com/domains/data-structures/trees)

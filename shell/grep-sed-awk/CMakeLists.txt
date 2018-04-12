@@ -1,1 +1,7 @@
 add_hackerrank_shell(text-processing-in-linux-the-grep-command-1.sh)
+add_hackerrank_shell(text-processing-in-linux-the-grep-command-2.sh)
+add_hackerrank_shell(text-processing-in-linux-the-grep-command-3.sh)
+add_hackerrank_shell(text-processing-in-linux-the-grep-command-4.sh)
+add_hackerrank_shell(sed-command-5.sh)
+add_hackerrank_shell(sed-command-4.sh)
+add_hackerrank_shell(awk-1.sh)

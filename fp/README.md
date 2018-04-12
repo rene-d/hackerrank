@@ -1,5 +1,3 @@
-# [HackerRank](https://www.hackerrank.com/) solutions
-
 ## [Functional Programming](https://www.hackerrank.com/domains/fp)
 
 ### [Introduction](https://www.hackerrank.com/domains/fp/intro)

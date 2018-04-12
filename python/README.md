@@ -1,7 +1,11 @@
-# [HackerRank](https://www.hackerrank.com/) solutions
-
 ## [Python](https://www.hackerrank.com/domains/python)
 
+### [Built-Ins](https://www.hackerrank.com/domains/python/py-built-ins)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Zipped!](https://www.hackerrank.com/challenges/zipped)|Compute the average by zipping data.|[Python](py-built-ins/zipped.py)|Easy
+[Input()](https://www.hackerrank.com/challenges/input)|A Python 2 challenge: Input() is equivalent to eval(raw_input(prompt)).|[Python](py-built-ins/input.py)|Easy
 ### [Date and Time](https://www.hackerrank.com/domains/python/py-date-time)
 
 Name | Preview | Code | Difficulty

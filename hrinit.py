@@ -77,7 +77,9 @@ class HackerRankParser():
                       "c": "c",
                       "python3": "py",
                       "haskell": "hs",
-                      "bash": "sh"}
+                      "bash": "sh",
+                      "text": "txt",
+                      "oracle": "sql"}
 
         # auto choose the language
         if lang == "*":
@@ -179,6 +181,14 @@ class HackerRankParser():
                 write_header(f, '# ')
             with open(cmake, "at") as f:
                 f.write("add_hackerrank_shell({}.sh)\n".format(self.key))
+
+        elif lang == "text":
+            with open(filename, "wt") as f:
+                write_header(f, '# ')
+
+        elif lang == "oracle":
+            with open(filename, "wt") as f:
+                write_header(f, '-- ')
 
         else:
             print("Unknown language:", lang)

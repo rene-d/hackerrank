@@ -1,2 +1,6 @@
 add_hackerrank_shell(text-processing-cut-1.sh)
 add_hackerrank_shell(paste-2.sh)
+add_hackerrank_shell(text-processing-in-linux-the-uniq-command-4.sh)
+add_hackerrank_shell(text-processing-in-linux-the-uniq-command-1.sh)
+add_hackerrank_shell(text-processing-in-linux-the-uniq-command-2.sh)
+add_hackerrank_shell(text-processing-in-linux-the-uniq-command-3.sh)

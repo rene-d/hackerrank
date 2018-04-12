@@ -1,5 +1,3 @@
-# [HackerRank](https://www.hackerrank.com/) solutions
-
 ## [Mathematics](https://www.hackerrank.com/domains/mathematics)
 
 ### [Fundamentals](https://www.hackerrank.com/domains/mathematics/fundamentals)

@@ -1,5 +1,3 @@
-# [HackerRank](https://www.hackerrank.com/) solutions
-
 ## [C++](https://www.hackerrank.com/domains/cpp)
 
 ### [Classes](https://www.hackerrank.com/domains/cpp/classes)

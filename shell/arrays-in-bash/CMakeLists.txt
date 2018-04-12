@@ -1,0 +1,8 @@
+add_hackerrank_shell(bash-tutorials-read-in-an-array.sh)
+add_hackerrank_shell(bash-tutorials-slice-an-array.sh)
+add_hackerrank_shell(bash-tutorials-filter-an-array-with-patterns.sh)
+add_hackerrank_shell(bash-tutorials-concatenate-an-array-with-itself.sh)
+add_hackerrank_shell(bash-tutorials-display-the-third-element-of-an-array.sh)
+add_hackerrank_shell(bash-tutorials-count-the-number-of-elements-in-an-array.sh)
+add_hackerrank_shell(bash-tutorials-remove-the-first-capital-letter-from-each-array-element.sh)
+add_hackerrank_shell(lonely-integer-2.sh)
