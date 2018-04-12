@@ -1,0 +1,40 @@
+# Coding Dojo
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Illustrerad_Verldshistoria_band_I_Ill_107.jpg/158px-Illustrerad_Verldshistoria_band_I_Ill_107.jpg)
+
+## Présentation
+
+### Introduction
+
+En japonais, le 道場 (_dōjō_) est le lieu où l'on étudie/cherche la voie.
+
+Définition [Wikipédia](https://fr.wikipedia.org/wiki/Coding_dojo) d'un **coding dojo** :
+
+> Le coding dojo est une rencontre entre plusieurs personnes qui souhaitent travailler sur un défi de programmation de façon collective.
+
+> Chaque coding dojo se concentre sur un sujet particulier, et représente l'objectif de la séance. Ce sujet doit permettre d'apprendre de façon collective sur le plan **technique** et sur la **manière** de réussir le défi. 
+
+### Bénéfices attendus
+
+* Découverte nouvelles notions de programmation
+* Perfectionnement
+* Apprentissage nouveaux langages
+* Partage du savoir
+* Compléments de formation continue
+
+### Choix des sujets 
+
+* Pas nécessairement liés aux projets
+* Mais technologies proches
+
+### Langages, outils et IDE
+
+- [Python](https://www.python.org)
+- [C++](http://www.cplusplus.com)
+- [Bash](https://www.gnu.org/software/bash/)
+- Navigateur web et une connexion Internet
+- [Visual Studio Code](http://code.visualstudio.com)
+- [git](https://git-scm.com)
+
+
+## Défis proposés

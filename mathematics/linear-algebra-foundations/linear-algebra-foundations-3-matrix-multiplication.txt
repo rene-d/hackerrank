@@ -1,0 +1,29 @@
+# Mathematics > Linear Algebra Foundations > Linear Algebra Foundations #3- Matrix Multiplication
+# Matrix Multiplication of 2x2 Matrices
+#
+# https://www.hackerrank.com/challenges/linear-algebra-foundations-3-matrix-multiplication/problem
+#
+
+1*4+2*7 = 18
+1*5+2*8 = 21
+2*4+3*7 = 29
+2*5+3*8 = 34
+
+réponse:
+
+18
+21
+29
+34
+
+
+# en Python:
+
+import numpy as np
+
+a = np.matrix([[1, 2], [2, 3]])
+b = np.matrix([[4, 5], [7, 8]])
+
+print(a)
+print(b)
+print(a * b)

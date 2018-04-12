@@ -1,0 +1,15 @@
+# Mathematics > Linear Algebra Foundations > Linear Algebra Foundations #1 - Matrix Addition
+# The basics of linear algebra and matrices as required in Machine Learning.
+#
+# https://www.hackerrank.com/challenges/linear-algebra-foundations-1/problem
+#
+
+5
+7
+9
+9
+11
+13
+5
+6
+8

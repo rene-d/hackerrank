@@ -1,0 +1,15 @@
+# Mathematics > Linear Algebra Foundations > Linear Algebra Foundations #2 - Matrix Subtraction
+# The basics of linear algebra and matrices as required in Machine Learning.
+#
+# https://www.hackerrank.com/challenges/linear-algebra-foundations-1-matrix-subtraction/problem
+#
+
+-3
+-3
+-3
+-5
+-5
+-5
+-3
+-4
+1

@@ -1,6 +1,6 @@
-## [Functional Programming](https://www.hackerrank.com/domains/fp)
+### [Functional Programming](https://www.hackerrank.com/domains/fp)
 
-### [Introduction](https://www.hackerrank.com/domains/fp/intro)
+#### [Introduction](https://www.hackerrank.com/domains/fp/intro)
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------

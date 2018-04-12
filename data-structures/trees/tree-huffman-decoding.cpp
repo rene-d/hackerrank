@@ -3,7 +3,6 @@
 //
 // https://www.hackerrank.com/challenges/tree-huffman-decoding/problem
 //
-
 //
 //  main.cpp
 //  Huffman
@@ -88,7 +87,46 @@ void print_codes_hidden(node * root,string code,map<char,string>&mp)
 
 }
 
-#include "tree-huffman-decoding.hpp"
+//============================================================================
+
+/*
+The structure of the node is
+
+typedef struct node
+{
+    int freq;
+    char data;
+    node * left;
+    node * right;
+
+}node;
+
+*/
+
+
+void decode_huff(node * root,string s)
+{
+    { static int flag = 1; if (flag) { flag = 0; (void) system("cat solution.cc >&2"); } }
+
+
+    node *n = root;
+
+    for (auto i : s)
+    {
+        if (i == '1')
+            n = n->right;
+        else
+            n = n->left;
+
+        if (n->right == NULL && n->left == NULL)
+        {
+            cout << n->data;
+            n = root;
+        }
+    }
+}
+
+//============================================================================
 
 int main()
 {

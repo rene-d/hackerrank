@@ -1,20 +1,73 @@
 # Coding Dojo
 
-![Coding Dojo](CoderDojo_Logo.png)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Illustrerad_Verldshistoria_band_I_Ill_107.jpg/158px-Illustrerad_Verldshistoria_band_I_Ill_107.jpg)
 
-## Introduction
+## Présentation
 
-Qu'est-ce qu'un [coding dojo](https://fr.wikipedia.org/wiki/Coding_dojo) (sur Wikipédia) ?
+### Introduction
+
+En japonais, le 道場 (_dōjō_) est le lieu où l'on étudie/cherche la voie.
+
+Définition [Wikipédia](https://fr.wikipedia.org/wiki/Coding_dojo) d'un **coding dojo** :
+
+> Le coding dojo est une rencontre entre plusieurs personnes qui souhaitent travailler sur un défi de programmation de façon collective.
+
+> Chaque coding dojo se concentre sur un sujet particulier, et représente l'objectif de la séance. Ce sujet doit permettre d'apprendre de façon collective sur le plan **technique** et sur la **manière** de réussir le défi. 
+
+### Bénéfices attendus
+
+* Découverte nouvelles notions de programmation
+* Perfectionnement
+* Apprentissage nouveaux langages
+* Partage du savoir
+* Compléments de formation continue
+
+### Choix des sujets 
+
+* Pas nécessairement liés aux projets
+* Mais technologies proches
+
+### Langages, outils et IDE
+
+- [Python](https://www.python.org)
+- [C++](http://www.cplusplus.com)
+- [Bash](https://www.gnu.org/software/bash/)
+- Navigateur web et une connexion Internet
+- [Visual Studio Code](http://code.visualstudio.com)
+- [git](https://git-scm.com)
+
 
 ## Défis proposés
+### [Python](https://www.hackerrank.com/domains/python)
 
-- [Maximum Element](https://www.hackerrank.com/challenges/maximum-element/problem)
-- [Cycle Detection](https://www.hackerrank.com/challenges/detect-whether-a-linked-list-contains-a-cycle/problem)
+#### [Regex and Parsing](https://www.hackerrank.com/domains/python/py-regex)
 
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Validating Credit Card Numbers](https://www.hackerrank.com/challenges/validating-credit-card-number)|Verify whether credit card numbers are valid or not.|[Python](validating-credit-card-number.py)|Medium
+### [C++](https://www.hackerrank.com/domains/cpp)
 
-## Langages, outils et IDE
+#### [Other Concepts](https://www.hackerrank.com/domains/cpp/other-concepts)
 
-- Python 3
-- C++, C++14
-- Visual Studio Code
-- git
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Bit Array](https://www.hackerrank.com/challenges/bitset-1)|Calculate the number of distinct integers created from the given code.|[C++](bitset-1.cpp)|Hard
+### [Data Structures](https://www.hackerrank.com/domains/data-structures)
+
+#### [Linked Lists](https://www.hackerrank.com/domains/data-structures/linked-lists)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Cycle Detection](https://www.hackerrank.com/challenges/detect-whether-a-linked-list-contains-a-cycle)|Given a pointer to the head of a linked list, determine whether the linked list loops back onto itself (i.e., determine if the list ends in a circularly linked list).|[C++](detect-whether-a-linked-list-contains-a-cycle.cpp)|Medium
+#### [Trees](https://www.hackerrank.com/domains/data-structures/trees)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Tree: Huffman Decoding ](https://www.hackerrank.com/challenges/tree-huffman-decoding)|Given a Huffman tree and an encoded binary string, you have to print the original string.|[C++](tree-huffman-decoding.cpp)|Medium
+#### [Stacks](https://www.hackerrank.com/domains/data-structures/stacks)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Maximum Element](https://www.hackerrank.com/challenges/maximum-element)|Given three types of queries, insert an element, delete an element or find the maximum element in a stack.|[C++](maximum-element.cpp)|Easy
+[Equal Stacks](https://www.hackerrank.com/challenges/equal-stacks)|Equalize the piles!|[Python](equal-stacks.py)|Easy
+

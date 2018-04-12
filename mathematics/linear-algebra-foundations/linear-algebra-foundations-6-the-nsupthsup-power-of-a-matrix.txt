@@ -1,0 +1,15 @@
+# Mathematics > Linear Algebra Foundations > Linear Algebra Foundations #6 - An Equation involving Matrices
+# Solve an equation involving matrices.
+#
+# https://www.hackerrank.com/challenges/linear-algebra-foundations-6-the-nsupthsup-power-of-a-matrix/problem
+#
+
+réponse:
+-2
+1
+
+
+
+A^2 = [[  1  2  0]
+       [  0  1  0]
+       [  0  0  1]]
