@@ -17,6 +17,7 @@ Name | Preview | Code | Difficulty
 [Day 10: Binary Numbers](https://www.hackerrank.com/challenges/30-binary-numbers)|Find the maximum number of consecutive 1's in the base-2 representation of a base-10 number.|[C++](30-days-of-code/30-binary-numbers.cpp) [Python](30-days-of-code/30-binary-numbers.py)|Easy
 [Day 11: 2D Arrays](https://www.hackerrank.com/challenges/30-2d-arrays)|Find the maximum sum of any hourglass in a 2D-Array.|[C++](30-days-of-code/30-2d-arrays.cpp) [Python](30-days-of-code/30-2d-arrays.py)|Easy
 [Day 12: Inheritance](https://www.hackerrank.com/challenges/30-inheritance)|Learn about inheritance.|[C++](30-days-of-code/30-inheritance.cpp)|Easy
+[Day 13: Abstract Classes](https://www.hackerrank.com/challenges/30-abstract-classes)|Build on what you've already learned about Inheritance with this Abstract Classes challenge|[C++](30-days-of-code/30-abstract-classes.cpp) [Python](30-days-of-code/30-abstract-classes.py)|Easy
 [Day 14: Scope](https://www.hackerrank.com/challenges/30-scope)|Learn about the scope of an identifier.|[C++](30-days-of-code/30-scope.cpp) [Python](30-days-of-code/30-scope.py)|Easy
 [Day 21: Generics](https://www.hackerrank.com/challenges/30-generics)|Welcome to Day 21! Review generics in this challenge!|[C++](30-days-of-code/30-generics.cpp)|Easy
 [Day 29: Bitwise AND](https://www.hackerrank.com/challenges/30-bitwise-and)|Apply everything we've learned in this bitwise AND challenge.|[C++](30-days-of-code/30-bitwise-and.cpp)|Medium
