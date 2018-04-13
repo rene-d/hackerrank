@@ -1,12 +1,11 @@
 dist: trusty
 sudo: false
-ghc:
-  - "7.10"
+language: python
 python:
   - "3.6"
 install:
   - pip install --user -r requirements.txt
 script:
-  - ls -l cmake-haskell
-  - which ghc
-  - mkdir -p build && cd build && cmake -DCMAKE_BUILD_TYPE=Release .. && make
+  - mkdir -p build && cd build && cmake -DCMAKE_BUILD_TYPE=Release ..
+  - make
+  - ctest
