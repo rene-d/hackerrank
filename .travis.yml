@@ -3,8 +3,10 @@ sudo: false
 ghc:
   - "7.10"
 python:
-  - 3.6
+  - "3.6"
 install:
   - pip install --user -r requirements.txt
 script:
+  - ls -l cmake-haskell 
+  - tree
   - mkdir -p build && cd build && cmake -DCMAKE_BUILD_TYPE=Release .. && make
