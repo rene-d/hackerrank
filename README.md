@@ -1,5 +1,7 @@
 # [![HackerRank](https://hrcdn.net/hackerrank/assets/brand/h_mark_sm-30dc0e0cbd2dded63b294819ff853a90.svg)](https://www.hackerrank.com) HackerRank
 
+[![Build status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank)
+
 HackerRank is a great site to learn, improve, play with your programming skills.
 
 ## Solutions
