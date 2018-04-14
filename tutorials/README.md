@@ -19,7 +19,9 @@ Name | Preview | Code | Difficulty
 [Day 12: Inheritance](https://www.hackerrank.com/challenges/30-inheritance)|Learn about inheritance.|[C++](30-days-of-code/30-inheritance.cpp)|Easy
 [Day 13: Abstract Classes](https://www.hackerrank.com/challenges/30-abstract-classes)|Build on what you've already learned about Inheritance with this Abstract Classes challenge|[C++](30-days-of-code/30-abstract-classes.cpp) [Python](30-days-of-code/30-abstract-classes.py)|Easy
 [Day 14: Scope](https://www.hackerrank.com/challenges/30-scope)|Learn about the scope of an identifier.|[C++](30-days-of-code/30-scope.cpp) [Python](30-days-of-code/30-scope.py)|Easy
+[Day 15: Linked List](https://www.hackerrank.com/challenges/30-linked-list)|Complete the body of a function that adds a new node to the tail of a Linked List.|[C++](30-days-of-code/30-linked-list.cpp) [Python](30-days-of-code/30-linked-list.py)|Easy
 [Day 21: Generics](https://www.hackerrank.com/challenges/30-generics)|Welcome to Day 21! Review generics in this challenge!|[C++](30-days-of-code/30-generics.cpp)|Easy
+[Day 27: Testing](https://www.hackerrank.com/challenges/30-testing)|Welcome to Day 27! Review testing in this challenge!|[Python](30-days-of-code/30-testing.py)|Easy
 [Day 29: Bitwise AND](https://www.hackerrank.com/challenges/30-bitwise-and)|Apply everything we've learned in this bitwise AND challenge.|[C++](30-days-of-code/30-bitwise-and.cpp)|Medium
 #### [Cracking the Coding Interview](https://www.hackerrank.com/domains/tutorials/cracking-the-coding-interview)
 

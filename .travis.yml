@@ -8,6 +8,8 @@ ghc:
 install:
   - pip install -r requirements.txt
 script:
-  - mkdir -p build && cd build && cmake -DCMAKE_BUILD_TYPE=Release ..
-  - make
+  - mkdir -p build
+  - cd build
+  - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
+  - make -j4
   - ctest

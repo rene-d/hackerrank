@@ -39,6 +39,7 @@ Définition [Wikipédia](https://fr.wikipedia.org/wiki/Coding_dojo) d'un **codin
 
 ## Défis proposés
 ### [Python](https://www.hackerrank.com/domains/python)
+A step by step guide to Python, a language that is easy to pick up yet one of the most powerful.
 
 #### [Regex and Parsing](https://www.hackerrank.com/domains/python/py-regex)
 
@@ -46,6 +47,7 @@ Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Validating Credit Card Numbers](https://www.hackerrank.com/challenges/validating-credit-card-number)|Verify whether credit card numbers are valid or not.|[Python](validating-credit-card-number.py)|Medium
 ### [C++](https://www.hackerrank.com/domains/cpp)
+A general-purpose programming language with imperative, object-oriented and generic programming features.
 
 #### [Other Concepts](https://www.hackerrank.com/domains/cpp/other-concepts)
 
@@ -53,6 +55,7 @@ Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Bit Array](https://www.hackerrank.com/challenges/bitset-1)|Calculate the number of distinct integers created from the given code.|[C++](bitset-1.cpp)|Hard
 ### [Data Structures](https://www.hackerrank.com/domains/data-structures)
+Data Structures help in elegant representation of data for algorithms
 
 #### [Linked Lists](https://www.hackerrank.com/domains/data-structures/linked-lists)
 

@@ -3,6 +3,8 @@
 
 cmake_minimum_required(VERSION 3.5)
 
+option(HACKERRANK_FP "Toggle Functional Programming" OFF)
+
 set (CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH};${CMAKE_SOURCE_DIR}/cmake-haskell/cmake")
 
 project(hackerrank)
@@ -53,6 +55,9 @@ add_subdirectory(mathematics)
 add_subdirectory(algorithms)
 add_subdirectory(data-structures)
 add_subdirectory(projecteuler)
-#add_subdirectory(fp)
 add_subdirectory(tutorials)
 add_subdirectory(shell)
+
+if(HACKERRANK_FP)
+    add_subdirectory(fp)
+endif()

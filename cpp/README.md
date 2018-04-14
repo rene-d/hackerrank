@@ -1,12 +1,13 @@
 ### [C++](https://www.hackerrank.com/domains/cpp)
+A general-purpose programming language with imperative, object-oriented and generic programming features.
 
 #### [Strings](https://www.hackerrank.com/domains/cpp/cpp-strings)
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
-[Attribute Parser](https://www.hackerrank.com/challenges/attribute-parser)|Parse the values within various tags.|[C++](cpp-strings/attribute-parser.cpp)|Medium
-[StringStream](https://www.hackerrank.com/challenges/c-tutorial-stringstream)|Learn how to use stringstreams.|[C++](cpp-strings/c-tutorial-stringstream.cpp)|Easy
 [Strings](https://www.hackerrank.com/challenges/c-tutorial-strings)|Learn how to input and output strings.|[C++](cpp-strings/c-tutorial-strings.cpp)|Easy
+[StringStream](https://www.hackerrank.com/challenges/c-tutorial-stringstream)|Learn how to use stringstreams.|[C++](cpp-strings/c-tutorial-stringstream.cpp)|Easy
+[Attribute Parser](https://www.hackerrank.com/challenges/attribute-parser)|Parse the values within various tags.|[C++](cpp-strings/attribute-parser.cpp)|Medium
 #### [Introduction](https://www.hackerrank.com/domains/cpp/cpp-introduction)
 
 Name | Preview | Code | Difficulty

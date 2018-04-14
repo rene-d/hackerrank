@@ -1,4 +1,5 @@
 ### [Mathematics](https://www.hackerrank.com/domains/mathematics)
+Without mathematics, there's nothing you can do. Everything around you is mathematics. Everything around you is numbers.
 
 #### [Combinatorics](https://www.hackerrank.com/domains/mathematics/combinatorics)
 
@@ -20,6 +21,11 @@ Name | Preview | Code | Difficulty
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Points On a Line](https://www.hackerrank.com/challenges/points-on-a-line)|Given a set of coordinates, determine if they fall in an horizontal or vertical line.|[Python](geometry/points-on-a-line.py)|Easy
+#### [Algebra](https://www.hackerrank.com/domains/mathematics/algebra)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Combo Meal](https://www.hackerrank.com/challenges/combo-meal)|Find the profit that a fast-food chain earns at each purchase.|[Python](algebra/combo-meal.py)|Easy
 #### [Fundamentals](https://www.hackerrank.com/domains/mathematics/fundamentals)
 
 Name | Preview | Code | Difficulty

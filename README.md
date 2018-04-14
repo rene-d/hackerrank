@@ -1,8 +1,8 @@
 # [![HackerRank](https://hrcdn.net/hackerrank/assets/brand/h_mark_sm-30dc0e0cbd2dded63b294819ff853a90.svg)](https://www.hackerrank.com) HackerRank
 
-[![Build status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank)
+[![Build Status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank)
 
-HackerRank is a great site to learn, improve, play with your programming skills.
+[HackerRank](https://www.hackerrank.com/dashboard) is a great site to learn, improve, play with your programming skills.
 
 ## Solutions
 
@@ -11,8 +11,9 @@ HackerRank is a great site to learn, improve, play with your programming skills.
 * [Mathematics](mathematics/)
 * [Algorithms](algorithms/)
 * [Data Structures](data-structures/)
-* [ProjectEuler+](projecteuler/) (See [here](https://github.com/rene-d/math/tree/master/projecteuler) my solutions of [Project Euler](https://projecteuler.net/))
+* [Shell](shell/)
 * [Tutorials](tutorials/)
+* [ProjectEuler+](projecteuler/) (See [here](https://github.com/rene-d/math/tree/master/projecteuler) my solutions of [Project Euler](https://projecteuler.net/))
 
 ## Usage and tools
 
@@ -41,13 +42,13 @@ A solution can be tested solely with `runtest.sh -t challenge-name [-n test-numb
 
 ### Tools
 
-- `hrinit.py` creates a new file for a given challenge based on the HackerRank model. Default language is Python.
+- `hrinit.py` creates a new file for a given challenge based on the HackerRank model. Default language is [Python 3](https://wiki.python.org/moin/Python2orPython3).
 
-- `runtest.sh` is the script used by CTest to run the solution.
+- `runtest.sh` is the script used by [CTest](https://cmake.org/Wiki/CMake/Testing_With_CTest) to verify the solution.
 
 - `compare.py` aims to fairly compare the program output with the except one. It is necessary since some challenges use decimal numbers : we cannot simply use `diff -qw`.
 
-- `tc2.py` can be used to download bought testcases. Copy and paste the download link.
+- `tc2.py` can be used to download purchased testcases. Copy and paste the download link.
 
 - `hackos.py` lists the free testcases. It should be used in conjunction with a webbrowser. Follow instructions in the source code.
 

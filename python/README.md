@@ -1,4 +1,5 @@
 ### [Python](https://www.hackerrank.com/domains/python)
+A step by step guide to Python, a language that is easy to pick up yet one of the most powerful.
 
 #### [Introduction](https://www.hackerrank.com/domains/python/py-introduction)
 
@@ -15,12 +16,12 @@ Name | Preview | Code | Difficulty
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
+[Lists](https://www.hackerrank.com/challenges/python-lists)|Perform different list operations.|[Python](py-basic-data-types/python-lists.py)|Easy
+[Tuples ](https://www.hackerrank.com/challenges/python-tuples)|Learn about tuples and compute hash(T).|[Python](py-basic-data-types/python-tuples.py)|Easy
 [List Comprehensions](https://www.hackerrank.com/challenges/list-comprehensions)|You will learn about list comprehensions.|[Python](py-basic-data-types/list-comprehensions.py)|Easy
 [Find the Runner-Up Score!  ](https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list)|For a given list of numbers, find the second largest number.|[Python](py-basic-data-types/find-second-maximum-number-in-a-list.py)|Easy
 [Nested Lists](https://www.hackerrank.com/challenges/nested-list)|In a classroom of N students, find the student with the second lowest grade.|[Python](py-basic-data-types/nested-list.py)|Easy
 [Finding the percentage](https://www.hackerrank.com/challenges/finding-the-percentage)|Store a list of students and marks in a dictionary, and find the average marks obtained by a student.|[Python](py-basic-data-types/finding-the-percentage.py)|Easy
-[Lists](https://www.hackerrank.com/challenges/python-lists)|Perform different list operations.|[Python](py-basic-data-types/python-lists.py)|Easy
-[Tuples ](https://www.hackerrank.com/challenges/python-tuples)|Learn about tuples and compute hash(T).|[Python](py-basic-data-types/python-tuples.py)|Easy
 #### [Strings](https://www.hackerrank.com/domains/python/py-strings)
 
 Name | Preview | Code | Difficulty
@@ -28,6 +29,9 @@ Name | Preview | Code | Difficulty
 [sWAP cASE](https://www.hackerrank.com/challenges/swap-case)|Swap the letter cases of a given string.|[Python](py-strings/swap-case.py)|Easy
 [String Split and Join](https://www.hackerrank.com/challenges/python-string-split-and-join)|Use Python's split and join methods on the input string.|[Python](py-strings/python-string-split-and-join.py)|Easy
 [What's Your Name?](https://www.hackerrank.com/challenges/whats-your-name)|Python string practice: Print your name in the console.|[Python](py-strings/whats-your-name.py)|Easy
+[Mutations](https://www.hackerrank.com/challenges/python-mutations)|Understand immutable vs mutable by making changes to a given string.|[Python](py-strings/python-mutations.py)|Easy
+[Find a string](https://www.hackerrank.com/challenges/find-a-string)|Find the number of occurrences of a substring in a string.|[Python](py-strings/find-a-string.py)|Easy
+[String Validators](https://www.hackerrank.com/challenges/string-validators)|Identify the presence of alphanumeric characters, alphabetical characters, digits, lowercase and uppercase characters in a string.|[Python](py-strings/string-validators.py)|Easy
 [String Formatting](https://www.hackerrank.com/challenges/python-string-formatting)|Print the formatted decimal, octal, hexadecimal, and binary values for $n$ integers.|[Python](py-strings/python-string-formatting.py)|Easy
 [Alphabet Rangoli](https://www.hackerrank.com/challenges/alphabet-rangoli)|Let's draw rangoli.|[Python](py-strings/alphabet-rangoli.py)|Easy
 [Capitalize!](https://www.hackerrank.com/challenges/capitalize)|Capitalize Each Word.|[Python](py-strings/capitalize.py)|Easy
