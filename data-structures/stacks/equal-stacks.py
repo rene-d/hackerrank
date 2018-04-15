@@ -11,9 +11,11 @@
 
 import itertools
 
+
 def get_stack():
     s = list(itertools.accumulate(reversed(list(map(int, input().split())))))
     return (len(s), s)
+
 
 def max_height(oh):
     oh = list(s[1] for s in oh)

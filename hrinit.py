@@ -1,12 +1,9 @@
 #! /usr/bin/env python3
 
-import sys
 import requests
 import os
 import subprocess
 import json
-import urllib.parse
-import pprint
 import argparse
 import platform
 import re
@@ -30,7 +27,6 @@ class HackerRankParser():
         self.contest = None
         self.key = None
 
-
     def feed(self, data):
         if self.debug:
             with open("model.json", "w") as f:
@@ -47,7 +43,7 @@ class HackerRankParser():
                     self.path = os.path.join(m["primary_contest"]["slug"])
                     self.path_name = "{}".format(m["primary_contest"]["name"])
                 else:
-                    self.path =  os.path.join(m["contest_slug"])
+                    self.path = os.path.join(m["contest_slug"])
                     self.path_name = m['contest_name']
             else:
                 self.path = os.path.join(m["track"]["track_slug"], m["track"]["slug"])
@@ -59,8 +55,7 @@ class HackerRankParser():
             if m['contest_slug'] == "master":
                 self.link = "https://www.hackerrank.com/challenges/{}/problem".format(self.key)
             else:
-                self.link = "https://www.hackerrank.com/contests/{}/challenges/{}".format(self.contest, self.key)
-
+                self.link = "https://www.hackerrank.com/contests/{}/challenges/{}".format(self.contest, self.key)  # noqa
 
     def info(self):
         print("key     :", self.model['slug'])
@@ -69,9 +64,8 @@ class HackerRankParser():
         print("preview :", self.model['preview'])
         print("lang    :", ','.join(self.model['languages']))
 
-
     def gen_stub(self, lang, overwrite=False, hpp=False, editor=True):
-
+        """ create a file based on the hackerrank template with a significant header """
         EXTENSIONS = {"cpp": "cpp",
                       "cpp14": "cpp",
                       "c": "c",
@@ -107,7 +101,6 @@ class HackerRankParser():
             return
 
         cmake = os.path.join(self.rootdir, self.path, "CMakeLists.txt")
-
 
         def write_header(f, comment, add_skeliton=True):
 
@@ -205,8 +198,8 @@ class HackerRankParser():
                 else:
                     subprocess.check_call(["code", filename])
 
-
     def download(self, overwrite=False):
+        """ download test cases and problem statement """
 
         def my_parsedate(text):
             return datetime.datetime(*email.utils.parsedate(text)[:6])
@@ -220,9 +213,9 @@ class HackerRankParser():
         testcase_file = os.path.join(testcases_dir, self.key + "-testcases.zip")
         statement_file = os.path.join(statements_dir, self.key + ".pdf")
 
-        if overwrite or (not os.path.exists(testcase_file) and not os.path.exists(testcase_file + ".404")):
+        if overwrite or (not os.path.exists(testcase_file) and not os.path.exists(testcase_file + ".404")):  # noqa
 
-            url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}/download_testcases".format(self.contest, self.key)
+            url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}/download_testcases".format(self.contest, self.key)  # noqa
             r = requests.get(url, allow_redirects=True)
             if r.status_code == 200:
                 if r.headers['content-type'] == 'application/zip':
@@ -241,14 +234,13 @@ class HackerRankParser():
                     with open(testcase_file + ".404", "w"):
                         pass
 
-
         if overwrite or not os.path.exists(statement_file):
 
             # Last-Modified: Fri, 09 Sep 2016 09:34:28 GMT
             # Content-Disposition: inline; filename=xxx-English.pdf
             # Content-Type: application/pdf
 
-            url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}/download_pdf?language=English".format(self.contest, self.key)
+            url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}/download_pdf?language=English".format(self.contest, self.key)  # noqa
             r = requests.get(url, allow_redirects=True)
             if r.status_code == 200:
                 if r.headers['content-type'] == 'application/pdf':
@@ -290,10 +282,11 @@ def main():
     parser.add_argument('-l', dest="lang", metavar="LANG", help="Language selection", default="*")
 
     args = parser.parse_args()
-    #print(args)
 
-    if args.force_cpp or args.force_hpp: args.lang = "cpp14"
-    if args.force_c: args.lang = "c"
+    if args.force_cpp or args.force_hpp:
+        args.lang = "cpp14"
+    if args.force_c:
+        args.lang = "c"
 
     data = ""
     if args.url.startswith('http'):

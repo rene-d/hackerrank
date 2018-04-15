@@ -7,38 +7,32 @@
 #   - Copier comme cURL
 #   - coller dans le champ data ci-dessous
 
-data = """
-"""
-
-
 import tkinter as tk
-import sys
 import re
 import subprocess
 
 
+root = tk.Tk()
 
-if data.strip() == "":
+root.wm_title("cURL ?")
 
-    root = tk.Tk()
+e = tk.Text(root)
+e.pack()
+e.focus_set()
+root.focus()
+root.focus_set()
 
-    root.wm_title("cURL ?")
 
-    e = tk.Text(root)
-    e.pack()
-    e.focus_set()
-    root.focus()
-    root.focus_set()
+def callback():
+    global data
+    data = e.get("1.0", tk.END)
+    root.destroy()
 
-    def callback():
-        global data
-        data = e.get("1.0", tk.END)
-        root.destroy()
 
-    b = tk.Button(root, text="get", width=10, command=callback)
-    b.pack()
+b = tk.Button(root, text="get", width=10, command=callback)
+b.pack()
 
-    root.mainloop()
+root.mainloop()
 
 n = 100
 for i in range(0, n + 1):
@@ -47,6 +41,7 @@ for i in range(0, n + 1):
     s = re.sub(r"-H 'Accept-Encoding: br, gzip, deflate'", r"-s ", s)
     p = subprocess.Popen(s, shell=True, stdout=subprocess.PIPE)
     r = p.communicate()[0]
-    if len(r) == 0: break
+    if len(r) == 0:
+        break
     print("{:2} => {}".format(i, r))
     p.wait()

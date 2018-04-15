@@ -7,6 +7,7 @@ coins = [1, 2, 5, 10, 20, 50, 100, 200]
 
 cache = []
 
+
 def r(objectif):
 
     for i in range(len(cache), objectif + 1):

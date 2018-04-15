@@ -6,9 +6,10 @@ https://www.hackerrank.com/challenges/validating-credit-card-number/problem
 
 import re
 
+
 for _ in range(int(input())):
     num = input()
-    
+
     ok1 = bool(re.match(r"^[456]\d{15}$", num))
     ok2 = bool(re.match(r"^[456]\d{3}\-\d{4}\-\d{4}\-\d{4}$", num))
     num = num.replace("-", "")

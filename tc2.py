@@ -57,6 +57,7 @@ else:
 
 print()
 z.printdir()
-# for e in z.infolist(): print("{} {:10} {:10} {}".format(e.date_time, e.compress_size, e.file_size, e.filename))
+# for e in z.infolist():
+#     print("{} {:10} {:10} {}".format(e.date_time, e.compress_size, e.file_size, e.filename))
 
 z.close()
