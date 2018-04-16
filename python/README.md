@@ -37,6 +37,49 @@ Name | Preview | Code | Difficulty
 [Capitalize!](https://www.hackerrank.com/challenges/capitalize)|Capitalize Each Word.|[Python](py-strings/capitalize.py)|Easy
 [The Minion Game](https://www.hackerrank.com/challenges/the-minion-game)|Given a string, judge the winner of the minion game.|[Python](py-strings/the-minion-game.py)|Medium
 [Merge the Tools!](https://www.hackerrank.com/challenges/merge-the-tools)|Split a string into subsegments of length $k$, then print each subsegment with any duplicate characters stripped out.|[Python](py-strings/merge-the-tools.py)|Medium
+#### [Sets](https://www.hackerrank.com/domains/python/py-sets)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[No Idea!](https://www.hackerrank.com/challenges/no-idea)|Compute your happiness.|[Python](py-sets/no-idea.py)|Medium
+[Set .add() ](https://www.hackerrank.com/challenges/py-set-add)|Add elements to set.|[Python](py-sets/py-set-add.py)|Easy
+#### [Math](https://www.hackerrank.com/domains/python/py-math)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Polar Coordinates](https://www.hackerrank.com/challenges/polar-coordinates)|Convert complex numbers to polar coordinates|[Python](py-math/polar-coordinates.py)|Easy
+[Find Angle MBC](https://www.hackerrank.com/challenges/find-angle)|Find the desired angle in the right triangle.|[Python](py-math/find-angle.py)|Medium
+[Triangle Quest 2](https://www.hackerrank.com/challenges/triangle-quest-2)|Create a palindromic triangle.|[Python](py-math/triangle-quest-2.py)|Medium
+[Mod Divmod](https://www.hackerrank.com/challenges/python-mod-divmod)|Get the quotient and remainder using the divmod operator in Python.|[Python](py-math/python-mod-divmod.py)|Easy
+#### [Itertools](https://www.hackerrank.com/domains/python/py-itertools)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Compress the String! ](https://www.hackerrank.com/challenges/compress-the-string)|groupby()|[Python](py-itertools/compress-the-string.py)|Medium
+[Iterables and Iterators](https://www.hackerrank.com/challenges/iterables-and-iterators)|Find the probability using itertools.|[Python](py-itertools/iterables-and-iterators.py)|Medium
+[Maximize It!](https://www.hackerrank.com/challenges/maximize-it)|Find the maximum possible value out of the equation provided.|[Python](py-itertools/maximize-it.py)|Hard
+#### [Collections](https://www.hackerrank.com/domains/python/py-collections)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Word Order](https://www.hackerrank.com/challenges/word-order)|List the number of occurrences of the words in order.|[Python](py-collections/word-order.py)|Medium
+[Piling Up!](https://www.hackerrank.com/challenges/piling-up)|Create a vertical pile of cubes.|[Python](py-collections/piling-up.py)|Medium
+#### [Date and Time](https://www.hackerrank.com/domains/python/py-date-time)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Time Delta](https://www.hackerrank.com/challenges/python-time-delta)|Find the absolute time difference.|[Python](py-date-time/python-time-delta.py)|Medium
+#### [Errors and Exceptions](https://www.hackerrank.com/domains/python/errors-exceptions)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Exceptions](https://www.hackerrank.com/challenges/exceptions)|Handle errors detected during execution.|[Python](errors-exceptions/exceptions.py)|Easy
+#### [Built-Ins](https://www.hackerrank.com/domains/python/py-built-ins)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Zipped!](https://www.hackerrank.com/challenges/zipped)|Compute the average by zipping data.|[Python](py-built-ins/zipped.py)|Easy
+[Input()](https://www.hackerrank.com/challenges/input)|A Python 2 challenge: Input() is equivalent to eval(raw_input(prompt)).|[Python](py-built-ins/input.py)|Easy
 #### [Python Functionals](https://www.hackerrank.com/domains/python/py-functionals)
 
 Name | Preview | Code | Difficulty
@@ -62,45 +105,6 @@ Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Standardize Mobile Number Using Decorators](https://www.hackerrank.com/challenges/standardize-mobile-number-using-decorators)|Use decorators to standardize mobile numbers.|[Python](closures-and-decorators/standardize-mobile-number-using-decorators.py)|Easy
 [Decorators 2 - Name Directory](https://www.hackerrank.com/challenges/decorators-2-name-directory)|Use decorators to build a name directory.|[Python](closures-and-decorators/decorators-2-name-directory.py)|Easy
-#### [Sets](https://www.hackerrank.com/domains/python/py-sets)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[No Idea!](https://www.hackerrank.com/challenges/no-idea)|Compute your happiness.|[Python](py-sets/no-idea.py)|Medium
-#### [Math](https://www.hackerrank.com/domains/python/py-math)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[Find Angle MBC](https://www.hackerrank.com/challenges/find-angle)|Find the desired angle in the right triangle.|[Python](py-math/find-angle.py)|Medium
-#### [Itertools](https://www.hackerrank.com/domains/python/py-itertools)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[Compress the String! ](https://www.hackerrank.com/challenges/compress-the-string)|groupby()|[Python](py-itertools/compress-the-string.py)|Medium
-[Iterables and Iterators](https://www.hackerrank.com/challenges/iterables-and-iterators)|Find the probability using itertools.|[Python](py-itertools/iterables-and-iterators.py)|Medium
-[Maximize It!](https://www.hackerrank.com/challenges/maximize-it)|Find the maximum possible value out of the equation provided.|[Python](py-itertools/maximize-it.py)|Hard
-#### [Collections](https://www.hackerrank.com/domains/python/py-collections)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[Word Order](https://www.hackerrank.com/challenges/word-order)|List the number of occurrences of the words in order.|[Python](py-collections/word-order.py)|Medium
-[Piling Up!](https://www.hackerrank.com/challenges/piling-up)|Create a vertical pile of cubes.|[Python](py-collections/piling-up.py)|Medium
-#### [Date and Time](https://www.hackerrank.com/domains/python/py-date-time)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[Time Delta](https://www.hackerrank.com/challenges/python-time-delta)|Find the absolute time difference.|[Python](py-date-time/python-time-delta.py)|Medium
-#### [Built-Ins](https://www.hackerrank.com/domains/python/py-built-ins)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[Zipped!](https://www.hackerrank.com/challenges/zipped)|Compute the average by zipping data.|[Python](py-built-ins/zipped.py)|Easy
-[Input()](https://www.hackerrank.com/challenges/input)|A Python 2 challenge: Input() is equivalent to eval(raw_input(prompt)).|[Python](py-built-ins/input.py)|Easy
-#### [Errors and Exceptions](https://www.hackerrank.com/domains/python/errors-exceptions)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[Exceptions](https://www.hackerrank.com/challenges/exceptions)|Handle errors detected during execution.|[Python](errors-exceptions/exceptions.py)|Easy
 #### [Numpy](https://www.hackerrank.com/domains/python/numpy)
 
 Name | Preview | Code | Difficulty

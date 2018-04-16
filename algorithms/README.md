@@ -2,75 +2,13 @@
 The true test of problem solving: when one realizes that time and memory aren't infinite.
 
 
-#### [Bit Manipulation](https://www.hackerrank.com/domains/algorithms/bit-manipulation)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[Lonely Integer](https://www.hackerrank.com/challenges/lonely-integer)|Find the unique element in an array of integer pairs.|[Python](bit-manipulation/lonely-integer.py)|Easy
-[Hamming Distance](https://www.hackerrank.com/challenges/hamming-distance)|You are given a string S, consisting of N small latin letters 'a'  and 'b'. Process the given M queries.|[C++](bit-manipulation/hamming-distance.cpp)|Expert
-#### [Strings](https://www.hackerrank.com/domains/algorithms/strings)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[Super Reduced String](https://www.hackerrank.com/challenges/reduced-string)|Given a string, repeatedly remove adjacent pairs of matching characters and then print the reduced result.|[Python](strings/reduced-string.py)|Easy
-[CamelCase](https://www.hackerrank.com/challenges/camelcase)||[Python](strings/camelcase.py)|Easy
-[Caesar Cipher](https://www.hackerrank.com/challenges/caesar-cipher-1)|Encrypt a string by rotating the alphabets by a fixed value in the string.|[Python](strings/caesar-cipher-1.py)|Easy
-[Mars Exploration](https://www.hackerrank.com/challenges/mars-exploration)|Save Our Ship!|[Python](strings/mars-exploration.py)|Easy
-[HackerRank in a String!](https://www.hackerrank.com/challenges/hackerrank-in-a-string)|Determine if a string contains a subsequence of characters that spell "hackerrank".|[Python](strings/hackerrank-in-a-string.py)|Easy
-[Pangrams](https://www.hackerrank.com/challenges/pangrams)|Check whether a given string is a panagram or not.|[Python](strings/pangrams.py)|Easy
-[Weighted Uniform Strings](https://www.hackerrank.com/challenges/weighted-uniform-string)|Determine if a string contains uniform substrings of certain weights.|[Python](strings/weighted-uniform-string.py)|Easy
-[Separate the Numbers](https://www.hackerrank.com/challenges/separate-the-numbers)|Determine if a numeric string can be broken into a sequence of increasing numbers.|[Python](strings/separate-the-numbers.py)|Easy
-[Funny String](https://www.hackerrank.com/challenges/funny-string)|Is the absolute difference between consecutive characters is the same for a string and the reverse of that string for all indices.|[Python](strings/funny-string.py)|Easy
-[Gemstones](https://www.hackerrank.com/challenges/gem-stones)|Find the number of different gem-elements present.|[Python](strings/gem-stones.py)|Easy
-[Alternating Characters ](https://www.hackerrank.com/challenges/alternating-characters)|Calculate the minimum number of deletions required to convert a string into a string in which consecutive characters are different.|[Python](strings/alternating-characters.py)|Easy
-[Beautiful Binary String](https://www.hackerrank.com/challenges/beautiful-binary-string)|How many binary characters must you change to remove every occurrence of "010" from a binary string?|[Python](strings/beautiful-binary-string.py)|Easy
-[The Love-Letter Mystery](https://www.hackerrank.com/challenges/the-love-letter-mystery)|Find the minimum number of operations required to convert a given string into a palindrome under certain conditions|[Python](strings/the-love-letter-mystery.py)|Easy
-[Determining DNA Health](https://www.hackerrank.com/challenges/determining-dna-health)|Determine which weighted substrings in a subset of substrings can be found in a given string and calculate the string's total weight.|[Python](strings/determining-dna-health.py)|Hard
-[Palindrome Index](https://www.hackerrank.com/challenges/palindrome-index)|Determine which character(s) must be removed to make a string a palindrome.|[Python](strings/palindrome-index.py)|Easy
-[Anagram](https://www.hackerrank.com/challenges/anagram)|Find the minimum number of characters of the first string that we need to change in order to make it an anagram of the second string.|[Python](strings/anagram.py)|Easy
-[Making Anagrams](https://www.hackerrank.com/challenges/making-anagrams)|How many characters should one delete to make two given strings anagrams of each other?|[Python](strings/making-anagrams.py)|Easy
-[Game of Thrones - I](https://www.hackerrank.com/challenges/game-of-thrones)|Check whether any anagram of a string can be a palindrome or not.|[Python](strings/game-of-thrones.py)|Easy
-[Two Strings](https://www.hackerrank.com/challenges/two-strings)|Given two strings, you find a common substring of non-zero length.|[Python](strings/two-strings.py)|Easy
-[String Construction ](https://www.hackerrank.com/challenges/string-construction)|Find the minimum cost of copying string s.|[Python](strings/string-construction.py)|Easy
-[Sherlock and the Valid String](https://www.hackerrank.com/challenges/sherlock-and-valid-string)|Remove some characters from the string such that the new string's characters have the same frequency.|[Python](strings/sherlock-and-valid-string.py)|Medium
-[Highest Value Palindrome](https://www.hackerrank.com/challenges/richie-rich)|Make a number palindromic in no more than $k$ moves, maximal.|[Python](strings/richie-rich.py)|Medium
-[Sherlock and Anagrams](https://www.hackerrank.com/challenges/sherlock-and-anagrams)|Find the number of unordered anagramic pairs of substrings of a string.|[Python](strings/sherlock-and-anagrams.py)|Medium
-[Common Child](https://www.hackerrank.com/challenges/common-child)|Given two strings a and b of equal length, what's the longest string (s) that can be constructed such that s is a child to both a and b?|[C++](strings/common-child.cpp) [Python](strings/common-child.py)|Medium
-[Morgan and a String](https://www.hackerrank.com/challenges/morgan-and-a-string)|Find the lexicographically minimal string that can be formed by the combination of two strings.|[C](strings/morgan-and-a-string.c)|Expert
-#### [Dynamic Programming](https://www.hackerrank.com/domains/algorithms/dynamic-programming)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[The Longest Increasing Subsequence](https://www.hackerrank.com/challenges/longest-increasing-subsequent)|Find the length of the longest increase subsequence in a given array.|[C++](dynamic-programming/longest-increasing-subsequent.cpp)|Advanced
-#### [Search](https://www.hackerrank.com/domains/algorithms/search)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[Ice Cream Parlor](https://www.hackerrank.com/challenges/icecream-parlor)|Help Sunny and Johnny spend all their money during each trip to the Ice Cream Parlor.|[Python](search/icecream-parlor.py)|Easy
-[Pairs](https://www.hackerrank.com/challenges/pairs)|Given N numbers, count the total pairs of numbers that have a difference of K.|[Python](search/pairs.py)|Medium
-#### [Sorting](https://www.hackerrank.com/domains/algorithms/arrays-and-sorting)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[Big Sorting](https://www.hackerrank.com/challenges/big-sorting)|Sort an array of very long numeric strings.|[Python](arrays-and-sorting/big-sorting.py)|Easy
-[Intro to Tutorial Challenges](https://www.hackerrank.com/challenges/tutorial-intro)|Introduction to the Tutorial Challenges|[Python](arrays-and-sorting/tutorial-intro.py)|Easy
-[Insertion Sort - Part 1](https://www.hackerrank.com/challenges/insertionsort1)|Insert an element into a sorted array.|[Python](arrays-and-sorting/insertionsort1.py)|Easy
-[Insertion Sort - Part 2](https://www.hackerrank.com/challenges/insertionsort2)|Code Insertion Sort itself.|[Python](arrays-and-sorting/insertionsort2.py)|Easy
-[Running Time of Algorithms](https://www.hackerrank.com/challenges/runningtime)|The running time of Algorithms in general and Insertion Sort in particular.|[Python](arrays-and-sorting/runningtime.py)|Easy
-[Quicksort 1 - Partition](https://www.hackerrank.com/challenges/quicksort1)|Perform the first step of Quicksort: partitioning an array.|[Python](arrays-and-sorting/quicksort1.py)|Easy
-[Counting Sort 1](https://www.hackerrank.com/challenges/countingsort1)|Count the number of times each value appears.|[Python](arrays-and-sorting/countingsort1.py)|Easy
-[Counting Sort 2](https://www.hackerrank.com/challenges/countingsort2)|Simple version of counting sort.|[Python](arrays-and-sorting/countingsort2.py)|Easy
-[The Full Counting Sort](https://www.hackerrank.com/challenges/countingsort4)|The real counting sort.|[Python](arrays-and-sorting/countingsort4.py)|Medium
-[Closest Numbers](https://www.hackerrank.com/challenges/closest-numbers)|Find the closest numbers in a list.|[Python](arrays-and-sorting/closest-numbers.py)|Easy
-[Find the Median](https://www.hackerrank.com/challenges/find-the-median)|Find the Median in a list of numbers.|[Python](arrays-and-sorting/find-the-median.py)|Easy
-[Insertion Sort Advanced Analysis](https://www.hackerrank.com/challenges/insertion-sort)|How many shifts will it take Insertion Sort to sort an array?|[C++](arrays-and-sorting/insertion-sort.cpp) [Python](arrays-and-sorting/insertion-sort.py)|Advanced
 #### [Warmup](https://www.hackerrank.com/domains/algorithms/warmup)
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Solve Me First](https://www.hackerrank.com/challenges/solve-me-first)|This is an easy challenge to help you start coding in your favorite languages!|[C++](warmup/solve-me-first.cpp)|Easy
-[Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum)|Calculate the sum of integers in an array.|[C++](warmup/simple-array-sum.cpp)|Easy
-[Compare the Triplets](https://www.hackerrank.com/challenges/compare-the-triplets)|Compare the elements in two triplets.|[C++](warmup/compare-the-triplets.cpp)|Easy
+[Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum)|Calculate the sum of integers in an array.|[C++](warmup/simple-array-sum.cpp) [Python](warmup/simple-array-sum.py)|Easy
+[Compare the Triplets](https://www.hackerrank.com/challenges/compare-the-triplets)|Compare the elements in two triplets.|[C++](warmup/compare-the-triplets.cpp) [Python](warmup/compare-the-triplets.py)|Easy
 [A Very Big Sum](https://www.hackerrank.com/challenges/a-very-big-sum)|Calculate the sum of the values in an array that might exceed the range of int values.|[Python](warmup/a-very-big-sum.py)|Easy
 [Diagonal Difference](https://www.hackerrank.com/challenges/diagonal-difference)|Calculate the absolute difference of sums across the two diagonals of a square matrix.|[Python](warmup/diagonal-difference.py)|Easy
 [Plus Minus](https://www.hackerrank.com/challenges/plus-minus)|Calculate the fraction of positive, negative and zero values in an array.|[Python](warmup/plus-minus.py)|Easy
@@ -78,21 +16,6 @@ Name | Preview | Code | Difficulty
 [Mini-Max Sum](https://www.hackerrank.com/challenges/mini-max-sum)|Find the maximum and minimum values obtained by summing four of five integers.|[Python](warmup/mini-max-sum.py)|Easy
 [Birthday Cake Candles](https://www.hackerrank.com/challenges/birthday-cake-candles)|Determine the number of candles that are blown out.|[Python](warmup/birthday-cake-candles.py)|Easy
 [Time Conversion](https://www.hackerrank.com/challenges/time-conversion)|Convert time from an AM/PM format to a 24 hour format.|[Python](warmup/time-conversion.py)|Easy
-#### [Game Theory](https://www.hackerrank.com/domains/algorithms/game-theory)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[Game of Stones](https://www.hackerrank.com/challenges/game-of-stones-1)|A Game of Stones|[Python](game-theory/game-of-stones-1.py)|Easy
-#### [Greedy](https://www.hackerrank.com/domains/algorithms/greedy)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[Minimum Absolute Difference in an Array](https://www.hackerrank.com/challenges/minimum-absolute-difference-in-an-array)|Given a list of integers, calculate their differences and find the difference with the smallest absolute value.|[Python](greedy/minimum-absolute-difference-in-an-array.py)|Easy
-[Marc's Cakewalk](https://www.hackerrank.com/challenges/marcs-cakewalk)|Find the minimum number of miles Marc must walk to burn the calories consumed from eating cupcakes.|[Python](greedy/marcs-cakewalk.py)|Easy
-[Grid Challenge](https://www.hackerrank.com/challenges/grid-challenge)|Find if it is possible to rearrange a square grid such that every  row and every column is lexicographically sorted.|[Python](greedy/grid-challenge.py)|Easy
-[Maximum Perimeter Triangle](https://www.hackerrank.com/challenges/maximum-perimeter-triangle)|Find the triangle having the maximum perimeter.|[C++](greedy/maximum-perimeter-triangle.cpp)|Easy
-[Beautiful Pairs](https://www.hackerrank.com/challenges/beautiful-pairs)|Change an element of B and calculate the number of pairwise disjoint beautiful pairs.|[Python](greedy/beautiful-pairs.py)|Easy
-[Sherlock and The Beast](https://www.hackerrank.com/challenges/sherlock-and-the-beast)|Find the largest number following some rules having N digits.|[Python](greedy/sherlock-and-the-beast.py)|Easy
 #### [Implementation](https://www.hackerrank.com/domains/algorithms/implementation)
 
 Name | Preview | Code | Difficulty
@@ -160,4 +83,85 @@ Name | Preview | Code | Difficulty
 [Ema's Supercomputer](https://www.hackerrank.com/challenges/two-pluses)|Determine the product of the areas of two pluses on a grid.|[C++](implementation/two-pluses.cpp)|Medium
 [Almost Sorted](https://www.hackerrank.com/challenges/almost-sorted)|Sort an array by either swapping or reversing a segment|[Python](implementation/almost-sorted.py)|Medium
 [Matrix Layer Rotation ](https://www.hackerrank.com/challenges/matrix-rotation-algo)|Rotate the matrix R times and print the resultant matrix.|[Python](implementation/matrix-rotation-algo.py)|Hard
+#### [Strings](https://www.hackerrank.com/domains/algorithms/strings)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Super Reduced String](https://www.hackerrank.com/challenges/reduced-string)|Given a string, repeatedly remove adjacent pairs of matching characters and then print the reduced result.|[Python](strings/reduced-string.py)|Easy
+[CamelCase](https://www.hackerrank.com/challenges/camelcase)||[Python](strings/camelcase.py)|Easy
+[Strong Password](https://www.hackerrank.com/challenges/strong-password)|How many characters should you add to make the password strong?|[Python](strings/strong-password.py)|Easy
+[Two Characters](https://www.hackerrank.com/challenges/two-characters)|Print the length of the longest possible string $t$ you can form.|[Python](strings/two-characters.py)|Easy
+[Caesar Cipher](https://www.hackerrank.com/challenges/caesar-cipher-1)|Encrypt a string by rotating the alphabets by a fixed value in the string.|[Python](strings/caesar-cipher-1.py)|Easy
+[Mars Exploration](https://www.hackerrank.com/challenges/mars-exploration)|Save Our Ship!|[Python](strings/mars-exploration.py)|Easy
+[HackerRank in a String!](https://www.hackerrank.com/challenges/hackerrank-in-a-string)|Determine if a string contains a subsequence of characters that spell "hackerrank".|[Python](strings/hackerrank-in-a-string.py)|Easy
+[Pangrams](https://www.hackerrank.com/challenges/pangrams)|Check whether a given string is a panagram or not.|[Python](strings/pangrams.py)|Easy
+[Weighted Uniform Strings](https://www.hackerrank.com/challenges/weighted-uniform-string)|Determine if a string contains uniform substrings of certain weights.|[Python](strings/weighted-uniform-string.py)|Easy
+[Separate the Numbers](https://www.hackerrank.com/challenges/separate-the-numbers)|Determine if a numeric string can be broken into a sequence of increasing numbers.|[Python](strings/separate-the-numbers.py)|Easy
+[Funny String](https://www.hackerrank.com/challenges/funny-string)|Is the absolute difference between consecutive characters is the same for a string and the reverse of that string for all indices.|[Python](strings/funny-string.py)|Easy
+[Gemstones](https://www.hackerrank.com/challenges/gem-stones)|Find the number of different gem-elements present.|[Python](strings/gem-stones.py)|Easy
+[Alternating Characters ](https://www.hackerrank.com/challenges/alternating-characters)|Calculate the minimum number of deletions required to convert a string into a string in which consecutive characters are different.|[Python](strings/alternating-characters.py)|Easy
+[Beautiful Binary String](https://www.hackerrank.com/challenges/beautiful-binary-string)|How many binary characters must you change to remove every occurrence of "010" from a binary string?|[Python](strings/beautiful-binary-string.py)|Easy
+[The Love-Letter Mystery](https://www.hackerrank.com/challenges/the-love-letter-mystery)|Find the minimum number of operations required to convert a given string into a palindrome under certain conditions|[Python](strings/the-love-letter-mystery.py)|Easy
+[Determining DNA Health](https://www.hackerrank.com/challenges/determining-dna-health)|Determine which weighted substrings in a subset of substrings can be found in a given string and calculate the string's total weight.|[Python](strings/determining-dna-health.py)|Hard
+[Palindrome Index](https://www.hackerrank.com/challenges/palindrome-index)|Determine which character(s) must be removed to make a string a palindrome.|[Python](strings/palindrome-index.py)|Easy
+[Anagram](https://www.hackerrank.com/challenges/anagram)|Find the minimum number of characters of the first string that we need to change in order to make it an anagram of the second string.|[Python](strings/anagram.py)|Easy
+[Making Anagrams](https://www.hackerrank.com/challenges/making-anagrams)|How many characters should one delete to make two given strings anagrams of each other?|[Python](strings/making-anagrams.py)|Easy
+[Game of Thrones - I](https://www.hackerrank.com/challenges/game-of-thrones)|Check whether any anagram of a string can be a palindrome or not.|[Python](strings/game-of-thrones.py)|Easy
+[Two Strings](https://www.hackerrank.com/challenges/two-strings)|Given two strings, you find a common substring of non-zero length.|[Python](strings/two-strings.py)|Easy
+[String Construction ](https://www.hackerrank.com/challenges/string-construction)|Find the minimum cost of copying string s.|[Python](strings/string-construction.py)|Easy
+[Sherlock and the Valid String](https://www.hackerrank.com/challenges/sherlock-and-valid-string)|Remove some characters from the string such that the new string's characters have the same frequency.|[Python](strings/sherlock-and-valid-string.py)|Medium
+[Highest Value Palindrome](https://www.hackerrank.com/challenges/richie-rich)|Make a number palindromic in no more than $k$ moves, maximal.|[Python](strings/richie-rich.py)|Medium
+[Sherlock and Anagrams](https://www.hackerrank.com/challenges/sherlock-and-anagrams)|Find the number of unordered anagramic pairs of substrings of a string.|[Python](strings/sherlock-and-anagrams.py)|Medium
+[Common Child](https://www.hackerrank.com/challenges/common-child)|Given two strings a and b of equal length, what's the longest string (s) that can be constructed such that s is a child to both a and b?|[C++](strings/common-child.cpp) [Python](strings/common-child.py)|Medium
+[Morgan and a String](https://www.hackerrank.com/challenges/morgan-and-a-string)|Find the lexicographically minimal string that can be formed by the combination of two strings.|[C](strings/morgan-and-a-string.c)|Expert
+#### [Sorting](https://www.hackerrank.com/domains/algorithms/arrays-and-sorting)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Big Sorting](https://www.hackerrank.com/challenges/big-sorting)|Sort an array of very long numeric strings.|[Python](arrays-and-sorting/big-sorting.py)|Easy
+[Intro to Tutorial Challenges](https://www.hackerrank.com/challenges/tutorial-intro)|Introduction to the Tutorial Challenges|[Python](arrays-and-sorting/tutorial-intro.py)|Easy
+[Insertion Sort - Part 1](https://www.hackerrank.com/challenges/insertionsort1)|Insert an element into a sorted array.|[Python](arrays-and-sorting/insertionsort1.py)|Easy
+[Insertion Sort - Part 2](https://www.hackerrank.com/challenges/insertionsort2)|Code Insertion Sort itself.|[Python](arrays-and-sorting/insertionsort2.py)|Easy
+[Running Time of Algorithms](https://www.hackerrank.com/challenges/runningtime)|The running time of Algorithms in general and Insertion Sort in particular.|[Python](arrays-and-sorting/runningtime.py)|Easy
+[Quicksort 1 - Partition](https://www.hackerrank.com/challenges/quicksort1)|Perform the first step of Quicksort: partitioning an array.|[Python](arrays-and-sorting/quicksort1.py)|Easy
+[Counting Sort 1](https://www.hackerrank.com/challenges/countingsort1)|Count the number of times each value appears.|[Python](arrays-and-sorting/countingsort1.py)|Easy
+[Counting Sort 2](https://www.hackerrank.com/challenges/countingsort2)|Simple version of counting sort.|[Python](arrays-and-sorting/countingsort2.py)|Easy
+[The Full Counting Sort](https://www.hackerrank.com/challenges/countingsort4)|The real counting sort.|[Python](arrays-and-sorting/countingsort4.py)|Medium
+[Closest Numbers](https://www.hackerrank.com/challenges/closest-numbers)|Find the closest numbers in a list.|[Python](arrays-and-sorting/closest-numbers.py)|Easy
+[Find the Median](https://www.hackerrank.com/challenges/find-the-median)|Find the Median in a list of numbers.|[Python](arrays-and-sorting/find-the-median.py)|Easy
+[Insertion Sort Advanced Analysis](https://www.hackerrank.com/challenges/insertion-sort)|How many shifts will it take Insertion Sort to sort an array?|[C++](arrays-and-sorting/insertion-sort.cpp) [Python](arrays-and-sorting/insertion-sort.py)|Advanced
+#### [Search](https://www.hackerrank.com/domains/algorithms/search)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Ice Cream Parlor](https://www.hackerrank.com/challenges/icecream-parlor)|Help Sunny and Johnny spend all their money during each trip to the Ice Cream Parlor.|[Python](search/icecream-parlor.py)|Easy
+[Pairs](https://www.hackerrank.com/challenges/pairs)|Given N numbers, count the total pairs of numbers that have a difference of K.|[Python](search/pairs.py)|Medium
+#### [Greedy](https://www.hackerrank.com/domains/algorithms/greedy)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Minimum Absolute Difference in an Array](https://www.hackerrank.com/challenges/minimum-absolute-difference-in-an-array)|Given a list of integers, calculate their differences and find the difference with the smallest absolute value.|[Python](greedy/minimum-absolute-difference-in-an-array.py)|Easy
+[Marc's Cakewalk](https://www.hackerrank.com/challenges/marcs-cakewalk)|Find the minimum number of miles Marc must walk to burn the calories consumed from eating cupcakes.|[Python](greedy/marcs-cakewalk.py)|Easy
+[Grid Challenge](https://www.hackerrank.com/challenges/grid-challenge)|Find if it is possible to rearrange a square grid such that every  row and every column is lexicographically sorted.|[Python](greedy/grid-challenge.py)|Easy
+[Maximum Perimeter Triangle](https://www.hackerrank.com/challenges/maximum-perimeter-triangle)|Find the triangle having the maximum perimeter.|[C++](greedy/maximum-perimeter-triangle.cpp)|Easy
+[Beautiful Pairs](https://www.hackerrank.com/challenges/beautiful-pairs)|Change an element of B and calculate the number of pairwise disjoint beautiful pairs.|[Python](greedy/beautiful-pairs.py)|Easy
+[Sherlock and The Beast](https://www.hackerrank.com/challenges/sherlock-and-the-beast)|Find the largest number following some rules having N digits.|[Python](greedy/sherlock-and-the-beast.py)|Easy
+#### [Dynamic Programming](https://www.hackerrank.com/domains/algorithms/dynamic-programming)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[The Longest Increasing Subsequence](https://www.hackerrank.com/challenges/longest-increasing-subsequent)|Find the length of the longest increase subsequence in a given array.|[C++](dynamic-programming/longest-increasing-subsequent.cpp)|Advanced
+#### [Bit Manipulation](https://www.hackerrank.com/domains/algorithms/bit-manipulation)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Lonely Integer](https://www.hackerrank.com/challenges/lonely-integer)|Find the unique element in an array of integer pairs.|[Python](bit-manipulation/lonely-integer.py)|Easy
+[Maximizing XOR](https://www.hackerrank.com/challenges/maximizing-xor)|Given two integers, L and R, find the maximal value of A xor B,  where A and B satisfy a condition.|[Python](bit-manipulation/maximizing-xor.py)|Easy
+[A or B](https://www.hackerrank.com/challenges/aorb)|A or B = C|[Python](bit-manipulation/aorb.py)|Medium
+[Hamming Distance](https://www.hackerrank.com/challenges/hamming-distance)|You are given a string S, consisting of N small latin letters 'a'  and 'b'. Process the given M queries.|[C++](bit-manipulation/hamming-distance.cpp)|Expert
+#### [Game Theory](https://www.hackerrank.com/domains/algorithms/game-theory)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Game of Stones](https://www.hackerrank.com/challenges/game-of-stones-1)|A Game of Stones|[Python](game-theory/game-of-stones-1.py)|Easy
 

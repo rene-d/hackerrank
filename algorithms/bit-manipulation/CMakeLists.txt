@@ -1,2 +1,4 @@
 add_hackerrank_py(lonely-integer.py)
 add_hackerrank(hamming-distance hamming-distance.cpp)
+add_hackerrank_py(maximizing-xor.py)
+add_hackerrank_py(aorb.py)

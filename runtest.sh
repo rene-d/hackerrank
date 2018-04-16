@@ -152,8 +152,8 @@ testcases="${rootdir}/testcases/${testname}-testcases.zip"
 testcases2="${rootdir}/testcases2/${testname}-testcases2.zip"
 
 if [ $download ]; then
-    echo "Downloading testcases and statement..."
-    download_pdf
+    echo "Downloading testcases..."
+    #download_pdf
     download_zip
 fi
 

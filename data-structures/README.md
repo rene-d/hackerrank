@@ -1,6 +1,16 @@
 ### [Data Structures](https://www.hackerrank.com/domains/data-structures)
 Data Structures help in elegant representation of data for algorithms
 
+#### [Arrays](https://www.hackerrank.com/domains/data-structures/arrays)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Arrays - DS](https://www.hackerrank.com/challenges/arrays-ds)|Accessing and using arrays.|[C++](arrays/arrays-ds.cpp) [Python](arrays/arrays-ds.py)|Easy
+[2D Array - DS](https://www.hackerrank.com/challenges/2d-array)|How to access and use 2d-arrays.|[Python](arrays/2d-array.py)|Easy
+[Dynamic Array](https://www.hackerrank.com/challenges/dynamic-array)|Learn to use dynamic arrays by solving this problem.|[Python](arrays/dynamic-array.py)|Easy
+[Left Rotation](https://www.hackerrank.com/challenges/array-left-rotation)|Given an array and a number, d, perform d left rotations on the array.|[Python](arrays/array-left-rotation.py)|Easy
+[Sparse Arrays](https://www.hackerrank.com/challenges/sparse-arrays)|Determine the number of times a string has previously appeared.|[Python](arrays/sparse-arrays.py)|Medium
+[Array Manipulation](https://www.hackerrank.com/challenges/crush)|Perform m operations on an array and print the maximum of the values.|[Python](arrays/crush.py)|Hard
 #### [Linked Lists](https://www.hackerrank.com/domains/data-structures/linked-lists)
 
 Name | Preview | Code | Difficulty
@@ -58,14 +68,4 @@ Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Contacts](https://www.hackerrank.com/challenges/contacts)|Create a Contacts application with the two basic operations: add and find.|[Python](trie/contacts.py)|Medium
 [No Prefix Set](https://www.hackerrank.com/challenges/no-prefix-set)|Given N strings, find if a string is a prefix of another string.|[Python](trie/no-prefix-set.py)|Hard
-#### [Arrays](https://www.hackerrank.com/domains/data-structures/arrays)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[Arrays - DS](https://www.hackerrank.com/challenges/arrays-ds)|Accessing and using arrays.|[C++](arrays/arrays-ds.cpp) [Python](arrays/arrays-ds.py)|Easy
-[2D Array - DS](https://www.hackerrank.com/challenges/2d-array)|How to access and use 2d-arrays.|[Python](arrays/2d-array.py)|Easy
-[Dynamic Array](https://www.hackerrank.com/challenges/dynamic-array)|Learn to use dynamic arrays by solving this problem.|[Python](arrays/dynamic-array.py)|Easy
-[Left Rotation](https://www.hackerrank.com/challenges/array-left-rotation)|Given an array and a number, d, perform d left rotations on the array.|[Python](arrays/array-left-rotation.py)|Easy
-[Sparse Arrays](https://www.hackerrank.com/challenges/sparse-arrays)|Determine the number of times a string has previously appeared.|[Python](arrays/sparse-arrays.py)|Medium
-[Array Manipulation](https://www.hackerrank.com/challenges/crush)|Perform m operations on an array and print the maximum of the values.|[Python](arrays/crush.py)|Hard
 

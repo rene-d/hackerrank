@@ -1,31 +1,6 @@
 ### [Mathematics](https://www.hackerrank.com/domains/mathematics)
 Without mathematics, there's nothing you can do. Everything around you is mathematics. Everything around you is numbers.
 
-#### [Combinatorics](https://www.hackerrank.com/domains/mathematics/combinatorics)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[nCr table](https://www.hackerrank.com/challenges/ncr-table)|Help Jim calculating nCr values|[Python](combinatorics/ncr-table.py)|Medium
-[Building a List](https://www.hackerrank.com/challenges/building-a-list)|Generate all possible combinations of a string|[Python](combinatorics/building-a-list.py)|Medium
-[Merge List](https://www.hackerrank.com/challenges/merge-list)|Help Shashank in merging two list.|[Python](combinatorics/merge-list.py)|Medium
-[A Chocolate Fiesta](https://www.hackerrank.com/challenges/a-chocolate-fiesta)|Find the number of even subsets in the given set of numbers.|[Python](combinatorics/a-chocolate-fiesta.py)|Easy
-#### [Number Theory](https://www.hackerrank.com/domains/mathematics/number-theory)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[Sherlock and GCD](https://www.hackerrank.com/challenges/sherlock-and-gcd)|Help Sherlock in finding the subset.|[Python](number-theory/sherlock-and-gcd.py)|Easy
-[Identify Smith Numbers](https://www.hackerrank.com/challenges/identify-smith-numbers)|Write a program to check whether a given integer is a Smith number.|[Python](number-theory/identify-smith-numbers.py)|Easy
-[Minimal Distance to Pi](https://www.hackerrank.com/challenges/minimal-distance-to-pi)|Given a range of denominators, find the common fraction that best approximates Pi.|[Python](number-theory/minimal-distance-to-pi.py)|Hard
-#### [Geometry](https://www.hackerrank.com/domains/mathematics/geometry)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[Points On a Line](https://www.hackerrank.com/challenges/points-on-a-line)|Given a set of coordinates, determine if they fall in an horizontal or vertical line.|[Python](geometry/points-on-a-line.py)|Easy
-#### [Algebra](https://www.hackerrank.com/domains/mathematics/algebra)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[Combo Meal](https://www.hackerrank.com/challenges/combo-meal)|Find the profit that a fast-food chain earns at each purchase.|[Python](algebra/combo-meal.py)|Easy
 #### [Fundamentals](https://www.hackerrank.com/domains/mathematics/fundamentals)
 
 Name | Preview | Code | Difficulty
@@ -55,4 +30,31 @@ Name | Preview | Code | Difficulty
 [Sumar and the Floating Rocks](https://www.hackerrank.com/challenges/harry-potter-and-the-floating-rocks)|Count the number of integral rocks between Harry and Hermoine|[Python](fundamentals/harry-potter-and-the-floating-rocks.py)|Easy
 [Russian Peasant Exponentiation](https://www.hackerrank.com/challenges/russian-peasant-exponentiation)|The only correct way to raise numbers in powers.|[Python](fundamentals/russian-peasant-exponentiation.py)|Easy
 [Most Distant](https://www.hackerrank.com/challenges/most-distant)|Measure the gap between the two most distant coordinates.|[Python](fundamentals/most-distant.py)|Easy
+#### [Number Theory](https://www.hackerrank.com/domains/mathematics/number-theory)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Sherlock and GCD](https://www.hackerrank.com/challenges/sherlock-and-gcd)|Help Sherlock in finding the subset.|[Python](number-theory/sherlock-and-gcd.py)|Easy
+[Identify Smith Numbers](https://www.hackerrank.com/challenges/identify-smith-numbers)|Write a program to check whether a given integer is a Smith number.|[Python](number-theory/identify-smith-numbers.py)|Easy
+[Minimal Distance to Pi](https://www.hackerrank.com/challenges/minimal-distance-to-pi)|Given a range of denominators, find the common fraction that best approximates Pi.|[Python](number-theory/minimal-distance-to-pi.py)|Hard
+#### [Combinatorics](https://www.hackerrank.com/domains/mathematics/combinatorics)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[nCr table](https://www.hackerrank.com/challenges/ncr-table)|Help Jim calculating nCr values|[Python](combinatorics/ncr-table.py)|Medium
+[Building a List](https://www.hackerrank.com/challenges/building-a-list)|Generate all possible combinations of a string|[Python](combinatorics/building-a-list.py)|Medium
+[Merge List](https://www.hackerrank.com/challenges/merge-list)|Help Shashank in merging two list.|[Python](combinatorics/merge-list.py)|Medium
+[A Chocolate Fiesta](https://www.hackerrank.com/challenges/a-chocolate-fiesta)|Find the number of even subsets in the given set of numbers.|[Python](combinatorics/a-chocolate-fiesta.py)|Easy
+#### [Algebra](https://www.hackerrank.com/domains/mathematics/algebra)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Combo Meal](https://www.hackerrank.com/challenges/combo-meal)|Find the profit that a fast-food chain earns at each purchase.|[Python](algebra/combo-meal.py)|Easy
+[Difference and Product](https://www.hackerrank.com/challenges/difference-and-product)|Answer a question about Difference and Product|[Python](algebra/difference-and-product.py)|Easy
+#### [Geometry](https://www.hackerrank.com/domains/mathematics/geometry)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Points On a Line](https://www.hackerrank.com/challenges/points-on-a-line)|Given a set of coordinates, determine if they fall in an horizontal or vertical line.|[Python](geometry/points-on-a-line.py)|Easy
+[Baby Step, Giant Step](https://www.hackerrank.com/challenges/baby-step-giant-step)|Find the minimum number of steps needed to get to point $(d, 0)$.|[Python](geometry/baby-step-giant-step.py)|Medium
 
