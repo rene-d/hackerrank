@@ -9,6 +9,7 @@ number=
 contest_slug=master
 testcase=
 download=
+quiet=
 
 # program usage
 usage()
@@ -102,9 +103,9 @@ download_zip()
 
 # read the options
 if [ "$(uname)" = "Darwin" ]; then
-    ARGS=`getopt hvn:t:c:aD $*`
+    ARGS=`getopt hvn:t:c:aDq $*`
 else
-    ARGS=`getopt -o hvn:t:c:aD --long help,verbose,contest:,number:,test:,all,download -n 'runtest.sh' -- "$@"`
+    ARGS=`getopt -o hvn:t:c:aDq --long help,verbose,contest:,number:,test:,all,download,quiet -n 'runtest.sh' -- "$@"`
 fi
 eval set -- "$ARGS"
 [ $? != 0 ] && usage 2
@@ -113,6 +114,7 @@ eval set -- "$ARGS"
 for i ; do
     case "$i" in
         -h|--help) usage ;;
+        -q|--quiet) quiet=1 ; shift ;;
         -v|--verbose) verbose=1 ; shift ;;
         -D|--download) download=1; shift ;;
         -t|--test) testname=$2 ; shift 2 ;;
@@ -194,7 +196,11 @@ for input in tests/${testname}/input/input*.txt; do
     fi
 
     echo -e "${COLOR_YELLOW}${exe} < ${input}${COLOR_END}"
-    ${exe} < ${input} | tee tests/$testname/result${n}
+    if [ $quiet ]; then
+        ${exe} < ${input} > tests/$testname/result${n}
+    else
+        ${exe} < ${input} | tee tests/$testname/result${n}
+    fi
     echo -ne "${COLOR_PURPLE}"
     compare tests/$testname/result${n} tests/$testname/output/output${n}
     rc=$?

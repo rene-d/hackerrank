@@ -24,10 +24,15 @@ Name | Preview | Code | Difficulty
 [Day 17: More Exceptions](https://www.hackerrank.com/challenges/30-more-exceptions)|Throw an exception when user sends wrong parameters to a method.|[C++](30-days-of-code/30-more-exceptions.cpp)|Easy
 [Day 18: Queues and Stacks](https://www.hackerrank.com/challenges/30-queues-stacks)|Use stacks and queues to determine if a string is a palindrome.|[Python](30-days-of-code/30-queues-stacks.py)|Easy
 [Day 19: Interfaces](https://www.hackerrank.com/challenges/30-interfaces)|Welcome to Day 19! Learn about interfaces in this challenge!|[C++](30-days-of-code/30-interfaces.cpp)|Easy
+[Day 20: Sorting](https://www.hackerrank.com/challenges/30-sorting)|Find the minimum number of conditional checks taking place in Bubble Sort|[C++](30-days-of-code/30-sorting.cpp)|Easy
 [Day 21: Generics](https://www.hackerrank.com/challenges/30-generics)|Welcome to Day 21! Review generics in this challenge!|[C++](30-days-of-code/30-generics.cpp)|Easy
 [Day 22: Binary Search Trees](https://www.hackerrank.com/challenges/30-binary-search-trees)|Given a binary tree, print its height.|[Python](30-days-of-code/30-binary-search-trees.py)|Easy
+[Day 23: BST Level-Order Traversal](https://www.hackerrank.com/challenges/30-binary-trees)|Implement a breadth-first search!|[C++](30-days-of-code/30-binary-trees.cpp) [Python](30-days-of-code/30-binary-trees.py)|Easy
+[Day 24: More Linked Lists](https://www.hackerrank.com/challenges/30-linked-list-deletion)|Welcome to Day 24! Review everything we've learned so far and learn more about Linked Lists in this challenge.|[C++](30-days-of-code/30-linked-list-deletion.cpp)|Easy
 [Day 25: Running Time and Complexity](https://www.hackerrank.com/challenges/30-running-time-and-complexity)|Determine if a number is prime in optimal time!|[C++](30-days-of-code/30-running-time-and-complexity.cpp) [Python](30-days-of-code/30-running-time-and-complexity.py)|Medium
+[Day 26: Nested Logic](https://www.hackerrank.com/challenges/30-nested-logic)|Test your understanding of layered logic by calculating a library fine!|[C++](30-days-of-code/30-nested-logic.cpp)|Easy
 [Day 27: Testing](https://www.hackerrank.com/challenges/30-testing)|Welcome to Day 27! Review testing in this challenge!|[Python](30-days-of-code/30-testing.py)|Easy
+[Day 28: RegEx, Patterns, and Intro to Databases](https://www.hackerrank.com/challenges/30-regex-patterns)|Review Pattern documentation and start using Regular Expressions|[Python](30-days-of-code/30-regex-patterns.py)|Medium
 [Day 29: Bitwise AND](https://www.hackerrank.com/challenges/30-bitwise-and)|Apply everything we've learned in this bitwise AND challenge.|[C++](30-days-of-code/30-bitwise-and.cpp)|Medium
 #### [Cracking the Coding Interview](https://www.hackerrank.com/domains/tutorials/cracking-the-coding-interview)
 

@@ -56,5 +56,7 @@ Name | Preview | Code | Difficulty
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Points On a Line](https://www.hackerrank.com/challenges/points-on-a-line)|Given a set of coordinates, determine if they fall in an horizontal or vertical line.|[Python](geometry/points-on-a-line.py)|Easy
+[Rectangular Game](https://www.hackerrank.com/challenges/rectangular-game)|What's the largest number in the rectangular grid?|[Python](geometry/rectangular-game.py)|Easy
+[Sherlock and Counting](https://www.hackerrank.com/challenges/sherlock-and-counting)|Help Sherlock count numbers satisfying an inequality.|[Python](geometry/sherlock-and-counting.py)|Easy
 [Baby Step, Giant Step](https://www.hackerrank.com/challenges/baby-step-giant-step)|Find the minimum number of steps needed to get to point $(d, 0)$.|[Python](geometry/baby-step-giant-step.py)|Medium
 
