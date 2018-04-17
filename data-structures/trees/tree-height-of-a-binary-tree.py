@@ -42,7 +42,7 @@ class BinarySearchTree:
 # (skeliton_head) ----------------------------------------------------------------------
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-'''
+        '''
 class Node:
       def __init__(self,info):
           self.info = info
@@ -53,15 +53,13 @@ class Node:
        // this is a node of the tree , which contains info as data, left , right
 '''
 
-    def getHeight(self,root,height=0):
-        #Write your code here
-
-        h = height
-        if root.left is not None:
-            h = max(h, self.getHeight(root.left, height + 1))
-        if root.right is not None:
-            h = max(h, self.getHeight(root.right, height + 1))
-        return h
+def height(root, level=0):
+    h = level
+    if root.left is not None:
+        h = max(h, height(root.left, level + 1))
+    if root.right is not None:
+        h = max(h, height(root.right, level + 1))
+    return h
 
 
 # (skeliton_tail) ----------------------------------------------------------------------

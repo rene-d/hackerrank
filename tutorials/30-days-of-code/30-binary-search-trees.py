@@ -1,8 +1,8 @@
 # Tutorials > 30 Days of Code > Day 22: Binary Search Trees
 # Given a binary tree, print its height.
-# 
+#
 # https://www.hackerrank.com/challenges/30-binary-search-trees/problem
-# 
+#
 
 class Node:
     def __init__(self,data):
@@ -22,8 +22,15 @@ class Solution:
         return root
 # (skeliton_head) ----------------------------------------------------------------------
 
-def getHeight(self,root):
+    def getHeight(self,root,height=0):
         #Write your code here
+
+        h = height
+        if root.left is not None:
+            h = max(h, self.getHeight(root.left, height + 1))
+        if root.right is not None:
+            h = max(h, self.getHeight(root.right, height + 1))
+        return h
 
 # (skeliton_tail) ----------------------------------------------------------------------
 T=int(input())

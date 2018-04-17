@@ -22,7 +22,7 @@
 - [Python 3.6](https://www.python.org) and some libraries ([numpy](http://www.numpy.org), [requests](http://html.python-requests.org))
 - [CMake](https://cmake.org)
 - Modern gcc or clang that come with macOS or Linux. Under Windows, use [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) or [MinGW](http://www.mingw.org).
-- [Haskell](https://www.haskell.org)
+- [Haskell](https://www.haskell.org) (functional programming only)
 
 ### Compilation
 
