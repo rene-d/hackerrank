@@ -1,6 +1,6 @@
 # [![HackerRank](https://hrcdn.net/hackerrank/assets/brand/h_mark_sm-30dc0e0cbd2dded63b294819ff853a90.svg)](https://www.hackerrank.com) HackerRank
 
-[![Build Status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank) ![404 solutions and counting](https://img.shields.io/badge/Challenges-404-blue.svg)
+[![Build Status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank) [![407 solutions and counting](https://img.shields.io/badge/Challenges-407-blue.svg)](https://github.com/rene-d/hackerrank)
 
 [HackerRank](https://www.hackerrank.com/dashboard) is a great site to learn, improve, play with your programming skills.
 
@@ -54,4 +54,4 @@ A solution can be tested solely with `runtest.sh -t challenge-name [-n test-numb
 
 ### IDE
 
-[Visual Studio Code](https://code.visualstudio.com) is a great free IDE. Some configuration files are provided.
+[Visual Studio Code](https://code.visualstudio.com) is a great free IDE that comes with many [plugins](https://marketplace.visualstudio.com/vscode). Some configuration files are provided
