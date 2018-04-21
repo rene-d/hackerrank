@@ -1,2 +1,4 @@
 add_hackerrank_py(pairs.py)
 add_hackerrank_py(icecream-parlor.py)
+add_hackerrank_py(missing-numbers.py)
+add_hackerrank_py(hackerland-radio-transmitters.py)

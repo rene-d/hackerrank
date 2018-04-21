@@ -27,6 +27,7 @@ Name | Preview | Code | Difficulty
 [Matrix Tracing](https://www.hackerrank.com/challenges/matrix-tracing)|How many ways can you trace a given matrix? - 30 Points|[Python](fundamentals/matrix-tracing.py)|Hard
 [Die Hard 3](https://www.hackerrank.com/challenges/die-hard-3)|Help Bruce and Samuel save the city by solving their puzzle|[Python](fundamentals/die-hard-3.py)|Medium
 [Halloween party](https://www.hackerrank.com/challenges/halloween-party)|Help Alex give Silvia the maximum number of chocolates|[Python](fundamentals/halloween-party.py)|Easy
+[Is Fibo](https://www.hackerrank.com/challenges/is-fibo)|Find out if a number is a Fibonacci Number or not.|[Python](fundamentals/is-fibo.py)|Medium
 [Sumar and the Floating Rocks](https://www.hackerrank.com/challenges/harry-potter-and-the-floating-rocks)|Count the number of integral rocks between Harry and Hermoine|[Python](fundamentals/harry-potter-and-the-floating-rocks.py)|Easy
 [Russian Peasant Exponentiation](https://www.hackerrank.com/challenges/russian-peasant-exponentiation)|The only correct way to raise numbers in powers.|[Python](fundamentals/russian-peasant-exponentiation.py)|Easy
 [Most Distant](https://www.hackerrank.com/challenges/most-distant)|Measure the gap between the two most distant coordinates.|[Python](fundamentals/most-distant.py)|Easy

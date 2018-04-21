@@ -134,7 +134,9 @@ Name | Preview | Code | Difficulty
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
+[Hackerland Radio Transmitters](https://www.hackerrank.com/challenges/hackerland-radio-transmitters)|Find the minimum number of radio transmitters needed to cover all the houses in Hackerland!|[Python](search/hackerland-radio-transmitters.py)|Medium
 [Ice Cream Parlor](https://www.hackerrank.com/challenges/icecream-parlor)|Help Sunny and Johnny spend all their money during each trip to the Ice Cream Parlor.|[Python](search/icecream-parlor.py)|Easy
+[Missing Numbers](https://www.hackerrank.com/challenges/missing-numbers)|Find the numbers missing from a sequence given a permutation of the original sequence|[Python](search/missing-numbers.py)|Easy
 [Pairs](https://www.hackerrank.com/challenges/pairs)|Given N numbers, count the total pairs of numbers that have a difference of K.|[Python](search/pairs.py)|Medium
 #### [Greedy](https://www.hackerrank.com/domains/algorithms/greedy)
 
@@ -157,6 +159,7 @@ Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Lonely Integer](https://www.hackerrank.com/challenges/lonely-integer)|Find the unique element in an array of integer pairs.|[Python](bit-manipulation/lonely-integer.py)|Easy
 [Maximizing XOR](https://www.hackerrank.com/challenges/maximizing-xor)|Given two integers, L and R, find the maximal value of A xor B,  where A and B satisfy a condition.|[Python](bit-manipulation/maximizing-xor.py)|Easy
+[Counter game](https://www.hackerrank.com/challenges/counter-game)|Louise and Richard play a game, find the winner of the game.|[Python](bit-manipulation/counter-game.py)|Medium
 [A or B](https://www.hackerrank.com/challenges/aorb)|A or B = C|[Python](bit-manipulation/aorb.py)|Medium
 [Hamming Distance](https://www.hackerrank.com/challenges/hamming-distance)|You are given a string S, consisting of N small latin letters 'a'  and 'b'. Process the given M queries.|[C++](bit-manipulation/hamming-distance.cpp)|Expert
 #### [Game Theory](https://www.hackerrank.com/domains/algorithms/game-theory)

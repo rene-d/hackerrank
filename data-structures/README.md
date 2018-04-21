@@ -42,6 +42,7 @@ Name | Preview | Code | Difficulty
 [Tree: Level Order Traversal](https://www.hackerrank.com/challenges/tree-level-order-traversal)|Level order traversal of a binary tree.|[C++](trees/tree-level-order-traversal.cpp)|Easy
 [Binary Search Tree : Insertion](https://www.hackerrank.com/challenges/binary-search-tree-insertion)|Given a number, insert it into it's position in a binary search tree.|[C++](trees/binary-search-tree-insertion.cpp)|Easy
 [Tree: Huffman Decoding ](https://www.hackerrank.com/challenges/tree-huffman-decoding)|Given a Huffman tree and an encoded binary string, you have to print the original string.|[C++](trees/tree-huffman-decoding.cpp)|Medium
+[Binary Search Tree : Lowest Common Ancestor](https://www.hackerrank.com/challenges/binary-search-tree-lowest-common-ancestor)|Given two nodes of a binary search tree, find the lowest common ancestor of these two nodes.|[C++](trees/binary-search-tree-lowest-common-ancestor.cpp)|Easy
 [Array Pairs](https://www.hackerrank.com/challenges/array-pairs)|Count the number of pairs satisfying a condition.|[Python](trees/array-pairs.py)|Advanced
 #### [Stacks](https://www.hackerrank.com/domains/data-structures/stacks)
 
@@ -50,6 +51,7 @@ Name | Preview | Code | Difficulty
 [Maximum Element](https://www.hackerrank.com/challenges/maximum-element)|Given three types of queries, insert an element, delete an element or find the maximum element in a stack.|[C++](stacks/maximum-element.cpp)|Easy
 [Balanced Brackets](https://www.hackerrank.com/challenges/balanced-brackets)|Given a string containing three types of brackets, determine if it is balanced.|[Python](stacks/balanced-brackets.py)|Medium
 [Equal Stacks](https://www.hackerrank.com/challenges/equal-stacks)|Equalize the piles!|[Python](stacks/equal-stacks.py)|Easy
+[Largest Rectangle ](https://www.hackerrank.com/challenges/largest-rectangle)|Given n buildings, find the largest rectangular area possible by joining consecutive K buildings.|[Python](stacks/largest-rectangle.py)|Medium
 #### [Queues](https://www.hackerrank.com/domains/data-structures/queues)
 
 Name | Preview | Code | Difficulty
