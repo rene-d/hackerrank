@@ -8,7 +8,7 @@ verbose=
 number=
 contest_slug=master
 testcase=
-download=
+download=${RUNTEST_DOWNLOAD}
 quiet=
 
 # program usage
@@ -89,6 +89,11 @@ download_zip()
     [ -s "${testcases}" ] && return
 
     mkdir -p "${rootdir}/testcases"
+
+    if [ -s "${rootdir}/offline/testcases/$(basename ${testcases})" ]; then
+        cp -p "${rootdir}/offline/testcases/$(basename ${testcases})" "${rootdir}/testcases"
+        return
+    fi
 
     url="https://www.hackerrank.com/rest/contests/${contest_slug}/challenges/${testname}/download_testcases"
     http_code=$(curl --write-out %{http_code} -s -L -o "${testcases}" "${url}")

@@ -27,10 +27,15 @@ Name | Preview | Code | Difficulty
 [Matrix Tracing](https://www.hackerrank.com/challenges/matrix-tracing)|How many ways can you trace a given matrix? - 30 Points|[Python](fundamentals/matrix-tracing.py)|Hard
 [Die Hard 3](https://www.hackerrank.com/challenges/die-hard-3)|Help Bruce and Samuel save the city by solving their puzzle|[Python](fundamentals/die-hard-3.py)|Medium
 [Halloween party](https://www.hackerrank.com/challenges/halloween-party)|Help Alex give Silvia the maximum number of chocolates|[Python](fundamentals/halloween-party.py)|Easy
+[Filling Jars](https://www.hackerrank.com/challenges/filling-jars)|Perform the multiple queries on the list. And print average. - 20 Points|[Python](fundamentals/filling-jars.py)|Easy
 [Is Fibo](https://www.hackerrank.com/challenges/is-fibo)|Find out if a number is a Fibonacci Number or not.|[Python](fundamentals/is-fibo.py)|Medium
+[K Candy Store](https://www.hackerrank.com/challenges/k-candy-store)|In how many ways can you select K candies out of N different types of candies when each of the N candies are infinite in number?|[Python](fundamentals/k-candy-store.py)|Medium
 [Sumar and the Floating Rocks](https://www.hackerrank.com/challenges/harry-potter-and-the-floating-rocks)|Count the number of integral rocks between Harry and Hermoine|[Python](fundamentals/harry-potter-and-the-floating-rocks.py)|Easy
 [Russian Peasant Exponentiation](https://www.hackerrank.com/challenges/russian-peasant-exponentiation)|The only correct way to raise numbers in powers.|[Python](fundamentals/russian-peasant-exponentiation.py)|Easy
+[Bus Station](https://www.hackerrank.com/challenges/bus-station)|Find all suitable bus sizes|[Python](fundamentals/bus-station.py)|Medium
 [Most Distant](https://www.hackerrank.com/challenges/most-distant)|Measure the gap between the two most distant coordinates.|[Python](fundamentals/most-distant.py)|Easy
+[Jim and the Jokes](https://www.hackerrank.com/challenges/jim-and-the-jokes)|Jim is running out of jokes! Help him finding new jokes.|[Python](fundamentals/jim-and-the-jokes.py)|Medium
+[Possible Path](https://www.hackerrank.com/challenges/possible-path)|Help Adam in reaching at aa particular point.|[Python](fundamentals/possible-path.py)|Easy
 #### [Number Theory](https://www.hackerrank.com/domains/mathematics/number-theory)
 
 Name | Preview | Code | Difficulty

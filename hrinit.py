@@ -211,7 +211,8 @@ class HackerRankParser():
         os.makedirs(statements_dir, exist_ok=True)
 
         testcase_file = os.path.join(testcases_dir, self.key + "-testcases.zip")
-        if overwrite or (not os.path.exists(testcase_file) and not os.path.exists(testcase_file + ".404")):  # noqa
+        testcase_err = os.path.join(testcases_dir, self.key + "-testcases.err")
+        if overwrite or (not os.path.exists(testcase_file) and not os.path.exists(testcase_err)):  # noqa
             url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}/download_testcases".format(self.contest, self.key)  # noqa
             r = requests.get(url, allow_redirects=True)
             if r.status_code == 200:
@@ -228,7 +229,7 @@ class HackerRankParser():
             else:
                 print("Testcase: download error", self.key, r, r.text)
                 if r.status_code == 404:
-                    with open(testcase_file + ".404", "w"):
+                    with open(testcase_err, "w"):
                         pass
 
         statement_file = os.path.join(statements_dir, self.key + ".pdf")
