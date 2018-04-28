@@ -11,10 +11,11 @@ a = np.matrix([[2, -1], [-1, 2]])
 print(np.linalg.eigvalsh(a))
 print(np.linalg.eigvalsh(a * a))
 
-
+"""
 réponse:
 
 1
 3
 1
 9
+"""

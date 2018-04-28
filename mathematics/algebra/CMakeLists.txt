@@ -1,2 +1,8 @@
 add_hackerrank_py(combo-meal.py)
 add_hackerrank_py(difference-and-product.py)
+add_hackerrank_py(pythagorean-triple.py)
+add_hackerrank_py(stepping-stones-game.py)
+add_hackerrank_py(little-gaurav-and-sequence.py)
+add_hackerrank_py(triangle-numbers.py)
+add_hackerrank_py(easy-sum.py)
+add_hackerrank_py(manasa-and-sub-sequences.py)

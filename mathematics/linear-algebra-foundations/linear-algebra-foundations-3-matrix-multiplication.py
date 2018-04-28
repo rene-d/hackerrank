@@ -4,14 +4,10 @@
 # https://www.hackerrank.com/challenges/linear-algebra-foundations-3-matrix-multiplication/problem
 #
 
-# 1*4+2*7 = 18
-# 1*5+2*8 = 21
-# 2*4+3*7 = 29
-# 2*5+3*8 = 34
+import numpy as np
 
-# réponse:
+a = np.matrix([[1, 2], [2, 3]])
+b = np.matrix([[4, 5], [7, 8]])
 
-18
-21
-29
-34
+p = a * b
+print(p)

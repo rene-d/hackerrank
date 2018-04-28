@@ -64,7 +64,7 @@ class HackerRankParser():
         print("preview :", self.model['preview'])
         print("lang    :", ','.join(self.model['languages']))
 
-    def gen_stub(self, lang, overwrite=False, hpp=False, editor=True):
+    def gen_stub(self, lang, overwrite=False, hpp=False, editor=True, add_test=True):
         """ create a file based on the hackerrank template with a significant header """
         EXTENSIONS = {"cpp": "cpp",
                       "cpp14": "cpp",
@@ -155,13 +155,19 @@ class HackerRankParser():
                     write_header(f, '// ')
 
             with open(cmake, "at") as f:
-                f.write("add_hackerrank({} {}.{})\n".format(self.key, self.key, lang[:3]))
+                if add_test:
+                    f.write("add_hackerrank({} {}.{})\n".format(self.key, self.key, lang[:3]))
+                else:
+                    f.write("add_executable({} {}.{})\n".format(self.key, self.key, lang[:3]))
 
         elif lang == "python3":
             with open(filename, "wt") as f:
                 write_header(f, '# ')
             with open(cmake, "at") as f:
-                f.write("add_hackerrank_py({}.py)\n".format(self.key))
+                if add_test:
+                    f.write("add_hackerrank_py({}.py)\n".format(self.key))
+                else:
+                    pass
 
         elif lang == "haskell":
             with open(filename, "wt") as f:
@@ -213,24 +219,32 @@ class HackerRankParser():
         testcase_file = os.path.join(testcases_dir, self.key + "-testcases.zip")
         testcase_err = os.path.join(testcases_dir, self.key + "-testcases.err")
         if overwrite or (not os.path.exists(testcase_file) and not os.path.exists(testcase_err)):  # noqa
-            url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}/download_testcases".format(self.contest, self.key)  # noqa
-            r = requests.get(url, allow_redirects=True)
-            if r.status_code == 200:
-                if r.headers['content-type'] == 'application/zip':
-                    with open(testcase_file, "wb") as f:
-                        f.write(r.content)
 
-                    if r.headers.get('last-modified'):
-                        d = my_parsedate(r.headers['last-modified'])
-                        ts = d.timestamp()
-                        os.utime(testcase_file, (ts, ts))
-
-                    print("Testcase: {} bytes".format(len(r.content)))
+            offline = os.path.join(os.path.dirname(__file__), "offline", "testcases",
+                                   self.key + "-testcases.zip")
+            if not overwrite and os.path.exists(offline):
+                print("link", offline, testcase_file)
+                os.link(offline, testcase_file)
+                pass
             else:
-                print("Testcase: download error", self.key, r, r.text)
-                if r.status_code == 404:
-                    with open(testcase_err, "w"):
-                        pass
+                url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}/download_testcases".format(self.contest, self.key)  # noqa
+                r = requests.get(url, allow_redirects=True)
+                if r.status_code == 200:
+                    if r.headers['content-type'] == 'application/zip':
+                        with open(testcase_file, "wb") as f:
+                            f.write(r.content)
+
+                        if r.headers.get('last-modified'):
+                            d = my_parsedate(r.headers['last-modified'])
+                            ts = d.timestamp()
+                            os.utime(testcase_file, (ts, ts))
+
+                        print("Testcase: {} bytes".format(len(r.content)))
+                else:
+                    print("Testcase: download error", self.key, r, r.text)
+                    if r.status_code == 404:
+                        with open(testcase_err, "w"):
+                            pass
 
         statement_file = os.path.join(statements_dir, self.key + ".pdf")
         if False and (overwrite or not os.path.exists(statement_file)):
@@ -238,21 +252,29 @@ class HackerRankParser():
             # Content-Disposition: inline; filename=xxx-English.pdf
             # Content-Type: application/pdf
 
-            url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}/download_pdf?language=English".format(self.contest, self.key)  # noqa
-            r = requests.get(url, allow_redirects=True)
-            if r.status_code == 200:
-                if r.headers['content-type'] == 'application/pdf':
-                    with open(statement_file, "wb") as f:
-                        f.write(r.content)
-
-                    if r.headers.get('last-modified'):
-                        d = my_parsedate(r.headers['last-modified'])
-                        ts = d.timestamp()
-                        os.utime(statement_file, (ts, ts))
-
-                    print("Statement: {} bytes".format(len(r.content)))
+            offline = os.path.join(os.path.dirname(__file__), "offline", "statements",
+                                   self.key + ".pdf")
+            if not overwrite and os.path.exists(offline):
+                print(offline, statement_file)
+                os.link(offline, statement_file)
+                pass
             else:
-                print("Statement: download error", self.key, r)
+
+                url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}/download_pdf?language=English".format(self.contest, self.key)  # noqa
+                r = requests.get(url, allow_redirects=True)
+                if r.status_code == 200:
+                    if r.headers['content-type'] == 'application/pdf':
+                        with open(statement_file, "wb") as f:
+                            f.write(r.content)
+
+                        if r.headers.get('last-modified'):
+                            d = my_parsedate(r.headers['last-modified'])
+                            ts = d.timestamp()
+                            os.utime(statement_file, (ts, ts))
+
+                        print("Statement: {} bytes".format(len(r.content)))
+                else:
+                    print("Statement: download error", self.key, r)
 
 
 def main():

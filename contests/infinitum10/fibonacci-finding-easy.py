@@ -28,9 +28,9 @@ def power(M, k):
     P = [1, 0,
          0, 1]
 
-    if n == 0:
+    if k == 0:
         return P
-    if n == 1:
+    if k == 1:
         return M
 
     while k != 0:

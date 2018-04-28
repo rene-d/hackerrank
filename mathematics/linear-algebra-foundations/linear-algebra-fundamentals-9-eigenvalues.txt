@@ -6,20 +6,23 @@
 
 # http://mathworld.wolfram.com/Eigenvalue.html
 
-det(A-λI) = 0
+Définition générale
+  det(A-λI) = 0
 
-λ = 1/2 [ (a11 + a22] ± sqrt(4 * a12 * a21 + (a11 - a22)^2) ]
+Solution générale pour dim=2
+  λ = 1/2 [ (a11 + a22] ± sqrt(4 * a12 * a21 + (a11 - a22)^2) ]
 
+Solution avec numpy
+  print(np.linalg.eigvals(np.matrix([[0, 1],[ -2, -3]])))
 
-[0   1]
-[-2 -3]
+Solution calulée:
+  A = [0   1]
+      [-2 -3]
+  λ = 1/2 * (-3 ± sqrt(-8+3^2))
+  ⟹ λ₁ = -4/2 = -2
+  ⟹ λ₂ = -2/2 = -1
 
-λ = 1/2 * (-3 ± sqrt(-8+3^2))
-
-⟹ λ₁ = -4/2 = -2
-⟹ λ₂ = -2/2 = -1
-
-réponse:
+Réponse:
 
 -2
 -1

@@ -1,0 +1,21 @@
+# Mathematics > Linear Algebra Foundations > Linear Algebra Foundations #7 - The 1000th Power of a Matrix
+# Compute the 1000th power of the given matrix.
+#
+# https://www.hackerrank.com/challenges/linear-algebra-foundations-7-the-1000th-power-of-a-matrix/problem
+#
+
+SOLUTION "EASY": avec numpy
+
+In [1]: import numpy as np
+In [2]: A = np.matrix([[-2, -9], [1, 4]])
+In [3]: A ** 1000
+Out[3]:
+matrix([[-2999, -9000],
+        [ 1000,  3001]])
+
+Réponse:
+
+-2999
+-9000
+1000
+3001
