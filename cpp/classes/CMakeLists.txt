@@ -6,3 +6,7 @@ add_hackerrank(abstract-classes-polymorphism abstract-classes-polymorphism.cpp)
 add_hackerrank(virtual-functions virtual-functions.cpp)
 add_hackerrank(inherited-code inherited-code.cpp)
 #add_hackerrank(exceptional-server exceptional-server.cpp)
+
+dirty_cpp(inherited-code)
+dirty_cpp(classes-objects)
+dirty_cpp(abstract-classes-polymorphism)

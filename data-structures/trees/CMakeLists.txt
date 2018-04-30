@@ -9,3 +9,5 @@ add_hackerrank(tree-postorder-traversal tree-postorder-traversal.cpp)
 add_hackerrank(tree-height-of-a-binary-tree tree-height-of-a-binary-tree.cpp)
 add_hackerrank(tree-huffman-decoding tree-huffman-decoding.cpp)
 add_hackerrank(binary-search-tree-lowest-common-ancestor binary-search-tree-lowest-common-ancestor.cpp)
+
+dirty_cpp(tree-huffman-decoding)

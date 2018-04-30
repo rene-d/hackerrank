@@ -12,8 +12,8 @@ endif()
 project(hackerrank)
 
 set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wconversion")
-set(CMAKE_C_FLAGS "-std=c99 -Wall -Wextra -Wconversion")
+set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wconversion -Werror")
+set(CMAKE_C_FLAGS "-std=c99 -Wall -Wextra -Wconversion -Werror")
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
     # clang n'a pas le fichier pratique de gcc de précompilation des headers de la STL
@@ -40,6 +40,16 @@ macro(add_hackerrank name cpp)
     add_test_hackerrank(${name})
 endmacro(add_hackerrank name cpp)
 
+# les auteurs d'hackerrank n'assoient un peu sur la qualité de leur code
+macro(dirty_cpp name)
+    target_compile_options("${name}" PRIVATE "-Wno-sign-compare")
+    target_compile_options("${name}" PRIVATE "-Wno-sign-conversion")
+    target_compile_options("${name}" PRIVATE "-Wno-sign-conversion")
+    target_compile_options("${name}" PRIVATE "-Wno-shorten-64-to-32")
+    target_compile_options("${name}" PRIVATE "-Wno-unused-parameter")
+    target_compile_options("${name}" PRIVATE "-Wno-reorder")
+endmacro(dirty_cpp name)
+
 macro(add_hackerrank_py name)
     configure_file("${name}" "${name}" COPYONLY @ONLY)
     add_test_hackerrank(${name})
@@ -49,6 +59,7 @@ macro(add_hackerrank_shell name)
     configure_file("${name}" "${name}" COPYONLY @ONLY)
     add_test_hackerrank(${name})
 endmacro(add_hackerrank_shell name)
+
 
 add_subdirectory(cpp)
 add_subdirectory(python)

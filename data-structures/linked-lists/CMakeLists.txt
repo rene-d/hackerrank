@@ -13,3 +13,5 @@ add_hackerrank_py(get-the-value-of-the-node-at-a-specific-position-from-the-tail
 add_hackerrank(delete-a-node-from-a-linked-list delete-a-node-from-a-linked-list.cpp)
 add_hackerrank(print-the-elements-of-a-linked-list-in-reverse print-the-elements-of-a-linked-list-in-reverse.cpp)
 add_hackerrank(insert-a-node-into-a-sorted-doubly-linked-list insert-a-node-into-a-sorted-doubly-linked-list.cpp)
+
+dirty_cpp(find-the-merge-point-of-two-joined-linked-lists)

@@ -18,3 +18,8 @@ add_hackerrank_py(ctci-ice-cream-parlor.py)
 add_hackerrank(ctci-connected-cell-in-a-grid ctci-connected-cell-in-a-grid.cpp)
 add_hackerrank(ctci-bfs-shortest-reach ctci-bfs-shortest-reach.cpp)
 add_hackerrank_py(ctci-merge-sort.py)
+
+dirty_cpp(ctci-lonely-integer)
+dirty_cpp(ctci-bfs-shortest-reach)
+dirty_cpp(ctci-connected-cell-in-a-grid)
+dirty_cpp(ctci-comparator-sorting)

@@ -41,8 +41,11 @@ Name | Preview | Code | Difficulty
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Constructing a Number](https://www.hackerrank.com/challenges/constructing-a-number)|Construct a number divisible by 3 from the given numbers by reordering their digits.|[Python](number-theory/constructing-a-number.py)|Easy
+[Closest Number](https://www.hackerrank.com/challenges/closest-number)|What is the closest number?|[Python](number-theory/closest-number.py)|Medium
 [Sherlock and GCD](https://www.hackerrank.com/challenges/sherlock-and-gcd)|Help Sherlock in finding the subset.|[Python](number-theory/sherlock-and-gcd.py)|Easy
 [Identify Smith Numbers](https://www.hackerrank.com/challenges/identify-smith-numbers)|Write a program to check whether a given integer is a Smith number.|[Python](number-theory/identify-smith-numbers.py)|Easy
+[Fibonacci Finding (easy)](https://www.hackerrank.com/challenges/fibonacci-finding-easy)|Find some Fibonacci numbers!|[Python](number-theory/fibonacci-finding-easy.py)|Easy
+[Little Panda Power](https://www.hackerrank.com/challenges/littlepandapower)|Compute A^B mod X|[Python](number-theory/littlepandapower.py)|Hard
 [Minimal Distance to Pi](https://www.hackerrank.com/challenges/minimal-distance-to-pi)|Given a range of denominators, find the common fraction that best approximates Pi.|[Python](number-theory/minimal-distance-to-pi.py)|Hard
 #### [Combinatorics](https://www.hackerrank.com/domains/mathematics/combinatorics)
 
@@ -63,6 +66,7 @@ Name | Preview | Code | Difficulty
 [Easy sum](https://www.hackerrank.com/challenges/easy-sum)|Find the mod sum|[Python](algebra/easy-sum.py)|Hard
 [Difference and Product](https://www.hackerrank.com/challenges/difference-and-product)|Answer a question about Difference and Product|[Python](algebra/difference-and-product.py)|Easy
 [Pythagorean Triple](https://www.hackerrank.com/challenges/pythagorean-triple)|Find the Pythagorean triple for the given side a.|[Python](algebra/pythagorean-triple.py)|Easy
+[Number Groups](https://www.hackerrank.com/challenges/number-groups)|Find the sum of consecutive odd number groups.|[Python](algebra/number-groups.py)|Easy
 [Manasa and Sub-sequences ](https://www.hackerrank.com/challenges/manasa-and-sub-sequences)|Help Manasa in getting candies|[Python](algebra/manasa-and-sub-sequences.py)|Medium
 #### [Geometry](https://www.hackerrank.com/domains/mathematics/geometry)
 

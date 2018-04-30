@@ -7,9 +7,6 @@
 #include <cassert>
 using namespace std;
 
-#pragma GCC diagnostic ignored "-Wreorder"
-#pragma GCC diagnostic ignored "-Wsign-compare"
-
 
 struct Node{
    Node* next;
@@ -21,8 +18,8 @@ struct Node{
 };
 
 class Cache{
-   
-   protected: 
+
+   protected:
    map<int,Node*> mp; //map the key to the node in the linked list
    int cp;  //capacity
    Node* tail; // double linked list tail pointer
@@ -99,7 +96,7 @@ int main() {
          int key;
          cin >> key;
          cout << l.get(key) << endl;
-      } 
+      }
       else if(command == "set") {
          int key, value;
          cin >> key >> value;
@@ -108,4 +105,3 @@ int main() {
    }
    return 0;
 }
-

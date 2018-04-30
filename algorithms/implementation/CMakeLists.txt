@@ -61,3 +61,6 @@ add_hackerrank_py(permutation-equation.py)
 add_hackerrank_py(bon-appetit.py)
 add_hackerrank_py(halloween-sale.py)
 add_hackerrank(two-pluses two-pluses.cpp)
+
+dirty_cpp(two-pluses)
+dirty_cpp(electronics-shop)

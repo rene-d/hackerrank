@@ -20,7 +20,7 @@ int main()
     cin >> n;
     while (n != 0)
     {
-        if (n & 1 == 1)
+        if ((n & 1) == 1)
         {
             one++;
             answer = max(answer, one);

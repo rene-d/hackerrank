@@ -1,9 +1,8 @@
 // Preprocessor Solution
 // Create preprocessor macros to make the existing code work.
-// 
+//
 // https://www.hackerrank.com/challenges/preprocessor-solution/problem
-// 
-
+//
 
 #define INF 1000000000
 
@@ -27,7 +26,7 @@ using namespace std;
 
 #if !defined toStr || !defined io || !defined FUNCTION || !defined INF
 #error Missing preprocessor definitions
-#endif 
+#endif
 
 FUNCTION(minimum, <)
 FUNCTION(maximum, >)

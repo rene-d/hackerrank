@@ -9,6 +9,7 @@ import platform
 import re
 import email.utils
 import datetime
+import time
 
 
 class HackerRankParser():
@@ -90,6 +91,9 @@ class HackerRankParser():
                 else:
                     print("Cannot choose a language:", ' '.join(languages))
                     return
+            else:
+                print('Model unknown: no languages[]')
+                return
 
         extension = EXTENSIONS.get(lang, lang)
 
@@ -196,6 +200,9 @@ class HackerRankParser():
         filename = os.path.relpath(filename)
 
         print("File created. Use « code {} » to edit it.".format(filename))
+
+        with open(os.path.join(self.rootdir, "history.md"), "at") as f:
+            f.write("{}|{}|{}|{}".format(self.path, self.key, lang, time.strftime("%c %z")))
 
         if editor:
             if 'VSCODE_PID' in os.environ:

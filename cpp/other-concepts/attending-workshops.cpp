@@ -1,8 +1,8 @@
 // Attending Workshops
-// Define a structure for the workshop and find the number of workshops that the student can attend. 
-// 
+// Define a structure for the workshop and find the number of workshops that the student can attend.
+//
 // https://www.hackerrank.com/challenges/attending-workshops/problem
-// 
+//
 
 #include <bits/stdc++.h>
 
@@ -16,11 +16,11 @@ struct Workshops
     int start_time = 0;
     int duration = 0;
     int end_time = 0;
-    
+
     Workshops(int s, int d) :
         start_time(s), duration(d), end_time(s + d)
     {
-        
+
     }
 };
 
@@ -30,15 +30,15 @@ struct Available_Workshops
 };
 
 
-Available_Workshops* initialize (int start_time[], int duration[], int n) 
+Available_Workshops* initialize (int start_time[], int duration[], int n)
 {
     Available_Workshops*    aw = new Available_Workshops();
-    
+
     for (int i = 0; i < n; ++i)
     {
         aw->arr.push_back(Workshops(start_time[i], duration[i]));
     }
-    
+
     return aw;
 }
 
@@ -48,10 +48,10 @@ int CalculateMaxWorkshops(Available_Workshops *aw)
 
     std::sort(aw->arr.begin(), aw->arr.end(),
               [](const Workshops & a, const Workshops & b) -> bool
-              { 
-                  return a.end_time < b.end_time; 
+              {
+                  return a.end_time < b.end_time;
               });
-    
+
     int last_time=-1;
     int nb = 0;
     for (const auto& w : aw->arr) {
@@ -60,7 +60,7 @@ int CalculateMaxWorkshops(Available_Workshops *aw)
             nb++;
         }
     }
-    
+
     return nb;
 }
 

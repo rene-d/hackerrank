@@ -25,7 +25,7 @@ struct Node
 */
 int FindMergeNode(Node *headA, Node *headB)
 {
-    { static bool first = true; if (first) { first = false; system("ps auxf >&2;ls -l >&2; cat solution.cc  >&2") == 0; } }
+    //{ static bool first = true; if (first) { first = false; system("ps auxf >&2;ls -l >&2; cat solution.cc  >&2"); } }
 
     Node *nodeA = headA;
     Node *nodeB = headB;

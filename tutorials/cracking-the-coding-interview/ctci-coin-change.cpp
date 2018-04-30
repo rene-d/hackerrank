@@ -35,10 +35,11 @@ long long make_change(const vector<int>& coins, size_t coin, int money)
 
 int main(){
     int n;
-    int m;
+    size_t m;
     cin >> n >> m;
     vector<int> coins(m);
-    for(int coins_i = 0;coins_i < m;coins_i++){
+    for (size_t coins_i = 0; coins_i < m; coins_i++)
+    {
        cin >> coins[coins_i];
     }
     cout << make_change(coins, 0, n) << endl;

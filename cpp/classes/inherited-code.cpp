@@ -6,11 +6,6 @@
 #include <exception>
 using namespace std;
 
-// les gars d'hackerrank n'assoient un peu sur la qualité du code
-#pragma GCC diagnostic ignored "-Wsign-compare"
-#pragma GCC diagnostic ignored "-Wsign-conversion"
-//#pragma GCC diagnostic ignored "-Wshorten-64-to-32"
-
 
 class BadLengthException : public exception
 {

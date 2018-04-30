@@ -8,10 +8,6 @@
 
 using namespace std;
 
-#pragma GCC diagnostic ignored "-Wsign-conversion"
-#pragma GCC diagnostic ignored "-Wsign-compare"
-#pragma GCC diagnostic ignored "-Wshorten-64-to-32"
-
 
 template<typename T>
 typename std::vector<T>::iterator insert_sorted(std::vector<T> & vec, T const& item)

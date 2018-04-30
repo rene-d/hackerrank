@@ -1,15 +1,8 @@
 // Operator Overloading
 // Learn how to overload operators. Print the sum of two matrices and print the resultant matrix.
-// 
+//
 // https://www.hackerrank.com/challenges/operator-overloading/problem
-// 
-
-#pragma GCC diagnostic ignored "-Wsign-compare"
-#pragma GCC diagnostic ignored "-Wsign-conversion"
-#pragma GCC diagnostic ignored "-Wshorten-64-to-32"
-#pragma GCC diagnostic ignored "-Wunused-variable"
-#pragma GCC diagnostic ignored "-Wfloat-conversion"
-
+//
 
 #include <cmath>
 #include <cstdio>
@@ -19,11 +12,11 @@
 using namespace std;
 // (skeliton_head) ----------------------------------------------------------------------
 
-class Matrix 
+class Matrix
 {
 public:
     vector<vector<int>> a;
-    
+
     Matrix& operator+(const Matrix& r)
     {
         if (a.size() == r.a.size())
@@ -81,6 +74,6 @@ int main () {
          }
          cout << endl;
       }
-   }  
+   }
    return 0;
 }

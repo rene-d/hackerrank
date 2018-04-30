@@ -1,8 +1,8 @@
 // Virtual Functions
 // Learn how to use virtual functions and solve the given problem.
-// 
+//
 // https://www.hackerrank.com/challenges/virtual-functions/problem
-// 
+//
 
 
 #include <cmath>
@@ -15,21 +15,15 @@ using namespace std;
 
 #include <numeric>
 
-// les gars d'hackerrank n'assoient un peu sur la qualité du code
-#pragma GCC diagnostic ignored "-Wsign-compare"
-#pragma GCC diagnostic ignored "-Wsign-conversion"
-#pragma GCC diagnostic ignored "-Wshorten-64-to-32"
-
-
 class Person
 {
     string name;
     int age;
     int person_id = 0;
 public:
-    Person(int id = 0) : person_id(id) 
+    Person(int id = 0) : person_id(id)
     {}
-    
+
     virtual void putdata() const
     {
         cout << name << " " << age << " " << getraw() << " " << person_id << endl;
@@ -38,7 +32,7 @@ public:
     {
         cin >> name >> age;
     }
-    
+
 protected:
     void setid(int id) { person_id = id; }
     virtual int getraw() const = 0;
@@ -58,7 +52,7 @@ public:
     }
 
 private:
-    virtual int getraw() const override 
+    virtual int getraw() const override
     {
         return accumulate(subjects, subjects + 6, 0);
     }
@@ -76,7 +70,7 @@ public:
         cin >> publications;
     }
 private:
-    virtual int getraw() const override 
+    virtual int getraw() const override
     {
         return publications;
     }
