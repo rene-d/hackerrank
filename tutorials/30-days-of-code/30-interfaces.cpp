@@ -24,8 +24,7 @@ public:
     virtual int divisorSum(int n) override
     {
         int sum = 0;
-        int r = (int) sqrt(n);
-        for (int i = 1; i <= r; ++i)
+        for (int i = 1; i <= n; ++i)
         {
             if (n % i == 0) sum += i;
         }
