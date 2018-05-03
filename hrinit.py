@@ -202,7 +202,10 @@ class HackerRankParser():
         print("File created. Use « code {} » to edit it.".format(filename))
 
         with open(os.path.join(self.rootdir, "history.md"), "at") as f:
-            f.write("{}|{}|{}|{}".format(self.path, self.key, lang, time.strftime("%c %z")))
+            f.write("{}|{}|{}|{}|[solution]({}) [web]({})\n".format(
+                self.path, self.key, lang, time.strftime("%c %z"),
+                os.path.join(self.path, self.key + "." + extension),
+                self.link))
 
         if editor:
             if 'VSCODE_PID' in os.environ:
