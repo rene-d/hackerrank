@@ -24,26 +24,24 @@ def main():
         f = open(sys.argv[1], "r")
         g = open(sys.argv[2], "r")
 
-        float_pattern = re.compile(r'^(\d+\.\d{' + str(DECIMALS) + r'})\d*$')
-        zero_pattern = re.compile(r'(\d+)\.0*')
+        float_pattern = re.compile(r'(\d+\.)(\d+)')
+
+        def float_fmt(m):
+            return m.group(1) + m.group(2)[:DECIMALS].ljust(DECIMALS, "0")
 
         n = 0
         for i, j in itertools.zip_longest(f, g, fillvalue=''):
             n += 1
 
             # ignore line endings
-            i = i.strip()
-            j = j.strip()
+            i = i.rstrip()
+            j = j.rstrip()
 
-            # when a decimal number is found, truncate unwanted digits
-            i = float_pattern.sub(r'\1', i)
-            j = float_pattern.sub(r'\1', j)
+            # when a float number is found, adjust decimal digits
+            i = float_pattern.sub(float_fmt, i)
+            j = float_pattern.sub(float_fmt, j)
 
-            # remove 0 decimals
-            i = zero_pattern.sub(r'\1', i)
-            j = zero_pattern.sub(r'\1', j)
-
-            if i.strip() != j.strip():
+            if i != j:
                 # a difference is found
                 print('{}< {}'.format(n, i))
                 print('{}> {}'.format(n, j))
