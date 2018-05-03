@@ -144,6 +144,7 @@ set_colors
 close_std
 
 # extract the extension
+result=result-${testname}
 extension="${testname##*.}"
 if [ "${extension}" == "py" ]; then
     exe="python3 ${testname}"
@@ -202,12 +203,12 @@ for input in tests/${testname}/input/input*.txt; do
 
     echo -e "${COLOR_YELLOW}${exe} < ${input}${COLOR_END}"
     if [ $quiet ]; then
-        ${exe} < ${input} > tests/$testname/result${n}
+        ${exe} < ${input} > tests/$testname/${result}${n}
     else
-        ${exe} < ${input} | tee tests/$testname/result${n}
+        ${exe} < ${input} | tee tests/$testname/${result}${n}
     fi
     echo -ne "${COLOR_PURPLE}"
-    compare tests/$testname/result${n} tests/$testname/output/output${n}
+    compare tests/$testname/${result}${n} tests/$testname/output/output${n}
     rc=$?
     echo -ne "${COLOR_END}"
     [ $rc -ne 0 ] && failure=1
