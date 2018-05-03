@@ -1,2 +1,6 @@
 add_hackerrank_py(input.py)
 add_hackerrank_py(zipped.py)
+add_hackerrank_py(python-eval.py)
+add_hackerrank_py(ginorts.py)
+add_hackerrank_py(python-sort-sort.py)
+add_hackerrank_py(any-or-all.py)

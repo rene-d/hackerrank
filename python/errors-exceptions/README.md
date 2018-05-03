@@ -6,4 +6,5 @@ A step by step guide to Python, a language that is easy to pick up yet one of th
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Exceptions](https://www.hackerrank.com/challenges/exceptions)|Handle errors detected during execution.|[Python](exceptions.py)|Easy
+[Incorrect Regex](https://www.hackerrank.com/challenges/incorrect-regex)|Check whether the regex is valid or not.|[Python](incorrect-regex.py)|Easy
 

@@ -42,7 +42,8 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "**/build/": true
+        "**/build/": true,
+        "**/build.nosync/": true
     },
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.env.osx": {
@@ -50,5 +51,9 @@
     },
     "terminal.integrated.env.linux": {
         "PATH": "$PATH:${workspaceFolder}"
-    }
+    },
+    "python.linting.enabled": false,
+    "editor.trimAutoWhitespace": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true
 }

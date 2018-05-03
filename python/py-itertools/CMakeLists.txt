@@ -1,3 +1,7 @@
 add_hackerrank_py(compress-the-string.py)
 add_hackerrank_py(maximize-it.py)
 add_hackerrank_py(iterables-and-iterators.py)
+add_hackerrank_py(itertools-product.py)
+add_hackerrank_py(itertools-permutations.py)
+add_hackerrank_py(itertools-combinations.py)
+add_hackerrank_py(itertools-combinations-with-replacement.py)

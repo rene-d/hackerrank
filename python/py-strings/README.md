@@ -11,6 +11,9 @@ Name | Preview | Code | Difficulty
 [Mutations](https://www.hackerrank.com/challenges/python-mutations)|Understand immutable vs mutable by making changes to a given string.|[Python](python-mutations.py)|Easy
 [Find a string](https://www.hackerrank.com/challenges/find-a-string)|Find the number of occurrences of a substring in a string.|[Python](find-a-string.py)|Easy
 [String Validators](https://www.hackerrank.com/challenges/string-validators)|Identify the presence of alphanumeric characters, alphabetical characters, digits, lowercase and uppercase characters in a string.|[Python](string-validators.py)|Easy
+[Text Alignment](https://www.hackerrank.com/challenges/text-alignment)|Generate the Hackerrank logo with alignments in Python.|[Python](text-alignment.py)|Easy
+[Text Wrap](https://www.hackerrank.com/challenges/text-wrap)|Wrap the given text in a fixed width.|[Python](text-wrap.py)|Easy
+[Designer Door Mat](https://www.hackerrank.com/challenges/designer-door-mat)|Print a designer door mat.|[Python](designer-door-mat.py)|Easy
 [String Formatting](https://www.hackerrank.com/challenges/python-string-formatting)|Print the formatted decimal, octal, hexadecimal, and binary values for $n$ integers.|[Python](python-string-formatting.py)|Easy
 [Alphabet Rangoli](https://www.hackerrank.com/challenges/alphabet-rangoli)|Let's draw rangoli.|[Python](alphabet-rangoli.py)|Easy
 [Capitalize!](https://www.hackerrank.com/challenges/capitalize)|Capitalize Each Word.|[Python](capitalize.py)|Easy
