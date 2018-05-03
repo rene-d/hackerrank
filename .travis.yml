@@ -8,8 +8,10 @@ ghc:
 install:
   - pip install -r requirements.txt
 script:
+  - env
   - mkdir -p build
   - cd build
   - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
   - make -j4
-  - ctest
+  - ctest -j4 -VV
+  - cat python/numpy/np-linear-algebra.py.log
