@@ -8,9 +8,11 @@ ghc:
 install:
   - pip install -r requirements.txt
 script:
-  - cat /proc/cpuinfo
+  - nproc
+  - nproc --all
+  - getconf _NPROCESSORS_ONLN
   - mkdir -p build
   - cd build
   - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
-  - make -j4
-  - ctest -VV --output-on-failure
+  - make -j16
+  - ctest --output-on-failure
