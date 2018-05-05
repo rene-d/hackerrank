@@ -1,7 +1,7 @@
-# Sherlock and Moving Tiles
+# Ad Infinitum 10 - Math Programming Contest > Sherlock and Moving Tiles
 # Help Sherlock in identifying the overlapping area.
 #
-# https://www.hackerrank.com/challenges/sherlock-and-moving-tiles/problem
+# https://www.hackerrank.com/contests/infinitum10/challenges/sherlock-and-moving-tiles
 #
 
 L, S1, S2 = map(int, input().split())

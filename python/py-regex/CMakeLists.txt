@@ -1,3 +1,6 @@
 add_hackerrank_py(matrix-script.py)
 add_hackerrank_py(validating-credit-card-number.py)
 add_hackerrank_py(validating-postalcode.py)
+add_hackerrank_py(introduction-to-regex.py)
+add_hackerrank_py(re-split.py)
+add_hackerrank_py(re-findall-re-finditer.py)

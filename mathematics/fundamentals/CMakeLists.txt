@@ -31,3 +31,5 @@ add_hackerrank_py(k-candy-store.py)
 add_hackerrank_py(bus-station.py)
 add_hackerrank_py(jim-and-the-jokes.py)
 add_hackerrank_py(possible-path.py)
+
+dirty_cpp(even-odd-query)
