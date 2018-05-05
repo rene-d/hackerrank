@@ -9,9 +9,9 @@ ghc:
 install:
   - pip install -r requirements.txt
 script:
-  - nproc
   - mkdir -p build
   - cd build
   - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
-  - make -j2
-  - ctest -j2 --output-on-failure
+  - make -j$(nproc)
+  - make extract-testcases
+  - ctest -j$(nproc) --output-on-failure

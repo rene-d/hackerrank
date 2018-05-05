@@ -41,10 +41,10 @@ class HackerRankParser():
 
             if m['track'] is None:
                 if "primary_contest" in m:
-                    self.path = os.path.join(m["primary_contest"]["slug"])
+                    self.path = os.path.join("contests", m["primary_contest"]["slug"])
                     self.path_name = "{}".format(m["primary_contest"]["name"])
                 else:
-                    self.path = os.path.join(m["contest_slug"])
+                    self.path = os.path.join("contests", m["contest_slug"])
                     self.path_name = m['contest_name']
             else:
                 self.path = os.path.join(m["track"]["track_slug"], m["track"]["slug"])
@@ -214,33 +214,38 @@ class HackerRankParser():
                 else:
                     subprocess.check_call(["code", filename])
 
-    def download(self, overwrite=False):
+    def download(self,
+                 dest_dir="testcases",
+                 url="download_testcases",
+                 suffix="-testcases.zip",
+                 content_type="application/zip",
+                 overwrite=False):
         """ download test cases and problem statement """
 
         def my_parsedate(text):
             return datetime.datetime(*email.utils.parsedate(text)[:6])
 
-        testcases_dir = os.path.join(self.rootdir, "testcases")
-        statements_dir = os.path.join(self.rootdir, "statements")
-
+        testcases_dir = os.path.join(self.rootdir, dest_dir, self.contest)
         os.makedirs(testcases_dir, exist_ok=True)
-        os.makedirs(statements_dir, exist_ok=True)
 
-        testcase_file = os.path.join(testcases_dir, self.key + "-testcases.zip")
-        testcase_err = os.path.join(testcases_dir, self.key + "-testcases.err")
+        testcase_file = os.path.join(testcases_dir, self.key + suffix)
+        testcase_err = os.path.splitext(testcase_file)[0] + ".err"
+
         if overwrite or (not os.path.exists(testcase_file) and not os.path.exists(testcase_err)):  # noqa
 
-            offline = os.path.join(os.path.dirname(__file__), "offline", "testcases",
-                                   self.key + "-testcases.zip")
+            offline = os.path.join(os.path.dirname(__file__),
+                                   "offline", dest_dir, self.contest,
+                                   self.key + suffix)
             if not overwrite and os.path.exists(offline):
                 print("link", offline, testcase_file)
                 os.link(offline, testcase_file)
                 pass
             else:
-                url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}/download_testcases".format(self.contest, self.key)  # noqa
+                url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}/{}".format(self.contest, self.key, url)  # noqa
+
                 r = requests.get(url, allow_redirects=True)
                 if r.status_code == 200:
-                    if r.headers['content-type'] == 'application/zip':
+                    if r.headers['content-type'] == content_type:
                         with open(testcase_file, "wb") as f:
                             f.write(r.content)
 
@@ -249,42 +254,20 @@ class HackerRankParser():
                             ts = d.timestamp()
                             os.utime(testcase_file, (ts, ts))
 
-                        print("Testcase: {} bytes".format(len(r.content)))
+                        print("Download {}: {} bytes".format(dest_dir, len(r.content)))
                 else:
-                    print("Testcase: download error", self.key, r, r.text)
+                    print("{}: download error".format(dest_dir, self.key, r, r.text))
                     if r.status_code == 404:
                         with open(testcase_err, "w"):
                             pass
 
-        statement_file = os.path.join(statements_dir, self.key + ".pdf")
-        if False and (overwrite or not os.path.exists(statement_file)):
-            # Last-Modified: Fri, 09 Sep 2016 09:34:28 GMT
-            # Content-Disposition: inline; filename=xxx-English.pdf
-            # Content-Type: application/pdf
-
-            offline = os.path.join(os.path.dirname(__file__), "offline", "statements",
-                                   self.key + ".pdf")
-            if not overwrite and os.path.exists(offline):
-                print(offline, statement_file)
-                os.link(offline, statement_file)
-                pass
-            else:
-
-                url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}/download_pdf?language=English".format(self.contest, self.key)  # noqa
-                r = requests.get(url, allow_redirects=True)
-                if r.status_code == 200:
-                    if r.headers['content-type'] == 'application/pdf':
-                        with open(statement_file, "wb") as f:
-                            f.write(r.content)
-
-                        if r.headers.get('last-modified'):
-                            d = my_parsedate(r.headers['last-modified'])
-                            ts = d.timestamp()
-                            os.utime(statement_file, (ts, ts))
-
-                        print("Statement: {} bytes".format(len(r.content)))
-                else:
-                    print("Statement: download error", self.key, r)
+    def downloads(self, overwrite=False):
+        self.download(overwrite=overwrite)
+        self.download(dest_dir="statements",
+                      url="download_pdf?language=English",
+                      suffix=".pdf",
+                      content_type="application/pdf",
+                      overwrite=overwrite)
 
 
 def main():
@@ -336,6 +319,16 @@ def main():
         r = requests.get(url)
         if r.status_code == 200:
             data = r.text
+
+    elif args.url.find(':') != -1:
+        contest, _, challenge = args.url.partition(':')
+        url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}".format(contest, challenge)
+        print('URL', contest, challenge, url)
+
+        r = requests.get(url)
+        if r.status_code == 200:
+            data = r.text
+
     else:
         with open(args.url) as f:
             data = f.read()
@@ -344,7 +337,7 @@ def main():
     parser.feed(data)
     parser.info()
     parser.gen_stub(args.lang, args.force, args.force_hpp)
-    parser.download(args.force)
+    parser.downloads(args.force)
 
 
 if __name__ == '__main__':

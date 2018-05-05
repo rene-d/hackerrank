@@ -11,7 +11,7 @@ import requests
 import re
 
 
-parser = argparse.ArgumentParser(description='Download testcases.')
+parser = argparse.ArgumentParser(description='Download testcases (practice challenge onlys).')
 parser.add_argument('name', help="Challenge name")
 parser.add_argument('url', nargs='*', help="test case url")
 
@@ -20,7 +20,7 @@ args = parser.parse_args()
 
 name = re.sub(r'^.*\.hackerrank\.com/challenges/([\w\d\-].*)/.*$', r'\1', args.name)
 
-zip = os.path.join(os.path.dirname(__file__), "testcases2", name + "-testcases2.zip")
+zip = os.path.join(os.path.dirname(__file__), "testcases2", "master", name + "-testcases2.zip")
 
 if not os.path.exists(zip):
     print("create", zip)

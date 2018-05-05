@@ -4,12 +4,11 @@
 
 # program parameters
 rootdir=$(dirname "$0")
-verbose=
-number=
-contest_slug=master
-testcase=
-download=${RUNTEST_DOWNLOAD}
+contest=master
 quiet=
+number=                     # testcase number (default 0)
+testsdir=                   # path for testcases files (<tests>/<contest>/<challenges>/input/...)
+extract_tests=
 
 # program usage
 usage()
@@ -21,7 +20,7 @@ usage()
     exit $1
 }
 
-
+# colors for term
 set_colors()
 {
     if [ -t 1 -a -t 0 ]; then
@@ -62,55 +61,13 @@ close_std()
     fi
 }
 
-
-download_pdf()
-{
-    pdf="${rootdir}/statements/$testname.pdf"
-    [ -s "$pdf" ] && return
-
-    # download only if directory statements exists
-    #[ -d "${rootdir}/statements" ] || return
-
-    mkdir -p "${rootdir}/statements"
-
-    url="https://www.hackerrank.com/rest/contests/${contest_slug}/challenges/$testname/download_pdf?language=English"
-    curl -s -L -o "${pdf}" "${url}"
-    if [ ! -s "${pdf}" ]; then
-        rm -f "${pdf}"
-        echo "Download problem: ${url}"
-        exit 2
-    fi
-}
-
-
-download_zip()
-{
-    [ -f "${testcases%%.zip}.err" ] && return
-    [ -s "${testcases}" ] && return
-
-    mkdir -p "${rootdir}/testcases"
-
-    if [ -s "${rootdir}/offline/testcases/$(basename ${testcases})" ]; then
-        cp -p "${rootdir}/offline/testcases/$(basename ${testcases})" "${rootdir}/testcases"
-        return
-    fi
-
-    url="https://www.hackerrank.com/rest/contests/${contest_slug}/challenges/${testname}/download_testcases"
-    http_code=$(curl --write-out %{http_code} -s -L -o "${testcases}" "${url}")
-
-    if [ $http_code -ne 200 ]; then
-        if [ -f "${testcases}" ]; then
-            mv -f "${testcases}" "${testcases%%.zip}.err"
-        fi
-        echo "Download problem: ${url}"
-    fi
-}
+##############################################################################
 
 # read the options
 if [ "$(uname)" = "Darwin" ]; then
-    ARGS=`getopt hvn:t:c:aDq $*`
+    ARGS=`getopt hqc:t:n:T:X: $*`
 else
-    ARGS=`getopt -o hvn:t:c:aDq --long help,verbose,contest:,number:,test:,all,download,quiet -n 'runtest.sh' -- "$@"`
+    ARGS=`getopt -o hqc:t:n:T:X: --long help,quiet,contest:,test:,number: -n 'runtest.sh' -- "$@"`
 fi
 eval set -- "$ARGS"
 [ $? != 0 ] && usage 2
@@ -120,15 +77,23 @@ for i ; do
     case "$i" in
         -h|--help) usage ;;
         -q|--quiet) quiet=1 ; shift ;;
-        -v|--verbose) verbose=1 ; shift ;;
-        -D|--download) download=1; shift ;;
+        -c|--contest) contest=$2 ; shift 2 ;;
         -t|--test) testname=$2 ; shift 2 ;;
-        -n|--num) number=$2 ; shift 2 ;;
-        -a|--all) number=a ; shift ;;
-        -c|--contest) contest_slug=$2; shift 2 ;;
+        -n|--number) number=$2 ; shift 2 ;;
+        -T) testsdir=$2 ; shift 2 ;;
+        -X) extract_tests=$2 ; shift 2;;
         --) shift ; break ;;
     esac
 done
+
+if [ $extract_tests ]; then
+    if [ -s "${rootdir}/testcases.tar.xz" ]; then
+        mkdir -p "${extract_tests}"
+        tar -C "${extract_tests}" -xJf "${rootdir}/testcases.tar.xz"
+        exit $?
+    fi
+    exit 1
+fi
 
 # alternate syntax
 if [ -z "${testname}" ]; then
@@ -144,55 +109,57 @@ set_colors
 close_std
 
 # extract the extension
-result=result-${testname}
 extension="${testname##*.}"
 if [ "${extension}" == "py" ]; then
     exe="python3 ${testname}"
     testname="${testname%.*}"
+    result=result${extension}
 elif [ "${extension}" == "sh" ]; then
     exe="bash ${testname}"
     testname="${testname%.*}"
+    result=result${extension}
 else
     exe=./${testname}
+    result=result-${testname}
 fi
 
-testcases="${rootdir}/testcases/${testname}-testcases.zip"
-testcases2="${rootdir}/testcases2/${testname}-testcases2.zip"
+##############################################################################
 
-if [ $download ]; then
-    echo "Downloading testcases..."
-    #download_pdf
-    download_zip
-fi
+# quatre considérations:
+#   - le fichier <rootdir>/testcases.tar.xz
+#   - le fichier <rootdir>/testcases/<contest>/<testname>-testcases.zip
+#   - le fichier <rootdir>/testcases2/<contest>/<testname>-testcases2.zip
+#   - le répertoire <tests>/<testname>/input/ existe
 
-mkdir -p tests
-
-if [ -f  "${testcases}" ]; then
-    unzip -q -o -d tests/${testname} "${testcases}"
-    missing_testcases=0
+if [ "${testsdir}" != "" ]; then
+    testsdir="${testsdir}/${contest}"
 else
-    missing_testcases=1
+    testsdir=tests
+    mkdir -p tests
+
+    # si les fichiers de testcases existent: on les extrait
+    zip="${rootdir}/testcases/${contest}/${testname}-testcases.zip"
+    if [ -f "${zip}" ]; then
+        unzip -q -o -d tests/${testname} "${zip}"
+    fi
+
+    zip="${rootdir}/testcases2/${contest}/${testname}-testcases2.zip"
+    if [ -f  "${zip}" ]; then
+        unzip -q -o -d tests/${testname} "${zip}"
+    fi
 fi
 
-if [ \( ! -z "$number" -o $missing_testcases -eq 1 \) -a -s "${testcases2}" ]; then
-    unzip -q -o -d tests/${testname} "${testcases2}"
-fi
-
-if [ $missing_testcases -eq 1 ]; then
-    tar -C tests -xJvf "${rootdir}/testcases.tar.xz" ${testname}
-fi
-
-if [ ! -d tests/${testname}/input ]; then
-    echo -e "${COLOR_RED}NO TEST${COLOR_END}"
+# si on n'a pas le répertoire des testcases, c'est une erreur
+if [ ! -d "${testsdir}/${testname}/input" ]; then
+    echo -e "${COLOR_RED}MISSING TESTCASES${COLOR_END}"
     exit 1
 fi
 
-if [ $verbose ]; then
-    /bin/ls -ogTp tests/${testname}/input/
-fi
+##############################################################################
+
 
 failure=0
-for input in tests/${testname}/input/input*.txt; do
+for input in "${testsdir}/${testname}/input/input"*.txt; do
     n=${input##*input}
 
     if [ ! -z "$number" -a "$number" != "a" ]; then
@@ -203,12 +170,13 @@ for input in tests/${testname}/input/input*.txt; do
 
     echo -e "${COLOR_YELLOW}${exe} < ${input}${COLOR_END}"
     if [ $quiet ]; then
-        ${exe} < ${input} > tests/$testname/${result}${n}
+        ${exe} < "${input}" > "${testsdir}/$testname/${result}${n}"
     else
-        ${exe} < ${input} | tee tests/$testname/${result}${n}
+        ${exe} < "${input}" | tee "${testsdir}/$testname/${result}${n}"
     fi
+
     echo -ne "${COLOR_PURPLE}"
-    compare tests/$testname/${result}${n} tests/$testname/output/output${n}
+    compare "${testsdir}/$testname/${result}${n}" "${testsdir}/$testname/output/output${n}"
     rc=$?
     echo -ne "${COLOR_END}"
     [ $rc -ne 0 ] && failure=1
