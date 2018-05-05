@@ -12,7 +12,7 @@ import re
 import itertools
 
 
-DECIMALS = 5
+DECIMALS = 6
 
 
 def main():
@@ -24,10 +24,13 @@ def main():
         f = open(sys.argv[1], "r")
         g = open(sys.argv[2], "r")
 
-        float_pattern = re.compile(r'(\d+\.)(\d+)')
+        float_pattern = re.compile(r'(\d+\.\d+)')
 
-        def float_fmt(m):
-            return m.group(1) + m.group(2)[:DECIMALS].ljust(DECIMALS, "0")
+        def float_fmt(floats):
+            def fmt(m):
+                floats.append(float(m.group(0)))
+                return "FLOAT"
+            return fmt
 
         n = 0
         for i, j in itertools.zip_longest(f, g, fillvalue=''):
@@ -38,10 +41,20 @@ def main():
             j = j.rstrip()
 
             # when a float number is found, adjust decimal digits
-            i = float_pattern.sub(float_fmt, i)
-            j = float_pattern.sub(float_fmt, j)
+            i_floats, j_floats = [], []
+            i_new = float_pattern.sub(float_fmt(i_floats), i)
+            j_new = float_pattern.sub(float_fmt(j_floats), j)
 
-            if i != j:
+            floats_are_equal = len(i_floats) == len(j_floats)
+            if floats_are_equal:
+                for a, b in zip(i_floats, j_floats):
+                    if a == b:
+                        continue
+                    if abs(a - b) / abs(a + b) > 10 ** -DECIMALS:
+                        floats_are_equal = False
+                        break
+
+            if i_new != j_new or not floats_are_equal:
                 # a difference is found
                 print('{}< {}'.format(n, i))
                 print('{}> {}'.format(n, j))
