@@ -1,6 +1,6 @@
 # [![HackerRank](https://hrcdn.net/hackerrank/assets/brand/h_mark_sm-30dc0e0cbd2dded63b294819ff853a90.svg)](https://www.hackerrank.com) HackerRank
 
-[![Build Status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank) [![474 solutions and counting](https://img.shields.io/badge/Challenges-474-blue.svg)](https://github.com/rene-d/hackerrank)
+[![Build Status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank) [![497 solutions and counting](https://img.shields.io/badge/Challenges-497-blue.svg)](https://github.com/rene-d/hackerrank)
 
 [HackerRank](https://www.hackerrank.com/dashboard) is a great site to learn, improve, play with your programming skills.
 
@@ -15,7 +15,7 @@
 * [Tutorials](tutorials/)
   * [30 Days of Code](tutorials/30-days-of-code/)
   * [Cracking the Coding Interview](tutorials/cracking-the-coding-interview/)
-* [ProjectEuler+](projecteuler/) (See [here](https://github.com/rene-d/math/tree/master/projecteuler) my solutions of [Project Euler](https://projecteuler.net/))
+* [ProjectEuler+](contests/projecteuler/) (See [here](https://github.com/rene-d/math/tree/master/projecteuler) my solutions of [Project Euler](https://projecteuler.net/))
 
 ## Usage and tools
 

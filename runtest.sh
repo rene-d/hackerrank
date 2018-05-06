@@ -125,13 +125,12 @@ fi
 
 ##############################################################################
 
-# quatre considérations:
-#   - le fichier <rootdir>/testcases.tar.xz
+# trois considérations:
+#   - le répertoire <tests>/<testname>/input/ existe
 #   - le fichier <rootdir>/testcases/<contest>/<testname>-testcases.zip
 #   - le fichier <rootdir>/testcases2/<contest>/<testname>-testcases2.zip
-#   - le répertoire <tests>/<testname>/input/ existe
 
-if [ "${testsdir}" != "" ]; then
+if [ "${testsdir}" != "" -a -d "${testsdir}/${contest}/${testname}" ]; then
     testsdir="${testsdir}/${contest}"
 else
     testsdir=tests
