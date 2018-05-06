@@ -6,7 +6,8 @@
 
 import numpy
 
-numpy.set_printoptions(legacy='1.13')
+if numpy.version.version >= '1.14.':
+    numpy.set_printoptions(legacy='1.13')
 
 a = numpy.array(input().split(), numpy.float)
 print(numpy.floor(a))

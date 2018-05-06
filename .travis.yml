@@ -14,6 +14,4 @@ script:
   - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
   - make -j$(nproc)
   - make extract-testcases
-  - echo ctest -j$(nproc) --output-on-failure
-  - cd python/numpy
-  - ../../../runtest.sh -t np-mean-var-and-std.py  -T ../../tests
+  - ctest -j$(nproc) --output-on-failure

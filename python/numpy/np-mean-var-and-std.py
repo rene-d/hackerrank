@@ -6,7 +6,8 @@
 
 import numpy
 
-numpy.set_printoptions(legacy='1.13')
+if numpy.version.version >= '1.14.':
+    numpy.set_printoptions(legacy='1.13')
 
 n, m = map(int, input().split())
 A = numpy.array([input().split() for i in range(n)], numpy.int)
