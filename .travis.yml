@@ -14,4 +14,4 @@ script:
   - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
   - make -j$(nproc)
   - make extract-testcases
-  - ctest -j$(nproc) --output-on-failure
+  - ctest -j$(nproc) --output-on-failure --quiet
