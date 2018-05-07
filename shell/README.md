@@ -15,6 +15,7 @@ Name | Preview | Code | Difficulty
 [More on Conditionals](https://www.hackerrank.com/challenges/bash-tutorials---more-on-conditionals)|Three sides of a triangle are provided to you. Is the Triangle Scalene, Equilateral or Isosceles?|[bash](bash/bash-tutorials---more-on-conditionals.sh)|Easy
 [Arithmetic Operations](https://www.hackerrank.com/challenges/bash-tutorials---arithmetic-operations)|Math in shell scripts.|[bash](bash/bash-tutorials---arithmetic-operations.sh)|Medium
 [Compute the Average](https://www.hackerrank.com/challenges/bash-tutorials---compute-the-average)|Compute the average of a list of N numbers provided to you.|[bash](bash/bash-tutorials---compute-the-average.sh)|Medium
+[Functions and Fractals - Recursive Trees - Bash!](https://www.hackerrank.com/challenges/fractal-trees-all)|Create a Fractal Tree|[bash](bash/fractal-trees-all.sh)|Hard
 #### [Text Processing](https://www.hackerrank.com/domains/shell/textpro)
 
 Name | Preview | Code | Difficulty
@@ -36,10 +37,20 @@ Name | Preview | Code | Difficulty
 ['Tr' Command #1](https://www.hackerrank.com/challenges/text-processing-tr-1)|Introduction to the 'tr' command.|[bash](textpro/text-processing-tr-1.sh)|Easy
 ['Tr' Command #2](https://www.hackerrank.com/challenges/text-processing-tr-2)|Introduction to the 'tr' command.|[bash](textpro/text-processing-tr-2.sh)|Easy
 ['Tr' Command #3](https://www.hackerrank.com/challenges/text-processing-tr-3)||[bash](textpro/text-processing-tr-3.sh)|Easy
+[Sort Command #1](https://www.hackerrank.com/challenges/text-processing-sort-1)|Introducing the 'sort' command in Linux.|[bash](textpro/text-processing-sort-1.sh)|Easy
+[Sort Command #2](https://www.hackerrank.com/challenges/text-processing-sort-2)|Introducing the 'sort' command in Linux.|[bash](textpro/text-processing-sort-2.sh)|Easy
+[Sort Command #3](https://www.hackerrank.com/challenges/text-processing-sort-3)|Introducing the 'sort' command in Linux.|[bash](textpro/text-processing-sort-3.sh)|Easy
+[Sort Command #4](https://www.hackerrank.com/challenges/text-processing-sort-4)|Playing around with the 'sort' command.|[bash](textpro/text-processing-sort-4.sh)|Easy
+[Sort Command #5](https://www.hackerrank.com/challenges/text-processing-sort-5)|Playing around with the 'sort' command.|[bash](textpro/text-processing-sort-5.sh)|Easy
+['Sort' command #6](https://www.hackerrank.com/challenges/text-processing-sort-6)|Let's learn about the 'sort' command.|[bash](textpro/text-processing-sort-6.sh)|Easy
+['Sort' command #7](https://www.hackerrank.com/challenges/text-processing-sort-7)|Let's learn about the 'sort' command.|[bash](textpro/text-processing-sort-7.sh)|Easy
 ['Uniq' Command #1](https://www.hackerrank.com/challenges/text-processing-in-linux-the-uniq-command-1)|Introduction to the 'uniq' command.|[bash](textpro/text-processing-in-linux-the-uniq-command-1.sh)|Easy
 ['Uniq' Command #2](https://www.hackerrank.com/challenges/text-processing-in-linux-the-uniq-command-2)|Introduction to the 'uniq' command.|[bash](textpro/text-processing-in-linux-the-uniq-command-2.sh)|Easy
 ['Uniq' command #3](https://www.hackerrank.com/challenges/text-processing-in-linux-the-uniq-command-3)|Let's learn about the 'uniq' command.|[bash](textpro/text-processing-in-linux-the-uniq-command-3.sh)|Easy
 ['Uniq' command #4](https://www.hackerrank.com/challenges/text-processing-in-linux-the-uniq-command-4)|Let's learn about the 'uniq' command.|[bash](textpro/text-processing-in-linux-the-uniq-command-4.sh)|Easy
+[Paste - 3](https://www.hackerrank.com/challenges/paste-3)|Getting started with the 'paste' command.|[bash](textpro/paste-3.sh)|Medium
+[Paste - 4](https://www.hackerrank.com/challenges/paste-4)|Getting started with the 'paste' command.|[bash](textpro/paste-4.sh)|Medium
+[Paste - 1](https://www.hackerrank.com/challenges/paste-1)|Getting started with the 'paste' command.|[bash](textpro/paste-1.sh)|Medium
 [Paste - 2](https://www.hackerrank.com/challenges/paste-2)|Getting started with the 'paste' command.|[bash](textpro/paste-2.sh)|Medium
 #### [Arrays in Bash](https://www.hackerrank.com/domains/shell/arrays-in-bash)
 
@@ -63,7 +74,12 @@ Name | Preview | Code | Difficulty
 ['Grep' #2](https://www.hackerrank.com/challenges/text-processing-in-linux-the-grep-command-2)|Introduction to 'grep' in Linux.|[bash](grep-sed-awk/text-processing-in-linux-the-grep-command-2.sh)|Medium
 ['Grep' #3](https://www.hackerrank.com/challenges/text-processing-in-linux-the-grep-command-3)|Introduction to 'grep' in Linux.|[bash](grep-sed-awk/text-processing-in-linux-the-grep-command-3.sh)|Medium
 ['Grep' - A](https://www.hackerrank.com/challenges/text-processing-in-linux-the-grep-command-4)|Let's 'grep' out stuff from text files!|[bash](grep-sed-awk/text-processing-in-linux-the-grep-command-4.sh)|Easy
+['Grep' - B](https://www.hackerrank.com/challenges/text-processing-in-linux-the-grep-command-5)|Let's 'grep' out stuff from text files!|[bash](grep-sed-awk/text-processing-in-linux-the-grep-command-5.sh)|Easy
+['Sed' command #1](https://www.hackerrank.com/challenges/text-processing-in-linux-the-sed-command-1)|Let's learn about the 'sed' command.|[bash](grep-sed-awk/text-processing-in-linux-the-sed-command-1.sh)|Medium
+['Sed' command #2](https://www.hackerrank.com/challenges/text-processing-in-linux-the-sed-command-2)|Let's learn about the 'sed' command.|[bash](grep-sed-awk/text-processing-in-linux-the-sed-command-2.sh)|Medium
+['Sed' command #3](https://www.hackerrank.com/challenges/text-processing-in-linux-the-sed-command-3)|Let's learn about the 'sed' command.|[bash](grep-sed-awk/text-processing-in-linux-the-sed-command-3.sh)|Easy
 ['Sed' command #4](https://www.hackerrank.com/challenges/sed-command-4)|Let's learn about the 'sed' command.|[bash](grep-sed-awk/sed-command-4.sh)|Hard
 ['Sed' command #5](https://www.hackerrank.com/challenges/sed-command-5)|Let's learn about the 'sed' command.|[bash](grep-sed-awk/sed-command-5.sh)|Hard
 ['Awk' - 1](https://www.hackerrank.com/challenges/awk-1)|Introduction to the 'awk' command in Linux.|[bash](grep-sed-awk/awk-1.sh)|Medium
+['Awk' - 2](https://www.hackerrank.com/challenges/awk-2)|Let's play around with 'awk'.|[bash](grep-sed-awk/awk-2.sh)|Medium
 

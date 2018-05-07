@@ -22,9 +22,19 @@ Name | Preview | Code | Difficulty
 ['Tr' Command #1](https://www.hackerrank.com/challenges/text-processing-tr-1)|Introduction to the 'tr' command.|[bash](text-processing-tr-1.sh)|Easy
 ['Tr' Command #2](https://www.hackerrank.com/challenges/text-processing-tr-2)|Introduction to the 'tr' command.|[bash](text-processing-tr-2.sh)|Easy
 ['Tr' Command #3](https://www.hackerrank.com/challenges/text-processing-tr-3)||[bash](text-processing-tr-3.sh)|Easy
+[Sort Command #1](https://www.hackerrank.com/challenges/text-processing-sort-1)|Introducing the 'sort' command in Linux.|[bash](text-processing-sort-1.sh)|Easy
+[Sort Command #2](https://www.hackerrank.com/challenges/text-processing-sort-2)|Introducing the 'sort' command in Linux.|[bash](text-processing-sort-2.sh)|Easy
+[Sort Command #3](https://www.hackerrank.com/challenges/text-processing-sort-3)|Introducing the 'sort' command in Linux.|[bash](text-processing-sort-3.sh)|Easy
+[Sort Command #4](https://www.hackerrank.com/challenges/text-processing-sort-4)|Playing around with the 'sort' command.|[bash](text-processing-sort-4.sh)|Easy
+[Sort Command #5](https://www.hackerrank.com/challenges/text-processing-sort-5)|Playing around with the 'sort' command.|[bash](text-processing-sort-5.sh)|Easy
+['Sort' command #6](https://www.hackerrank.com/challenges/text-processing-sort-6)|Let's learn about the 'sort' command.|[bash](text-processing-sort-6.sh)|Easy
+['Sort' command #7](https://www.hackerrank.com/challenges/text-processing-sort-7)|Let's learn about the 'sort' command.|[bash](text-processing-sort-7.sh)|Easy
 ['Uniq' Command #1](https://www.hackerrank.com/challenges/text-processing-in-linux-the-uniq-command-1)|Introduction to the 'uniq' command.|[bash](text-processing-in-linux-the-uniq-command-1.sh)|Easy
 ['Uniq' Command #2](https://www.hackerrank.com/challenges/text-processing-in-linux-the-uniq-command-2)|Introduction to the 'uniq' command.|[bash](text-processing-in-linux-the-uniq-command-2.sh)|Easy
 ['Uniq' command #3](https://www.hackerrank.com/challenges/text-processing-in-linux-the-uniq-command-3)|Let's learn about the 'uniq' command.|[bash](text-processing-in-linux-the-uniq-command-3.sh)|Easy
 ['Uniq' command #4](https://www.hackerrank.com/challenges/text-processing-in-linux-the-uniq-command-4)|Let's learn about the 'uniq' command.|[bash](text-processing-in-linux-the-uniq-command-4.sh)|Easy
+[Paste - 3](https://www.hackerrank.com/challenges/paste-3)|Getting started with the 'paste' command.|[bash](paste-3.sh)|Medium
+[Paste - 4](https://www.hackerrank.com/challenges/paste-4)|Getting started with the 'paste' command.|[bash](paste-4.sh)|Medium
+[Paste - 1](https://www.hackerrank.com/challenges/paste-1)|Getting started with the 'paste' command.|[bash](paste-1.sh)|Medium
 [Paste - 2](https://www.hackerrank.com/challenges/paste-2)|Getting started with the 'paste' command.|[bash](paste-2.sh)|Medium
 

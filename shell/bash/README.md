@@ -15,4 +15,5 @@ Name | Preview | Code | Difficulty
 [More on Conditionals](https://www.hackerrank.com/challenges/bash-tutorials---more-on-conditionals)|Three sides of a triangle are provided to you. Is the Triangle Scalene, Equilateral or Isosceles?|[bash](bash-tutorials---more-on-conditionals.sh)|Easy
 [Arithmetic Operations](https://www.hackerrank.com/challenges/bash-tutorials---arithmetic-operations)|Math in shell scripts.|[bash](bash-tutorials---arithmetic-operations.sh)|Medium
 [Compute the Average](https://www.hackerrank.com/challenges/bash-tutorials---compute-the-average)|Compute the average of a list of N numbers provided to you.|[bash](bash-tutorials---compute-the-average.sh)|Medium
+[Functions and Fractals - Recursive Trees - Bash!](https://www.hackerrank.com/challenges/fractal-trees-all)|Create a Fractal Tree|[bash](fractal-trees-all.sh)|Hard
 
