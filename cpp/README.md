@@ -1,5 +1,7 @@
+
 ### [C++](https://www.hackerrank.com/domains/cpp)
 A general-purpose programming language with imperative, object-oriented and generic programming features.
+
 
 #### [Introduction](https://www.hackerrank.com/domains/cpp/cpp-introduction)
 
@@ -14,6 +16,7 @@ Name | Preview | Code | Difficulty
 [Pointer](https://www.hackerrank.com/challenges/c-tutorial-pointer)|Learn how to declare pointers and use them.|[C++](cpp-introduction/c-tutorial-pointer.cpp)|Easy
 [Arrays Introduction](https://www.hackerrank.com/challenges/arrays-introduction)|How to access and use arrays. Print the array in the reverse order.|[C++](cpp-introduction/arrays-introduction.cpp)|Easy
 [Variable Sized Arrays](https://www.hackerrank.com/challenges/variable-sized-arrays)|Find the element described in the query for integer sequences.|[C++](cpp-introduction/variable-sized-arrays.cpp)|Easy
+
 #### [Strings](https://www.hackerrank.com/domains/cpp/cpp-strings)
 
 Name | Preview | Code | Difficulty
@@ -21,6 +24,7 @@ Name | Preview | Code | Difficulty
 [Strings](https://www.hackerrank.com/challenges/c-tutorial-strings)|Learn how to input and output strings.|[C++](cpp-strings/c-tutorial-strings.cpp)|Easy
 [StringStream](https://www.hackerrank.com/challenges/c-tutorial-stringstream)|Learn how to use stringstreams.|[C++](cpp-strings/c-tutorial-stringstream.cpp)|Easy
 [Attribute Parser](https://www.hackerrank.com/challenges/attribute-parser)|Parse the values within various tags.|[C++](cpp-strings/attribute-parser.cpp)|Medium
+
 #### [Classes](https://www.hackerrank.com/domains/cpp/classes)
 
 Name | Preview | Code | Difficulty
@@ -33,6 +37,7 @@ Name | Preview | Code | Difficulty
 [Exceptional Server](https://www.hackerrank.com/challenges/exceptional-server)|Handle server errors.|[C++](classes/exceptional-server.cpp)|Medium
 [Virtual Functions](https://www.hackerrank.com/challenges/virtual-functions)|Learn how to use virtual functions and solve the given problem.|[C++](classes/virtual-functions.cpp)|Medium
 [Abstract Classes - Polymorphism](https://www.hackerrank.com/challenges/abstract-classes-polymorphism)|Given an abstract class Cache, write a class LRUCache which extends the class Cache and implement an LRU cache.|[C++](classes/abstract-classes-polymorphism.cpp)|Hard
+
 #### [STL](https://www.hackerrank.com/domains/cpp/stl)
 
 Name | Preview | Code | Difficulty
@@ -44,6 +49,7 @@ Name | Preview | Code | Difficulty
 [Maps-STL](https://www.hackerrank.com/challenges/cpp-maps)|Learn to use map container. Given some queries, add the marks to a corresponding student, delete a student  and print the marks of a particular student.|[C++](stl/cpp-maps.cpp)|Easy
 [Print Pretty](https://www.hackerrank.com/challenges/prettyprint)|This challenge will test your knowledge of the STL <iomanip> library.|[C++](stl/prettyprint.cpp)|Easy
 [Deque-STL](https://www.hackerrank.com/challenges/deque-stl)|Learn to use deque container. Find the maximum number in each and every contiguous sub array of size K in the given array.|[C++](stl/deque-stl.cpp)|Medium
+
 #### [Inheritance](https://www.hackerrank.com/domains/cpp/inheritance)
 
 Name | Preview | Code | Difficulty
@@ -53,6 +59,7 @@ Name | Preview | Code | Difficulty
 [Multi Level Inheritance ](https://www.hackerrank.com/challenges/multi-level-inheritance-cpp)|Learn what multiple inheritance is and try to solve this problem.|[C++](inheritance/multi-level-inheritance-cpp.cpp)|Easy
 [Accessing Inherited Functions](https://www.hackerrank.com/challenges/accessing-inherited-functions)|Access inherited functions with the same name.|[C++](inheritance/accessing-inherited-functions.cpp)|Medium
 [Magic Spells](https://www.hackerrank.com/challenges/magic-spells)|Identify the correct kind of spell and possibly compare it with your spell journal.|[C++](inheritance/magic-spells.cpp)|Hard
+
 #### [Other Concepts](https://www.hackerrank.com/domains/cpp/other-concepts)
 
 Name | Preview | Code | Difficulty

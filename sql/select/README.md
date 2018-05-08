@@ -1,5 +1,7 @@
+
 ### [SQL](https://www.hackerrank.com/domains/sql)
 A special-purpose language designed for managing data held in a relational database.
+
 
 #### [Basic Select](https://www.hackerrank.com/domains/sql/select)
 

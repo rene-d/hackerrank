@@ -1,5 +1,7 @@
+
 ### [Data Structures](https://www.hackerrank.com/domains/data-structures)
 Data Structures help in elegant representation of data for algorithms
+
 
 #### [Stacks](https://www.hackerrank.com/domains/data-structures/stacks)
 

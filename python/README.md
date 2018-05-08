@@ -1,5 +1,7 @@
+
 ### [Python](https://www.hackerrank.com/domains/python)
 A step by step guide to Python, a language that is easy to pick up yet one of the most powerful.
+
 
 #### [Introduction](https://www.hackerrank.com/domains/python/py-introduction)
 
@@ -12,6 +14,7 @@ Name | Preview | Code | Difficulty
 [Loops](https://www.hackerrank.com/challenges/python-loops)|Practice using "for" and "while" loops in Python.|[Python](py-introduction/python-loops.py)|Easy
 [Write a function](https://www.hackerrank.com/challenges/write-a-function)|Write a function to check if the given year is leap or not|[Python](py-introduction/write-a-function.py)|Medium
 [Print Function](https://www.hackerrank.com/challenges/python-print)|Learn to use print as a function|[Python](py-introduction/python-print.py)|Easy
+
 #### [Basic Data Types](https://www.hackerrank.com/domains/python/py-basic-data-types)
 
 Name | Preview | Code | Difficulty
@@ -22,6 +25,7 @@ Name | Preview | Code | Difficulty
 [Find the Runner-Up Score!  ](https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list)|For a given list of numbers, find the second largest number.|[Python](py-basic-data-types/find-second-maximum-number-in-a-list.py)|Easy
 [Nested Lists](https://www.hackerrank.com/challenges/nested-list)|In a classroom of N students, find the student with the second lowest grade.|[Python](py-basic-data-types/nested-list.py)|Easy
 [Finding the percentage](https://www.hackerrank.com/challenges/finding-the-percentage)|Store a list of students and marks in a dictionary, and find the average marks obtained by a student.|[Python](py-basic-data-types/finding-the-percentage.py)|Easy
+
 #### [Strings](https://www.hackerrank.com/domains/python/py-strings)
 
 Name | Preview | Code | Difficulty
@@ -40,6 +44,7 @@ Name | Preview | Code | Difficulty
 [Capitalize!](https://www.hackerrank.com/challenges/capitalize)|Capitalize Each Word.|[Python](py-strings/capitalize.py)|Easy
 [The Minion Game](https://www.hackerrank.com/challenges/the-minion-game)|Given a string, judge the winner of the minion game.|[Python](py-strings/the-minion-game.py)|Medium
 [Merge the Tools!](https://www.hackerrank.com/challenges/merge-the-tools)|Split a string into subsegments of length $k$, then print each subsegment with any duplicate characters stripped out.|[Python](py-strings/merge-the-tools.py)|Medium
+
 #### [Sets](https://www.hackerrank.com/domains/python/py-sets)
 
 Name | Preview | Code | Difficulty
@@ -57,6 +62,7 @@ Name | Preview | Code | Difficulty
 [The Captain's Room ](https://www.hackerrank.com/challenges/py-the-captains-room)|Out of a list of room numbers, determine the number of the captain's room.|[Python](py-sets/py-the-captains-room.py)|Easy
 [Check Subset](https://www.hackerrank.com/challenges/py-check-subset)|Verify if set A is a subset of set B.|[Python](py-sets/py-check-subset.py)|Easy
 [Check Strict Superset](https://www.hackerrank.com/challenges/py-check-strict-superset)|Check if A is a strict superset of the other given sets.|[Python](py-sets/py-check-strict-superset.py)|Easy
+
 #### [Math](https://www.hackerrank.com/domains/python/py-math)
 
 Name | Preview | Code | Difficulty
@@ -68,6 +74,7 @@ Name | Preview | Code | Difficulty
 [Power - Mod Power](https://www.hackerrank.com/challenges/python-power-mod-power)|Perform modular exponentiation in Python.|[Python](py-math/python-power-mod-power.py)|Easy
 [Integers Come In All Sizes](https://www.hackerrank.com/challenges/python-integers-come-in-all-sizes)|Exercises with big integers in Python.|[Python](py-math/python-integers-come-in-all-sizes.py)|Easy
 [Triangle Quest](https://www.hackerrank.com/challenges/python-quest-1)|Print a numeric triangle of height N-1 using only 2 lines.|[Python](py-math/python-quest-1.py)|Medium
+
 #### [Itertools](https://www.hackerrank.com/domains/python/py-itertools)
 
 Name | Preview | Code | Difficulty
@@ -79,6 +86,7 @@ Name | Preview | Code | Difficulty
 [Compress the String! ](https://www.hackerrank.com/challenges/compress-the-string)|groupby()|[Python](py-itertools/compress-the-string.py)|Medium
 [Iterables and Iterators](https://www.hackerrank.com/challenges/iterables-and-iterators)|Find the probability using itertools.|[Python](py-itertools/iterables-and-iterators.py)|Medium
 [Maximize It!](https://www.hackerrank.com/challenges/maximize-it)|Find the maximum possible value out of the equation provided.|[Python](py-itertools/maximize-it.py)|Hard
+
 #### [Collections](https://www.hackerrank.com/domains/python/py-collections)
 
 Name | Preview | Code | Difficulty
@@ -91,24 +99,28 @@ Name | Preview | Code | Difficulty
 [Collections.deque()](https://www.hackerrank.com/challenges/py-collections-deque)|Perform multiple operations on a double-ended queue or deque.|[Python](py-collections/py-collections-deque.py)|Easy
 [Piling Up!](https://www.hackerrank.com/challenges/piling-up)|Create a vertical pile of cubes.|[Python](py-collections/piling-up.py)|Medium
 [Company Logo](https://www.hackerrank.com/challenges/most-commons)|Print the number of character occurrences in descending order.|[Python](py-collections/most-commons.py)|Medium
+
 #### [Date and Time](https://www.hackerrank.com/domains/python/py-date-time)
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Calendar Module](https://www.hackerrank.com/challenges/calendar-module)|Print the day of a given date.|[Python](py-date-time/calendar-module.py)|Easy
 [Time Delta](https://www.hackerrank.com/challenges/python-time-delta)|Find the absolute time difference.|[Python](py-date-time/python-time-delta.py)|Medium
+
 #### [Errors and Exceptions](https://www.hackerrank.com/domains/python/errors-exceptions)
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Exceptions](https://www.hackerrank.com/challenges/exceptions)|Handle errors detected during execution.|[Python](errors-exceptions/exceptions.py)|Easy
 [Incorrect Regex](https://www.hackerrank.com/challenges/incorrect-regex)|Check whether the regex is valid or not.|[Python](errors-exceptions/incorrect-regex.py)|Easy
+
 #### [Classes](https://www.hackerrank.com/domains/python/py-classes)
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Classes: Dealing with Complex Numbers](https://www.hackerrank.com/challenges/class-1-dealing-with-complex-numbers)|Create a new data type for complex numbers.|[Python](py-classes/class-1-dealing-with-complex-numbers.py)|Medium
 [Class 2 - Find the Torsional Angle](https://www.hackerrank.com/challenges/class-2-find-the-torsional-angle)|Find the angle between two planes.|[Python](py-classes/class-2-find-the-torsional-angle.py)|Easy
+
 #### [Built-Ins](https://www.hackerrank.com/domains/python/py-built-ins)
 
 Name | Preview | Code | Difficulty
@@ -119,6 +131,7 @@ Name | Preview | Code | Difficulty
 [Athlete Sort](https://www.hackerrank.com/challenges/python-sort-sort)|Sort the table on the kth attribute.|[Python](py-built-ins/python-sort-sort.py)|Medium
 [Any or All](https://www.hackerrank.com/challenges/any-or-all)|Return True, if any of the iterable is true or if all of it is true using the any() and all() expressions.|[Python](py-built-ins/any-or-all.py)|Easy
 [ginortS](https://www.hackerrank.com/challenges/ginorts)|An uneasy sort.|[Python](py-built-ins/ginorts.py)|Medium
+
 #### [Python Functionals](https://www.hackerrank.com/domains/python/py-functionals)
 
 Name | Preview | Code | Difficulty
@@ -126,6 +139,7 @@ Name | Preview | Code | Difficulty
 [Map and Lambda Function](https://www.hackerrank.com/challenges/map-and-lambda-expression)|This challenge covers the basic concept of maps and lambda expressions.|[Python](py-functionals/map-and-lambda-expression.py)|Easy
 [Validating Email Addresses With a Filter ](https://www.hackerrank.com/challenges/validate-list-of-email-address-with-filter)|This question covers the concept of filters.|[Python](py-functionals/validate-list-of-email-address-with-filter.py)|Medium
 [Reduce Function](https://www.hackerrank.com/challenges/reduce-function)|Python Practice|[Python](py-functionals/reduce-function.py)|Medium
+
 #### [Regex and Parsing](https://www.hackerrank.com/domains/python/py-regex)
 
 Name | Preview | Code | Difficulty
@@ -147,18 +161,21 @@ Name | Preview | Code | Difficulty
 [Validating Credit Card Numbers](https://www.hackerrank.com/challenges/validating-credit-card-number)|Verify whether credit card numbers are valid or not.|[Python](py-regex/validating-credit-card-number.py)|Medium
 [Validating Postal Codes](https://www.hackerrank.com/challenges/validating-postalcode)|Verify if the postal code is valid or invalid.|[Python](py-regex/validating-postalcode.py)|Hard
 [Matrix Script](https://www.hackerrank.com/challenges/matrix-script)|Decode the Matrix.|[Python](py-regex/matrix-script.py)|Hard
+
 #### [XML](https://www.hackerrank.com/domains/python/xml)
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [XML 1 - Find the Score](https://www.hackerrank.com/challenges/xml-1-find-the-score)|Learn about XML parsing in Python.|[Python](xml/xml-1-find-the-score.py)|Easy
 [XML2 - Find the Maximum Depth](https://www.hackerrank.com/challenges/xml2-find-the-maximum-depth)|Find the maximum depth in an XML document.|[Python](xml/xml2-find-the-maximum-depth.py)|Easy
+
 #### [Closures and Decorators](https://www.hackerrank.com/domains/python/closures-and-decorators)
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Standardize Mobile Number Using Decorators](https://www.hackerrank.com/challenges/standardize-mobile-number-using-decorators)|Use decorators to standardize mobile numbers.|[Python](closures-and-decorators/standardize-mobile-number-using-decorators.py)|Easy
 [Decorators 2 - Name Directory](https://www.hackerrank.com/challenges/decorators-2-name-directory)|Use decorators to build a name directory.|[Python](closures-and-decorators/decorators-2-name-directory.py)|Easy
+
 #### [Numpy](https://www.hackerrank.com/domains/python/numpy)
 
 Name | Preview | Code | Difficulty

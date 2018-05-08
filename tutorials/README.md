@@ -1,4 +1,6 @@
+
 ### [Tutorials](https://www.hackerrank.com/domains/tutorials)
+
 
 #### [30 Days of Code](https://www.hackerrank.com/domains/tutorials/30-days-of-code)
 
@@ -34,6 +36,7 @@ Name | Preview | Code | Difficulty
 [Day 27: Testing](https://www.hackerrank.com/challenges/30-testing)|Welcome to Day 27! Review testing in this challenge!|[Python](30-days-of-code/30-testing.py)|Easy
 [Day 28: RegEx, Patterns, and Intro to Databases](https://www.hackerrank.com/challenges/30-regex-patterns)|Review Pattern documentation and start using Regular Expressions|[Python](30-days-of-code/30-regex-patterns.py)|Medium
 [Day 29: Bitwise AND](https://www.hackerrank.com/challenges/30-bitwise-and)|Apply everything we've learned in this bitwise AND challenge.|[C++](30-days-of-code/30-bitwise-and.cpp)|Medium
+
 #### [Cracking the Coding Interview](https://www.hackerrank.com/domains/tutorials/cracking-the-coding-interview)
 
 Name | Preview | Code | Difficulty

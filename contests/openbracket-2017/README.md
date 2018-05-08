@@ -1,3 +1,4 @@
+
 ### [OpenBracket Delaware - Online Trials](https://www.hackerrank.com/contests/openbracket-2017)
 Participate and win in OpenBracket's CodeSprint to qualify for the championships!
 

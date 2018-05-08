@@ -1,3 +1,4 @@
+
 ### [OpenBracket Delaware - Online Trials](https://www.hackerrank.com/contests/openbracket-2017)
 Participate and win in OpenBracket's CodeSprint to qualify for the championships!
 
@@ -5,6 +6,7 @@ Participate and win in OpenBracket's CodeSprint to qualify for the championships
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Hogwarts Email Address](https://www.hackerrank.com/challenges/because-owlery-is-too-lazy)|You have to determine whether the given string is a valid email address or not.|[Python](openbracket-2017/because-owlery-is-too-lazy.py)|Easy
+
 ### [ProjectEuler+](https://www.hackerrank.com/contests/projecteuler)
 HackerRank brings you the fun of solving Projecteuler challenges with hidden test cases and time limit.<br>
 
@@ -20,8 +22,10 @@ HackerRank brings you the fun of solving Projecteuler challenges with hidden tes
 [Project Euler #3: Largest prime factor](https://www.hackerrank.com/challenges/euler003)|Figuring out prime numbers, factors, and then both of them together!|[C++](projecteuler/euler003.cpp)|Easy
 [Project Euler #2: Even Fibonacci numbers](https://www.hackerrank.com/challenges/euler002)|Even Fibonacci numbers|[C++](projecteuler/euler002.cpp)|Easy
 [Project Euler #1: Multiples of 3 and 5](https://www.hackerrank.com/challenges/euler001)|Multiples of 3 and 5|[Python](projecteuler/euler001.py)|Easy
+
 ### [Mathematics](https://www.hackerrank.com/domains/mathematics)
 Without mathematics, there's nothing you can do. Everything around you is mathematics. Everything around you is numbers.
+
 
 #### [Fundamentals](https://www.hackerrank.com/domains/mathematics/fundamentals)
 
@@ -29,6 +33,7 @@ Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Sherlock and Moving Tiles](https://www.hackerrank.com/challenges/sherlock-and-moving-tiles)|Help Sherlock in identifying the overlapping area.|[Python](infinitum10/sherlock-and-moving-tiles.py)|Easy
 [Even Odd Query](https://www.hackerrank.com/challenges/even-odd-query)|Is the number odd or even?|[Python](w5/even-odd-query.py)|Hard
+
 #### [Number Theory](https://www.hackerrank.com/domains/mathematics/number-theory)
 
 Name | Preview | Code | Difficulty

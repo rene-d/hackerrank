@@ -1,5 +1,7 @@
+
 ### [Data Structures](https://www.hackerrank.com/domains/data-structures)
 Data Structures help in elegant representation of data for algorithms
+
 
 #### [Arrays](https://www.hackerrank.com/domains/data-structures/arrays)
 
@@ -11,6 +13,7 @@ Name | Preview | Code | Difficulty
 [Left Rotation](https://www.hackerrank.com/challenges/array-left-rotation)|Given an array and a number, d, perform d left rotations on the array.|[Python](arrays/array-left-rotation.py)|Easy
 [Sparse Arrays](https://www.hackerrank.com/challenges/sparse-arrays)|Determine the number of times a string has previously appeared.|[Python](arrays/sparse-arrays.py)|Medium
 [Array Manipulation](https://www.hackerrank.com/challenges/crush)|Perform m operations on an array and print the maximum of the values.|[Python](arrays/crush.py)|Hard
+
 #### [Linked Lists](https://www.hackerrank.com/domains/data-structures/linked-lists)
 
 Name | Preview | Code | Difficulty
@@ -30,6 +33,7 @@ Name | Preview | Code | Difficulty
 [Find Merge Point of Two Lists](https://www.hackerrank.com/challenges/find-the-merge-point-of-two-joined-linked-lists)|Given two linked lists, find the node where they merge into one.|[C++](linked-lists/find-the-merge-point-of-two-joined-linked-lists.cpp)|Easy
 [Inserting a Node Into a Sorted Doubly Linked List](https://www.hackerrank.com/challenges/insert-a-node-into-a-sorted-doubly-linked-list)|Create a node with a given value and insert it into a sorted doubly-linked list|[C++](linked-lists/insert-a-node-into-a-sorted-doubly-linked-list.cpp)|Easy
 [Reverse a doubly linked list](https://www.hackerrank.com/challenges/reverse-a-doubly-linked-list)|Given the head node of a doubly linked list, reverse it.|[Python](linked-lists/reverse-a-doubly-linked-list.py)|Easy
+
 #### [Trees](https://www.hackerrank.com/domains/data-structures/trees)
 
 Name | Preview | Code | Difficulty
@@ -44,6 +48,7 @@ Name | Preview | Code | Difficulty
 [Tree: Huffman Decoding ](https://www.hackerrank.com/challenges/tree-huffman-decoding)|Given a Huffman tree and an encoded binary string, you have to print the original string.|[C++](trees/tree-huffman-decoding.cpp)|Medium
 [Binary Search Tree : Lowest Common Ancestor](https://www.hackerrank.com/challenges/binary-search-tree-lowest-common-ancestor)|Given two nodes of a binary search tree, find the lowest common ancestor of these two nodes.|[C++](trees/binary-search-tree-lowest-common-ancestor.cpp)|Easy
 [Array Pairs](https://www.hackerrank.com/challenges/array-pairs)|Count the number of pairs satisfying a condition.|[Python](trees/array-pairs.py)|Advanced
+
 #### [Stacks](https://www.hackerrank.com/domains/data-structures/stacks)
 
 Name | Preview | Code | Difficulty
@@ -52,11 +57,13 @@ Name | Preview | Code | Difficulty
 [Balanced Brackets](https://www.hackerrank.com/challenges/balanced-brackets)|Given a string containing three types of brackets, determine if it is balanced.|[Python](stacks/balanced-brackets.py)|Medium
 [Equal Stacks](https://www.hackerrank.com/challenges/equal-stacks)|Equalize the piles!|[Python](stacks/equal-stacks.py)|Easy
 [Largest Rectangle ](https://www.hackerrank.com/challenges/largest-rectangle)|Given n buildings, find the largest rectangular area possible by joining consecutive K buildings.|[Python](stacks/largest-rectangle.py)|Medium
+
 #### [Queues](https://www.hackerrank.com/domains/data-structures/queues)
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Queue using Two Stacks](https://www.hackerrank.com/challenges/queue-using-two-stacks)|Create a queue data structure using two stacks.|[Python](queues/queue-using-two-stacks.py)|Medium
+
 #### [Heap](https://www.hackerrank.com/domains/data-structures/heap)
 
 Name | Preview | Code | Difficulty
@@ -64,6 +71,7 @@ Name | Preview | Code | Difficulty
 [QHEAP1](https://www.hackerrank.com/challenges/qheap1)|Solve the basic heap question with insertion and deletion.|[Python](heap/qheap1.py)|Easy
 [Jesse and Cookies](https://www.hackerrank.com/challenges/jesse-and-cookies)|Calculate the number of operations needed to increase the sweetness of the cookies so that each cookie in the collection has a sweetness >=K.|[Python](heap/jesse-and-cookies.py)|Easy
 [Find the Running Median](https://www.hackerrank.com/challenges/find-the-running-median)|Find the median of the elements after inputting each element.|[Python](heap/find-the-running-median.py)|Hard
+
 #### [Trie](https://www.hackerrank.com/domains/data-structures/trie)
 
 Name | Preview | Code | Difficulty

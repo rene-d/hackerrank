@@ -1,5 +1,7 @@
+
 ### [Linux Shell](https://www.hackerrank.com/domains/shell)
 Bash and command-line tools can be very powerful. Test your Linux scripting skills.
+
 
 #### [Bash](https://www.hackerrank.com/domains/shell/bash)
 
@@ -16,6 +18,7 @@ Name | Preview | Code | Difficulty
 [Arithmetic Operations](https://www.hackerrank.com/challenges/bash-tutorials---arithmetic-operations)|Math in shell scripts.|[bash](bash/bash-tutorials---arithmetic-operations.sh)|Medium
 [Compute the Average](https://www.hackerrank.com/challenges/bash-tutorials---compute-the-average)|Compute the average of a list of N numbers provided to you.|[bash](bash/bash-tutorials---compute-the-average.sh)|Medium
 [Functions and Fractals - Recursive Trees - Bash!](https://www.hackerrank.com/challenges/fractal-trees-all)|Create a Fractal Tree|[bash](bash/fractal-trees-all.sh)|Hard
+
 #### [Text Processing](https://www.hackerrank.com/domains/shell/textpro)
 
 Name | Preview | Code | Difficulty
@@ -52,6 +55,7 @@ Name | Preview | Code | Difficulty
 [Paste - 4](https://www.hackerrank.com/challenges/paste-4)|Getting started with the 'paste' command.|[bash](textpro/paste-4.sh)|Medium
 [Paste - 1](https://www.hackerrank.com/challenges/paste-1)|Getting started with the 'paste' command.|[bash](textpro/paste-1.sh)|Medium
 [Paste - 2](https://www.hackerrank.com/challenges/paste-2)|Getting started with the 'paste' command.|[bash](textpro/paste-2.sh)|Medium
+
 #### [Arrays in Bash](https://www.hackerrank.com/domains/shell/arrays-in-bash)
 
 Name | Preview | Code | Difficulty
@@ -64,6 +68,7 @@ Name | Preview | Code | Difficulty
 [Count the number of elements in an Array](https://www.hackerrank.com/challenges/bash-tutorials-count-the-number-of-elements-in-an-array)|Read in an Array - and count the number of elements in it.|[bash](arrays-in-bash/bash-tutorials-count-the-number-of-elements-in-an-array.sh)|Easy
 [Remove the First Capital Letter from Each Element](https://www.hackerrank.com/challenges/bash-tutorials-remove-the-first-capital-letter-from-each-array-element)|The first capital letter in each element should be replaced with a dot ('.').|[bash](arrays-in-bash/bash-tutorials-remove-the-first-capital-letter-from-each-array-element.sh)|Medium
 [Lonely Integer - Bash!](https://www.hackerrank.com/challenges/lonely-integer-2)|Find the integer that occurs only once in the Array|[bash](arrays-in-bash/lonely-integer-2.sh)|Hard
+
 #### [Grep Sed Awk](https://www.hackerrank.com/domains/shell/grep-sed-awk)
 
 Name | Preview | Code | Difficulty

@@ -57,4 +57,4 @@ A solution can be tested solely with `runtest.sh -t challenge-name [-n test-numb
 
 ### IDE
 
-[Visual Studio Code](https://code.visualstudio.com) is a great free IDE that comes with many [plugins](https://marketplace.visualstudio.com/vscode). Some configuration files are provided
+[Visual Studio Code](https://code.visualstudio.com) is a great free IDE that comes with many [plugins](https://marketplace.visualstudio.com/vscode). Some configuration files are provided.

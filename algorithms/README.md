@@ -1,5 +1,7 @@
+
 ### [Algorithms](https://www.hackerrank.com/domains/algorithms)
 The true test of problem solving: when one realizes that time and memory aren't infinite.
+
 
 
 #### [Warmup](https://www.hackerrank.com/domains/algorithms/warmup)
@@ -16,6 +18,7 @@ Name | Preview | Code | Difficulty
 [Mini-Max Sum](https://www.hackerrank.com/challenges/mini-max-sum)|Find the maximum and minimum values obtained by summing four of five integers.|[Python](warmup/mini-max-sum.py)|Easy
 [Birthday Cake Candles](https://www.hackerrank.com/challenges/birthday-cake-candles)|Determine the number of candles that are blown out.|[Python](warmup/birthday-cake-candles.py)|Easy
 [Time Conversion](https://www.hackerrank.com/challenges/time-conversion)|Convert time from an AM/PM format to a 24 hour format.|[Python](warmup/time-conversion.py)|Easy
+
 #### [Implementation](https://www.hackerrank.com/domains/algorithms/implementation)
 
 Name | Preview | Code | Difficulty
@@ -83,6 +86,7 @@ Name | Preview | Code | Difficulty
 [Ema's Supercomputer](https://www.hackerrank.com/challenges/two-pluses)|Determine the product of the areas of two pluses on a grid.|[C++](implementation/two-pluses.cpp)|Medium
 [Almost Sorted](https://www.hackerrank.com/challenges/almost-sorted)|Sort an array by either swapping or reversing a segment|[Python](implementation/almost-sorted.py)|Medium
 [Matrix Layer Rotation ](https://www.hackerrank.com/challenges/matrix-rotation-algo)|Rotate the matrix R times and print the resultant matrix.|[Python](implementation/matrix-rotation-algo.py)|Hard
+
 #### [Strings](https://www.hackerrank.com/domains/algorithms/strings)
 
 Name | Preview | Code | Difficulty
@@ -114,6 +118,7 @@ Name | Preview | Code | Difficulty
 [Sherlock and Anagrams](https://www.hackerrank.com/challenges/sherlock-and-anagrams)|Find the number of unordered anagramic pairs of substrings of a string.|[Python](strings/sherlock-and-anagrams.py)|Medium
 [Common Child](https://www.hackerrank.com/challenges/common-child)|Given two strings a and b of equal length, what's the longest string (s) that can be constructed such that s is a child to both a and b?|[C++](strings/common-child.cpp) [Python](strings/common-child.py)|Medium
 [Morgan and a String](https://www.hackerrank.com/challenges/morgan-and-a-string)|Find the lexicographically minimal string that can be formed by the combination of two strings.|[C](strings/morgan-and-a-string.c)|Expert
+
 #### [Sorting](https://www.hackerrank.com/domains/algorithms/arrays-and-sorting)
 
 Name | Preview | Code | Difficulty
@@ -130,6 +135,7 @@ Name | Preview | Code | Difficulty
 [Closest Numbers](https://www.hackerrank.com/challenges/closest-numbers)|Find the closest numbers in a list.|[Python](arrays-and-sorting/closest-numbers.py)|Easy
 [Find the Median](https://www.hackerrank.com/challenges/find-the-median)|Find the Median in a list of numbers.|[Python](arrays-and-sorting/find-the-median.py)|Easy
 [Insertion Sort Advanced Analysis](https://www.hackerrank.com/challenges/insertion-sort)|How many shifts will it take Insertion Sort to sort an array?|[C++](arrays-and-sorting/insertion-sort.cpp) [Python](arrays-and-sorting/insertion-sort.py)|Advanced
+
 #### [Search](https://www.hackerrank.com/domains/algorithms/search)
 
 Name | Preview | Code | Difficulty
@@ -138,6 +144,7 @@ Name | Preview | Code | Difficulty
 [Ice Cream Parlor](https://www.hackerrank.com/challenges/icecream-parlor)|Help Sunny and Johnny spend all their money during each trip to the Ice Cream Parlor.|[Python](search/icecream-parlor.py)|Easy
 [Missing Numbers](https://www.hackerrank.com/challenges/missing-numbers)|Find the numbers missing from a sequence given a permutation of the original sequence|[Python](search/missing-numbers.py)|Easy
 [Pairs](https://www.hackerrank.com/challenges/pairs)|Given N numbers, count the total pairs of numbers that have a difference of K.|[Python](search/pairs.py)|Medium
+
 #### [Greedy](https://www.hackerrank.com/domains/algorithms/greedy)
 
 Name | Preview | Code | Difficulty
@@ -148,11 +155,13 @@ Name | Preview | Code | Difficulty
 [Maximum Perimeter Triangle](https://www.hackerrank.com/challenges/maximum-perimeter-triangle)|Find the triangle having the maximum perimeter.|[C++](greedy/maximum-perimeter-triangle.cpp)|Easy
 [Beautiful Pairs](https://www.hackerrank.com/challenges/beautiful-pairs)|Change an element of B and calculate the number of pairwise disjoint beautiful pairs.|[Python](greedy/beautiful-pairs.py)|Easy
 [Sherlock and The Beast](https://www.hackerrank.com/challenges/sherlock-and-the-beast)|Find the largest number following some rules having N digits.|[Python](greedy/sherlock-and-the-beast.py)|Easy
+
 #### [Dynamic Programming](https://www.hackerrank.com/domains/algorithms/dynamic-programming)
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [The Longest Increasing Subsequence](https://www.hackerrank.com/challenges/longest-increasing-subsequent)|Find the length of the longest increase subsequence in a given array.|[C++](dynamic-programming/longest-increasing-subsequent.cpp)|Advanced
+
 #### [Bit Manipulation](https://www.hackerrank.com/domains/algorithms/bit-manipulation)
 
 Name | Preview | Code | Difficulty
@@ -162,6 +171,7 @@ Name | Preview | Code | Difficulty
 [Counter game](https://www.hackerrank.com/challenges/counter-game)|Louise and Richard play a game, find the winner of the game.|[Python](bit-manipulation/counter-game.py)|Medium
 [A or B](https://www.hackerrank.com/challenges/aorb)|A or B = C|[Python](bit-manipulation/aorb.py)|Medium
 [Hamming Distance](https://www.hackerrank.com/challenges/hamming-distance)|You are given a string S, consisting of N small latin letters 'a'  and 'b'. Process the given M queries.|[C++](bit-manipulation/hamming-distance.cpp)|Expert
+
 #### [Game Theory](https://www.hackerrank.com/domains/algorithms/game-theory)
 
 Name | Preview | Code | Difficulty

@@ -1,5 +1,7 @@
+
 ### [Mathematics](https://www.hackerrank.com/domains/mathematics)
 Without mathematics, there's nothing you can do. Everything around you is mathematics. Everything around you is numbers.
+
 
 #### [Linear Algebra Foundations](https://www.hackerrank.com/domains/mathematics/linear-algebra-foundations)
 

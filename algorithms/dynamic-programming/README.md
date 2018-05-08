@@ -1,5 +1,7 @@
+
 ### [Algorithms](https://www.hackerrank.com/domains/algorithms)
 The true test of problem solving: when one realizes that time and memory aren't infinite.
+
 
 
 #### [Dynamic Programming](https://www.hackerrank.com/domains/algorithms/dynamic-programming)

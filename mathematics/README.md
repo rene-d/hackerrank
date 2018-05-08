@@ -1,5 +1,7 @@
+
 ### [Mathematics](https://www.hackerrank.com/domains/mathematics)
 Without mathematics, there's nothing you can do. Everything around you is mathematics. Everything around you is numbers.
+
 
 #### [Fundamentals](https://www.hackerrank.com/domains/mathematics/fundamentals)
 
@@ -36,6 +38,7 @@ Name | Preview | Code | Difficulty
 [Most Distant](https://www.hackerrank.com/challenges/most-distant)|Measure the gap between the two most distant coordinates.|[Python](fundamentals/most-distant.py)|Easy
 [Jim and the Jokes](https://www.hackerrank.com/challenges/jim-and-the-jokes)|Jim is running out of jokes! Help him finding new jokes.|[Python](fundamentals/jim-and-the-jokes.py)|Medium
 [Possible Path](https://www.hackerrank.com/challenges/possible-path)|Help Adam in reaching at aa particular point.|[Python](fundamentals/possible-path.py)|Easy
+
 #### [Number Theory](https://www.hackerrank.com/domains/mathematics/number-theory)
 
 Name | Preview | Code | Difficulty
@@ -47,6 +50,7 @@ Name | Preview | Code | Difficulty
 [Fibonacci Finding (easy)](https://www.hackerrank.com/challenges/fibonacci-finding-easy)|Find some Fibonacci numbers!|[Python](number-theory/fibonacci-finding-easy.py)|Easy
 [Little Panda Power](https://www.hackerrank.com/challenges/littlepandapower)|Compute A^B mod X|[Python](number-theory/littlepandapower.py)|Hard
 [Minimal Distance to Pi](https://www.hackerrank.com/challenges/minimal-distance-to-pi)|Given a range of denominators, find the common fraction that best approximates Pi.|[Python](number-theory/minimal-distance-to-pi.py)|Hard
+
 #### [Combinatorics](https://www.hackerrank.com/domains/mathematics/combinatorics)
 
 Name | Preview | Code | Difficulty
@@ -55,6 +59,7 @@ Name | Preview | Code | Difficulty
 [Building a List](https://www.hackerrank.com/challenges/building-a-list)|Generate all possible combinations of a string|[Python](combinatorics/building-a-list.py)|Medium
 [Merge List](https://www.hackerrank.com/challenges/merge-list)|Help Shashank in merging two list.|[Python](combinatorics/merge-list.py)|Medium
 [A Chocolate Fiesta](https://www.hackerrank.com/challenges/a-chocolate-fiesta)|Find the number of even subsets in the given set of numbers.|[Python](combinatorics/a-chocolate-fiesta.py)|Easy
+
 #### [Algebra](https://www.hackerrank.com/domains/mathematics/algebra)
 
 Name | Preview | Code | Difficulty
@@ -68,6 +73,7 @@ Name | Preview | Code | Difficulty
 [Pythagorean Triple](https://www.hackerrank.com/challenges/pythagorean-triple)|Find the Pythagorean triple for the given side a.|[Python](algebra/pythagorean-triple.py)|Easy
 [Number Groups](https://www.hackerrank.com/challenges/number-groups)|Find the sum of consecutive odd number groups.|[Python](algebra/number-groups.py)|Easy
 [Manasa and Sub-sequences ](https://www.hackerrank.com/challenges/manasa-and-sub-sequences)|Help Manasa in getting candies|[Python](algebra/manasa-and-sub-sequences.py)|Medium
+
 #### [Geometry](https://www.hackerrank.com/domains/mathematics/geometry)
 
 Name | Preview | Code | Difficulty
@@ -76,6 +82,7 @@ Name | Preview | Code | Difficulty
 [Rectangular Game](https://www.hackerrank.com/challenges/rectangular-game)|What's the largest number in the rectangular grid?|[Python](geometry/rectangular-game.py)|Easy
 [Sherlock and Counting](https://www.hackerrank.com/challenges/sherlock-and-counting)|Help Sherlock count numbers satisfying an inequality.|[Python](geometry/sherlock-and-counting.py)|Easy
 [Baby Step, Giant Step](https://www.hackerrank.com/challenges/baby-step-giant-step)|Find the minimum number of steps needed to get to point $(d, 0)$.|[Python](geometry/baby-step-giant-step.py)|Medium
+
 #### [Linear Algebra Foundations](https://www.hackerrank.com/domains/mathematics/linear-algebra-foundations)
 
 Name | Preview | Code | Difficulty
