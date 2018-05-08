@@ -51,8 +51,8 @@ Node* MergeLists(Node *headA, Node* headB)
 
     if (headA == NULL && headB == NULL) return NULL;
 
-    Node *headC;
-    Node *node;
+    Node *headC = NULL;
+    Node *node = NULL;
     Node *prev = NULL;
 
     while (headA != NULL || headB != NULL)
@@ -94,7 +94,10 @@ Node* MergeLists(Node *headA, Node* headB)
         }
     }
 
-    node->next = NULL;
+    // gcc 4.8.4 ne "voit" pas que le while est toujours exécuté, et renvoie un warning -Wmaybe-uninitialized
+    // les versions plus récentes et clang sont plus intelligentes !
+    if (node != NULL)
+        node->next = NULL;
 
     return headC;
 }
