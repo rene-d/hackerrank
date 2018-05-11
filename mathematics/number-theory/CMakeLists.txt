@@ -10,6 +10,4 @@ add_hackerrank_py(john-and-gcd-list.py)
 add_hackerrank_py(easy-gcd-1.py)
 add_hackerrank_py(the-chosen-one.py)
 add_hackerrank_py(power-of-large-numbers.py)
-
-set(HACKERRANK_CONTEST infinitum-apr14)
 add_hackerrank_py(manasa-and-factorials.py)

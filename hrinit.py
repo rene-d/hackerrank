@@ -55,9 +55,11 @@ class HackerRankParser():
 
             if m['contest_slug'] == "master":
                 self.url = "https://www.hackerrank.com/challenges/{}/problem".format(self.key)
+                self.url2 = None
 
                 if 'primary_contest' in m:
-                    self.url2 = "https://www.hackerrank.com/contests/{}/challenges/{}".format(m['primary_contest']['slug'], self.key)  # noqa
+                    if m['primary_contest'] and 'slug' in m['primary_contest']:
+                        self.url2 = "https://www.hackerrank.com/contests/{}/challenges/{}".format(m['primary_contest']['slug'], self.key)  # noqa
 
             else:
                 self.url = "https://www.hackerrank.com/contests/{}/challenges/{}".format(self.contest, self.key)  # noqa
@@ -94,6 +96,8 @@ class HackerRankParser():
                     lang = 'haskell'
                 elif 'bash' in languages:
                     lang = 'bash'
+                elif 'oracle' in languages:
+                    lang = 'oracle'
                 else:
                     print("Cannot choose a language:", ' '.join(languages))
                     return
@@ -245,7 +249,7 @@ class HackerRankParser():
                                    "offline", dest_dir, self.contest,
                                    self.key + suffix)
             if not overwrite and os.path.exists(offline):
-                print("link", offline, testcase_file)
+                print("link", os.path.relpath(offline), os.path.relpath(testcase_file))
                 os.link(offline, testcase_file)
                 pass
             else:
@@ -270,12 +274,14 @@ class HackerRankParser():
                             pass
 
     def downloads(self, overwrite=False):
-        self.download(overwrite=overwrite)
-        self.download(dest_dir="statements",
-                      url="download_pdf?language=English",
-                      suffix=".pdf",
-                      content_type="application/pdf",
-                      overwrite=overwrite)
+        if True:
+            self.download(overwrite=overwrite)
+        if False:
+            self.download(dest_dir="statements",
+                        url="download_pdf?language=English",
+                        suffix=".pdf",
+                        content_type="application/pdf",
+                        overwrite=overwrite)
 
 
 def main():

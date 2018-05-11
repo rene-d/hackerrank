@@ -3,7 +3,7 @@
 source /etc/profile
 source ~/.bash_profile
 
-PROJECT_HOME=$PWD
+PROJECT_HOME="$PWD"
 
 alias cdd='cd "${PROJECT_HOME}"'
 

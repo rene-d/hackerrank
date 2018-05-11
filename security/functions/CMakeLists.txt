@@ -1,0 +1,6 @@
+add_hackerrank(security-function-ii security-function-ii.cpp)
+add_hackerrank(security-tutorial-functions security-tutorial-functions.cpp)
+add_hackerrank(security-bijective-functions security-bijective-functions.cpp)
+add_hackerrank(security-inverse-of-a-function security-inverse-of-a-function.cpp)
+add_hackerrank(security-tutorial-permutations security-tutorial-permutations.cpp)
+add_hackerrank(security-involution security-involution.cpp)
