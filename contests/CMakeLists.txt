@@ -1,8 +1,4 @@
 add_subdirectory(projecteuler)
 add_subdirectory(openbracket-2017)
-add_subdirectory(infinitum10)
-add_subdirectory(infinitum18)
-add_subdirectory(101hack38)
-add_subdirectory(101hack45)
-add_subdirectory(101nov13)
 add_subdirectory(womens-codesprint-3)
+

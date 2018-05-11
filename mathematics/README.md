@@ -24,7 +24,7 @@ Name | Preview | Code | Difficulty
 [Diwali Lights](https://www.hackerrank.com/challenges/diwali-lights)|Number of ways to light the room|[Python](fundamentals/diwali-lights.py)|Medium
 [Sherlock and Divisors](https://www.hackerrank.com/challenges/sherlock-and-divisors)|Help Sherlock in Counting Divisors.|[Python](fundamentals/sherlock-and-divisors.py)|Easy
 [Sherlock and Permutations](https://www.hackerrank.com/challenges/sherlock-and-permutations)|Help Sherlock in counting permutations.|[Python](fundamentals/sherlock-and-permutations.py)|Hard
-[Even Odd Query](https://www.hackerrank.com/challenges/even-odd-query)|Is the number odd or even?|[C++](fundamentals/even-odd-query.cpp)|Hard
+[Even Odd Query](https://www.hackerrank.com/challenges/even-odd-query)|Is the number odd or even?|[C++](fundamentals/even-odd-query.cpp) [Python](fundamentals/even-odd-query.py)|Hard
 [Special Multiple](https://www.hackerrank.com/challenges/special-multiple)|Can you find the least positive integer that is made of only 0s and 9s? - 30 Points|[C](fundamentals/special-multiple.c) [Python](fundamentals/special-multiple.py)|Medium
 [Matrix Tracing](https://www.hackerrank.com/challenges/matrix-tracing)|How many ways can you trace a given matrix? - 30 Points|[Python](fundamentals/matrix-tracing.py)|Hard
 [Die Hard 3](https://www.hackerrank.com/challenges/die-hard-3)|Help Bruce and Samuel save the city by solving their puzzle|[Python](fundamentals/die-hard-3.py)|Medium
