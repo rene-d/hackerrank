@@ -4,16 +4,6 @@
 # https://www.hackerrank.com/challenges/lowest-triangle/problem
 #
 
-
-def lowestTriangle(base, area):
-    # Complete this function
-    h = area / base * 2
-    if int(h) == h:
-        return int(h)
-    else:
-        return int(h) + 1
-
-base, area = input().strip().split(' ')
-base, area = [int(base), int(area)]
-height = lowestTriangle(base, area)
+base, area = map(int, input().split())
+height = (2 * area - 1) // base + 1
 print(height)

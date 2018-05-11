@@ -40,12 +40,12 @@ class HackerRankParser():
             self.model = m = data['model']
 
             if m['track'] is None:
-                if "primary_contest" in m:
-                    self.path = os.path.join("contests", m["primary_contest"]["slug"])
-                    self.path_name = "{}".format(m["primary_contest"]["name"])
-                else:
-                    self.path = os.path.join("contests", m["contest_slug"])
-                    self.path_name = m['contest_name']
+                # if "primary_contest" in m:
+                #     self.path = os.path.join("contests", m["primary_contest"]["slug"])
+                #     self.path_name = "{}".format(m["primary_contest"]["name"])
+                # else:
+                self.path = os.path.join("contests", m["contest_slug"])
+                self.path_name = "{}".format(m["primary_contest"]["name"])
             else:
                 self.path = os.path.join(m["track"]["track_slug"], m["track"]["slug"])
                 self.path_name = "{} > {}".format(m["track"]["track_name"], m["track"]["name"])
@@ -54,9 +54,15 @@ class HackerRankParser():
             self.key = m['slug']
 
             if m['contest_slug'] == "master":
-                self.link = "https://www.hackerrank.com/challenges/{}/problem".format(self.key)
+                self.url = "https://www.hackerrank.com/challenges/{}/problem".format(self.key)
+
+                if 'primary_contest' in m:
+                    self.url2 = "https://www.hackerrank.com/contests/{}/challenges/{}".format(m['primary_contest']['slug'], self.key)  # noqa
+
             else:
-                self.link = "https://www.hackerrank.com/contests/{}/challenges/{}".format(self.contest, self.key)  # noqa
+                self.url = "https://www.hackerrank.com/contests/{}/challenges/{}".format(self.contest, self.key)  # noqa
+                self.url2 = None
+
 
     def info(self):
         print("key     :", self.model['slug'])
@@ -133,7 +139,9 @@ class HackerRankParser():
                 line(self.model['preview'])
 
             line('')
-            line('{}'.format(self.link))
+            line('{}'.format(self.url))
+            if self.url2:
+                line('{}'.format(self.url2))
             line('')
             line()
 
@@ -205,7 +213,7 @@ class HackerRankParser():
             f.write("{}|{}|{}|{}|[solution]({}) [web]({})\n".format(
                 self.path, self.key, lang, time.strftime("%c %z"),
                 os.path.join(self.path, self.key + "." + extension),
-                self.link))
+                self.url))
 
         if editor:
             if 'VSCODE_PID' in os.environ:

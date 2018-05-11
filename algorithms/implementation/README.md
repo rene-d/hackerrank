@@ -69,6 +69,7 @@ Name | Preview | Code | Difficulty
 [Strange Counter](https://www.hackerrank.com/challenges/strange-code)|Print the value displayed by the counter at a given time, $t$.|[Python](strange-code.py)|Easy
 [Absolute Permutation](https://www.hackerrank.com/challenges/absolute-permutation)|Find lexicographically smallest absolute permutation.|[Python](absolute-permutation.py)|Medium
 [Ema's Supercomputer](https://www.hackerrank.com/challenges/two-pluses)|Determine the product of the areas of two pluses on a grid.|[C++](two-pluses.cpp)|Medium
+[Larry's Array](https://www.hackerrank.com/challenges/larrys-array)|Larry|[Python](larrys-array.py)|Medium
 [Almost Sorted](https://www.hackerrank.com/challenges/almost-sorted)|Sort an array by either swapping or reversing a segment|[Python](almost-sorted.py)|Medium
 [Matrix Layer Rotation ](https://www.hackerrank.com/challenges/matrix-rotation-algo)|Rotate the matrix R times and print the resultant matrix.|[Python](matrix-rotation-algo.py)|Hard
 

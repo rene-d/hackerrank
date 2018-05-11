@@ -27,16 +27,16 @@ add_custom_target(extract-testcases
                   COMMAND ${CMAKE_SOURCE_DIR}/runtest.sh -X ${CMAKE_BINARY_DIR}/tests
                   WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
 
-set(HACKERRANK_CONTEST_SLUG master)
+set(HACKERRANK_CONTEST master)
 macro(add_test_hackerrank name)
     add_test(NAME ${name}
-             COMMAND ${CMAKE_SOURCE_DIR}/runtest.sh -t ${name} -c ${HACKERRANK_CONTEST_SLUG} -T ${CMAKE_BINARY_DIR}/tests
+             COMMAND ${CMAKE_SOURCE_DIR}/runtest.sh -t ${name} -c ${HACKERRANK_CONTEST} -T ${CMAKE_BINARY_DIR}/tests
              WORKING_DIRECTORY ${CURRENT_BINARY_DIR})
     set_tests_properties(${name} PROPERTIES TIMEOUT 30)
 endmacro()
 
 macro(add_hackerrank name cpp)
-    add_executable("${name}" "${cpp}" ${ARGV})
+    add_executable(${name} ${cpp})
     add_test_hackerrank(${name})
 endmacro(add_hackerrank name cpp)
 

@@ -84,6 +84,7 @@ Name | Preview | Code | Difficulty
 [Strange Counter](https://www.hackerrank.com/challenges/strange-code)|Print the value displayed by the counter at a given time, $t$.|[Python](implementation/strange-code.py)|Easy
 [Absolute Permutation](https://www.hackerrank.com/challenges/absolute-permutation)|Find lexicographically smallest absolute permutation.|[Python](implementation/absolute-permutation.py)|Medium
 [Ema's Supercomputer](https://www.hackerrank.com/challenges/two-pluses)|Determine the product of the areas of two pluses on a grid.|[C++](implementation/two-pluses.cpp)|Medium
+[Larry's Array](https://www.hackerrank.com/challenges/larrys-array)|Larry|[Python](implementation/larrys-array.py)|Medium
 [Almost Sorted](https://www.hackerrank.com/challenges/almost-sorted)|Sort an array by either swapping or reversing a segment|[Python](implementation/almost-sorted.py)|Medium
 [Matrix Layer Rotation ](https://www.hackerrank.com/challenges/matrix-rotation-algo)|Rotate the matrix R times and print the resultant matrix.|[Python](implementation/matrix-rotation-algo.py)|Hard
 
@@ -127,6 +128,7 @@ Name | Preview | Code | Difficulty
 [Intro to Tutorial Challenges](https://www.hackerrank.com/challenges/tutorial-intro)|Introduction to the Tutorial Challenges|[Python](arrays-and-sorting/tutorial-intro.py)|Easy
 [Insertion Sort - Part 1](https://www.hackerrank.com/challenges/insertionsort1)|Insert an element into a sorted array.|[Python](arrays-and-sorting/insertionsort1.py)|Easy
 [Insertion Sort - Part 2](https://www.hackerrank.com/challenges/insertionsort2)|Code Insertion Sort itself.|[Python](arrays-and-sorting/insertionsort2.py)|Easy
+[Correctness and the Loop Invariant](https://www.hackerrank.com/challenges/correctness-invariant)|How do you demonstrate the correctness of an algorithm? You can use the loop invariant.|[Python](arrays-and-sorting/correctness-invariant.py)|Easy
 [Running Time of Algorithms](https://www.hackerrank.com/challenges/runningtime)|The running time of Algorithms in general and Insertion Sort in particular.|[Python](arrays-and-sorting/runningtime.py)|Easy
 [Quicksort 1 - Partition](https://www.hackerrank.com/challenges/quicksort1)|Perform the first step of Quicksort: partitioning an array.|[Python](arrays-and-sorting/quicksort1.py)|Easy
 [Counting Sort 1](https://www.hackerrank.com/challenges/countingsort1)|Count the number of times each value appears.|[Python](arrays-and-sorting/countingsort1.py)|Easy
@@ -161,6 +163,7 @@ Name | Preview | Code | Difficulty
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [The Longest Increasing Subsequence](https://www.hackerrank.com/challenges/longest-increasing-subsequent)|Find the length of the longest increase subsequence in a given array.|[C++](dynamic-programming/longest-increasing-subsequent.cpp)|Advanced
+[Dorsey Thief](https://www.hackerrank.com/challenges/dorsey-thief)|standard knapsack problem|[C++](dynamic-programming/dorsey-thief.cpp)|Advanced
 
 #### [Bit Manipulation](https://www.hackerrank.com/domains/algorithms/bit-manipulation)
 

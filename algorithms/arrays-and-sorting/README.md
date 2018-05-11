@@ -12,6 +12,7 @@ Name | Preview | Code | Difficulty
 [Intro to Tutorial Challenges](https://www.hackerrank.com/challenges/tutorial-intro)|Introduction to the Tutorial Challenges|[Python](tutorial-intro.py)|Easy
 [Insertion Sort - Part 1](https://www.hackerrank.com/challenges/insertionsort1)|Insert an element into a sorted array.|[Python](insertionsort1.py)|Easy
 [Insertion Sort - Part 2](https://www.hackerrank.com/challenges/insertionsort2)|Code Insertion Sort itself.|[Python](insertionsort2.py)|Easy
+[Correctness and the Loop Invariant](https://www.hackerrank.com/challenges/correctness-invariant)|How do you demonstrate the correctness of an algorithm? You can use the loop invariant.|[Python](correctness-invariant.py)|Easy
 [Running Time of Algorithms](https://www.hackerrank.com/challenges/runningtime)|The running time of Algorithms in general and Insertion Sort in particular.|[Python](runningtime.py)|Easy
 [Quicksort 1 - Partition](https://www.hackerrank.com/challenges/quicksort1)|Perform the first step of Quicksort: partitioning an array.|[Python](quicksort1.py)|Easy
 [Counting Sort 1](https://www.hackerrank.com/challenges/countingsort1)|Count the number of times each value appears.|[Python](countingsort1.py)|Easy

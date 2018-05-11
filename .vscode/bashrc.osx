@@ -1,0 +1,36 @@
+# init file for bash
+
+source /etc/profile
+source ~/.bash_profile
+
+PROJECT_HOME=$PWD
+
+alias cdd='cd "${PROJECT_HOME}"'
+
+build()
+{
+    local nproc
+    local type=${1:-Release}
+
+    if [ $(uname) = Darwin ] ; then
+        nproc=$(sysctl -n hw.logicalcpu)
+    else
+        nproc=$(nproc)
+    fi
+
+    (
+        set -e
+        cd "$PROJECT_HOME"
+        mkdir -p build
+        cd build
+        cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=${type} ..
+        make -j${nproc}
+    )
+}
+
+COLOR_GREEN="\033[0;32m"
+COLOR_END="\033[0m"
+
+echo -e "${COLOR_GREEN}HackerRank${COLOR_END} ready."
+
+unset COLOR_GREEN COLOR_END

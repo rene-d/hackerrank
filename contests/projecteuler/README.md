@@ -11,6 +11,7 @@ Name | Preview | Code | Difficulty
 [Project Euler #28: Number spiral diagonals](https://www.hackerrank.com/contests/projecteuler/challenges/euler028)|Running around a matrix.|[Python](euler028.py)|Easy
 [Project Euler #16: Power digit sum](https://www.hackerrank.com/contests/projecteuler/challenges/euler016)|With more power comes more responsibility.|[Python](euler016.py)|Easy
 [Project Euler #9: Special Pythagorean triplet](https://www.hackerrank.com/contests/projecteuler/challenges/euler009)|A what triplet, you say?|[C++](euler009.cpp)|Easy
+[Project Euler #5: Smallest multiple](https://www.hackerrank.com/contests/projecteuler/challenges/euler005)|Smallest number which divides all numbers from 1 to N.|[Python](euler005.py)|Medium
 [Project Euler #4: Largest palindrome product](https://www.hackerrank.com/contests/projecteuler/challenges/euler004)|Largest palindrome of product of three digit numbers less than N.|[C++](euler004.cpp)|Medium
 [Project Euler #3: Largest prime factor](https://www.hackerrank.com/contests/projecteuler/challenges/euler003)|Figuring out prime numbers, factors, and then both of them together!|[C++](euler003.cpp)|Easy
 [Project Euler #2: Even Fibonacci numbers](https://www.hackerrank.com/contests/projecteuler/challenges/euler002)|Even Fibonacci numbers|[C++](euler002.cpp)|Easy

@@ -9,4 +9,5 @@ The true test of problem solving: when one realizes that time and memory aren't 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [The Longest Increasing Subsequence](https://www.hackerrank.com/challenges/longest-increasing-subsequent)|Find the length of the longest increase subsequence in a given array.|[C++](longest-increasing-subsequent.cpp)|Advanced
+[Dorsey Thief](https://www.hackerrank.com/challenges/dorsey-thief)|standard knapsack problem|[C++](dorsey-thief.cpp)|Advanced
 

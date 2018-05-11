@@ -1,4 +1,4 @@
-set(HACKERRANK_CONTEST_SLUG projecteuler)
+set(HACKERRANK_CONTEST projecteuler)
 
 add_hackerrank_py(euler001.py)
 add_hackerrank_py(euler028.py)
@@ -10,3 +10,4 @@ add_hackerrank(euler009 euler009.cpp)
 add_hackerrank(euler002 euler002.cpp)
 add_hackerrank(euler003 euler003.cpp)
 add_hackerrank(euler004 euler004.cpp)
+add_hackerrank_py(euler005.py)

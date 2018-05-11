@@ -121,6 +121,8 @@ elif [ "${extension}" == "sh" ]; then
 else
     exe=./${testname}
     result=result-${testname}
+    # special case for duplicated challenges (practice/contest)
+    testname=${testname%_*}
 fi
 
 ##############################################################################

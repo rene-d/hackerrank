@@ -5,5 +5,5 @@
 #
 
 base, area = map(int, input().split())
-height = (2 * area - 1) // base + 1)
+height = (2 * area - 1) // base + 1
 print(height)

@@ -11,7 +11,13 @@ Name | Preview | Code | Difficulty
 [Closest Number](https://www.hackerrank.com/challenges/closest-number)|What is the closest number?|[Python](closest-number.py)|Medium
 [Sherlock and GCD](https://www.hackerrank.com/challenges/sherlock-and-gcd)|Help Sherlock in finding the subset.|[Python](sherlock-and-gcd.py)|Easy
 [Identify Smith Numbers](https://www.hackerrank.com/challenges/identify-smith-numbers)|Write a program to check whether a given integer is a Smith number.|[Python](identify-smith-numbers.py)|Easy
+[Euler's Criterion](https://www.hackerrank.com/challenges/eulers-criterion)|Detect whether the number is a quadratic residue.|[Python](eulers-criterion.py)|Easy
 [Fibonacci Finding (easy)](https://www.hackerrank.com/challenges/fibonacci-finding-easy)|Find some Fibonacci numbers!|[Python](fibonacci-finding-easy.py)|Easy
 [Little Panda Power](https://www.hackerrank.com/challenges/littlepandapower)|Compute A^B mod X|[Python](littlepandapower.py)|Hard
 [Minimal Distance to Pi](https://www.hackerrank.com/challenges/minimal-distance-to-pi)|Given a range of denominators, find the common fraction that best approximates Pi.|[Python](minimal-distance-to-pi.py)|Hard
+[The Chosen One](https://www.hackerrank.com/challenges/the-chosen-one)|Given a list of integers, find and print an integer that is a divisor of all but one integer in the list.|[Python](the-chosen-one.py)|Medium
+[Power of large numbers](https://www.hackerrank.com/challenges/power-of-large-numbers)|How much does Hackerland coach pay to get Cristiano Ronaldo to play for his team?|[Python](power-of-large-numbers.py)|Medium
+[Manasa and Factorials](https://www.hackerrank.com/challenges/manasa-and-factorials)|Think about number of zeros in k!|[Python](manasa-and-factorials.py)|Hard
+[Easy GCD](https://www.hackerrank.com/challenges/easy-gcd-1)|Find the maximum number less than K such that GCD of all numbers is still more than one!|[Python](easy-gcd-1.py)|Medium
+[John and GCD list](https://www.hackerrank.com/challenges/john-and-gcd-list)|Help John in making a list from GCD list|[Python](john-and-gcd-list.py)|Easy
 

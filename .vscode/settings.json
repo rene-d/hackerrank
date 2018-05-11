@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "bashrc.osx": "shellscript",
         "cstdlib": "cpp",
         "ios": "cpp",
         "queue": "cpp",
@@ -47,11 +48,18 @@
     },
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.env.osx": {
-        "PATH": "$PATH:${workspaceFolder}"
+        "PATH": "$PATH:${workspaceFolder}",
+        "CDPATH": ":${workspaceFolder}",
     },
     "terminal.integrated.env.linux": {
-        "PATH": "$PATH:${workspaceFolder}"
+        "PATH": "$PATH:${workspaceFolder}",
+        "CDPATH": ":${workspaceFolder}",
     },
+    "terminal.integrated.shell.osx": "/bin/bash",
+    "terminal.integrated.shellArgs.osx": [
+        "--rcfile",
+        ".vscode/bashrc.osx",
+    ],
     "python.linting.enabled": false,
     "editor.trimAutoWhitespace": true,
     "files.trimTrailingWhitespace": true,
