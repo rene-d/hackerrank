@@ -15,7 +15,8 @@ def diviseurs(n):
             if i != q:
                 div.append(q)
         i += 1
-    div.append(n)
+    if n != 1:
+        div.append(n)
     return div
 
 

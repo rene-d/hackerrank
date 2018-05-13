@@ -10,10 +10,13 @@ Name | Preview | Code | Difficulty
 [Constructing a Number](https://www.hackerrank.com/challenges/constructing-a-number)|Construct a number divisible by 3 from the given numbers by reordering their digits.|[Python](constructing-a-number.py)|Easy
 [Closest Number](https://www.hackerrank.com/challenges/closest-number)|What is the closest number?|[Python](closest-number.py)|Medium
 [Sherlock and GCD](https://www.hackerrank.com/challenges/sherlock-and-gcd)|Help Sherlock in finding the subset.|[Python](sherlock-and-gcd.py)|Easy
+[Primitive Problem](https://www.hackerrank.com/challenges/primitive-problem)|Find the primitive roots of a prime number.|[Python](primitive-problem.py)|Easy
 [Identify Smith Numbers](https://www.hackerrank.com/challenges/identify-smith-numbers)|Write a program to check whether a given integer is a Smith number.|[Python](identify-smith-numbers.py)|Easy
 [Euler's Criterion](https://www.hackerrank.com/challenges/eulers-criterion)|Detect whether the number is a quadratic residue.|[Python](eulers-criterion.py)|Easy
+[Twins](https://www.hackerrank.com/challenges/twins)|How many pairs of twins can you find?|[Python](twins.py)|Medium
 [Fibonacci Finding (easy)](https://www.hackerrank.com/challenges/fibonacci-finding-easy)|Find some Fibonacci numbers!|[Python](fibonacci-finding-easy.py)|Easy
 [Little Panda Power](https://www.hackerrank.com/challenges/littlepandapower)|Compute A^B mod X|[Python](littlepandapower.py)|Hard
+[Mehta and his Laziness](https://www.hackerrank.com/challenges/mehta-and-his-laziness)|How will Mehta do these calculations?|[Python](mehta-and-his-laziness.py)|Hard
 [Minimal Distance to Pi](https://www.hackerrank.com/challenges/minimal-distance-to-pi)|Given a range of denominators, find the common fraction that best approximates Pi.|[Python](minimal-distance-to-pi.py)|Hard
 [The Chosen One](https://www.hackerrank.com/challenges/the-chosen-one)|Given a list of integers, find and print an integer that is a divisor of all but one integer in the list.|[Python](the-chosen-one.py)|Medium
 [Power of large numbers](https://www.hackerrank.com/challenges/power-of-large-numbers)|How much does Hackerland coach pay to get Cristiano Ronaldo to play for his team?|[Python](power-of-large-numbers.py)|Medium

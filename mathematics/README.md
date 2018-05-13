@@ -46,10 +46,13 @@ Name | Preview | Code | Difficulty
 [Constructing a Number](https://www.hackerrank.com/challenges/constructing-a-number)|Construct a number divisible by 3 from the given numbers by reordering their digits.|[Python](number-theory/constructing-a-number.py)|Easy
 [Closest Number](https://www.hackerrank.com/challenges/closest-number)|What is the closest number?|[Python](number-theory/closest-number.py)|Medium
 [Sherlock and GCD](https://www.hackerrank.com/challenges/sherlock-and-gcd)|Help Sherlock in finding the subset.|[Python](number-theory/sherlock-and-gcd.py)|Easy
+[Primitive Problem](https://www.hackerrank.com/challenges/primitive-problem)|Find the primitive roots of a prime number.|[Python](number-theory/primitive-problem.py)|Easy
 [Identify Smith Numbers](https://www.hackerrank.com/challenges/identify-smith-numbers)|Write a program to check whether a given integer is a Smith number.|[Python](number-theory/identify-smith-numbers.py)|Easy
 [Euler's Criterion](https://www.hackerrank.com/challenges/eulers-criterion)|Detect whether the number is a quadratic residue.|[Python](number-theory/eulers-criterion.py)|Easy
+[Twins](https://www.hackerrank.com/challenges/twins)|How many pairs of twins can you find?|[Python](number-theory/twins.py)|Medium
 [Fibonacci Finding (easy)](https://www.hackerrank.com/challenges/fibonacci-finding-easy)|Find some Fibonacci numbers!|[Python](number-theory/fibonacci-finding-easy.py)|Easy
 [Little Panda Power](https://www.hackerrank.com/challenges/littlepandapower)|Compute A^B mod X|[Python](number-theory/littlepandapower.py)|Hard
+[Mehta and his Laziness](https://www.hackerrank.com/challenges/mehta-and-his-laziness)|How will Mehta do these calculations?|[Python](number-theory/mehta-and-his-laziness.py)|Hard
 [Minimal Distance to Pi](https://www.hackerrank.com/challenges/minimal-distance-to-pi)|Given a range of denominators, find the common fraction that best approximates Pi.|[Python](number-theory/minimal-distance-to-pi.py)|Hard
 [The Chosen One](https://www.hackerrank.com/challenges/the-chosen-one)|Given a list of integers, find and print an integer that is a divisor of all but one integer in the list.|[Python](number-theory/the-chosen-one.py)|Medium
 [Power of large numbers](https://www.hackerrank.com/challenges/power-of-large-numbers)|How much does Hackerland coach pay to get Cristiano Ronaldo to play for his team?|[Python](number-theory/power-of-large-numbers.py)|Medium
@@ -72,12 +75,14 @@ Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Combo Meal](https://www.hackerrank.com/challenges/combo-meal)|Find the profit that a fast-food chain earns at each purchase.|[Python](algebra/combo-meal.py)|Easy
 [Stepping Stones Game](https://www.hackerrank.com/challenges/stepping-stones-game)|Can you tell Bob, if he should play Stepping Stones or not ?|[Python](algebra/stepping-stones-game.py)|Medium
+[Shashank and List](https://www.hackerrank.com/challenges/shashank-and-list)|Help Shashank in Huge calculations.|[Python](algebra/shashank-and-list.py)|Medium
 [Triangle Numbers](https://www.hackerrank.com/challenges/triangle-numbers)|Given a triangle numbers where each number is equal to the sum of the three top numbers, find the first even number in a row.|[Python](algebra/triangle-numbers.py)|Medium
 [Little Gaurav and Sequence](https://www.hackerrank.com/challenges/little-gaurav-and-sequence)|Help Gaurav in calculating last digit of a sequence.|[Python](algebra/little-gaurav-and-sequence.py)|Medium
 [Easy sum](https://www.hackerrank.com/challenges/easy-sum)|Find the mod sum|[Python](algebra/easy-sum.py)|Hard
 [Difference and Product](https://www.hackerrank.com/challenges/difference-and-product)|Answer a question about Difference and Product|[Python](algebra/difference-and-product.py)|Easy
 [Pythagorean Triple](https://www.hackerrank.com/challenges/pythagorean-triple)|Find the Pythagorean triple for the given side a.|[Python](algebra/pythagorean-triple.py)|Easy
 [Number Groups](https://www.hackerrank.com/challenges/number-groups)|Find the sum of consecutive odd number groups.|[Python](algebra/number-groups.py)|Easy
+[Tell the Average](https://www.hackerrank.com/challenges/tell-the-average)|Tell me average of all list value.|[Python](algebra/tell-the-average.py)|Medium
 [Manasa and Sub-sequences ](https://www.hackerrank.com/challenges/manasa-and-sub-sequences)|Help Manasa in getting candies|[Python](algebra/manasa-and-sub-sequences.py)|Medium
 
 #### [Geometry](https://www.hackerrank.com/domains/mathematics/geometry)
@@ -87,7 +92,16 @@ Name | Preview | Code | Difficulty
 [Points On a Line](https://www.hackerrank.com/challenges/points-on-a-line)|Given a set of coordinates, determine if they fall in an horizontal or vertical line.|[Python](geometry/points-on-a-line.py)|Easy
 [Rectangular Game](https://www.hackerrank.com/challenges/rectangular-game)|What's the largest number in the rectangular grid?|[Python](geometry/rectangular-game.py)|Easy
 [Sherlock and Counting](https://www.hackerrank.com/challenges/sherlock-and-counting)|Help Sherlock count numbers satisfying an inequality.|[Python](geometry/sherlock-and-counting.py)|Easy
+[Sherlock and Planes](https://www.hackerrank.com/challenges/sherlock-and-planes)|Help Sherlock with points on planes.|[Python](geometry/sherlock-and-planes.py)|Easy
+[Circle City](https://www.hackerrank.com/challenges/circle-city)|Determine whether Roy's city can be saved or not.|[Python](geometry/circle-city.py)|Medium
 [Baby Step, Giant Step](https://www.hackerrank.com/challenges/baby-step-giant-step)|Find the minimum number of steps needed to get to point $(d, 0)$.|[Python](geometry/baby-step-giant-step.py)|Medium
+[Points on a Rectangle](https://www.hackerrank.com/challenges/points-on-rectangle)|Determine if a set of points coincides with the edges of a non-degenerate rectangle.|[Python](geometry/points-on-rectangle.py)|Easy
+
+#### [Probability](https://www.hackerrank.com/domains/mathematics/probability)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[B'day Gift](https://www.hackerrank.com/challenges/bday-gift)|Whats the price Isaac has to pay for HackerPhone|[Python](probability/bday-gift.py)|Easy
 
 #### [Linear Algebra Foundations](https://www.hackerrank.com/domains/mathematics/linear-algebra-foundations)
 

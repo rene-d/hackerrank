@@ -4,8 +4,6 @@ compiler: clang
 language: python
 python:
   - "3.6"
-ghc:
-  - "7.8"
 install:
   - pip install -r requirements.txt
 script:
@@ -14,4 +12,4 @@ script:
   - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
   - make -j$(nproc)
   - make extract-testcases
-  - ctest -j$(nproc) --output-on-failure --quiet
+  - ctest -j$(nproc) --output-on-failure

@@ -273,10 +273,10 @@ class HackerRankParser():
                         with open(testcase_err, "w"):
                             pass
 
-    def downloads(self, overwrite=False):
-        if True:
+    def downloads(self, overwrite=False, testcases=True, statement=False):
+        if testcases:
             self.download(overwrite=overwrite)
-        if False:
+        if statement:
             self.download(dest_dir="statements",
                         url="download_pdf?language=English",
                         suffix=".pdf",
