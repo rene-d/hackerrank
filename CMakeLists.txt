@@ -13,7 +13,7 @@ project(hackerrank)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wconversion -Wno-unused-result")
-set(CMAKE_C_FLAGS "-std=c99 -Wall -Wextra -Wconversion -Wno-unused-result")
+set(CMAKE_C_FLAGS "-std=c11 -Wall -Wextra -Wconversion -Wno-unused-result")
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
     # clang n'a pas le fichier pratique de gcc de précompilation des headers de la STL
