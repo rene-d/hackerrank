@@ -1,6 +1,6 @@
 dist: trusty
 sudo: false
-compiler: clang
+compiler: gcc
 language: python
 python:
   - "3.6"
