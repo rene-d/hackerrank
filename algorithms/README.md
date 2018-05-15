@@ -162,6 +162,7 @@ Name | Preview | Code | Difficulty
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
+[Fibonacci Modified](https://www.hackerrank.com/challenges/fibonacci-modified)|Compute the nth term of a Fibonacci sequence.|[Python](dynamic-programming/fibonacci-modified.py)|Medium
 [The Longest Increasing Subsequence](https://www.hackerrank.com/challenges/longest-increasing-subsequent)|Find the length of the longest increase subsequence in a given array.|[C++](dynamic-programming/longest-increasing-subsequent.cpp)|Advanced
 [Dorsey Thief](https://www.hackerrank.com/challenges/dorsey-thief)|standard knapsack problem|[C++](dynamic-programming/dorsey-thief.cpp)|Advanced
 

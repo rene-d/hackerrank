@@ -17,5 +17,6 @@ Name | Preview | Code | Difficulty
 [Pythagorean Triple](https://www.hackerrank.com/challenges/pythagorean-triple)|Find the Pythagorean triple for the given side a.|[Python](pythagorean-triple.py)|Easy
 [Number Groups](https://www.hackerrank.com/challenges/number-groups)|Find the sum of consecutive odd number groups.|[Python](number-groups.py)|Easy
 [Tell the Average](https://www.hackerrank.com/challenges/tell-the-average)|Tell me average of all list value.|[Python](tell-the-average.py)|Medium
+[Wet Shark and 42](https://www.hackerrank.com/challenges/wet-shark-and-42)|Help Wet Shark escape the gods of 42.|[Python](wet-shark-and-42.py)|Easy
 [Manasa and Sub-sequences ](https://www.hackerrank.com/challenges/manasa-and-sub-sequences)|Help Manasa in getting candies|[Python](manasa-and-sub-sequences.py)|Medium
 

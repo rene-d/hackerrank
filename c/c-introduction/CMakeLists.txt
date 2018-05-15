@@ -1,0 +1,5 @@
+add_hackerrank(hello-world-c hello-world-c.c)
+add_hackerrank(sum-numbers-c sum-numbers-c.c)
+add_hackerrank(functions-in-c functions-in-c.c)
+add_hackerrank(pointer-in-c pointer-in-c.c)
+add_hackerrank(playing-with-characters playing-with-characters.c)

@@ -57,6 +57,7 @@ Name | Preview | Code | Difficulty
 [Balanced Brackets](https://www.hackerrank.com/challenges/balanced-brackets)|Given a string containing three types of brackets, determine if it is balanced.|[Python](stacks/balanced-brackets.py)|Medium
 [Equal Stacks](https://www.hackerrank.com/challenges/equal-stacks)|Equalize the piles!|[Python](stacks/equal-stacks.py)|Easy
 [Largest Rectangle ](https://www.hackerrank.com/challenges/largest-rectangle)|Given n buildings, find the largest rectangular area possible by joining consecutive K buildings.|[Python](stacks/largest-rectangle.py)|Medium
+[Simple Text Editor](https://www.hackerrank.com/challenges/simple-text-editor)|Implement a simple text editor and perform some number of operations.|[Python](stacks/simple-text-editor.py)|Medium
 
 #### [Queues](https://www.hackerrank.com/domains/data-structures/queues)
 

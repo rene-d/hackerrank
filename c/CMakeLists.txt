@@ -1,0 +1,5 @@
+add_subdirectory(c-introduction)
+add_subdirectory(c-conditionals-and-loops)
+add_subdirectory(c-arrays-and-strings)
+add_subdirectory(c-functions)
+add_subdirectory(c-structs-and-enums)

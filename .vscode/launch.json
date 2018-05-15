@@ -5,6 +5,30 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "(lldb) structuring-the-document",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/c/c-structs-and-enums/structuring-the-document",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build/c/c-structs-and-enums",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "(lldb) querying-the-document",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/c/c-functions/querying-the-document",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build/c/c-functions",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb"
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",

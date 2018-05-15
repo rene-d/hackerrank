@@ -98,6 +98,8 @@ class HackerRankParser():
                     lang = 'bash'
                 elif 'oracle' in languages:
                     lang = 'oracle'
+                elif 'c' in languages:
+                    lang = 'c'
                 else:
                     print("Cannot choose a language:", ' '.join(languages))
                     return

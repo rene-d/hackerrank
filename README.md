@@ -1,12 +1,13 @@
 # [![HackerRank](https://hrcdn.net/hackerrank/assets/brand/h_mark_sm-30dc0e0cbd2dded63b294819ff853a90.svg)](https://www.hackerrank.com) HackerRank
 
-[![Build Status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank) [![554 solutions and counting](https://img.shields.io/badge/Challenges-554-blue.svg)](https://github.com/rene-d/hackerrank)
+[![Build Status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank) [![584 solutions and counting](https://img.shields.io/badge/Challenges-584-blue.svg)](https://github.com/rene-d/hackerrank)
 
-[HackerRank](https://www.hackerrank.com/dashboard) is a great site to learn, improve, play with your programming skills.
+[HackerRank](https://www.hackerrank.com/dashboard) is a great place to learn, improve, play with your programming skills.
 
 ## Solutions
 
 [![C++](https://hrcdn.net/hackerrank/assets/dashboard/cpp-4644489c8b8e68a81dd0ccfac5097c2e.svg)](cpp/)
+[![C](assets_c.svg)](c/)
 [![Python](https://hrcdn.net/hackerrank/assets/dashboard/python-473706315bc214a540c1ca7b57f60854.svg)](python/)
 [![Shell](https://hrcdn.net/hackerrank/assets/dashboard/shell-5c42f1aa41f72148347b7e91bf46ae4f.svg)](shell/)
 [![Algorithms](https://hrcdn.net/hackerrank/assets/dashboard/algorithms-ea9e958ddb5b097c5ebcdd22de4a9766.svg)](algorithms/)
@@ -14,6 +15,10 @@
 [![Mathematics](https://hrcdn.net/hackerrank/assets/dashboard/mathematics-3ec234bd89020880ff0349f9cacdab30.svg)](mathematics/)
 [![30 Days of Code](https://hrcdn.net/hackerrank/assets/dashboard/30-days-of-code-bf00cb8a1c6f38bf917f45ea7ab2bf6b.svg)](tutorials/30-days-of-code/)
 [![Cracking the Coding Interview](https://hrcdn.net/hackerrank/assets/dashboard/cracking-the-coding-interview-a56b2213a9c4f9393bfeb13261449c37.svg)](tutorials/cracking-the-coding-interview/)
+
+[![Security](https://hrcdn.net/hackerrank/assets/dashboard/security-ee10c8f654e78f4659d5dc6305768a63.svg)](security/)
+[![Databases](https://hrcdn.net/hackerrank/assets/dashboard/databases-0ff7fcc96c1e9516abc9ea327c9a0ef9.svg)](databases/)
+[![SQL](https://hrcdn.net/hackerrank/assets/dashboard/sql-be1ac821f4358a522d8eba7600e69549.svg)](sql/)
 
 and [ProjectEuler+](contests/projecteuler/) (See [here](https://github.com/rene-d/math/tree/master/projecteuler) my solutions of [Project Euler](https://projecteuler.net/))
 
@@ -51,9 +56,8 @@ A solution can be tested solely with `runtest.sh -t challenge-name [-n test-numb
 
 - `compare.py` aims to fairly compare the program output with the except one. It is necessary since some challenges use decimal numbers : we cannot simply use `diff -qw`.
 
-- `tc2.py` can be used to download purchased testcases. Copy and paste the download link.
+- `tc2.py` can be used to download purchased testcases. Copy and paste the download links of input and output data.
 
-- `hackos.py` lists the free testcases. It should be used in conjunction with a webbrowser. Follow instructions in the source code.
 
 ### IDE
 

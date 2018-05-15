@@ -65,6 +65,7 @@ Name | Preview | Code | Difficulty
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [nCr table](https://www.hackerrank.com/challenges/ncr-table)|Help Jim calculating nCr values|[Python](combinatorics/ncr-table.py)|Medium
+[Coinage](https://www.hackerrank.com/challenges/coinage)|Find the number of ways to pay a given amount, given a set of coins with prescribed denominations.|[Python](combinatorics/coinage.py)|Medium
 [Building a List](https://www.hackerrank.com/challenges/building-a-list)|Generate all possible combinations of a string|[Python](combinatorics/building-a-list.py)|Medium
 [Merge List](https://www.hackerrank.com/challenges/merge-list)|Help Shashank in merging two list.|[Python](combinatorics/merge-list.py)|Medium
 [A Chocolate Fiesta](https://www.hackerrank.com/challenges/a-chocolate-fiesta)|Find the number of even subsets in the given set of numbers.|[Python](combinatorics/a-chocolate-fiesta.py)|Easy
@@ -83,6 +84,7 @@ Name | Preview | Code | Difficulty
 [Pythagorean Triple](https://www.hackerrank.com/challenges/pythagorean-triple)|Find the Pythagorean triple for the given side a.|[Python](algebra/pythagorean-triple.py)|Easy
 [Number Groups](https://www.hackerrank.com/challenges/number-groups)|Find the sum of consecutive odd number groups.|[Python](algebra/number-groups.py)|Easy
 [Tell the Average](https://www.hackerrank.com/challenges/tell-the-average)|Tell me average of all list value.|[Python](algebra/tell-the-average.py)|Medium
+[Wet Shark and 42](https://www.hackerrank.com/challenges/wet-shark-and-42)|Help Wet Shark escape the gods of 42.|[Python](algebra/wet-shark-and-42.py)|Easy
 [Manasa and Sub-sequences ](https://www.hackerrank.com/challenges/manasa-and-sub-sequences)|Help Manasa in getting candies|[Python](algebra/manasa-and-sub-sequences.py)|Medium
 
 #### [Geometry](https://www.hackerrank.com/domains/mathematics/geometry)
@@ -101,6 +103,7 @@ Name | Preview | Code | Difficulty
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
+[Random number generator](https://www.hackerrank.com/challenges/random-number-generator)|what's the probability that x + y is less than C?|[Python](probability/random-number-generator.py)|Easy
 [B'day Gift](https://www.hackerrank.com/challenges/bday-gift)|Whats the price Isaac has to pay for HackerPhone|[Python](probability/bday-gift.py)|Easy
 
 #### [Linear Algebra Foundations](https://www.hackerrank.com/domains/mathematics/linear-algebra-foundations)
