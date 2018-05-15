@@ -14,9 +14,11 @@ python:
   - "3.6"
 
 install:
+  - source ~/virtualenv/python3.6/bin/activate
   - pip3 install -r requirements.txt
 
 script:
+  - source ~/virtualenv/python3.6/bin/activate
   - export CC=clang
   - export CXX=clang++
   - mkdir -p build
