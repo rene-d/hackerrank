@@ -1,12 +1,15 @@
 dist: trusty
 sudo: false
-compiler: clang
+compiler:
+  - clang
 language: python
 python:
   - "3.6"
 install:
   - pip install -r requirements.txt
 script:
+  - export CC=clang
+  - export CXX=clang++
   - mkdir -p build
   - cd build
   - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
