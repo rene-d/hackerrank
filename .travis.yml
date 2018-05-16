@@ -15,21 +15,6 @@ matrix:
       env:
         - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
 
-    # works on Trusty
-    - os: linux
-      dist: trusty
-      sudo: false
-      python: "3.6"
-      addons:
-        apt:
-          sources:
-            - llvm-toolchain-trusty-5.0
-          packages:
-            - clang-5.0
-      env:
-        - MATRIX_EVAL="CC=clang-5.0 && CXX=clang++-5.0"
-
-
 before_install:
   - eval "${MATRIX_EVAL}"
   - source ~/virtualenv/python3.6/bin/activate
@@ -38,11 +23,11 @@ install:
   - pip3 install -r requirements.txt
 
 script:
-  - echo MATRIX_EVAL=$MATRIX_EVAL
   - echo CC=$CC
   - $CC -v
-  - echo CXX=$CXX
-  - $CXX -v
+  - /usr/bin/cc -v
+  - export CC
+  - export CXX
   - mkdir -p build
   - cd build
   - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
