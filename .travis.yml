@@ -11,9 +11,9 @@ matrix:
           sources:
             - ubuntu-toolchain-r-test
           packages:
-            - g++-6
+            - g++-7
       env:
-        - MATRIX_EVAL="CC=gcc-6 && CXX=g++-6"
+        - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
 
     # works on Trusty
     - os: linux
@@ -40,7 +40,9 @@ install:
 script:
   - echo MATRIX_EVAL=$MATRIX_EVAL
   - echo CC=$CC
+  - $CC -v
   - echo CXX=$CXX
+  - $CXX -v
   - mkdir -p build
   - cd build
   - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
