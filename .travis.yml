@@ -2,11 +2,8 @@ dist: trusty
 
 sudo: false
 
-addons:
-    apt:
-      update: true
-
 compiler:
+  - gcc
   - clang
 
 language:
@@ -20,11 +17,12 @@ install:
   - pip3 install -r requirements.txt
 
 script:
-  - export CC=clang
-  - export CXX=clang++
   - mkdir -p build
   - cd build
   - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
-  - make -j$(nproc)
+  - cd c
+  - make -j$(nproc) VERBOSE=1
+  - cd ..
   - make extract-testcases
+  - cd c
   - ctest -j$(nproc) --output-on-failure

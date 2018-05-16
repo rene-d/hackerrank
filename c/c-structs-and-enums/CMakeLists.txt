@@ -7,3 +7,6 @@ add_hackerrank(structuring-the-document structuring-the-document.c)
 target_compile_options(small-triangles-large-triangles PRIVATE "-Wno-conversion")
 target_compile_options(post-transition PRIVATE "-Wno-conversion")
 target_compile_options(structuring-the-document PRIVATE "-Wno-conversion" "-Wno-unused-variable")
+
+#set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -lm")
+
