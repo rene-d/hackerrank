@@ -10,3 +10,4 @@ target_compile_options(structuring-the-document PRIVATE "-Wno-conversion" "-Wno-
 
 #set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -lm")
 
+target_link_libraries(small-triangles-large-triangle m)
