@@ -1,11 +1,11 @@
-dist: trusty
-
-sudo: false
 
 matrix:
   include:
     # works on Precise and Trusty
     - os: linux
+      dist: trusty
+      sudo: false
+      python: "3.6"
       addons:
         apt:
           sources:
@@ -17,6 +17,9 @@ matrix:
 
     # works on Trusty
     - os: linux
+      dist: trusty
+      sudo: false
+      python: "3.6"
       addons:
         apt:
           sources:
@@ -26,24 +29,21 @@ matrix:
       env:
         - MATRIX_EVAL="CC=clang-5.0 && CXX=clang++-5.0"
 
-python:
-  - "3.6"
 
 before_install:
   - eval "${MATRIX_EVAL}"
   - source ~/virtualenv/python3.6/bin/activate
 
 install:
-  - eval "${MATRIX_EVAL}"
-  - source ~/virtualenv/python3.6/bin/activate
   - pip3 install -r requirements.txt
 
 script:
-  - eval "${MATRIX_EVAL}"
-  - source ~/virtualenv/python3.6/bin/activate
+  - echo MATRIX_EVAL=$MATRIX_EVAL
+  - echo CC=$CC
+  - echo CXX=$CXX
   - mkdir -p build
   - cd build
   - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
-  - make -j$(nproc)
+  - make -j$(nproc)   hello-world-c
   - make extract-testcases
-  - ctest -j$(nproc) --output-on-failure
+  - ctest -j$(nproc) --output-on-failure   -R hello-world-c
