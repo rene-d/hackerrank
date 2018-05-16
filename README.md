@@ -7,7 +7,7 @@
 ## Solutions
 
 [![C++](https://hrcdn.net/hackerrank/assets/dashboard/cpp-4644489c8b8e68a81dd0ccfac5097c2e.svg)](cpp/)
-[![C](assets_c.svg)](c/)
+[![C](https://hrcdn.net/hackerrank/assets/dashboard/c-43bbd380e51d62b83c4b542c58699a97.svg)](c/)
 [![Python](https://hrcdn.net/hackerrank/assets/dashboard/python-473706315bc214a540c1ca7b57f60854.svg)](python/)
 [![Shell](https://hrcdn.net/hackerrank/assets/dashboard/shell-5c42f1aa41f72148347b7e91bf46ae4f.svg)](shell/)
 [![Algorithms](https://hrcdn.net/hackerrank/assets/dashboard/algorithms-ea9e958ddb5b097c5ebcdd22de4a9766.svg)](algorithms/)
