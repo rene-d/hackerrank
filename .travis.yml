@@ -2,15 +2,38 @@ dist: trusty
 
 sudo: false
 
-compiler:
-  - gcc
-  - clang
+matrix:
+  include:
+    # works on Precise and Trusty
+    - os: linux
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-6
+      env:
+        - MATRIX_EVAL="CC=gcc-6 && CXX=g++-6"
+
+    # works on Trusty
+    - os: linux
+      addons:
+        apt:
+          sources:
+            - llvm-toolchain-trusty-5.0
+          packages:
+            - clang-5.0
+      env:
+        - MATRIX_EVAL="CC=clang-5.0 && CXX=clang++-5.0"
 
 python:
   - "3.6"
 
-install:
+before_install:
+  - eval "${MATRIX_EVAL}"
   - source ~/virtualenv/python3.6/bin/activate
+
+install:
   - pip3 install -r requirements.txt
 
 script:
