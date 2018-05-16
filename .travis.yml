@@ -6,9 +6,6 @@ compiler:
   - gcc
   - clang
 
-language:
-  - python
-
 python:
   - "3.6"
 
@@ -20,9 +17,6 @@ script:
   - mkdir -p build
   - cd build
   - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
-  - cd c
-  - make -j$(nproc) VERBOSE=1
-  - cd ..
+  - make -j$(nproc)
   - make extract-testcases
-  - cd c
   - ctest -j$(nproc) --output-on-failure

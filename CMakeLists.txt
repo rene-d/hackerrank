@@ -36,10 +36,10 @@ macro(add_test_hackerrank name)
     set_tests_properties(${name} PROPERTIES TIMEOUT 30)
 endmacro()
 
-macro(add_hackerrank name cpp)
-    add_executable(${name} ${cpp})
+macro(add_hackerrank name src)
+    add_executable(${name} ${src})
     add_test_hackerrank(${name})
-endmacro(add_hackerrank name cpp)
+endmacro(add_hackerrank name src)
 
 # les auteurs d'hackerrank n'assoient un peu sur la qualité de leur code
 macro(dirty_cpp name)
