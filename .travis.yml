@@ -1,24 +1,43 @@
-dist: trusty
 
-sudo: false
+matrix:
+  include:
+    # works on Precise and Trusty
+    - os: linux
+      dist: trusty
+      sudo: false
+      python: "3.6"
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-7
+      env:
+        - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
 
-language:
-  - c
-  - cpp
-  - python
+    # works on Trusty
+#    - os: linux
+#      dist: trusty
+#      sudo: false
+#      python: "3.6"
+#      addons:
+#        apt:
+#          sources:
+#            - llvm-toolchain-trusty-5.0
+#          packages:
+#            - clang-5.0
+#      env:
+#        - MATRIX_EVAL="CC=clang-5.0 && CXX=clang++-5.0"
 
-compiler:
-  - clang
-
-python:
-  - "3.6"
+before_install:
+  - eval "${MATRIX_EVAL}"
+  - export CC CXX
+  - source ~/virtualenv/python3.6/bin/activate
 
 install:
-  - pip install -r requirements.txt
+  - pip3 install -r requirements.txt
 
 script:
-  - export CC=clang
-  - export CXX=clang++
   - mkdir -p build
   - cd build
   - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..

@@ -12,8 +12,9 @@ endif()
 project(hackerrank)
 
 set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wconversion -Wno-unused-result")
-set(CMAKE_C_FLAGS "-std=c11 -Wall -Wextra -Wconversion -Wno-unused-result")
+set(CMAKE_C_FLAGS "-Wall -Wextra -Wconversion -Wno-unused-result")
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
     # clang n'a pas le fichier pratique de gcc de précompilation des headers de la STL
@@ -35,10 +36,10 @@ macro(add_test_hackerrank name)
     set_tests_properties(${name} PROPERTIES TIMEOUT 30)
 endmacro()
 
-macro(add_hackerrank name cpp)
-    add_executable(${name} ${cpp})
+macro(add_hackerrank name src)
+    add_executable(${name} ${src})
     add_test_hackerrank(${name})
-endmacro(add_hackerrank name cpp)
+endmacro(add_hackerrank name src)
 
 # les auteurs d'hackerrank n'assoient un peu sur la qualité de leur code
 macro(dirty_cpp name)

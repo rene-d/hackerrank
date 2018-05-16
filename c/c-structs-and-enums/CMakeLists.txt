@@ -7,3 +7,5 @@ add_hackerrank(structuring-the-document structuring-the-document.c)
 target_compile_options(small-triangles-large-triangles PRIVATE "-Wno-conversion")
 target_compile_options(post-transition PRIVATE "-Wno-conversion")
 target_compile_options(structuring-the-document PRIVATE "-Wno-conversion" "-Wno-unused-variable")
+
+target_link_libraries(small-triangles-large-triangles m)
