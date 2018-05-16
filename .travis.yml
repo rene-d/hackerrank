@@ -34,9 +34,13 @@ before_install:
   - source ~/virtualenv/python3.6/bin/activate
 
 install:
+  - eval "${MATRIX_EVAL}"
+  - source ~/virtualenv/python3.6/bin/activate
   - pip3 install -r requirements.txt
 
 script:
+  - eval "${MATRIX_EVAL}"
+  - source ~/virtualenv/python3.6/bin/activate
   - mkdir -p build
   - cd build
   - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
