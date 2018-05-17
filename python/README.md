@@ -196,3 +196,10 @@ Name | Preview | Code | Difficulty
 [Polynomials](https://www.hackerrank.com/challenges/np-polynomials)|Given the coefficients, use polynomials in NumPy.|[Python](numpy/np-polynomials.py)|Easy
 [Linear Algebra](https://www.hackerrank.com/challenges/np-linear-algebra)|NumPy routines for linear algebra calculations.|[Python](numpy/np-linear-algebra.py)|Easy
 
+#### [Debugging](https://www.hackerrank.com/domains/python/py-debugging)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Python words score](https://www.hackerrank.com/challenges/python-words-score)|Calculate the total score of the list of words.|[Python](py-debugging/python-words-score.py)|Medium
+[Python default arguments](https://www.hackerrank.com/challenges/python-default-arguments)|Debug a function which uses a default value for one of its arguments.|[Python](py-debugging/python-default-arguments.py)|Medium
+
