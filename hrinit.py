@@ -53,6 +53,11 @@ class HackerRankParser():
             self.contest = m['contest_slug']
             self.key = m['slug']
 
+            if 'id' in m:
+                self.challenge_id = m['id']
+            else:
+                self.challenge_id = None
+
             if m['contest_slug'] == "master":
                 self.url = "https://www.hackerrank.com/challenges/{}/problem".format(self.key)
                 self.url2 = None
@@ -148,6 +153,8 @@ class HackerRankParser():
             line('{}'.format(self.url))
             if self.url2:
                 line('{}'.format(self.url2))
+            if self.challenge_id:
+                line('challenge id: {}'.format(self.challenge_id))
             line('')
             line()
 
