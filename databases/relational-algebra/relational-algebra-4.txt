@@ -1,0 +1,6 @@
+# Databases > Relational Algebra > Relational Algebra - 4
+#
+# https://www.hackerrank.com/challenges/relational-algebra-4/problem
+#
+
+Left to right

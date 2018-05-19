@@ -1,0 +1,7 @@
+# Databases > Relational Algebra > Relations - 1
+
+#
+# https://www.hackerrank.com/challenges/relations-1/problem
+#
+
+Join

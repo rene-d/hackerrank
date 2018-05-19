@@ -1,0 +1,9 @@
+# Databases > Relational Algebra > Basics of Sets and Relations #2
+# Problems based on the basics of sets and relations.
+#
+# https://www.hackerrank.com/challenges/basics-of-sets-and-relational-algebra-2/problem
+#
+
+# intersection: les éléments 2,3,4,5,6 sont présents dans les deux listes
+
+5

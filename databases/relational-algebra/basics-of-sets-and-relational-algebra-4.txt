@@ -1,0 +1,9 @@
+# Databases > Relational Algebra > Basics of Sets and Relations #4
+# Problems based on the basics of sets and relations.
+#
+# https://www.hackerrank.com/challenges/basics-of-sets-and-relational-algebra-4/problem
+#
+
+# c'est le nombre de combinaisons entre A et B: 6 éléments de A avec 7 éléments de B
+
+42
