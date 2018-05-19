@@ -140,12 +140,12 @@ else
 
     # si les fichiers de testcases existent: on les extrait
     zip="${rootdir}/testcases/${contest}/${testname}-testcases.zip"
-    if [ -f "${zip}" ]; then
+    if [ -s "${zip}" ]; then
         unzip -q -o -d tests/${testname} "${zip}"
     fi
 
     zip="${rootdir}/testcases2/${contest}/${testname}-testcases2.zip"
-    if [ -f  "${zip}" ]; then
+    if [ -s "${zip}" ]; then
         unzip -q -o -d tests/${testname} "${zip}"
     fi
 fi
