@@ -70,7 +70,6 @@ class HackerRankParser():
                 self.url = "https://www.hackerrank.com/contests/{}/challenges/{}".format(self.contest, self.key)  # noqa
                 self.url2 = None
 
-
     def info(self):
         print("key     :", self.model['slug'])
         print("name    :", self.model['name'])
@@ -287,10 +286,10 @@ class HackerRankParser():
             self.download(overwrite=overwrite)
         if statement:
             self.download(dest_dir="statements",
-                        url="download_pdf?language=English",
-                        suffix=".pdf",
-                        content_type="application/pdf",
-                        overwrite=overwrite)
+                          url="download_pdf?language=English",
+                          suffix=".pdf",
+                          content_type="application/pdf",
+                          overwrite=overwrite)
 
 
 def main():
