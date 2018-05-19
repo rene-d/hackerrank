@@ -5,6 +5,8 @@
 
 using namespace std;
 
+#pragma GCC diagnostic ignored "-Wsign-conversion"
+
 int main()
 {
     vector<int> a;

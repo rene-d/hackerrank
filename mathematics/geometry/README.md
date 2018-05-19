@@ -12,6 +12,7 @@ Name | Preview | Code | Difficulty
 [Sherlock and Counting](https://www.hackerrank.com/challenges/sherlock-and-counting)|Help Sherlock count numbers satisfying an inequality.|[Python](sherlock-and-counting.py)|Easy
 [Sherlock and Planes](https://www.hackerrank.com/challenges/sherlock-and-planes)|Help Sherlock with points on planes.|[Python](sherlock-and-planes.py)|Easy
 [Circle City](https://www.hackerrank.com/challenges/circle-city)|Determine whether Roy's city can be saved or not.|[Python](circle-city.py)|Medium
+[Xrange's Pancakes](https://www.hackerrank.com/challenges/xrange-and-pizza)|Determine who needs to be added to the end of the line to restore the pancake to its initial orientation.|[Python](xrange-and-pizza.py)|Easy
 [Baby Step, Giant Step](https://www.hackerrank.com/challenges/baby-step-giant-step)|Find the minimum number of steps needed to get to point $(d, 0)$.|[Python](baby-step-giant-step.py)|Medium
 [Points on a Rectangle](https://www.hackerrank.com/challenges/points-on-rectangle)|Determine if a set of points coincides with the edges of a non-degenerate rectangle.|[Python](points-on-rectangle.py)|Easy
 

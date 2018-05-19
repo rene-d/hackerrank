@@ -38,4 +38,5 @@ Name | Preview | Code | Difficulty
 [Most Distant](https://www.hackerrank.com/challenges/most-distant)|Measure the gap between the two most distant coordinates.|[Python](most-distant.py)|Easy
 [Jim and the Jokes](https://www.hackerrank.com/challenges/jim-and-the-jokes)|Jim is running out of jokes! Help him finding new jokes.|[Python](jim-and-the-jokes.py)|Medium
 [Possible Path](https://www.hackerrank.com/challenges/possible-path)|Help Adam in reaching at aa particular point.|[Python](possible-path.py)|Easy
+[Mutual Recurrences](https://www.hackerrank.com/challenges/mutual-recurrences)|Compute terms in a mutual recurrence.|[C++](mutual-recurrences.cpp) [Python](mutual-recurrences.py)|Medium
 

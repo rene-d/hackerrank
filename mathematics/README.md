@@ -38,6 +38,7 @@ Name | Preview | Code | Difficulty
 [Most Distant](https://www.hackerrank.com/challenges/most-distant)|Measure the gap between the two most distant coordinates.|[Python](fundamentals/most-distant.py)|Easy
 [Jim and the Jokes](https://www.hackerrank.com/challenges/jim-and-the-jokes)|Jim is running out of jokes! Help him finding new jokes.|[Python](fundamentals/jim-and-the-jokes.py)|Medium
 [Possible Path](https://www.hackerrank.com/challenges/possible-path)|Help Adam in reaching at aa particular point.|[Python](fundamentals/possible-path.py)|Easy
+[Mutual Recurrences](https://www.hackerrank.com/challenges/mutual-recurrences)|Compute terms in a mutual recurrence.|[C++](fundamentals/mutual-recurrences.cpp) [Python](fundamentals/mutual-recurrences.py)|Medium
 
 #### [Number Theory](https://www.hackerrank.com/domains/mathematics/number-theory)
 
@@ -96,6 +97,7 @@ Name | Preview | Code | Difficulty
 [Sherlock and Counting](https://www.hackerrank.com/challenges/sherlock-and-counting)|Help Sherlock count numbers satisfying an inequality.|[Python](geometry/sherlock-and-counting.py)|Easy
 [Sherlock and Planes](https://www.hackerrank.com/challenges/sherlock-and-planes)|Help Sherlock with points on planes.|[Python](geometry/sherlock-and-planes.py)|Easy
 [Circle City](https://www.hackerrank.com/challenges/circle-city)|Determine whether Roy's city can be saved or not.|[Python](geometry/circle-city.py)|Medium
+[Xrange's Pancakes](https://www.hackerrank.com/challenges/xrange-and-pizza)|Determine who needs to be added to the end of the line to restore the pancake to its initial orientation.|[Python](geometry/xrange-and-pizza.py)|Easy
 [Baby Step, Giant Step](https://www.hackerrank.com/challenges/baby-step-giant-step)|Find the minimum number of steps needed to get to point $(d, 0)$.|[Python](geometry/baby-step-giant-step.py)|Medium
 [Points on a Rectangle](https://www.hackerrank.com/challenges/points-on-rectangle)|Determine if a set of points coincides with the edges of a non-degenerate rectangle.|[Python](geometry/points-on-rectangle.py)|Easy
 
