@@ -1,6 +1,6 @@
 # [![HackerRank](https://hrcdn.net/hackerrank/assets/brand/h_mark_sm-30dc0e0cbd2dded63b294819ff853a90.svg)](https://www.hackerrank.com) HackerRank
 
-[![Build Status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank) [![592 solutions and counting](https://img.shields.io/badge/Challenges-592-blue.svg)](https://www.hackerrank.com/rene_d?hr_r=1)
+[![Build Status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank) [![632 solutions and counting](https://img.shields.io/badge/Challenges-632-blue.svg)](https://www.hackerrank.com/rene_d?hr_r=1)
 
 [HackerRank](https://www.hackerrank.com/dashboard) is a great place to learn, improve, play with your programming skills.
 
@@ -62,3 +62,13 @@ A solution can be tested solely with `runtest.sh -t challenge-name [-n test-numb
 ### IDE
 
 [Visual Studio Code](https://code.visualstudio.com) is a great free IDE that comes with many [plugins](https://marketplace.visualstudio.com/vscode). Some configuration files are provided.
+
+### Other online resources
+
+* [stack overflow](https://stackoverflow.com) and [Mathematics Stack Exchange](https://math.stackexchange.com)
+* [GeeksforGeeks](https://www.geeksforgeeks.org) Computer Science portal and resources
+* [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code)
+* [tutorialspoint](https://www.tutorialspoint.com/)
+* [Compiler Explorer](https://godbolt.org) Run compilers interactively from your web browser and interact with the assembly ([opensource](https://github.com/mattgodbolt/compiler-explorer)).
+* [Ideone](https://ideone.com) Online compiler and debugging tool which allows youto compile source code and execute it online in more than 60 programming languages.
+* and many, many more...
