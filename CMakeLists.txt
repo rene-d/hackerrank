@@ -11,6 +11,8 @@ endif()
 
 project(hackerrank)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS on)
+
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wconversion -Wno-unused-result")

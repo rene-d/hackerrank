@@ -59,8 +59,12 @@ Name | Preview | Code | Difficulty
 [Dancing in Pairs](https://www.hackerrank.com/challenges/dance-class)|Find out if they can dance in pairs?|[Python](number-theory/dance-class.py)|Hard
 [The Chosen One](https://www.hackerrank.com/challenges/the-chosen-one)|Given a list of integers, find and print an integer that is a divisor of all but one integer in the list.|[Python](number-theory/the-chosen-one.py)|Medium
 [Power of large numbers](https://www.hackerrank.com/challenges/power-of-large-numbers)|How much does Hackerland coach pay to get Cristiano Ronaldo to play for his team?|[Python](number-theory/power-of-large-numbers.py)|Medium
+[Salary Blues](https://www.hackerrank.com/challenges/salary-blues)|Help manager of HackerX company to normalize salaries.|[Python](number-theory/salary-blues.py)|Medium
 [Akhil and GF](https://www.hackerrank.com/challenges/akhil-and-gf)|Help Akhil in impressing his girlfriend|[Python](number-theory/akhil-and-gf.py)|Hard
+[Little Ashish's Huge Donation](https://www.hackerrank.com/challenges/little-chammys-huge-donation)|Help Ashish calculate donations.|[C++](number-theory/little-chammys-huge-donation.cpp)|Hard
 [Manasa and Factorials](https://www.hackerrank.com/challenges/manasa-and-factorials)|Think about number of zeros in k!|[Python](number-theory/manasa-and-factorials.py)|Hard
+[Number of zero-xor subsets](https://www.hackerrank.com/challenges/number-of-subsets)|How many subsets with zero xor are here?|[Python](number-theory/number-of-subsets.py)|Medium
+[Cheese and Random Toppings](https://www.hackerrank.com/challenges/cheese-and-random-toppings)|How many ways are there to choose exactly R toppings from N toppings?|[Python](number-theory/cheese-and-random-toppings.py)|Easy
 [Easy GCD](https://www.hackerrank.com/challenges/easy-gcd-1)|Find the maximum number less than K such that GCD of all numbers is still more than one!|[Python](number-theory/easy-gcd-1.py)|Medium
 [Manasa loves Maths](https://www.hackerrank.com/challenges/manasa-loves-maths)|Find out if any permutation of the given number is divisible by 8.|[Python](number-theory/manasa-loves-maths.py)|Medium
 [John and GCD list](https://www.hackerrank.com/challenges/john-and-gcd-list)|Help John in making a list from GCD list|[Python](number-theory/john-and-gcd-list.py)|Easy

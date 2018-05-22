@@ -148,6 +148,11 @@ else
     if [ -s "${zip}" ]; then
         unzip -q -o -d tests/${testname} "${zip}"
     fi
+
+    zip="${rootdir}/offline/testcases/${contest}/${testname}-testcases.zip"
+    if [ -s "${zip}" ]; then
+        unzip -q -o -d tests/${testname} "${zip}"
+    fi
 fi
 
 # si on n'a pas le répertoire des testcases, c'est une erreur
