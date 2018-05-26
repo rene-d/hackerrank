@@ -1,46 +1,29 @@
-
 matrix:
   include:
-    # works on Precise and Trusty
-    - os: linux
-      dist: trusty
-      sudo: false
-      python: "3.6"
-      addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-          packages:
-            - g++-7
-      env:
-        - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
-
-    # works on Trusty
-#    - os: linux
-#      dist: trusty
-#      sudo: false
-#      python: "3.6"
-#      addons:
-#        apt:
-#          sources:
-#            - llvm-toolchain-trusty-5.0
-#          packages:
-#            - clang-5.0
-#      env:
-#        - MATRIX_EVAL="CC=clang-5.0 && CXX=clang++-5.0"
-
+  - os: linux
+    dist: trusty
+    sudo: false
+    python: '3.6'
+    addons:
+      apt:
+        sources:
+        - ubuntu-toolchain-r-test
+        packages:
+        - g++-7
+    env:
+    - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
 before_install:
-  - eval "${MATRIX_EVAL}"
-  - export CC CXX
-  - source ~/virtualenv/python3.6/bin/activate
-
+- eval "${MATRIX_EVAL}"
+- export CC CXX
+- source ~/virtualenv/python3.6/bin/activate
 install:
-  - pip3 install -r requirements.txt
-
+- pip3 install -r requirements.txt
 script:
-  - mkdir -p build
-  - cd build
-  - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
-  - make -j$(nproc)
-  - make extract-testcases
-  - ctest -j$(nproc) --output-on-failure
+- mkdir -p build
+- cd build
+- cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
+- make -j$(nproc)
+- make extract-testcases
+- ctest -j$(nproc) --output-on-failure
+- tar czf build.tgz build/compile_commands.json
+- secure: W0F6qWaA9tQ1U1XwwnY+wwr7EgJOpcJVSLC36yVMzUTJO7JlZmljI5h7S7Hswt0rkamziUypkrDOGnVFKY9kXncfaVnSRAI0ilcr0o34jC6tayXLzcl9zNwBQQt7EC7wTmoLsK3HqlvfMI2SIL817wOEqPjYwrZBT8u9UpH4Ubxj/UV5F+HCIn/vA0F9DhWxkQfwEUKBgyCT+QKwMQgZo05qHmVPgYU3OKhwXll5ZOB06O3Mil4KYHDBA9upHACHl+1o4t9F519roCuJg5hR46r3189pOcXJWAKBNsB54fBLSES8Q2D9RCrGXBY/KZcRulkx3uBAFrcfEVnU98SOL3/fzcwj6PogufTWtGwEV1oB4sCIJmrjDasY8aTtQ5q8hMfOs8iRr15uP/ltp5W+OqrGq/UmGtdhm20as5UNvb4uJ2KJVG4GyOMeGQMeYIRvHBkpSK2SbdGROUS8aDpAEzI9Z8scQo6j5fekFNxvsAuTPVTt023kR6NpVttGnMRgLf4svyMvKpIk2Bue5FtIHagPzDJwJHzxqlhRqAZkt8T7P8shtto8TSFk6DOlbGYYzi0xD+Psr5wQJk9NsNhFWCvkjz8LviMZ7J4oNd8skrTqfLcIzAJC1AC0ckOTEOMJXKl71QsM/11FX1dUWSAE01l4Ov9hPwhXfDAE2FiWWbM=

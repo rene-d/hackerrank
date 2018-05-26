@@ -26,10 +26,12 @@ endif()
 
 enable_testing()
 
+# cible pour extraire les testcases
 add_custom_target(extract-testcases
                   COMMAND ${CMAKE_SOURCE_DIR}/runtest.sh -X ${CMAKE_BINARY_DIR}/tests
                   WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
 
+# lancement du test d'un challenge
 set(HACKERRANK_CONTEST master)
 macro(add_test_hackerrank name)
     add_test(NAME ${name}
@@ -38,6 +40,7 @@ macro(add_test_hackerrank name)
     set_tests_properties(${name} PROPERTIES TIMEOUT 30)
 endmacro()
 
+# ajoute un challenge en C/C++ avec le test associé
 macro(add_hackerrank name src)
     add_executable(${name} ${src})
     add_test_hackerrank(${name})
@@ -55,16 +58,19 @@ macro(dirty_cpp name)
     endif()
 endmacro(dirty_cpp name)
 
+# ajoute un challenge en Python avec le test associé
 macro(add_hackerrank_py name)
     configure_file("${name}" "${name}" COPYONLY @ONLY)
     add_test_hackerrank(${name})
 endmacro(add_hackerrank_py name)
 
+# ajoute un challenge et son test en bash
 macro(add_hackerrank_shell name)
     configure_file("${name}" "${name}" COPYONLY @ONLY)
     add_test_hackerrank(${name})
 endmacro(add_hackerrank_shell name)
 
+# contests et domains
 add_subdirectory(mathematics)
 add_subdirectory(algorithms)
 add_subdirectory(data-structures)
