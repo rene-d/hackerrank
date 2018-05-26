@@ -10,6 +10,7 @@ matrix:
         - ubuntu-toolchain-r-test
         packages:
         - g++-7
+        - lftp
     env:
     - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
 before_install:
@@ -19,6 +20,8 @@ before_install:
 install:
 - pip3 install -r requirements.txt
 script:
+- which lftp
+- which wput 
 - mkdir -p build
 - cd build
 - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
