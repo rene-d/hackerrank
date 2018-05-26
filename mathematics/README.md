@@ -67,21 +67,26 @@ Name | Preview | Code | Difficulty
 [Breaking Sticks](https://www.hackerrank.com/challenges/breaking-sticks)|Find the length of the longest sequence of moves.|[C++](number-theory/breaking-sticks.cpp)|Medium
 [Cheese and Random Toppings](https://www.hackerrank.com/challenges/cheese-and-random-toppings)|How many ways are there to choose exactly R toppings from N toppings?|[Python](number-theory/cheese-and-random-toppings.py)|Easy
 [Easy GCD](https://www.hackerrank.com/challenges/easy-gcd-1)|Find the maximum number less than K such that GCD of all numbers is still more than one!|[Python](number-theory/easy-gcd-1.py)|Medium
+[Satisfactory Pairs](https://www.hackerrank.com/challenges/pairs-again)|How many pairs of integers give a solution?|[C++](number-theory/pairs-again.cpp)|Hard
 [Manasa loves Maths](https://www.hackerrank.com/challenges/manasa-loves-maths)|Find out if any permutation of the given number is divisible by 8.|[Python](number-theory/manasa-loves-maths.py)|Medium
+[Largest Non-Coprime Submatrix](https://www.hackerrank.com/challenges/largest-coprime-submatrix)|Given a matrix find the largest coprime submatrix.|[C++](number-theory/largest-coprime-submatrix.cpp)|Hard
 [John and GCD list](https://www.hackerrank.com/challenges/john-and-gcd-list)|Help John in making a list from GCD list|[Python](number-theory/john-and-gcd-list.py)|Easy
 [Easy math](https://www.hackerrank.com/challenges/easy-math)|Help Johnny in figuring out the value of Y|[Python](number-theory/easy-math.py)|Medium
 [Binomial Coefficients](https://www.hackerrank.com/challenges/binomial-coefficients)|Calculate how many binomial coefficients of n become 0 after modulo by P.|[Python](number-theory/binomial-coefficients.py)|Medium
 [Lucy and Flowers](https://www.hackerrank.com/challenges/lucy-and-flowers)|Help Lucy's father with a computation involving flowers|[C++](number-theory/lucy-and-flowers.cpp)|Medium
+[nCr](https://www.hackerrank.com/challenges/ncr)|Given n and r, in how many ways can r items be chosen from n items?|[Python](number-theory/ncr.py)|Expert
 
 #### [Combinatorics](https://www.hackerrank.com/domains/mathematics/combinatorics)
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
-[nCr table](https://www.hackerrank.com/challenges/ncr-table)|Help Jim calculating nCr values|[Python](combinatorics/ncr-table.py)|Medium
+[nCr table](https://www.hackerrank.com/challenges/ncr-table)|Help Jim calculating nCr values|[C++](combinatorics/ncr-table.cpp) [Python](combinatorics/ncr-table.py)|Medium
 [Coinage](https://www.hackerrank.com/challenges/coinage)|Find the number of ways to pay a given amount, given a set of coins with prescribed denominations.|[Python](combinatorics/coinage.py)|Medium
 [Building a List](https://www.hackerrank.com/challenges/building-a-list)|Generate all possible combinations of a string|[Python](combinatorics/building-a-list.py)|Medium
 [Merge List](https://www.hackerrank.com/challenges/merge-list)|Help Shashank in merging two list.|[Python](combinatorics/merge-list.py)|Medium
 [A Chocolate Fiesta](https://www.hackerrank.com/challenges/a-chocolate-fiesta)|Find the number of even subsets in the given set of numbers.|[Python](combinatorics/a-chocolate-fiesta.py)|Easy
+[Sherlock and Pairs](https://www.hackerrank.com/challenges/sherlock-and-pairs)|Count the number of pairs that satisfy a given constraint.|[Python](combinatorics/sherlock-and-pairs.py)|Medium
+[Picking Cards](https://www.hackerrank.com/challenges/picking-cards)|How many ways can you pick up all the cards from a table?|[Python](combinatorics/picking-cards.py)|Easy
 
 #### [Algebra](https://www.hackerrank.com/domains/mathematics/algebra)
 
@@ -98,6 +103,7 @@ Name | Preview | Code | Difficulty
 [Number Groups](https://www.hackerrank.com/challenges/number-groups)|Find the sum of consecutive odd number groups.|[Python](algebra/number-groups.py)|Easy
 [Tell the Average](https://www.hackerrank.com/challenges/tell-the-average)|Tell me average of all list value.|[Python](algebra/tell-the-average.py)|Medium
 [Wet Shark and 42](https://www.hackerrank.com/challenges/wet-shark-and-42)|Help Wet Shark escape the gods of 42.|[Python](algebra/wet-shark-and-42.py)|Easy
+[Sherlock and Square](https://www.hackerrank.com/challenges/sherlock-and-square)|Help Sherlock in finding the total side lengths of squares.|[Python](algebra/sherlock-and-square.py)|Hard
 [Manasa and Sub-sequences ](https://www.hackerrank.com/challenges/manasa-and-sub-sequences)|Help Manasa in getting candies|[Python](algebra/manasa-and-sub-sequences.py)|Medium
 
 #### [Geometry](https://www.hackerrank.com/domains/mathematics/geometry)

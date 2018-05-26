@@ -30,9 +30,12 @@ Name | Preview | Code | Difficulty
 [Breaking Sticks](https://www.hackerrank.com/challenges/breaking-sticks)|Find the length of the longest sequence of moves.|[C++](breaking-sticks.cpp)|Medium
 [Cheese and Random Toppings](https://www.hackerrank.com/challenges/cheese-and-random-toppings)|How many ways are there to choose exactly R toppings from N toppings?|[Python](cheese-and-random-toppings.py)|Easy
 [Easy GCD](https://www.hackerrank.com/challenges/easy-gcd-1)|Find the maximum number less than K such that GCD of all numbers is still more than one!|[Python](easy-gcd-1.py)|Medium
+[Satisfactory Pairs](https://www.hackerrank.com/challenges/pairs-again)|How many pairs of integers give a solution?|[C++](pairs-again.cpp)|Hard
 [Manasa loves Maths](https://www.hackerrank.com/challenges/manasa-loves-maths)|Find out if any permutation of the given number is divisible by 8.|[Python](manasa-loves-maths.py)|Medium
+[Largest Non-Coprime Submatrix](https://www.hackerrank.com/challenges/largest-coprime-submatrix)|Given a matrix find the largest coprime submatrix.|[C++](largest-coprime-submatrix.cpp)|Hard
 [John and GCD list](https://www.hackerrank.com/challenges/john-and-gcd-list)|Help John in making a list from GCD list|[Python](john-and-gcd-list.py)|Easy
 [Easy math](https://www.hackerrank.com/challenges/easy-math)|Help Johnny in figuring out the value of Y|[Python](easy-math.py)|Medium
 [Binomial Coefficients](https://www.hackerrank.com/challenges/binomial-coefficients)|Calculate how many binomial coefficients of n become 0 after modulo by P.|[Python](binomial-coefficients.py)|Medium
 [Lucy and Flowers](https://www.hackerrank.com/challenges/lucy-and-flowers)|Help Lucy's father with a computation involving flowers|[C++](lucy-and-flowers.cpp)|Medium
+[nCr](https://www.hackerrank.com/challenges/ncr)|Given n and r, in how many ways can r items be chosen from n items?|[Python](ncr.py)|Expert
 

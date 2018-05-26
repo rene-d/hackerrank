@@ -4,7 +4,6 @@
 # https://www.hackerrank.com/challenges/sherlock-and-squares/problem
 #
 
-
 def squares(a, b):
     # Complete this function
 
@@ -25,6 +24,7 @@ def squares(a, b):
         else:
             break
     return nb
+
 
 if __name__ == "__main__":
     q = int(input().strip())

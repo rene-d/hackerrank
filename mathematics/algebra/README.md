@@ -18,5 +18,6 @@ Name | Preview | Code | Difficulty
 [Number Groups](https://www.hackerrank.com/challenges/number-groups)|Find the sum of consecutive odd number groups.|[Python](number-groups.py)|Easy
 [Tell the Average](https://www.hackerrank.com/challenges/tell-the-average)|Tell me average of all list value.|[Python](tell-the-average.py)|Medium
 [Wet Shark and 42](https://www.hackerrank.com/challenges/wet-shark-and-42)|Help Wet Shark escape the gods of 42.|[Python](wet-shark-and-42.py)|Easy
+[Sherlock and Square](https://www.hackerrank.com/challenges/sherlock-and-square)|Help Sherlock in finding the total side lengths of squares.|[Python](sherlock-and-square.py)|Hard
 [Manasa and Sub-sequences ](https://www.hackerrank.com/challenges/manasa-and-sub-sequences)|Help Manasa in getting candies|[Python](manasa-and-sub-sequences.py)|Medium
 

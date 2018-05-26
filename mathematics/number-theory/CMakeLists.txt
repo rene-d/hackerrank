@@ -26,3 +26,8 @@ add_hackerrank(breaking-sticks breaking-sticks.cpp)
 add_hackerrank_py(easy-math.py)
 add_hackerrank(lucy-and-flowers lucy-and-flowers.cpp)
 add_hackerrank_py(binomial-coefficients.py)
+add_hackerrank(pairs-again pairs-again.cpp)
+add_hackerrank(largest-coprime-submatrix largest-coprime-submatrix.cpp)
+
+set_tests_properties(pairs-again PROPERTIES TIMEOUT 120)
+add_hackerrank_py(ncr.py)

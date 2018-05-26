@@ -46,7 +46,8 @@
         "ratio": "cpp",
         "tuple": "cpp",
         "string.h": "c",
-        "locale": "cpp"
+        "locale": "cpp",
+        "numeric": "cpp"
     },
     "files.exclude": {
         "**/.git": true,
