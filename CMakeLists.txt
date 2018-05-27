@@ -79,6 +79,7 @@ add_subdirectory(python)
 add_subdirectory(shell)
 add_subdirectory(c)
 add_subdirectory(security)
+add_subdirectory(regex)
 add_subdirectory(tutorials)
 add_subdirectory(contests)
 
