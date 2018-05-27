@@ -20,4 +20,5 @@ Name | Preview | Code | Difficulty
 [Wet Shark and 42](https://www.hackerrank.com/challenges/wet-shark-and-42)|Help Wet Shark escape the gods of 42.|[Python](wet-shark-and-42.py)|Easy
 [Sherlock and Square](https://www.hackerrank.com/challenges/sherlock-and-square)|Help Sherlock in finding the total side lengths of squares.|[Python](sherlock-and-square.py)|Hard
 [Manasa and Sub-sequences ](https://www.hackerrank.com/challenges/manasa-and-sub-sequences)|Help Manasa in getting candies|[Python](manasa-and-sub-sequences.py)|Medium
+[Simple One](https://www.hackerrank.com/challenges/simple-one)|Calculate the tan function of a given equation.|[Python](simple-one.py)|Easy
 

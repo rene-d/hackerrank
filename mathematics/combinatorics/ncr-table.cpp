@@ -38,7 +38,7 @@ int main()
 
     while (t--)
     {
-        int n;
+        unsigned n;
         cin >> n;
         for (unsigned i = 0; i <= n; ++i)
             cout << C[n][i] << " ";

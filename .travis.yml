@@ -1,29 +1,46 @@
+
 matrix:
   include:
-  - os: linux
-    dist: trusty
-    sudo: false
-    python: '3.6'
-    addons:
-      apt:
-        sources:
-        - ubuntu-toolchain-r-test
-        packages:
-        - g++-7
-        - lftp
-    env:
-    - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
+    # works on Precise and Trusty
+    - os: linux
+      dist: trusty
+      sudo: false
+      python: "3.6"
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-7
+      env:
+        - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
+
+    # works on Trusty
+#    - os: linux
+#      dist: trusty
+#      sudo: false
+#      python: "3.6"
+#      addons:
+#        apt:
+#          sources:
+#            - llvm-toolchain-trusty-5.0
+#          packages:
+#            - clang-5.0
+#      env:
+#        - MATRIX_EVAL="CC=clang-5.0 && CXX=clang++-5.0"
+
 before_install:
-- eval "${MATRIX_EVAL}"
-- export CC CXX
-- source ~/virtualenv/python3.6/bin/activate
+  - eval "${MATRIX_EVAL}"
+  - export CC CXX
+  - source ~/virtualenv/python3.6/bin/activate
+
 install:
-- pip3 install -r requirements.txt
+  - pip3 install -r requirements.txt
+
 script:
-- which lftp
-- which wput 
-- mkdir -p build
-- cd build
-- cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
-- tar czf build.tgz compile_commands.json
-- secure: mFOznuXeHct0lf7+bQZdqk0BjPgYBJWZOnTT/tmBAFGUY+JFGqP+4QUEc/Rw4/HdS/5vNgZKb516dC8CunxLPg4i+jMmzW792cDiUa1NpNmmbSnkqWPYzG94QdCb3I8Z+/xCiobhbYKDH+Lr+ME4ztJlvvnaxK/1ztSbSAzw8zxBQ0cHrnW3xtLV99TRYSGviikIB71dy0lC8lBsHKx2N8Ouc7hHiSF+HQXztmpe6UbWgKjgLYgDRHqDvJYXIR32eENm3o1/cg2EXwXryz6yBKHUjWxmvx2F7pj4/KNRiI/Ea5QDJb65bwnzYm19j1osHWMR4kARPTW0Nbov7uDr9TurIIQM/SXPySbxbp1BlVY2lHqXZdYHT5kH2QeHVgeLg83HD0paUa/gBf8hwVBKQHtKMGVQAgeBMyjMNcf3jdN7vKufT/AEbgkTd8/qCmh9jk4J1XzCAHqCcN6yDm7txe61fqj7k9sm25IGLM7GMZv3m9FNyfkiwPSUTGDZ7AK92O0ljjpcXodqcV3s4/62Z3T1SNhqhF089Fjyy+aDyzoYUtj1wuqZ1QIoMG1FgKatLxv6GipKVrJY61cov63zbiwEYHYGXiOm/t8799dEUJxrdm266+80RVysOmyOIXOVr1nhH3nuJdf34Q44Vhgu9ZjhE2PuLxRDqRxbO1QhMdI=
+  - mkdir -p build
+  - cd build
+  - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
+  - make -j$(nproc)
+  - make extract-testcases
+  - ctest -j$(nproc) --output-on-failure
