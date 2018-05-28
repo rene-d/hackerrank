@@ -1,7 +1,7 @@
-# Python > Debugging > Python words score
+# Python > Debugging > Words Score
 # Calculate the total score of the list of words.
 #
-# https://www.hackerrank.com/challenges/python-words-score/problem
+# https://www.hackerrank.com/challenges/words-score/problem
 # challenge id: 66426
 #
 

@@ -85,6 +85,9 @@ class HackerRankParser():
                       "python3": "py",
                       "haskell": "hs",
                       "bash": "sh",
+                      "java": "java",
+                      "perl": "pl",
+                      "lua": "lua",
                       "text": "txt",
                       "oracle": "sql"}
 
@@ -92,21 +95,16 @@ class HackerRankParser():
         if lang == "*":
             if 'languages' in self.model:
                 languages = self.model['languages']
-                if 'python3' in languages:
-                    lang = 'python3'
-                elif 'cpp14' in languages:
-                    lang = 'cpp14'
-                elif 'haskell' in languages:
-                    lang = 'haskell'
-                elif 'bash' in languages:
-                    lang = 'bash'
-                elif 'oracle' in languages:
-                    lang = 'oracle'
-                elif 'c' in languages:
-                    lang = 'c'
+                if len(languages) == 1:
+                    lang = languages[0]
                 else:
-                    print("Cannot choose a language:", ' '.join(languages))
-                    return
+                    for i in ['python3', 'cpp14', 'c', 'haskell', 'bash', 'oracle', 'text']:
+                        if i in languages:
+                            lang = i
+                            break
+                    else:
+                        print("Cannot choose automatically a language:", ' '.join(languages))
+                        return
             else:
                 print('Model unknown: no languages[]')
                 return
@@ -162,6 +160,7 @@ class HackerRankParser():
                 skeliton("template")
                 skeliton("skeliton_tail") or skeliton("template_tail")
 
+        # langages avec testeur
         if lang == "cpp" or lang == "cpp14" or lang == "c":
 
             if hpp:
@@ -205,13 +204,19 @@ class HackerRankParser():
             with open(cmake, "at") as f:
                 f.write("add_hackerrank_shell({}.sh)\n".format(self.key))
 
-        elif lang == "text":
+        # langages sans testeur
+        elif lang == "text" or lang == "perl":
             with open(filename, "wt") as f:
                 write_header(f, '# ')
 
-        elif lang == "oracle":
+        elif lang == "oracle" or lang == "lua":
             with open(filename, "wt") as f:
                 write_header(f, '-- ')
+
+        elif lang == "java":
+            with open(filename, "wt") as f:
+                write_header(f, '// ')
+
 
         else:
             print("Unknown language:", lang)

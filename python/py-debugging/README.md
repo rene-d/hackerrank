@@ -7,6 +7,6 @@ A step by step guide to Python, a language that is easy to pick up yet one of th
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
-[Python words score](https://www.hackerrank.com/challenges/python-words-score)|Calculate the total score of the list of words.|[Python](python-words-score.py)|Medium
-[Python default arguments](https://www.hackerrank.com/challenges/python-default-arguments)|Debug a function which uses a default value for one of its arguments.|[Python](python-default-arguments.py)|Medium
+[Words Score](https://www.hackerrank.com/challenges/words-score)|Calculate the total score of the list of words.|[Python](words-score.py)|Medium
+[Default Arguments](https://www.hackerrank.com/challenges/default-arguments)|Debug a function which uses a default value for one of its arguments.|[Python](default-arguments.py)|Medium
 

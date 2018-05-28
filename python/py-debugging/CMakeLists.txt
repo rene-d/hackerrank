@@ -1,2 +1,2 @@
-add_hackerrank_py(python-default-arguments.py)
-add_hackerrank_py(python-words-score.py)
+add_hackerrank_py(default-arguments.py)
+add_hackerrank_py(words-score.py)

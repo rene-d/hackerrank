@@ -1,7 +1,7 @@
 # Python > Debugging > Default Arguments
 # Debug a function which uses a default value for one of its arguments.
 #
-# https://www.hackerrank.com/challenges/python-default-arguments/problem
+# https://www.hackerrank.com/challenges/default-arguments/problem
 # challenge id: 66403
 #
 
