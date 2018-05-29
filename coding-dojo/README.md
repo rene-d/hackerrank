@@ -49,6 +49,16 @@ Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Validating Credit Card Numbers](https://www.hackerrank.com/challenges/validating-credit-card-number)|Verify whether credit card numbers are valid or not.|[Python](validating-credit-card-number.py)|Medium
 
+### [Regex](https://www.hackerrank.com/domains/regex)
+Explore the power of regular expressions
+
+
+#### [Applications](https://www.hackerrank.com/domains/regex/re-applications)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[IP Address Validation](https://www.hackerrank.com/challenges/ip-address-validation)|Validate possible IP Addresses with regex.|[Python](ip-address-validation.py)|Easy
+
 ### [Data Structures](https://www.hackerrank.com/domains/data-structures)
 Data Structures help in elegant representation of data for algorithms
 

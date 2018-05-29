@@ -1,17 +1,35 @@
-# build and test HackerRank solutions
+# Build and test HackerRank solutions
 #
 
 cmake_minimum_required(VERSION 3.5)
 
+project(hackerrank)
+
+#
+# Options
+#
+
 option(HACKERRANK_FP "Toggle Functional Programming" OFF)
+option(HACKERRANK_JAVA "Toggle Java" ON)
+
+
+#
+# Réglages de la compilation
+#
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS on)
 
 if(HACKERRANK_FP)
     set(CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH};${CMAKE_SOURCE_DIR}/cmake-haskell/cmake")
 endif()
 
-project(hackerrank)
-
-set(CMAKE_EXPORT_COMPILE_COMMANDS on)
+if(HACKERRANK_JAVA)
+    find_package(Java REQUIRED)
+    include(UseJava)
+    # tous les challenges doivent avoir une classe Solution: on utilise un manifest simplifié
+    set(JAVA_DAI_MANIFEST "${CMAKE_CURRENT_BINARY_DIR}/manifest.mf")
+    file(WRITE ${JAVA_DAI_MANIFEST} "Main-Class: Solution\n")
+endif()
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_C_STANDARD 11)
@@ -25,6 +43,11 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 enable_testing()
+
+
+#
+# Macros
+#
 
 # cible pour extraire les testcases
 add_custom_target(extract-testcases
@@ -70,7 +93,25 @@ macro(add_hackerrank_shell name)
     add_test_hackerrank(${name})
 endmacro(add_hackerrank_shell name)
 
-# contests et domains
+# ajoute un challenge écrit en Java
+macro(add_hackerrank_java src)
+    if(HACKERRANK_JAVA)
+        get_filename_component(name ${src} NAME_WE)
+        set(JAR_NAME ${name})
+        set(JAVA_SOURCE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/${name})
+        file(MAKE_DIRECTORY ${JAVA_SOURCE_DIRECTORY})
+        set(JAVA_SOURCE_FILES ${JAVA_SOURCE_DIRECTORY}/Solution.java)
+        configure_file(${src} ${JAVA_SOURCE_FILES} COPYONLY @ONLY)
+        add_jar(${JAR_NAME} ${JAVA_SOURCE_FILES} MANIFEST ${JAVA_DAI_MANIFEST})
+        add_test_hackerrank(${name}.jar)
+    endif()
+endmacro()
+
+
+#
+# Contests et domains
+#
+
 add_subdirectory(mathematics)
 add_subdirectory(algorithms)
 add_subdirectory(data-structures)
