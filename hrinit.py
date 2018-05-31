@@ -217,7 +217,6 @@ class HackerRankParser():
             with open(filename, "wt") as f:
                 write_header(f, '// ')
 
-
         else:
             print("Unknown language:", lang)
             return

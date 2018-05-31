@@ -47,7 +47,8 @@
         "tuple": "cpp",
         "string.h": "c",
         "locale": "cpp",
-        "numeric": "cpp"
+        "numeric": "cpp",
+        "cmath": "cpp"
     },
     "files.exclude": {
         "**/.git": true,

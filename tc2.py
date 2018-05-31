@@ -11,7 +11,7 @@ import requests
 import re
 
 
-parser = argparse.ArgumentParser(description='Download testcases (practice challenge onlys).')
+parser = argparse.ArgumentParser(description='Download testcases (practice challenges only).')
 parser.add_argument('name', help="Challenge name")
 parser.add_argument('url', nargs='*', help="test case url")
 

@@ -14,7 +14,7 @@ option(HACKERRANK_JAVA "Toggle Java" ON)
 
 
 #
-# Réglages de la compilation
+# Compilation settings
 #
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS on)
@@ -26,7 +26,7 @@ endif()
 if(HACKERRANK_JAVA)
     find_package(Java REQUIRED)
     include(UseJava)
-    # tous les challenges doivent avoir une classe Solution: on utilise un manifest simplifié
+    # all Java challenges should have a Solution main class
     set(JAVA_DAI_MANIFEST "${CMAKE_CURRENT_BINARY_DIR}/manifest.mf")
     file(WRITE ${JAVA_DAI_MANIFEST} "Main-Class: Solution\n")
 endif()
@@ -37,7 +37,7 @@ set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wconversion -Wno-unused-result")
 set(CMAKE_C_FLAGS "-Wall -Wextra -Wconversion -Wno-unused-result")
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-    # clang n'a pas le fichier pratique de gcc de précompilation des headers de la STL
+    # clang doesn't have the handy gcc STL header file
     configure_file(stdc++.h.in bits/stdc++.h COPYONLY @ONLY)
     include_directories(${CMAKE_CURRENT_BINARY_DIR})
 endif()
@@ -49,12 +49,12 @@ enable_testing()
 # Macros
 #
 
-# cible pour extraire les testcases
+# target to extract the testcases
 add_custom_target(extract-testcases
                   COMMAND ${CMAKE_SOURCE_DIR}/runtest.sh -X ${CMAKE_BINARY_DIR}/tests
                   WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
 
-# lancement du test d'un challenge
+# run a challenge
 set(HACKERRANK_CONTEST master)
 macro(add_test_hackerrank name)
     add_test(NAME ${name}
@@ -63,13 +63,13 @@ macro(add_test_hackerrank name)
     set_tests_properties(${name} PROPERTIES TIMEOUT 30)
 endmacro()
 
-# ajoute un challenge en C/C++ avec le test associé
+# add a C/C++ challenge
 macro(add_hackerrank name src)
     add_executable(${name} ${src})
     add_test_hackerrank(${name})
 endmacro(add_hackerrank name src)
 
-# les auteurs d'hackerrank n'assoient un peu sur la qualité de leur code
+# hackerrank problem setters really should improve their code quality
 macro(dirty_cpp name)
     target_compile_options("${name}" PRIVATE "-Wno-conversion")
     #target_compile_options("${name}" PRIVATE "-Wno-sign-conversion")
@@ -81,19 +81,19 @@ macro(dirty_cpp name)
     endif()
 endmacro(dirty_cpp name)
 
-# ajoute un challenge en Python avec le test associé
+# add a Python challenge
 macro(add_hackerrank_py name)
     configure_file("${name}" "${name}" COPYONLY @ONLY)
     add_test_hackerrank(${name})
 endmacro(add_hackerrank_py name)
 
-# ajoute un challenge et son test en bash
+# add a Shell challenge
 macro(add_hackerrank_shell name)
     configure_file("${name}" "${name}" COPYONLY @ONLY)
     add_test_hackerrank(${name})
 endmacro(add_hackerrank_shell name)
 
-# ajoute un challenge écrit en Java
+# add a Java challenge (only if option is on)
 macro(add_hackerrank_java src)
     if(HACKERRANK_JAVA)
         get_filename_component(name ${src} NAME_WE)
@@ -109,7 +109,7 @@ endmacro()
 
 
 #
-# Contests et domains
+# Contests and domains
 #
 
 add_subdirectory(mathematics)
