@@ -1,0 +1,4 @@
+add_hackerrank_java(welcome-to-java.java)
+add_hackerrank_java(java-stdin-and-stdout-1.java)
+add_hackerrank_java(java-if-else.java)
+add_hackerrank_java(java-stdin-stdout.java)

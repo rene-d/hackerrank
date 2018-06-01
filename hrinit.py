@@ -86,6 +86,7 @@ class HackerRankParser():
                       "haskell": "hs",
                       "bash": "sh",
                       "java": "java",
+                      "java8": "java",
                       "perl": "pl",
                       "lua": "lua",
                       "text": "txt",
@@ -98,7 +99,7 @@ class HackerRankParser():
                 if len(languages) == 1:
                     lang = languages[0]
                 else:
-                    for i in ['python3', 'cpp14', 'c', 'haskell', 'bash', 'oracle', 'text']:
+                    for i in ['python3', 'cpp14', 'c', 'haskell', 'bash', 'oracle', 'text', 'java8']:
                         if i in languages:
                             lang = i
                             break
@@ -204,6 +205,12 @@ class HackerRankParser():
             with open(cmake, "at") as f:
                 f.write("add_hackerrank_shell({}.sh)\n".format(self.key))
 
+        elif lang == "java" or lang == "java8":
+            with open(filename, "wt") as f:
+                write_header(f, '// ')
+            with open(cmake, "at") as f:
+                f.write("add_hackerrank_java({}.java)\n".format(self.key))
+
         # langages sans testeur
         elif lang == "text" or lang == "perl":
             with open(filename, "wt") as f:
@@ -212,10 +219,6 @@ class HackerRankParser():
         elif lang == "oracle" or lang == "lua":
             with open(filename, "wt") as f:
                 write_header(f, '-- ')
-
-        elif lang == "java":
-            with open(filename, "wt") as f:
-                write_header(f, '// ')
 
         else:
             print("Unknown language:", lang)
