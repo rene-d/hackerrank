@@ -92,6 +92,9 @@ class HackerRankParser():
                       "text": "txt",
                       "oracle": "sql"}
 
+        PREFERED = ['python3', 'cpp14', 'c', 'haskell',
+                    'bash', 'oracle', 'text', 'java8']
+
         # auto choose the language
         if lang == "*":
             if 'languages' in self.model:
@@ -99,7 +102,7 @@ class HackerRankParser():
                 if len(languages) == 1:
                     lang = languages[0]
                 else:
-                    for i in ['python3', 'cpp14', 'c', 'haskell', 'bash', 'oracle', 'text', 'java8']:
+                    for i in PREFERED:
                         if i in languages:
                             lang = i
                             break
