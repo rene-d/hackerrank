@@ -58,6 +58,7 @@ Explore the power of regular expressions
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [IP Address Validation](https://www.hackerrank.com/challenges/ip-address-validation)|Validate possible IP Addresses with regex.|[Python](ip-address-validation.py)|Easy
+[Detecting Valid Latitude and Longitude Pairs](https://www.hackerrank.com/challenges/detecting-valid-latitude-and-longitude)|Can you detect the Latitude and Longitude embedded in text snippets, using regular expressions?|[Python](detecting-valid-latitude-and-longitude.py)|Easy
 
 ### [Data Structures](https://www.hackerrank.com/domains/data-structures)
 Data Structures help in elegant representation of data for algorithms
