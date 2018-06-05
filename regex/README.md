@@ -78,5 +78,10 @@ Name | Preview | Code | Difficulty
 [Valid PAN format](https://www.hackerrank.com/challenges/valid-pan-format)|Use regex to determine the validity of a given set of characters.|[Python](re-applications/valid-pan-format.py)|Easy
 [Find HackerRank](https://www.hackerrank.com/challenges/find-hackerrank)|Write a regex to find out if conversations start/end or both start and end with hackerrank|[Python](re-applications/find-hackerrank.py)|Easy
 [Saying Hi](https://www.hackerrank.com/challenges/saying-hi)|Use a regex to print all the lines that start with "hi " but are not immediately followed by a 'd' or 'D'.|[Python](re-applications/saying-hi.py)|Easy
+[HackerRank Language](https://www.hackerrank.com/challenges/hackerrank-language)|Use regex if an api request has a valid language string set or not|[Python](re-applications/hackerrank-language.py)|Easy
+[Building a Smart IDE: Programming Language Detection](https://www.hackerrank.com/challenges/programming-language-detection)|You are provided with a set of programs in Java, C and Python and you are also told which of the languages each program is in. Now, given a program written in one of these languages, can you identify which of the languages it is written in?|[Python](re-applications/programming-language-detection.py)|Medium
+[Split the Phone Numbers](https://www.hackerrank.com/challenges/split-number)|This problem introduces you to the concept of matching groups in regular expressions.|[Python](re-applications/split-number.py)|Easy
+[Detect HTML Attributes](https://www.hackerrank.com/challenges/html-attributes)|Use Regular Expressions to detect HTML Attributes corresponding to various tags.|[Python](re-applications/html-attributes.py)|Easy
 [The British and American Style of Spelling](https://www.hackerrank.com/challenges/uk-and-us)|Use regular expression to find the count of a given word that ends with either *ze* or *se*|[Python](re-applications/uk-and-us.py)|Easy
+[UK and US: Part 2](https://www.hackerrank.com/challenges/uk-and-us-2)|Use regular expression to count the number of occurrences of a given word with either *our* or *or* in it.|[Python](re-applications/uk-and-us-2.py)|Easy
 

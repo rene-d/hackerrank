@@ -1,6 +1,6 @@
 # [![HackerRank](https://hrcdn.net/hackerrank/assets/brand/h_mark_sm-30dc0e0cbd2dded63b294819ff853a90.svg)](https://www.hackerrank.com) HackerRank
 
-[![Build Status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank) [![700 solutions and counting](https://img.shields.io/badge/Challenges-700-blue.svg)](https://www.hackerrank.com/rene_d?hr_r=1)
+[![Build Status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank) [![705 solutions and counting](https://img.shields.io/badge/Challenges-705-blue.svg)](https://www.hackerrank.com/rene_d?hr_r=1)
 
 [HackerRank](https://www.hackerrank.com/dashboard) is a great place to learn, improve, play with your programming skills.
 
