@@ -186,6 +186,6 @@ Name | Preview | Code | Difficulty
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
-[Prime Dates](https://www.hackerrank.com/challenges/prime-date)|Find the number of prime dates in a range|[C++](algo-debugging/prime-date.cpp) [Python](algo-debugging/prime-date.py)|Medium
-[Zig Zag Sequence](https://www.hackerrank.com/challenges/zig-zag-sequence)|Find a zig zag sequence of the given array.|[C++](algo-debugging/zig-zag-sequence.cpp) [Python](algo-debugging/zig-zag-sequence.py)|Medium
+[Prime Dates](https://www.hackerrank.com/challenges/prime-date)|Find the number of prime dates in a range|[C++](algo-debugging/prime-date.cpp) [Java](algo-debugging/prime-date.java) [Python](algo-debugging/prime-date.py)|Medium
+[Zig Zag Sequence](https://www.hackerrank.com/challenges/zig-zag-sequence)|Find a zig zag sequence of the given array.|[C++](algo-debugging/zig-zag-sequence.cpp) [Java](algo-debugging/zig-zag-sequence.java) [Python](algo-debugging/zig-zag-sequence.py)|Medium
 
