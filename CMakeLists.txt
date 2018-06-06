@@ -26,9 +26,6 @@ endif()
 if(HACKERRANK_JAVA)
     find_package(Java REQUIRED)
     include(UseJava)
-    # all Java challenges should have a Solution main class
-    set(JAVA_DAI_MANIFEST "${CMAKE_CURRENT_BINARY_DIR}/manifest.mf")
-    file(WRITE ${JAVA_DAI_MANIFEST} "Main-Class: Solution\n")
 endif()
 
 set(CMAKE_CXX_STANDARD 14)
@@ -94,18 +91,35 @@ macro(add_hackerrank_shell name)
 endmacro(add_hackerrank_shell name)
 
 # add a Java challenge (only if option is on)
-macro(add_hackerrank_java src)
+function(add_hackerrank_java src)
     if(HACKERRANK_JAVA)
+
+        cmake_parse_arguments(_hr_java
+            ""
+            "CLASS"
+            ""
+            ${ARGN}
+        )
+
+        if(NOT DEFINED _hr_java_CLASS)
+            set(_hr_java_CLASS Solution)
+        endif()
+
         get_filename_component(name ${src} NAME_WE)
-        set(JAR_NAME ${name})
-        set(JAVA_SOURCE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/${name})
+        set(JAR_NAME ${name}_java)
+        set(JAVA_SOURCE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/${name}_java)
         file(MAKE_DIRECTORY ${JAVA_SOURCE_DIRECTORY})
-        set(JAVA_SOURCE_FILES ${JAVA_SOURCE_DIRECTORY}/Solution.java)
+        set(JAVA_SOURCE_FILES ${JAVA_SOURCE_DIRECTORY}/${_hr_java_CLASS}.java)
         configure_file(${src} ${JAVA_SOURCE_FILES} COPYONLY @ONLY)
-        add_jar(${JAR_NAME} ${JAVA_SOURCE_FILES} MANIFEST ${JAVA_DAI_MANIFEST})
+
+        set(JAVA_DAI_MANIFEST  ${CMAKE_CURRENT_BINARY_DIR}/${name}_java/manifest)
+        file(WRITE ${JAVA_DAI_MANIFEST} "Main-Class: ${_hr_java_CLASS}\n")
+
+        add_jar(${JAR_NAME} ${JAVA_SOURCE_FILES} MANIFEST ${JAVA_DAI_MANIFEST}
+                OUTPUT_NAME ${name})
         add_test_hackerrank(${name}.jar)
     endif()
-endmacro()
+endfunction()
 
 
 #
