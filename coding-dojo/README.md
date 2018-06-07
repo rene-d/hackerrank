@@ -68,7 +68,7 @@ Data Structures help in elegant representation of data for algorithms
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
-[Cycle Detection](https://www.hackerrank.com/challenges/detect-whether-a-linked-list-contains-a-cycle)|Given a pointer to the head of a linked list, determine whether the linked list loops back onto itself (i.e., determine if the list ends in a circularly linked list).|[C++](detect-whether-a-linked-list-contains-a-cycle.cpp)|Medium
+[Cycle Detection](https://www.hackerrank.com/challenges/detect-whether-a-linked-list-contains-a-cycle)|Given a pointer to the head of a linked list, determine whether the linked list loops back onto itself|[C++](detect-whether-a-linked-list-contains-a-cycle.cpp)|Medium
 
 #### [Trees](https://www.hackerrank.com/domains/data-structures/trees)
 
