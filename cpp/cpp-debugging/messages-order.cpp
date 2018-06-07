@@ -1,7 +1,7 @@
 // C++ > Debugging > Cpp messages order
 // Implement a software layer over the top of a network, such that sent messages are printed by the recipient in the order they were sent.
 //
-// https://www.hackerrank.com/challenges/cpp-messages-order/problem
+// https://www.hackerrank.com/challenges/messages-order/problem
 // challenge id: 67829
 //
 

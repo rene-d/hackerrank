@@ -1,7 +1,7 @@
 // C++ > Debugging > Hotel Prices
 // Debug the existing class definitions so the total hotel's profit is calculated correctly.
 //
-// https://www.hackerrank.com/challenges/cpp-hotel-prices/problem
+// https://www.hackerrank.com/challenges/hotel-prices/problem
 //
 
 #include <iostream>
