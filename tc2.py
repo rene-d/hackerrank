@@ -17,7 +17,6 @@ parser.add_argument('url', nargs='*', help="test case url")
 
 args = parser.parse_args()
 
-
 name = re.sub(r'^.*\.hackerrank\.com/challenges/([\w\d\-].*)/.*$', r'\1', args.name)
 
 zip = os.path.join(os.path.dirname(__file__), "testcases2", "master", name + "-testcases2.zip")
