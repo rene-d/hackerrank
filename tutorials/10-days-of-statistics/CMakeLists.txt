@@ -1,0 +1,5 @@
+add_hackerrank_py(s10-basic-statistics.py)
+add_hackerrank_py(s10-weighted-mean.py)
+add_hackerrank_py(s10-quartiles.py)
+add_hackerrank_py(s10-standard-deviation.py)
+add_hackerrank_py(s10-interquartile-range.py)
