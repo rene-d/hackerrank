@@ -16,4 +16,5 @@ Name | Preview | Code | Difficulty
 [Java Loops II](https://www.hackerrank.com/challenges/java-loops)|Use loops to find sum of a series.|[Java](java-loops.java)|Easy
 [Java Datatypes](https://www.hackerrank.com/challenges/java-datatypes)|Learn about different Java Datatypes.|[Java](java-datatypes.java)|Easy
 [Java End-of-file](https://www.hackerrank.com/challenges/java-end-of-file)|Learn how to read from standard input until EOF.|[Java](java-end-of-file.java)|Easy
+[Java Static Initializer Block](https://www.hackerrank.com/challenges/java-static-initializer-block)|Initialize some variables using Static initialization blocks!|[Java](java-static-initializer-block.java)|Easy
 

@@ -14,11 +14,10 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 public class Solution {
-// (template_head) ----------------------------------------------------------------------
 
 
-// (template_tail) ----------------------------------------------------------------------
-private static final Scanner scanner = new Scanner(System.in);
+
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         int N = scanner.nextInt();

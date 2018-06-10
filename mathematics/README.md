@@ -119,6 +119,7 @@ Name | Preview | Code | Difficulty
 [Xrange's Pancakes](https://www.hackerrank.com/challenges/xrange-and-pizza)|Determine who needs to be added to the end of the line to restore the pancake to its initial orientation.|[Python](geometry/xrange-and-pizza.py)|Easy
 [Baby Step, Giant Step](https://www.hackerrank.com/challenges/baby-step-giant-step)|Find the minimum number of steps needed to get to point $(d, 0)$.|[Python](geometry/baby-step-giant-step.py)|Medium
 [Points on a Rectangle](https://www.hackerrank.com/challenges/points-on-rectangle)|Determine if a set of points coincides with the edges of a non-degenerate rectangle.|[Python](geometry/points-on-rectangle.py)|Easy
+[A Circle and a Square](https://www.hackerrank.com/challenges/a-circle-and-a-square)|Draw a circle and a square at specific coordinates within a raster image.|[C++](geometry/a-circle-and-a-square.cpp)|Medium
 
 #### [Probability](https://www.hackerrank.com/domains/mathematics/probability)
 
