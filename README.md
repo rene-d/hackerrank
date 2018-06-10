@@ -7,15 +7,19 @@
 ## Solutions
 
 [![C++](https://hrcdn.net/hackerrank/assets/dashboard/cpp-4644489c8b8e68a81dd0ccfac5097c2e.svg)](cpp/)
-[![C](assets_c.svg)](c/)
+<a href="c/"><img src="https://hrcdn.net/hackerrank/assets/dashboard/c-43bbd380e51d62b83c4b542c58699a97.svg" width="50px" height="50px"></a>
 [![Python](https://hrcdn.net/hackerrank/assets/dashboard/python-473706315bc214a540c1ca7b57f60854.svg)](python/)
 [![Shell](https://hrcdn.net/hackerrank/assets/dashboard/shell-5c42f1aa41f72148347b7e91bf46ae4f.svg)](shell/)
+[![Java](https://hrcdn.net/hackerrank/assets/dashboard/java-5a95cc68f65be63c24f5913e29bafb66.svg)](java/)
+&nbsp;&nbsp;&nbsp;
 [![Algorithms](https://hrcdn.net/hackerrank/assets/dashboard/algorithms-ea9e958ddb5b097c5ebcdd22de4a9766.svg)](algorithms/)
 [![Data Structures](https://hrcdn.net/hackerrank/assets/dashboard/data-structures-e83daf9e8769351037cc25ff131931d1.svg)](data-structures/)
 [![Mathematics](https://hrcdn.net/hackerrank/assets/dashboard/mathematics-3ec234bd89020880ff0349f9cacdab30.svg)](mathematics/)
+
 [![30 Days of Code](https://hrcdn.net/hackerrank/assets/dashboard/30-days-of-code-bf00cb8a1c6f38bf917f45ea7ab2bf6b.svg)](tutorials/30-days-of-code/)
 [![Cracking the Coding Interview](https://hrcdn.net/hackerrank/assets/dashboard/cracking-the-coding-interview-a56b2213a9c4f9393bfeb13261449c37.svg)](tutorials/cracking-the-coding-interview/)
-
+[![10 Days of Statistics](https://hrcdn.net/hackerrank/assets/dashboard/10-days-of-statistics-f45c998a5d47c9527eb61e620f35f5c0.svg)](tutorials/10-days-of-statistics/)
+&nbsp;&nbsp;&nbsp;
 [![Regex](https://hrcdn.net/hackerrank/assets/dashboard/regex-d83b1db79fe03650410202032d3b8afd.svg)](regex/)
 [![Security](https://hrcdn.net/hackerrank/assets/dashboard/security-ee10c8f654e78f4659d5dc6305768a63.svg)](security/)
 [![Databases](https://hrcdn.net/hackerrank/assets/dashboard/databases-0ff7fcc96c1e9516abc9ea327c9a0ef9.svg)](databases/)
