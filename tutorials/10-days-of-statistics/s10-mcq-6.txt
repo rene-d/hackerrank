@@ -1,0 +1,8 @@
+# Tutorials > 10 Days of Statistics > Day 3: Drawing Marbles
+# Find the probability that the second marble drawn is blue.
+#
+# https://www.hackerrank.com/challenges/s10-mcq-6/problem
+# challenge id: 21612
+#
+
+2 / 3

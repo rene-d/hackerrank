@@ -1,8 +1,10 @@
 # [![HackerRank](https://hrcdn.net/hackerrank/assets/brand/h_mark_sm-30dc0e0cbd2dded63b294819ff853a90.svg)](https://www.hackerrank.com) HackerRank
 
-[![Build Status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank) [![718 solutions and counting](https://img.shields.io/badge/Challenges-718-blue.svg)](https://www.hackerrank.com/rene_d?hr_r=1)
+[![Build Status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank) [![726 solutions and counting](https://img.shields.io/badge/Challenges-726-blue.svg)](https://www.hackerrank.com/rene_d?hr_r=1)
 
 [HackerRank](https://www.hackerrank.com/dashboard) is a great place to learn, improve, play with your programming skills.
+
+All challenges are runable, except SQL and multiple choice question ones. They are verified with the default testcase (usually Testcase 0).
 
 ## Solutions
 
@@ -35,6 +37,7 @@ and [ProjectEuler+](contests/projecteuler/) (See [here](https://github.com/rene-
 - [CMake](https://cmake.org)
 - Modern gcc or clang that come with macOS or Linux. Under Windows, use [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) or [MinGW](http://www.mingw.org).
 - [Haskell](https://www.haskell.org) (functional programming only)
+- [Java](http://www.oracle.com/technetwork/java/javase/index.html)
 
 ### Compilation
 

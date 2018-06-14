@@ -15,6 +15,13 @@ Name | Preview | Code | Difficulty
 [Day 2: Basic Probability](https://www.hackerrank.com/challenges/s10-mcq-1)|Calculate the probability that two dice will have a maximum sum of 9.|[Python](10-days-of-statistics/s10-mcq-1.py)|Easy
 [Day 2: More Dice](https://www.hackerrank.com/challenges/s10-mcq-2)|Calculate the probability that two dice will roll two unique values having a sum of 6.|[Python](10-days-of-statistics/s10-mcq-2.py)|Easy
 [Day 2: Compound Event Probability](https://www.hackerrank.com/challenges/s10-mcq-3)||[Python](10-days-of-statistics/s10-mcq-3.py)|Easy
+[Day 3: Conditional Probability](https://www.hackerrank.com/challenges/s10-mcq-4)|Find the probability that both children are boys, given that one is a boy.|[text](10-days-of-statistics/s10-mcq-4.txt)|Easy
+[Day 3: Cards of the Same Suit](https://www.hackerrank.com/challenges/s10-mcq-5)|Find the probability that 2 cards drawn from a deck (without replacement) are of the same suit.|[text](10-days-of-statistics/s10-mcq-5.txt)|Easy
+[Day 3: Drawing Marbles](https://www.hackerrank.com/challenges/s10-mcq-6)|Find the probability that the second marble drawn is blue.|[text](10-days-of-statistics/s10-mcq-6.txt)|Easy
+[Day 4: Binomial Distribution I](https://www.hackerrank.com/challenges/s10-binomial-distribution-1)|Problems based on basic statistical distributions.|[Python](10-days-of-statistics/s10-binomial-distribution-1.py)|Easy
+[Day 4: Binomial Distribution II](https://www.hackerrank.com/challenges/s10-binomial-distribution-2)|Problems based on basic statistical distributions.|[Python](10-days-of-statistics/s10-binomial-distribution-2.py)|Easy
+[Day 4: Geometric Distribution I](https://www.hackerrank.com/challenges/s10-geometric-distribution-1)|Problems based on basic statistical distributions.|[Python](10-days-of-statistics/s10-geometric-distribution-1.py)|Easy
+[Day 4: Geometric Distribution II](https://www.hackerrank.com/challenges/s10-geometric-distribution-2)|Problems based on basic statistical distributions.|[Python](10-days-of-statistics/s10-geometric-distribution-2.py)|Easy
 
 #### [30 Days of Code](https://www.hackerrank.com/domains/tutorials/30-days-of-code)
 

@@ -1,0 +1,8 @@
+# Tutorials > 10 Days of Statistics > Day 3: Cards of the Same Suit
+# Find the probability that 2 cards drawn from a deck (without replacement) are of the same suit.
+#
+# https://www.hackerrank.com/challenges/s10-mcq-5/problem
+# challenge id: 21611
+#
+
+12 / 51
