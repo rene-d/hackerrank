@@ -18,4 +18,6 @@ Name | Preview | Code | Difficulty
 [Java End-of-file](https://www.hackerrank.com/challenges/java-end-of-file)|Learn how to read from standard input until EOF.|[Java](java-end-of-file.java)|Easy
 [Java Static Initializer Block](https://www.hackerrank.com/challenges/java-static-initializer-block)|Initialize some variables using Static initialization blocks!|[Java](java-static-initializer-block.java)|Easy
 [Java Int to String](https://www.hackerrank.com/challenges/java-int-to-string)|Convert an integer to a string.|[Java](java-int-to-string.java)|Easy
+[Java Date and Time](https://www.hackerrank.com/challenges/java-date-and-time)|Print the day of a given date.|[Java](java-date-and-time.java)|Easy
+[Java Currency Formatter](https://www.hackerrank.com/challenges/java-currency-formatter)|Format Currency in Java|[Java](java-currency-formatter.java)|Easy
 
