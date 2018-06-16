@@ -26,4 +26,9 @@ Name | Preview | Code | Difficulty
 [Day 5: Poisson Distribution II](https://www.hackerrank.com/challenges/s10-poisson-distribution-2)|Basic problem on Poisson Distribution.|[Python](s10-poisson-distribution-2.py)|Easy
 [Day 5: Normal Distribution I](https://www.hackerrank.com/challenges/s10-normal-distribution-1)|Problems based on basic statistical distributions.|[Python](s10-normal-distribution-1.py)|Easy
 [Day 5: Normal Distribution II](https://www.hackerrank.com/challenges/s10-normal-distribution-2)|Problems based on basic statistical distributions.|[Python](s10-normal-distribution-2.py)|Easy
+[Day 6: The Central Limit Theorem I](https://www.hackerrank.com/challenges/s10-the-central-limit-theorem-1)|Basic problems on the Central Limit Theorem.|[Python](s10-the-central-limit-theorem-1.py)|Easy
+[Day 6: The Central Limit Theorem II](https://www.hackerrank.com/challenges/s10-the-central-limit-theorem-2)|Basic problems on the Central Limit Theorem.|[Python](s10-the-central-limit-theorem-2.py)|Easy
+[Day 6: The Central Limit Theorem III](https://www.hackerrank.com/challenges/s10-the-central-limit-theorem-3)|Basic problems on the Central Limit Theorem.|[Python](s10-the-central-limit-theorem-3.py)|Easy
+[Day 7: Pearson Correlation Coefficient I](https://www.hackerrank.com/challenges/s10-pearson-correlation-coefficient)|Computing Pearson correlation coefficient.|[Python](s10-pearson-correlation-coefficient.py)|Easy
+[Day 7: Spearman's Rank Correlation Coefficient](https://www.hackerrank.com/challenges/s10-spearman-rank-correlation-coefficient)|Computing Spearman's rank correlation coefficient.|[Python](s10-spearman-rank-correlation-coefficient.py)|Easy
 
