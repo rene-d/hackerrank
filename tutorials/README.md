@@ -22,6 +22,10 @@ Name | Preview | Code | Difficulty
 [Day 4: Binomial Distribution II](https://www.hackerrank.com/challenges/s10-binomial-distribution-2)|Problems based on basic statistical distributions.|[Python](10-days-of-statistics/s10-binomial-distribution-2.py)|Easy
 [Day 4: Geometric Distribution I](https://www.hackerrank.com/challenges/s10-geometric-distribution-1)|Problems based on basic statistical distributions.|[Python](10-days-of-statistics/s10-geometric-distribution-1.py)|Easy
 [Day 4: Geometric Distribution II](https://www.hackerrank.com/challenges/s10-geometric-distribution-2)|Problems based on basic statistical distributions.|[Python](10-days-of-statistics/s10-geometric-distribution-2.py)|Easy
+[Day 5: Poisson Distribution I](https://www.hackerrank.com/challenges/s10-poisson-distribution-1)|Basic problem on Poisson Distribution.|[Python](10-days-of-statistics/s10-poisson-distribution-1.py)|Easy
+[Day 5: Poisson Distribution II](https://www.hackerrank.com/challenges/s10-poisson-distribution-2)|Basic problem on Poisson Distribution.|[Python](10-days-of-statistics/s10-poisson-distribution-2.py)|Easy
+[Day 5: Normal Distribution I](https://www.hackerrank.com/challenges/s10-normal-distribution-1)|Problems based on basic statistical distributions.|[Python](10-days-of-statistics/s10-normal-distribution-1.py)|Easy
+[Day 5: Normal Distribution II](https://www.hackerrank.com/challenges/s10-normal-distribution-2)|Problems based on basic statistical distributions.|[Python](10-days-of-statistics/s10-normal-distribution-2.py)|Easy
 
 #### [30 Days of Code](https://www.hackerrank.com/domains/tutorials/30-days-of-code)
 
