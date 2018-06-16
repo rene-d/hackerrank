@@ -30,6 +30,7 @@ def print_from_stream(n, stream=None):
     for _ in range(n):
         print(stream.get_next())
 
+# probable error of author during conversion from Python2 to Python3...
 raw_input = input
 
 # (skeliton_tail) ----------------------------------------------------------------------
