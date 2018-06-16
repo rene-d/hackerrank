@@ -19,7 +19,7 @@ args = parser.parse_args()
 
 name = re.sub(r'^.*\.hackerrank\.com/challenges/([\w\d\-].*)/.*$', r'\1', args.name)
 
-zip = os.path.join(os.path.dirname(__file__), "testcases2", "master", name + "-testcases2.zip")
+zip = os.path.join(os.path.dirname(__file__), "testcases2", "master", name + "-testcases.zip")
 
 if not os.path.exists(zip):
     print("create", zip)
@@ -42,6 +42,26 @@ def add_testcase(url):
 
         print("Add {} size {} into archive".format(arcname, len(data.content)))
         z.writestr(arcname, data.content)
+
+    else:
+        m = re.search(r'([io])(\d+)', url)
+        if m:
+            if m.group(1) == 'i':
+                arcname = "input/input"
+            else:
+                arcname = "output/output"
+            arcname += "{:02d}.txt".format(int(m.group(2)))
+
+            print("Enter data for {}, terminate with a empty line".format(arcname))
+            data = ""
+            while True:
+                s = input().strip()
+                if s == "":
+                    break
+                data += s + "\n"
+
+            print("Add {} size {} into archive".format(arcname, len(data)))
+            z.writestr(arcname, data)
 
 
 if len(args.url) == 0:
