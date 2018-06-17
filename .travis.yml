@@ -41,6 +41,6 @@ script:
   - mkdir -p build
   - cd build
   - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
-  - make -j$(nproc)
   - make extract-testcases
-  - ctest -j$(nproc) --output-on-failure
+  - cd tutorials/10-days-of-statistics
+  - ../../../runtest.sh -t s10-multiple-linear-regression.py
