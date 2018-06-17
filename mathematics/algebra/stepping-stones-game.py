@@ -2,6 +2,7 @@
 # Can you tell Bob, if he should play Stepping Stones or not ?
 #
 # https://www.hackerrank.com/challenges/stepping-stones-game/problem
+# https://www.hackerrank.com/contests/infinitum-aug14/challenges/stepping-stones-game
 #
 
 # il faut vérifier si n est un nombre triangulaire

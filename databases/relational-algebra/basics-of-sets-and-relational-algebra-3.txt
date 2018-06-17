@@ -1,0 +1,9 @@
+# Databases > Relational Algebra > Basics of Sets and Relations #3
+# Problems based on the basics of sets and relations.
+#
+# https://www.hackerrank.com/challenges/basics-of-sets-and-relational-algebra-3/problem
+#
+
+# les éléments de A moins les éléments de B: il ne reste que 1
+
+1

@@ -1,0 +1,7 @@
+# Databases > Relational Algebra > Basics of Sets and Relations #6
+# Problems based on the basics of sets and relations.
+#
+# https://www.hackerrank.com/challenges/basics-of-sets-and-relational-algebra-6/problem
+#
+
+2

@@ -2,6 +2,7 @@
 Minimal Distance to Pi
 
 https://www.hackerrank.com/challenges/minimal-distance-to-pi/problem
+https://www.hackerrank.com/contests/w29/challenges/minimal-distance-to-pi
 """
 
 from fractions import Fraction
@@ -21,7 +22,7 @@ rmax = 0
 
 for i in range(d0, d1 + 1):
     q, r = divmod(i * pi50, base)
-        
+
     # print("{:<8} {:<8} {:<50} {:<50}".format(i, q, r, 10 ** 50 - r))
 
     print(r / base)
@@ -42,7 +43,7 @@ print("{}/{}".format(nd1[0], nd1[1]))
 a001203 = [3, 7, 15, 1, 292, 1, 1, 1, 2, 1, 3, 1, 14, 2, 1, 1, 2, 2, 2, 2, 1, 84,
            2, 1, 1, 15, 3, 13, 1, 4, 2, 6, 6, 99, 1, 2, 2, 6, 3, 5, 1, 1, 6, 8, 1,
            7, 1, 2, 3, 7, 1, 2, 1, 1, 12, 1, 1, 1, 3, 1, 1, 8, 1, 1, 2, 1, 6, 1, 1, 5,
-           2, 2, 3, 1, 2, 4, 4, 16, 1, 161, 45, 1, 22, 1, 2, 2, 1, 4, 1, 2, 24, 1, 2, 
+           2, 2, 3, 1, 2, 4, 4, 16, 1, 161, 45, 1, 22, 1, 2, 2, 1, 4, 1, 2, 24, 1, 2,
            1, 3, 1, 2, 1]
 
 
@@ -62,7 +63,7 @@ def calc_fraction_continue(a, k):
 
 # http://www.libragold.com/blog/2017/03/minimal-distance-to-pi/
 P = calc_fraction_continue(a001203, 30) - 3
- 
+
 # find endpoints of Farey intervals
 a, b, c, d = 0, 1, 1, 1
 farey = [(a,b),(c,d)]
@@ -79,7 +80,7 @@ while True:
         a, b = e, f
 
 p_min = int(P * q1)
- 
+
 # increase p_min/min by fractions in farey
 while q1 <= q2:
     c, d = 0, 0

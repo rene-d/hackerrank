@@ -49,6 +49,17 @@ Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Validating Credit Card Numbers](https://www.hackerrank.com/challenges/validating-credit-card-number)|Verify whether credit card numbers are valid or not.|[Python](validating-credit-card-number.py)|Medium
 
+### [Regex](https://www.hackerrank.com/domains/regex)
+Explore the power of regular expressions
+
+
+#### [Applications](https://www.hackerrank.com/domains/regex/re-applications)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[IP Address Validation](https://www.hackerrank.com/challenges/ip-address-validation)|Validate possible IP Addresses with regex.|[Python](ip-address-validation.py)|Easy
+[Detecting Valid Latitude and Longitude Pairs](https://www.hackerrank.com/challenges/detecting-valid-latitude-and-longitude)|Can you detect the Latitude and Longitude embedded in text snippets, using regular expressions?|[Python](detecting-valid-latitude-and-longitude.py)|Easy
+
 ### [Data Structures](https://www.hackerrank.com/domains/data-structures)
 Data Structures help in elegant representation of data for algorithms
 
@@ -57,7 +68,7 @@ Data Structures help in elegant representation of data for algorithms
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
-[Cycle Detection](https://www.hackerrank.com/challenges/detect-whether-a-linked-list-contains-a-cycle)|Given a pointer to the head of a linked list, determine whether the linked list loops back onto itself (i.e., determine if the list ends in a circularly linked list).|[C++](detect-whether-a-linked-list-contains-a-cycle.cpp)|Medium
+[Cycle Detection](https://www.hackerrank.com/challenges/detect-whether-a-linked-list-contains-a-cycle)|Given a pointer to the head of a linked list, determine whether the linked list loops back onto itself|[C++](detect-whether-a-linked-list-contains-a-cycle.cpp)|Medium
 
 #### [Trees](https://www.hackerrank.com/domains/data-structures/trees)
 

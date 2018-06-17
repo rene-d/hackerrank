@@ -1,0 +1,9 @@
+# Databases > Relational Algebra > Procedural Language
+
+#
+# https://www.hackerrank.com/challenges/procedural-language/problem
+#
+
+Relational algebra
+
+# (question vaseuse)

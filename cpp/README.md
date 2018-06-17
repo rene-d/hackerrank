@@ -60,6 +60,15 @@ Name | Preview | Code | Difficulty
 [Accessing Inherited Functions](https://www.hackerrank.com/challenges/accessing-inherited-functions)|Access inherited functions with the same name.|[C++](inheritance/accessing-inherited-functions.cpp)|Medium
 [Magic Spells](https://www.hackerrank.com/challenges/magic-spells)|Identify the correct kind of spell and possibly compare it with your spell journal.|[C++](inheritance/magic-spells.cpp)|Hard
 
+#### [Debugging](https://www.hackerrank.com/domains/cpp/cpp-debugging)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Hotel Prices](https://www.hackerrank.com/challenges/hotel-prices)|Debug the existing class definitions so the total hotel's profit is calculated correctly.|[C++](cpp-debugging/hotel-prices.cpp)|Medium
+[Cpp exception handling](https://www.hackerrank.com/challenges/cpp-exception-handling)|Handle possible exceptions in a correct way.|[C++](cpp-debugging/cpp-exception-handling.cpp)|Medium
+[Overloading Ostream Operator](https://www.hackerrank.com/challenges/overloading-ostream-operator)|Overload the << operator for Person class.|[C++](cpp-debugging/overloading-ostream-operator.cpp)|Medium
+[Messages Order](https://www.hackerrank.com/challenges/messages-order)|Implement a software layer over the top of a network, such that sent messages are printed by the recipient in the order they were sent.|[C++](cpp-debugging/messages-order.cpp)|Medium
+
 #### [Other Concepts](https://www.hackerrank.com/domains/cpp/other-concepts)
 
 Name | Preview | Code | Difficulty

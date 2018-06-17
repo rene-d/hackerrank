@@ -53,6 +53,11 @@ class HackerRankParser():
             self.contest = m['contest_slug']
             self.key = m['slug']
 
+            if 'id' in m:
+                self.challenge_id = m['id']
+            else:
+                self.challenge_id = None
+
             if m['contest_slug'] == "master":
                 self.url = "https://www.hackerrank.com/challenges/{}/problem".format(self.key)
                 self.url2 = None
@@ -64,7 +69,6 @@ class HackerRankParser():
             else:
                 self.url = "https://www.hackerrank.com/contests/{}/challenges/{}".format(self.contest, self.key)  # noqa
                 self.url2 = None
-
 
     def info(self):
         print("key     :", self.model['slug'])
@@ -81,28 +85,30 @@ class HackerRankParser():
                       "python3": "py",
                       "haskell": "hs",
                       "bash": "sh",
+                      "java": "java",
+                      "java8": "java",
+                      "perl": "pl",
+                      "lua": "lua",
                       "text": "txt",
                       "oracle": "sql"}
+
+        PREFERED = ['python3', 'cpp14', 'c', 'haskell',
+                    'bash', 'oracle', 'text', 'java8']
 
         # auto choose the language
         if lang == "*":
             if 'languages' in self.model:
                 languages = self.model['languages']
-                if 'python3' in languages:
-                    lang = 'python3'
-                elif 'cpp14' in languages:
-                    lang = 'cpp14'
-                elif 'haskell' in languages:
-                    lang = 'haskell'
-                elif 'bash' in languages:
-                    lang = 'bash'
-                elif 'oracle' in languages:
-                    lang = 'oracle'
-                elif 'c' in languages:
-                    lang = 'c'
+                if len(languages) == 1:
+                    lang = languages[0]
                 else:
-                    print("Cannot choose a language:", ' '.join(languages))
-                    return
+                    for i in PREFERED:
+                        if i in languages:
+                            lang = i
+                            break
+                    else:
+                        print("Cannot choose automatically a language:", ' '.join(languages))
+                        return
             else:
                 print('Model unknown: no languages[]')
                 return
@@ -148,6 +154,8 @@ class HackerRankParser():
             line('{}'.format(self.url))
             if self.url2:
                 line('{}'.format(self.url2))
+            if self.challenge_id:
+                line('challenge id: {}'.format(self.challenge_id))
             line('')
             line()
 
@@ -156,6 +164,7 @@ class HackerRankParser():
                 skeliton("template")
                 skeliton("skeliton_tail") or skeliton("template_tail")
 
+        # langages avec testeur
         if lang == "cpp" or lang == "cpp14" or lang == "c":
 
             if hpp:
@@ -199,11 +208,18 @@ class HackerRankParser():
             with open(cmake, "at") as f:
                 f.write("add_hackerrank_shell({}.sh)\n".format(self.key))
 
-        elif lang == "text":
+        elif lang == "java" or lang == "java8":
+            with open(filename, "wt") as f:
+                write_header(f, '// ')
+            with open(cmake, "at") as f:
+                f.write("add_hackerrank_java({}.java)\n".format(self.key))
+
+        # langages sans testeur
+        elif lang == "text" or lang == "perl":
             with open(filename, "wt") as f:
                 write_header(f, '# ')
 
-        elif lang == "oracle":
+        elif lang == "oracle" or lang == "lua":
             with open(filename, "wt") as f:
                 write_header(f, '-- ')
 
@@ -280,10 +296,10 @@ class HackerRankParser():
             self.download(overwrite=overwrite)
         if statement:
             self.download(dest_dir="statements",
-                        url="download_pdf?language=English",
-                        suffix=".pdf",
-                        content_type="application/pdf",
-                        overwrite=overwrite)
+                          url="download_pdf?language=English",
+                          suffix=".pdf",
+                          content_type="application/pdf",
+                          overwrite=overwrite)
 
 
 def main():

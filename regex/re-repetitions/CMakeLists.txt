@@ -1,0 +1,5 @@
+add_hackerrank_py(matching-x-repetitions.py)
+add_hackerrank_py(matching-x-y-repetitions.py)
+add_hackerrank_py(matching-zero-or-more-repetitions.py)
+add_hackerrank_py(matching-one-or-more-repititions.py)
+add_hackerrank_py(matching-ending-items.py)

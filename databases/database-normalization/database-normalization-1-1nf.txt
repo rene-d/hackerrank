@@ -1,0 +1,9 @@
+# Databases > Database Normalization > Database Normalization #1 - 1NF
+# The first normal form.
+#
+# https://www.hackerrank.com/challenges/database-normalization-1-1nf/problem
+#
+
+3
+5
+2

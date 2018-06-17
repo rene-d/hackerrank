@@ -118,6 +118,10 @@ elif [ "${extension}" == "sh" ]; then
     exe="bash ${testname}"
     testname="${testname%.*}"
     result=result${extension}
+elif [ "${extension}" == "jar" ]; then
+    exe="java -jar ${testname}"
+    testname="${testname%.*}"
+    result=result${extension}
 else
     exe=./${testname}
     result=result-${testname}
@@ -130,7 +134,7 @@ fi
 # trois considérations:
 #   - le répertoire <tests>/<testname>/input/ existe
 #   - le fichier <rootdir>/testcases/<contest>/<testname>-testcases.zip
-#   - le fichier <rootdir>/testcases2/<contest>/<testname>-testcases2.zip
+#   - le fichier <rootdir>/testcases2/<contest>/<testname>-testcases.zip
 
 if [ "${testsdir}" != "" -a -d "${testsdir}/${contest}/${testname}" ]; then
     testsdir="${testsdir}/${contest}"
@@ -140,12 +144,17 @@ else
 
     # si les fichiers de testcases existent: on les extrait
     zip="${rootdir}/testcases/${contest}/${testname}-testcases.zip"
-    if [ -f "${zip}" ]; then
+    if [ -s "${zip}" ]; then
         unzip -q -o -d tests/${testname} "${zip}"
     fi
 
-    zip="${rootdir}/testcases2/${contest}/${testname}-testcases2.zip"
-    if [ -f  "${zip}" ]; then
+    zip="${rootdir}/testcases2/${contest}/${testname}-testcases.zip"
+    if [ -s "${zip}" ]; then
+        unzip -q -o -d tests/${testname} "${zip}"
+    fi
+
+    zip="${rootdir}/offline/testcases/${contest}/${testname}-testcases.zip"
+    if [ -s "${zip}" ]; then
         unzip -q -o -d tests/${testname} "${zip}"
     fi
 fi

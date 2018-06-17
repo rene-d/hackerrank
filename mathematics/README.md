@@ -38,6 +38,7 @@ Name | Preview | Code | Difficulty
 [Most Distant](https://www.hackerrank.com/challenges/most-distant)|Measure the gap between the two most distant coordinates.|[Python](fundamentals/most-distant.py)|Easy
 [Jim and the Jokes](https://www.hackerrank.com/challenges/jim-and-the-jokes)|Jim is running out of jokes! Help him finding new jokes.|[Python](fundamentals/jim-and-the-jokes.py)|Medium
 [Possible Path](https://www.hackerrank.com/challenges/possible-path)|Help Adam in reaching at aa particular point.|[Python](fundamentals/possible-path.py)|Easy
+[Mutual Recurrences](https://www.hackerrank.com/challenges/mutual-recurrences)|Compute terms in a mutual recurrence.|[C++](fundamentals/mutual-recurrences.cpp) [Python](fundamentals/mutual-recurrences.py)|Medium
 
 #### [Number Theory](https://www.hackerrank.com/domains/mathematics/number-theory)
 
@@ -54,21 +55,38 @@ Name | Preview | Code | Difficulty
 [Little Panda Power](https://www.hackerrank.com/challenges/littlepandapower)|Compute A^B mod X|[Python](number-theory/littlepandapower.py)|Hard
 [Mehta and his Laziness](https://www.hackerrank.com/challenges/mehta-and-his-laziness)|How will Mehta do these calculations?|[Python](number-theory/mehta-and-his-laziness.py)|Hard
 [Minimal Distance to Pi](https://www.hackerrank.com/challenges/minimal-distance-to-pi)|Given a range of denominators, find the common fraction that best approximates Pi.|[Python](number-theory/minimal-distance-to-pi.py)|Hard
+[Help Mike](https://www.hackerrank.com/challenges/help-mike)|Help Mike attend the NSA meeting|[Python](number-theory/help-mike.py)|Hard
+[Dancing in Pairs](https://www.hackerrank.com/challenges/dance-class)|Find out if they can dance in pairs?|[Python](number-theory/dance-class.py)|Hard
 [The Chosen One](https://www.hackerrank.com/challenges/the-chosen-one)|Given a list of integers, find and print an integer that is a divisor of all but one integer in the list.|[Python](number-theory/the-chosen-one.py)|Medium
 [Power of large numbers](https://www.hackerrank.com/challenges/power-of-large-numbers)|How much does Hackerland coach pay to get Cristiano Ronaldo to play for his team?|[Python](number-theory/power-of-large-numbers.py)|Medium
+[Salary Blues](https://www.hackerrank.com/challenges/salary-blues)|Help manager of HackerX company to normalize salaries.|[Python](number-theory/salary-blues.py)|Medium
+[Akhil and GF](https://www.hackerrank.com/challenges/akhil-and-gf)|Help Akhil in impressing his girlfriend|[Python](number-theory/akhil-and-gf.py)|Hard
+[Little Ashish's Huge Donation](https://www.hackerrank.com/challenges/little-chammys-huge-donation)|Help Ashish calculate donations.|[C++](number-theory/little-chammys-huge-donation.cpp)|Hard
 [Manasa and Factorials](https://www.hackerrank.com/challenges/manasa-and-factorials)|Think about number of zeros in k!|[Python](number-theory/manasa-and-factorials.py)|Hard
+[Number of zero-xor subsets](https://www.hackerrank.com/challenges/number-of-subsets)|How many subsets with zero xor are here?|[Python](number-theory/number-of-subsets.py)|Medium
+[Breaking Sticks](https://www.hackerrank.com/challenges/breaking-sticks)|Find the length of the longest sequence of moves.|[C++](number-theory/breaking-sticks.cpp)|Medium
+[Cheese and Random Toppings](https://www.hackerrank.com/challenges/cheese-and-random-toppings)|How many ways are there to choose exactly R toppings from N toppings?|[Python](number-theory/cheese-and-random-toppings.py)|Easy
 [Easy GCD](https://www.hackerrank.com/challenges/easy-gcd-1)|Find the maximum number less than K such that GCD of all numbers is still more than one!|[Python](number-theory/easy-gcd-1.py)|Medium
+[Satisfactory Pairs](https://www.hackerrank.com/challenges/pairs-again)|How many pairs of integers give a solution?|[C++](number-theory/pairs-again.cpp)|Hard
+[Manasa loves Maths](https://www.hackerrank.com/challenges/manasa-loves-maths)|Find out if any permutation of the given number is divisible by 8.|[Python](number-theory/manasa-loves-maths.py)|Medium
+[Largest Non-Coprime Submatrix](https://www.hackerrank.com/challenges/largest-coprime-submatrix)|Given a matrix find the largest coprime submatrix.|[C++](number-theory/largest-coprime-submatrix.cpp)|Hard
 [John and GCD list](https://www.hackerrank.com/challenges/john-and-gcd-list)|Help John in making a list from GCD list|[Python](number-theory/john-and-gcd-list.py)|Easy
+[Easy math](https://www.hackerrank.com/challenges/easy-math)|Help Johnny in figuring out the value of Y|[Python](number-theory/easy-math.py)|Medium
+[Binomial Coefficients](https://www.hackerrank.com/challenges/binomial-coefficients)|Calculate how many binomial coefficients of n become 0 after modulo by P.|[Python](number-theory/binomial-coefficients.py)|Medium
+[Lucy and Flowers](https://www.hackerrank.com/challenges/lucy-and-flowers)|Help Lucy's father with a computation involving flowers|[C++](number-theory/lucy-and-flowers.cpp)|Medium
+[nCr](https://www.hackerrank.com/challenges/ncr)|Given n and r, in how many ways can r items be chosen from n items?|[Python](number-theory/ncr.py)|Expert
 
 #### [Combinatorics](https://www.hackerrank.com/domains/mathematics/combinatorics)
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
-[nCr table](https://www.hackerrank.com/challenges/ncr-table)|Help Jim calculating nCr values|[Python](combinatorics/ncr-table.py)|Medium
+[nCr table](https://www.hackerrank.com/challenges/ncr-table)|Help Jim calculating nCr values|[C++](combinatorics/ncr-table.cpp) [Python](combinatorics/ncr-table.py)|Medium
 [Coinage](https://www.hackerrank.com/challenges/coinage)|Find the number of ways to pay a given amount, given a set of coins with prescribed denominations.|[Python](combinatorics/coinage.py)|Medium
 [Building a List](https://www.hackerrank.com/challenges/building-a-list)|Generate all possible combinations of a string|[Python](combinatorics/building-a-list.py)|Medium
 [Merge List](https://www.hackerrank.com/challenges/merge-list)|Help Shashank in merging two list.|[Python](combinatorics/merge-list.py)|Medium
 [A Chocolate Fiesta](https://www.hackerrank.com/challenges/a-chocolate-fiesta)|Find the number of even subsets in the given set of numbers.|[Python](combinatorics/a-chocolate-fiesta.py)|Easy
+[Sherlock and Pairs](https://www.hackerrank.com/challenges/sherlock-and-pairs)|Count the number of pairs that satisfy a given constraint.|[Python](combinatorics/sherlock-and-pairs.py)|Medium
+[Picking Cards](https://www.hackerrank.com/challenges/picking-cards)|How many ways can you pick up all the cards from a table?|[Python](combinatorics/picking-cards.py)|Easy
 
 #### [Algebra](https://www.hackerrank.com/domains/mathematics/algebra)
 
@@ -85,7 +103,9 @@ Name | Preview | Code | Difficulty
 [Number Groups](https://www.hackerrank.com/challenges/number-groups)|Find the sum of consecutive odd number groups.|[Python](algebra/number-groups.py)|Easy
 [Tell the Average](https://www.hackerrank.com/challenges/tell-the-average)|Tell me average of all list value.|[Python](algebra/tell-the-average.py)|Medium
 [Wet Shark and 42](https://www.hackerrank.com/challenges/wet-shark-and-42)|Help Wet Shark escape the gods of 42.|[Python](algebra/wet-shark-and-42.py)|Easy
+[Sherlock and Square](https://www.hackerrank.com/challenges/sherlock-and-square)|Help Sherlock in finding the total side lengths of squares.|[Python](algebra/sherlock-and-square.py)|Hard
 [Manasa and Sub-sequences ](https://www.hackerrank.com/challenges/manasa-and-sub-sequences)|Help Manasa in getting candies|[Python](algebra/manasa-and-sub-sequences.py)|Medium
+[Simple One](https://www.hackerrank.com/challenges/simple-one)|Calculate the tan function of a given equation.|[Python](algebra/simple-one.py)|Easy
 
 #### [Geometry](https://www.hackerrank.com/domains/mathematics/geometry)
 
@@ -96,8 +116,10 @@ Name | Preview | Code | Difficulty
 [Sherlock and Counting](https://www.hackerrank.com/challenges/sherlock-and-counting)|Help Sherlock count numbers satisfying an inequality.|[Python](geometry/sherlock-and-counting.py)|Easy
 [Sherlock and Planes](https://www.hackerrank.com/challenges/sherlock-and-planes)|Help Sherlock with points on planes.|[Python](geometry/sherlock-and-planes.py)|Easy
 [Circle City](https://www.hackerrank.com/challenges/circle-city)|Determine whether Roy's city can be saved or not.|[Python](geometry/circle-city.py)|Medium
+[Xrange's Pancakes](https://www.hackerrank.com/challenges/xrange-and-pizza)|Determine who needs to be added to the end of the line to restore the pancake to its initial orientation.|[Python](geometry/xrange-and-pizza.py)|Easy
 [Baby Step, Giant Step](https://www.hackerrank.com/challenges/baby-step-giant-step)|Find the minimum number of steps needed to get to point $(d, 0)$.|[Python](geometry/baby-step-giant-step.py)|Medium
 [Points on a Rectangle](https://www.hackerrank.com/challenges/points-on-rectangle)|Determine if a set of points coincides with the edges of a non-degenerate rectangle.|[Python](geometry/points-on-rectangle.py)|Easy
+[A Circle and a Square](https://www.hackerrank.com/challenges/a-circle-and-a-square)|Draw a circle and a square at specific coordinates within a raster image.|[C++](geometry/a-circle-and-a-square.cpp)|Medium
 
 #### [Probability](https://www.hackerrank.com/domains/mathematics/probability)
 

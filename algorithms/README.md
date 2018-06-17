@@ -182,3 +182,10 @@ Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Game of Stones](https://www.hackerrank.com/challenges/game-of-stones-1)|A Game of Stones|[Python](game-theory/game-of-stones-1.py)|Easy
 
+#### [Debugging](https://www.hackerrank.com/domains/algorithms/algo-debugging)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Prime Dates](https://www.hackerrank.com/challenges/prime-date)|Find the number of prime dates in a range|[C++](algo-debugging/prime-date.cpp) [Java](algo-debugging/prime-date.java) [Python](algo-debugging/prime-date.py)|Medium
+[Zig Zag Sequence](https://www.hackerrank.com/challenges/zig-zag-sequence)|Find a zig zag sequence of the given array.|[C++](algo-debugging/zig-zag-sequence.cpp) [Java](algo-debugging/zig-zag-sequence.java) [Python](algo-debugging/zig-zag-sequence.py)|Medium
+
