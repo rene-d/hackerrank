@@ -43,4 +43,4 @@ script:
   - cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Release ..
   - make extract-testcases
   - cd tutorials/10-days-of-statistics
-  - ../../../runtest.sh -t s10-multiple-linear-regression.py
+  - ../../../runtest.sh -t s10-multiple-linear-regression.py -T ../../tests
