@@ -1,10 +1,10 @@
 # [![HackerRank](https://hrcdn.net/hackerrank/assets/brand/h_mark_sm-30dc0e0cbd2dded63b294819ff853a90.svg)](https://www.hackerrank.com) HackerRank
 
-[![Build Status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank) [![730 solutions and counting](https://img.shields.io/badge/Challenges-730-blue.svg)](https://www.hackerrank.com/rene_d?hr_r=1)
+[![Build Status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank) [![740 solutions and counting](https://img.shields.io/badge/Challenges-740-blue.svg)](https://www.hackerrank.com/rene_d?hr_r=1)
 
 [HackerRank](https://www.hackerrank.com/dashboard) is a great place to learn, improve, play with your programming skills.
 
-All challenges are runable, except SQL and multiple choice question ones. They are verified with the default testcase (usually Testcase 0).
+All challenges are runnable, except SQL and multiple choice question ones. They are verified with their default testcase (usually Testcase 0).
 
 ## Solutions
 
@@ -33,11 +33,11 @@ and [ProjectEuler+](contests/projecteuler/) (See [here](https://github.com/rene-
 
 ### Requirements
 
-- [Python 3.6](https://www.python.org) and some libraries ([numpy](http://www.numpy.org), [requests](http://html.python-requests.org)), [flake8](http://flake8.readthedocs.io/)
+- [Python 3.6](https://www.python.org) and some packages : [numpy](http://www.numpy.org), [sklearn](http://scikit-learn.org/), [requests](http://html.python-requests.org), [flake8](http://flake8.readthedocs.io/)
 - [CMake](https://cmake.org)
-- Modern gcc or clang that come with macOS or Linux. Under Windows, use [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) or [MinGW](http://www.mingw.org).
+- Modern [GCC](https://gcc.gnu.org) or [Clang](https://clang.llvm.org) that come with macOS or Linux. For Windows, you can use [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10), [Cygwin](https://www.cygwin.com) or [Visual Studio Comunity 2017](https://www.visualstudio.com/downloads/)
 - [Haskell](https://www.haskell.org) (functional programming only)
-- [Java](http://www.oracle.com/technetwork/java/javase/index.html)
+- [Java](http://www.oracle.com/technetwork/java/javase/index.html) (some challenges and Java practice)
 
 ### Compilation
 

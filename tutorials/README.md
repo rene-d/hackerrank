@@ -31,6 +31,9 @@ Name | Preview | Code | Difficulty
 [Day 6: The Central Limit Theorem III](https://www.hackerrank.com/challenges/s10-the-central-limit-theorem-3)|Basic problems on the Central Limit Theorem.|[Python](10-days-of-statistics/s10-the-central-limit-theorem-3.py)|Easy
 [Day 7: Pearson Correlation Coefficient I](https://www.hackerrank.com/challenges/s10-pearson-correlation-coefficient)|Computing Pearson correlation coefficient.|[Python](10-days-of-statistics/s10-pearson-correlation-coefficient.py)|Easy
 [Day 7: Spearman's Rank Correlation Coefficient](https://www.hackerrank.com/challenges/s10-spearman-rank-correlation-coefficient)|Computing Spearman's rank correlation coefficient.|[Python](10-days-of-statistics/s10-spearman-rank-correlation-coefficient.py)|Easy
+[Day 8: Least Square Regression Line](https://www.hackerrank.com/challenges/s10-least-square-regression-line)|Find the line of best fit.|[Python](10-days-of-statistics/s10-least-square-regression-line.py)|Easy
+[Day 8: Pearson Correlation Coefficient II](https://www.hackerrank.com/challenges/s10-mcq-7)|Find the Pearson correlation coefficient|[text](10-days-of-statistics/s10-mcq-7.txt)|Medium
+[Day 9: Multiple Linear Regression](https://www.hackerrank.com/challenges/s10-multiple-linear-regression)|Learn multiple linear regression|[Python](10-days-of-statistics/s10-multiple-linear-regression.py)|Medium
 
 #### [30 Days of Code](https://www.hackerrank.com/domains/tutorials/30-days-of-code)
 

@@ -1,0 +1,14 @@
+# Tutorials > 10 Days of Statistics > Day 8: Pearson Correlation Coefficient II
+# Find the Pearson correlation coefficient
+#
+# https://www.hackerrank.com/challenges/s10-mcq-7/problem
+# challenge id: 21709
+#
+
+# explication:
+#   3*x + 4*y + 8 = 0  ⟹  y = -3/4 * x - 2    ⟹  b = -3/4 = ρ σy/σx
+#   4*x + 3*y + 7 = 0  ⟹  x = -3/4 * y - 7/4  ⟹  b = -3/4 = ρ σx/σy
+#   (-3/4)² = ρ²  ⟹  ρ = ± 3/4
+#   b < 0  ⟹  ρ = - 3/4
+
+-3 / 4
