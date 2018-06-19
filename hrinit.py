@@ -83,6 +83,7 @@ class HackerRankParser():
                       "cpp14": "cpp",
                       "c": "c",
                       "python3": "py",
+                      "python": "py",
                       "haskell": "hs",
                       "bash": "sh",
                       "java": "java",
@@ -187,7 +188,7 @@ class HackerRankParser():
                 else:
                     f.write("add_executable({} {}.{})\n".format(self.key, self.key, lang[:3]))
 
-        elif lang == "python3":
+        elif lang == "python3" or lang == "python":
             with open(filename, "wt") as f:
                 write_header(f, '# ')
             with open(cmake, "at") as f:
