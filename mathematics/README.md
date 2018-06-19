@@ -126,7 +126,13 @@ Name | Preview | Code | Difficulty
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Random number generator](https://www.hackerrank.com/challenges/random-number-generator)|what's the probability that x + y is less than C?|[Python](probability/random-number-generator.py)|Easy
+[Day 4: Normal Distribution #1](https://www.hackerrank.com/challenges/normal-distribution-1)|Problems based on basic statistical distributions.|[Python](probability/normal-distribution-1.py)|Medium
+[Day 4: Normal Distribution #2](https://www.hackerrank.com/challenges/normal-distribution-2)|Problems based on basic statistical distributions.|[Python](probability/normal-distribution-2.py)|Medium
+[Normal Distribution #3](https://www.hackerrank.com/challenges/normal-distribution-3)|Problems based on basic statistical distributions.|[Python](probability/normal-distribution-3.py)|Hard
 [B'day Gift](https://www.hackerrank.com/challenges/bday-gift)|Whats the price Isaac has to pay for HackerPhone|[Python](probability/bday-gift.py)|Easy
+[Binomial Distribution #1](https://www.hackerrank.com/challenges/binomial-distribution-1)|Problems based on basic statistical distributions.|[Python](probability/binomial-distribution-1.py)|Medium
+[Binomial Distribution #2](https://www.hackerrank.com/challenges/binomial-distribution-2)|Problems based on basic statistical distributions.|[Python](probability/binomial-distribution-2.py)|Hard
+[Binomial Distribution #3](https://www.hackerrank.com/challenges/binomial-distribution-3)|Problems based on basic statistical distributions.|[Python](probability/binomial-distribution-3.py)|Hard
 
 #### [Linear Algebra Foundations](https://www.hackerrank.com/domains/mathematics/linear-algebra-foundations)
 
