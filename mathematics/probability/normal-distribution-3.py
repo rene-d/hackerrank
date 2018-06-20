@@ -22,6 +22,6 @@ except ImportError:
         """ Cumulative Probability """
         return 1. / 2 * (1 + math.erf((x - m) / s / math.sqrt(2)))
 
-    print("{:.2f}".format(100 - phi(60, 70, 10) * 100))
+    print("{:.2f}".format(100 - phi(80, 70, 10) * 100))
     print("{:.2f}".format(100 - phi(60, 70, 10) * 100))
     print("{:.2f}".format(phi(60, 70, 10) * 100))
