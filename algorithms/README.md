@@ -8,7 +8,7 @@ The true test of problem solving: when one realizes that time and memory aren't 
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
-[Solve Me First](https://www.hackerrank.com/challenges/solve-me-first)|This is an easy challenge to help you start coding in your favorite languages!|[C++](warmup/solve-me-first.cpp)|Easy
+[Solve Me First](https://www.hackerrank.com/challenges/solve-me-first)|This is an easy challenge to help you start coding in your favorite languages!|[C++](warmup/solve-me-first.cpp) [Haskell](warmup/solve-me-first.hs) [Java](warmup/solve-me-first.java) [Python](warmup/solve-me-first.py) [bash](warmup/solve-me-first.sh)|Easy
 [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum)|Calculate the sum of integers in an array.|[C++](warmup/simple-array-sum.cpp) [Python](warmup/simple-array-sum.py)|Easy
 [Compare the Triplets](https://www.hackerrank.com/challenges/compare-the-triplets)|Compare the elements in two triplets.|[C++](warmup/compare-the-triplets.cpp) [Python](warmup/compare-the-triplets.py)|Easy
 [A Very Big Sum](https://www.hackerrank.com/challenges/a-very-big-sum)|Calculate the sum of the values in an array that might exceed the range of int values.|[Python](warmup/a-very-big-sum.py)|Easy

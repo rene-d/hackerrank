@@ -122,6 +122,10 @@ elif [ "${extension}" == "jar" ]; then
     exe="java -jar ${testname}"
     testname="${testname%.*}"
     result=result${extension}
+elif [ "${extension}" == "js" ]; then
+    exe="node ${testname}"
+    testname="${testname%.*}"
+    result=result${extension}
 else
     exe=./${testname}
     result=result-${testname}
