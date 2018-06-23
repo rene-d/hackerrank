@@ -6,6 +6,7 @@
 
 All challenges are runnable, except SQL and multiple choice question ones. They are verified with their default testcase (usually Testcase 0).
 
+
 ## Solutions
 
 [![C++](https://hrcdn.net/hackerrank/assets/dashboard/cpp-4644489c8b8e68a81dd0ccfac5097c2e.svg)](cpp/)
@@ -21,6 +22,7 @@ All challenges are runnable, except SQL and multiple choice question ones. They 
 [![30 Days of Code](https://hrcdn.net/hackerrank/assets/dashboard/30-days-of-code-bf00cb8a1c6f38bf917f45ea7ab2bf6b.svg)](tutorials/30-days-of-code/)
 [![Cracking the Coding Interview](https://hrcdn.net/hackerrank/assets/dashboard/cracking-the-coding-interview-a56b2213a9c4f9393bfeb13261449c37.svg)](tutorials/cracking-the-coding-interview/)
 [![10 Days of Statistics](https://hrcdn.net/hackerrank/assets/dashboard/10-days-of-statistics-f45c998a5d47c9527eb61e620f35f5c0.svg)](tutorials/10-days-of-statistics/)
+[![10 Days of Javascript](https://hrcdn.net/hackerrank/assets/dashboard/10-days-of-javascript-bf50d09114e28b603041e791559003b6.svg)](tutorials/10-days-of-javascript/)
 &nbsp;&nbsp;&nbsp;
 [![Regex](https://hrcdn.net/hackerrank/assets/dashboard/regex-d83b1db79fe03650410202032d3b8afd.svg)](regex/)
 [![Security](https://hrcdn.net/hackerrank/assets/dashboard/security-ee10c8f654e78f4659d5dc6305768a63.svg)](security/)

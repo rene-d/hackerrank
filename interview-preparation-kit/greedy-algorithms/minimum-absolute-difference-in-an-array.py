@@ -1,0 +1,1 @@
+../../algorithms/greedy/minimum-absolute-difference-in-an-array.py

@@ -39,6 +39,22 @@ Définition [Wikipédia](https://fr.wikipedia.org/wiki/Coding_dojo) d'un **codin
 
 ## Défis proposés
 
+### [Data Structures](https://www.hackerrank.com/domains/data-structures)
+Data Structures help in elegant representation of data for algorithms
+
+
+#### [Stacks](https://www.hackerrank.com/domains/data-structures/stacks)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Largest Rectangle ](https://www.hackerrank.com/challenges/largest-rectangle)|Given n buildings, find the largest rectangular area possible by joining consecutive K buildings.|[Python](largest-rectangle.py)|Medium
+
+#### [Trees](https://www.hackerrank.com/domains/data-structures/trees)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Tree: Huffman Decoding ](https://www.hackerrank.com/challenges/tree-huffman-decoding)|Given a Huffman tree and an encoded binary string, you have to print the original string.|[C++](tree-huffman-decoding.cpp)|Medium
+
 ### [Python](https://www.hackerrank.com/domains/python)
 A step by step guide to Python, a language that is easy to pick up yet one of the most powerful.
 
@@ -70,19 +86,12 @@ Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Cycle Detection](https://www.hackerrank.com/challenges/detect-whether-a-linked-list-contains-a-cycle)|Given a pointer to the head of a linked list, determine whether the linked list loops back onto itself|[C++](detect-whether-a-linked-list-contains-a-cycle.cpp)|Medium
 
-#### [Trees](https://www.hackerrank.com/domains/data-structures/trees)
-
-Name | Preview | Code | Difficulty
----- | ------- | ---- | ----------
-[Tree: Huffman Decoding ](https://www.hackerrank.com/challenges/tree-huffman-decoding)|Given a Huffman tree and an encoded binary string, you have to print the original string.|[C++](tree-huffman-decoding.cpp)|Medium
-
 #### [Stacks](https://www.hackerrank.com/domains/data-structures/stacks)
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [Maximum Element](https://www.hackerrank.com/challenges/maximum-element)|Given three types of queries, insert an element, delete an element or find the maximum element in a stack.|[C++](maximum-element.cpp)|Easy
 [Equal Stacks](https://www.hackerrank.com/challenges/equal-stacks)|Equalize the piles!|[Python](equal-stacks.py)|Easy
-[Largest Rectangle ](https://www.hackerrank.com/challenges/largest-rectangle)|Given n buildings, find the largest rectangular area possible by joining consecutive K buildings.|[Python](largest-rectangle.py)|Medium
 
 ### [Algorithms](https://www.hackerrank.com/domains/algorithms)
 The true test of problem solving: when one realizes that time and memory aren't infinite.

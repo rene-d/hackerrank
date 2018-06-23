@@ -1,1 +1,4 @@
-add_hackerrank_py(friend-circle-queries.py)
+add_subdirectory(arrays)
+add_subdirectory(dictionaries-hashmaps)
+
+add_subdirectory(miscellaneous)
