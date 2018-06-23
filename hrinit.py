@@ -28,11 +28,11 @@ class HackerRankParser():
         self.contest = None
         self.key = None
 
-    def feed(self, data):
+    def feed(self, data, ignore_path=False):
         if self.debug:
             with open("model.json", "w") as f:
                 f.write(data)
-            print("DEBUG: write initialData.json")
+            print("DEBUG: write model.json")
 
         data = json.loads(data)
 
@@ -40,12 +40,17 @@ class HackerRankParser():
             self.model = m = data['model']
 
             if m['track'] is None:
-                # if "primary_contest" in m:
-                #     self.path = os.path.join("contests", m["primary_contest"]["slug"])
-                #     self.path_name = "{}".format(m["primary_contest"]["name"])
-                # else:
-                self.path = os.path.join("contests", m["contest_slug"])
-                self.path_name = "{}".format(m["primary_contest"]["name"])
+                if m["primary_contest"] is None:
+                    # challenge is not categorized (not a contest, no track)
+                    if ignore_path:
+                        self.path = "master"
+                        self.path_name = "master"
+                    else:
+                        print("Cannot determine path for challenge {}".format(m['name']))
+                        exit()
+                else:
+                    self.path = os.path.join("contests", m["contest_slug"])
+                    self.path_name = "{}".format(m["primary_contest"]["name"])
             else:
                 self.path = os.path.join(m["track"]["track_slug"], m["track"]["slug"])
                 self.path_name = "{} > {}".format(m["track"]["track_name"], m["track"]["name"])
@@ -88,13 +93,15 @@ class HackerRankParser():
                       "bash": "sh",
                       "java": "java",
                       "java8": "java",
+                      "javascript": "js",
                       "perl": "pl",
                       "lua": "lua",
                       "text": "txt",
                       "oracle": "sql"}
 
         PREFERED = ['python3', 'cpp14', 'c', 'haskell',
-                    'bash', 'oracle', 'text', 'java8']
+                    'bash', 'oracle', 'text', 'java8',
+                    'python', 'javascript']
 
         # auto choose the language
         if lang == "*":
@@ -214,6 +221,12 @@ class HackerRankParser():
                 write_header(f, '// ')
             with open(cmake, "at") as f:
                 f.write("add_hackerrank_java({}.java)\n".format(self.key))
+
+        elif lang == "javascript":
+            with open(filename, "wt") as f:
+                write_header(f, '// ')
+            with open(cmake, "at") as f:
+                f.write("add_hackerrank_js({}.js)\n".format(self.key))
 
         # langages sans testeur
         elif lang == "text" or lang == "perl":

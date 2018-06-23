@@ -1,0 +1,1 @@
+add_hackerrank_py(friend-circle-queries.py)

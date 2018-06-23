@@ -178,6 +178,7 @@ add_subdirectory(security)
 add_subdirectory(regex)
 add_subdirectory(tutorials)
 add_subdirectory(contests)
+add_subdirectory(interview-preparation-kit)
 
 if(HACKERRANK_FP)
     add_subdirectory(fp)
