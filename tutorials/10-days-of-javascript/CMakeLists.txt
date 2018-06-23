@@ -1,0 +1,6 @@
+add_hackerrank_js(js10-hello-world.js)
+add_hackerrank_js(js10-data-types.js)
+add_hackerrank_js(js10-arithmetic-operators.js)
+add_hackerrank_js(js10-function.js)
+add_hackerrank_js(js10-let-and-const.js)
+add_hackerrank_js(js10-if-else.js)
