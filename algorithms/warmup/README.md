@@ -8,7 +8,7 @@ The true test of problem solving: when one realizes that time and memory aren't 
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
-[Solve Me First](https://www.hackerrank.com/challenges/solve-me-first)|This is an easy challenge to help you start coding in your favorite languages!|[C++](solve-me-first.cpp) [Haskell](solve-me-first.hs) [Java](solve-me-first.java) [Python](solve-me-first.py) [bash](solve-me-first.sh)|Easy
+[Solve Me First](https://www.hackerrank.com/challenges/solve-me-first)|This is an easy challenge to help you start coding in your favorite languages!|[C++](solve-me-first.cpp) [Haskell](solve-me-first.hs) [Java](solve-me-first.java) [Javascript](solve-me-first.js) [Python](solve-me-first.py) [bash](solve-me-first.sh)|Easy
 [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum)|Calculate the sum of integers in an array.|[C++](simple-array-sum.cpp) [Python](simple-array-sum.py)|Easy
 [Compare the Triplets](https://www.hackerrank.com/challenges/compare-the-triplets)|Compare the elements in two triplets.|[C++](compare-the-triplets.cpp) [Python](compare-the-triplets.py)|Easy
 [A Very Big Sum](https://www.hackerrank.com/challenges/a-very-big-sum)|Calculate the sum of the values in an array that might exceed the range of int values.|[Python](a-very-big-sum.py)|Easy
