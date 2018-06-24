@@ -32,12 +32,12 @@ int main()
         // mot non trouvé ou épuisé
         if (i == magazine.end() || i->second == 0)
         {
-            cout << "No\n";
+            cout << "No" << endl;
             return 0;
         }
         i->second--;
     }
 
-    cout << "Yes\n";
+    cout << "Yes" << endl;
     return 0;
 }
