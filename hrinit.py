@@ -347,19 +347,48 @@ def main():
     if args.force_c:
         args.lang = "c"
 
+    alt_path = None
+    alt_path_name = None
+    alt_url = None
+
     data = ""
     if args.url.startswith('http'):
 
-        t = re.search(r"www\.hackerrank\.com/challenges/([^/]+)/", args.url)
+        # challenge linked from the interview preparation kit ?
+        t = re.search(r"www\.hackerrank\.com/challenges/([a-z\-\d]+)/problem\?h_l=playlist&slugs%5B%5D=interview&slugs%5B%5D=([a-z\-\d]+)&slugs%5B%5D=([a-z\-\d]+)", args.url)  # noqa
         if t:
             contest = "master"
             challenge = t.group(1)
-        else:
-            t = re.search(r"www\.hackerrank\.com/contests/([^/]+)/challenges/([\w\d\-]+)", args.url)
-            if t:
-                contest = t.group(1)
-                challenge = t.group(2)
+            alt_path = os.path.join(t.group(2), t.group(3))
 
+            # retrieve the name of the interview section
+            url = "https://www.hackerrank.com/rest/playlists/" + t.group(2)
+            r = requests.get(url)
+            if r.status_code == 200:
+                data = json.loads(r.content)
+                name1 = data['name']
+                name2 = [i['name'] for i in data['playlists'] if i['slug'] == t.group(3)][0]
+                alt_path_name = "{} > {}".format(name1, name2)
+            else:
+                alt_path_name = alt_path
+
+            alt_url = "https://www.hackerrank.com/challenges/{}/problem?h_l=playlist&slugs%5B%5D%5B%5D=interview&slugs%5B%5D%5B%5D={}&slugs%5B%5D%5B%5D={}".format(t.group(1), t.group(2), t.group(3))  # noqa
+
+        else:
+            # practice challenge ?
+            t = re.search(r"www\.hackerrank\.com/challenges/([^/]+)", args.url)
+            if t:
+                contest = "master"
+                challenge = t.group(1)
+
+            else:
+                # contest challenge ?
+                t = re.search(r"www\.hackerrank\.com/contests/([^/]+)/challenges/([\w\d\-]+)", args.url)
+                if t:
+                    contest = t.group(1)
+                    challenge = t.group(2)
+
+        # REST api to get challenge model
         url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}".format(contest, challenge)
 
         r = requests.get(url)
@@ -380,7 +409,14 @@ def main():
             data = f.read()
 
     parser = HackerRankParser(args.debug)
-    parser.feed(data)
+    parser.feed(data, True)
+
+    # trick to manage "interview-preparation-kit" only challenge
+    if alt_path:
+        parser.path = alt_path
+        parser.path_name = alt_path_name
+        parser.url = alt_url
+
     parser.info()
     parser.gen_stub(args.lang, args.force, args.force_hpp)
     parser.downloads(args.force)
