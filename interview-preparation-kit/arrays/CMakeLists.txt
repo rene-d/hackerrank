@@ -1,3 +1,5 @@
 #add_hackerrank_py(2d-array.py)
-# ctci-array-left-rotation.py
-# crush.py
+#add_hackerrank_py(ctci-array-left-rotation.py)
+#add_hackerrank_py(crush.py)
+#add_hackerrank_py(new-year-chaos.py)
+add_hackerrank_py(minimum-swaps-2.py)

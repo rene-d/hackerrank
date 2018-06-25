@@ -48,7 +48,8 @@
         "string.h": "c",
         "locale": "cpp",
         "numeric": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "iostream": "cpp"
     },
     "files.exclude": {
         "**/.git": true,

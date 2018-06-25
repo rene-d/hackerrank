@@ -13,4 +13,8 @@ Name | Preview | Code | Difficulty
 [Day 1: Functions](https://www.hackerrank.com/challenges/js10-function)|Practice writing JavaScript functions.|[Javascript](js10-function.js)|Easy
 [Day 1: Let and Const](https://www.hackerrank.com/challenges/js10-let-and-const)|The const declaration creates a read-only reference to a value.|[Javascript](js10-let-and-const.js)|Easy
 [Day 2: Conditional Statements: If-Else](https://www.hackerrank.com/challenges/js10-if-else)|Learning about conditional statements.|[Javascript](js10-if-else.js)|Easy
+[Day 2: Conditional Statements: Switch](https://www.hackerrank.com/challenges/js10-switch)|Practice using Switch statements.|[Javascript](js10-switch.js)|Easy
+[Day 2: Loops](https://www.hackerrank.com/challenges/js10-loops)|Learn For, While and Do-While loops in Javascript.|[Javascript](js10-loops.js)|Easy
+[Day 3: Arrays](https://www.hackerrank.com/challenges/js10-arrays)|Output the 2nd largest number in an array in JavaScript.|[Javascript](js10-arrays.js)|Easy
+[Day 8: Create a Button](https://www.hackerrank.com/challenges/js10-create-a-button)|Create a button.|[HTML](js10-create-a-button.html)|Easy
 
