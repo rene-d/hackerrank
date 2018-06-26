@@ -16,5 +16,10 @@ Name | Preview | Code | Difficulty
 [Day 2: Conditional Statements: Switch](https://www.hackerrank.com/challenges/js10-switch)|Practice using Switch statements.|[Javascript](js10-switch.js)|Easy
 [Day 2: Loops](https://www.hackerrank.com/challenges/js10-loops)|Learn For, While and Do-While loops in Javascript.|[Javascript](js10-loops.js)|Easy
 [Day 3: Arrays](https://www.hackerrank.com/challenges/js10-arrays)|Output the 2nd largest number in an array in JavaScript.|[Javascript](js10-arrays.js)|Easy
+[Day 3: Try, Catch, and Finally](https://www.hackerrank.com/challenges/js10-try-catch-and-finally)|Learn to use `try`, `catch`, and 'finally' in JavaScript.|[Javascript](js10-try-catch-and-finally.js)|Easy
+[Day 3: Throw](https://www.hackerrank.com/challenges/js10-throw)|Practice throwing errors` in JavaScript.|[Javascript](js10-throw.js)|Easy
+[Day 4: Create a Rectangle Object](https://www.hackerrank.com/challenges/js10-objects)|Create an object with certain properties in JavaScript.|[Javascript](js10-objects.js)|Easy
+[Day 4: Count Objects](https://www.hackerrank.com/challenges/js10-count-objects)|Iterate over the elements in an array and perform an action based on each element's properties.|[Javascript](js10-count-objects.js)|Easy
+[Day 4: Classes](https://www.hackerrank.com/challenges/js10-class)|Practice using JavaScript classes.|[Javascript](js10-class.js)|Easy
 [Day 8: Create a Button](https://www.hackerrank.com/challenges/js10-create-a-button)|Create a button.|[HTML](js10-create-a-button.html)|Easy
 

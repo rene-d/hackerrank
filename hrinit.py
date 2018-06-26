@@ -12,6 +12,39 @@ import datetime
 import time
 
 
+class Colors:
+    """ Terminal colors """
+    BLACK = "\033[0;30m"
+    RED = "\033[0;31m"
+    GREEN = "\033[0;32m"
+    BROWN = "\033[0;33m"
+    BLUE = "\033[0;34m"
+    PURPLE = "\033[0;35m"
+    CYAN = "\033[0;36m"
+    LIGHT_GRAY = "\033[0;37m"
+    DARK_GRAY = "\033[1;30m"
+    LIGHT_RED = "\033[1;31m"
+    LIGHT_GREEN = "\033[1;32m"
+    YELLOW = "\033[1;33m"
+    LIGHT_BLUE = "\033[1;34m"
+    LIGHT_PURPLE = "\033[1;35m"
+    LIGHT_CYAN = "\033[1;36m"
+    LIGHT_WHITE = "\033[1;37m"
+    BOLD = "\033[1m"
+    FAINT = "\033[2m"
+    ITALIC = "\033[3m"
+    UNDERLINE = "\033[4m"
+    BLINK = "\033[5m"
+    NEGATIVE = "\033[7m"
+    CROSSED = "\033[9m"
+    END = "\033[0m"
+    # cancel SGR codes if we don't write to a terminal
+    if not __import__("sys").stdout.isatty():
+        for c in dir():
+            if isinstance(c, str) and c[0:2] != "__":
+                locals()[c] = ""
+
+
 class HackerRankParser():
 
     def __init__(self, debug=False, rootdir=None):
@@ -76,11 +109,11 @@ class HackerRankParser():
                 self.url2 = None
 
     def info(self):
-        print("key     :", self.model['slug'])
-        print("name    :", self.model['name'])
-        print("domain  :", self.path_name)
-        print("preview :", self.model['preview'])
-        print("lang    :", ','.join(self.model['languages']))
+        print(Colors.LIGHT_BLUE + "key     :" + Colors.END, self.model['slug'])
+        print(Colors.LIGHT_BLUE + "name    :" + Colors.END, self.model['name'])
+        print(Colors.LIGHT_BLUE + "domain  :" + Colors.END, self.path_name)
+        print(Colors.LIGHT_BLUE + "preview :" + Colors.END, self.model['preview'])
+        print(Colors.LIGHT_BLUE + "lang    :" + Colors.END, ','.join(self.model['languages']))
 
     def gen_stub(self, lang, overwrite=False, hpp=False, editor=True, add_test=True):
         """ create a file based on the hackerrank template with a significant header """
@@ -319,6 +352,7 @@ class HackerRankParser():
 def main():
 
     lines = [
+        Colors.GREEN,
         "===============================================================================",
         ",--.  ,--.              ,--.                 ,------.                 ,--.     ",
         "|  '--'  | ,--,--. ,---.|  |,-. ,---. ,--.--.|  .--. ' ,--,--.,--,--, |  |,-.  ",
@@ -326,11 +360,13 @@ def main():
         "|  |  |  |\\ '-'  |\\ `--.|  \\  \\\\   --.|  |   |  |\\  \\ \\ '-'  ||  ||  ||  \\  \\  ",
         "`--'  `--' `--`--' `---'`--'`--'`----'`--'   `--' '--' `--`--'`--''--'`--'`--' ",
         "===============================================================================",
+        Colors.END,
     ]
     for i in lines:
         print(i)
 
-    parser = argparse.ArgumentParser(description='Intialize a HackerRank challenge.')
+    parser = argparse.ArgumentParser(
+        description='Intialize a ' + Colors.LIGHT_BLUE + 'HackerRank' + Colors.END + ' challenge.')
     parser.add_argument('url', help="Challenge URL")
     parser.add_argument('-v', '--verbose', help="Verbose mode", action='store_true')
     parser.add_argument('-d', '--debug', help="Debug mode", action='store_true')
@@ -383,7 +419,7 @@ def main():
 
             else:
                 # contest challenge ?
-                t = re.search(r"www\.hackerrank\.com/contests/([^/]+)/challenges/([\w\d\-]+)", args.url)
+                t = re.search(r"www\.hackerrank\.com/contests/([^/]+)/challenges/([\w\d\-]+)", args.url)  # noqa
                 if t:
                     contest = t.group(1)
                     challenge = t.group(2)
