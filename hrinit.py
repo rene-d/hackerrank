@@ -12,6 +12,39 @@ import datetime
 import time
 
 
+class Colors:
+    """ Terminal colors """
+    BLACK = "\033[0;30m"
+    RED = "\033[0;31m"
+    GREEN = "\033[0;32m"
+    BROWN = "\033[0;33m"
+    BLUE = "\033[0;34m"
+    PURPLE = "\033[0;35m"
+    CYAN = "\033[0;36m"
+    LIGHT_GRAY = "\033[0;37m"
+    DARK_GRAY = "\033[1;30m"
+    LIGHT_RED = "\033[1;31m"
+    LIGHT_GREEN = "\033[1;32m"
+    YELLOW = "\033[1;33m"
+    LIGHT_BLUE = "\033[1;34m"
+    LIGHT_PURPLE = "\033[1;35m"
+    LIGHT_CYAN = "\033[1;36m"
+    LIGHT_WHITE = "\033[1;37m"
+    BOLD = "\033[1m"
+    FAINT = "\033[2m"
+    ITALIC = "\033[3m"
+    UNDERLINE = "\033[4m"
+    BLINK = "\033[5m"
+    NEGATIVE = "\033[7m"
+    CROSSED = "\033[9m"
+    END = "\033[0m"
+    # cancel SGR codes if we don't write to a terminal
+    if not __import__("sys").stdout.isatty():
+        for c in dir():
+            if isinstance(c, str) and c[0:2] != "__":
+                locals()[c] = ""
+
+
 class HackerRankParser():
 
     def __init__(self, debug=False, rootdir=None):
@@ -28,11 +61,11 @@ class HackerRankParser():
         self.contest = None
         self.key = None
 
-    def feed(self, data):
+    def feed(self, data, ignore_path=False):
         if self.debug:
             with open("model.json", "w") as f:
                 f.write(data)
-            print("DEBUG: write initialData.json")
+            print("DEBUG: write model.json")
 
         data = json.loads(data)
 
@@ -40,12 +73,17 @@ class HackerRankParser():
             self.model = m = data['model']
 
             if m['track'] is None:
-                # if "primary_contest" in m:
-                #     self.path = os.path.join("contests", m["primary_contest"]["slug"])
-                #     self.path_name = "{}".format(m["primary_contest"]["name"])
-                # else:
-                self.path = os.path.join("contests", m["contest_slug"])
-                self.path_name = "{}".format(m["primary_contest"]["name"])
+                if m["primary_contest"] is None:
+                    # challenge is not categorized (not a contest, no track)
+                    if ignore_path:
+                        self.path = "master"
+                        self.path_name = "master"
+                    else:
+                        print("Cannot determine path for challenge {}".format(m['name']))
+                        exit()
+                else:
+                    self.path = os.path.join("contests", m["contest_slug"])
+                    self.path_name = "{}".format(m["primary_contest"]["name"])
             else:
                 self.path = os.path.join(m["track"]["track_slug"], m["track"]["slug"])
                 self.path_name = "{} > {}".format(m["track"]["track_name"], m["track"]["name"])
@@ -71,11 +109,11 @@ class HackerRankParser():
                 self.url2 = None
 
     def info(self):
-        print("key     :", self.model['slug'])
-        print("name    :", self.model['name'])
-        print("domain  :", self.path_name)
-        print("preview :", self.model['preview'])
-        print("lang    :", ','.join(self.model['languages']))
+        print(Colors.LIGHT_BLUE + "key     :" + Colors.END, self.model['slug'])
+        print(Colors.LIGHT_BLUE + "name    :" + Colors.END, self.model['name'])
+        print(Colors.LIGHT_BLUE + "domain  :" + Colors.END, self.path_name)
+        print(Colors.LIGHT_BLUE + "preview :" + Colors.END, self.model['preview'])
+        print(Colors.LIGHT_BLUE + "lang    :" + Colors.END, ','.join(self.model['languages']))
 
     def gen_stub(self, lang, overwrite=False, hpp=False, editor=True, add_test=True):
         """ create a file based on the hackerrank template with a significant header """
@@ -83,17 +121,20 @@ class HackerRankParser():
                       "cpp14": "cpp",
                       "c": "c",
                       "python3": "py",
+                      "python": "py",
                       "haskell": "hs",
                       "bash": "sh",
                       "java": "java",
                       "java8": "java",
+                      "javascript": "js",
                       "perl": "pl",
                       "lua": "lua",
                       "text": "txt",
                       "oracle": "sql"}
 
         PREFERED = ['python3', 'cpp14', 'c', 'haskell',
-                    'bash', 'oracle', 'text', 'java8']
+                    'bash', 'oracle', 'text', 'java8',
+                    'python', 'javascript']
 
         # auto choose the language
         if lang == "*":
@@ -187,7 +228,7 @@ class HackerRankParser():
                 else:
                     f.write("add_executable({} {}.{})\n".format(self.key, self.key, lang[:3]))
 
-        elif lang == "python3":
+        elif lang == "python3" or lang == "python":
             with open(filename, "wt") as f:
                 write_header(f, '# ')
             with open(cmake, "at") as f:
@@ -213,6 +254,12 @@ class HackerRankParser():
                 write_header(f, '// ')
             with open(cmake, "at") as f:
                 f.write("add_hackerrank_java({}.java)\n".format(self.key))
+
+        elif lang == "javascript":
+            with open(filename, "wt") as f:
+                write_header(f, '// ')
+            with open(cmake, "at") as f:
+                f.write("add_hackerrank_js({}.js)\n".format(self.key))
 
         # langages sans testeur
         elif lang == "text" or lang == "perl":
@@ -305,6 +352,7 @@ class HackerRankParser():
 def main():
 
     lines = [
+        Colors.GREEN,
         "===============================================================================",
         ",--.  ,--.              ,--.                 ,------.                 ,--.     ",
         "|  '--'  | ,--,--. ,---.|  |,-. ,---. ,--.--.|  .--. ' ,--,--.,--,--, |  |,-.  ",
@@ -312,11 +360,13 @@ def main():
         "|  |  |  |\\ '-'  |\\ `--.|  \\  \\\\   --.|  |   |  |\\  \\ \\ '-'  ||  ||  ||  \\  \\  ",
         "`--'  `--' `--`--' `---'`--'`--'`----'`--'   `--' '--' `--`--'`--''--'`--'`--' ",
         "===============================================================================",
+        Colors.END,
     ]
     for i in lines:
         print(i)
 
-    parser = argparse.ArgumentParser(description='Intialize a HackerRank challenge.')
+    parser = argparse.ArgumentParser(
+        description='Intialize a ' + Colors.LIGHT_BLUE + 'HackerRank' + Colors.END + ' challenge.')
     parser.add_argument('url', help="Challenge URL")
     parser.add_argument('-v', '--verbose', help="Verbose mode", action='store_true')
     parser.add_argument('-d', '--debug', help="Debug mode", action='store_true')
@@ -333,19 +383,48 @@ def main():
     if args.force_c:
         args.lang = "c"
 
+    alt_path = None
+    alt_path_name = None
+    alt_url = None
+
     data = ""
     if args.url.startswith('http'):
 
-        t = re.search(r"www\.hackerrank\.com/challenges/([^/]+)/", args.url)
+        # challenge linked from the interview preparation kit ?
+        t = re.search(r"www\.hackerrank\.com/challenges/([a-z\-\d]+)/problem\?h_l=playlist&slugs%5B%5D=interview&slugs%5B%5D=([a-z\-\d]+)&slugs%5B%5D=([a-z\-\d]+)", args.url)  # noqa
         if t:
             contest = "master"
             challenge = t.group(1)
-        else:
-            t = re.search(r"www\.hackerrank\.com/contests/([^/]+)/challenges/([\w\d\-]+)", args.url)
-            if t:
-                contest = t.group(1)
-                challenge = t.group(2)
+            alt_path = os.path.join(t.group(2), t.group(3))
 
+            # retrieve the name of the interview section
+            url = "https://www.hackerrank.com/rest/playlists/" + t.group(2)
+            r = requests.get(url)
+            if r.status_code == 200:
+                data = json.loads(r.content)
+                name1 = data['name']
+                name2 = [i['name'] for i in data['playlists'] if i['slug'] == t.group(3)][0]
+                alt_path_name = "{} > {}".format(name1, name2)
+            else:
+                alt_path_name = alt_path
+
+            alt_url = "https://www.hackerrank.com/challenges/{}/problem?h_l=playlist&slugs%5B%5D%5B%5D=interview&slugs%5B%5D%5B%5D={}&slugs%5B%5D%5B%5D={}".format(t.group(1), t.group(2), t.group(3))  # noqa
+
+        else:
+            # practice challenge ?
+            t = re.search(r"www\.hackerrank\.com/challenges/([^/]+)", args.url)
+            if t:
+                contest = "master"
+                challenge = t.group(1)
+
+            else:
+                # contest challenge ?
+                t = re.search(r"www\.hackerrank\.com/contests/([^/]+)/challenges/([\w\d\-]+)", args.url)  # noqa
+                if t:
+                    contest = t.group(1)
+                    challenge = t.group(2)
+
+        # REST api to get challenge model
         url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}".format(contest, challenge)
 
         r = requests.get(url)
@@ -366,7 +445,14 @@ def main():
             data = f.read()
 
     parser = HackerRankParser(args.debug)
-    parser.feed(data)
+    parser.feed(data, True)
+
+    # trick to manage "interview-preparation-kit" only challenge
+    if alt_path:
+        parser.path = alt_path
+        parser.path_name = alt_path_name
+        parser.url = alt_url
+
     parser.info()
     parser.gen_stub(args.lang, args.force, args.force_hpp)
     parser.downloads(args.force)

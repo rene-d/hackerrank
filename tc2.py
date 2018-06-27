@@ -14,14 +14,17 @@ import re
 parser = argparse.ArgumentParser(description='Download testcases (practice challenges only).')
 parser.add_argument('name', help="Challenge name")
 parser.add_argument('url', nargs='*', help="test case url")
+parser.add_argument('-o', '--overwrite', help="Overwrite", action="store_true")
 
 args = parser.parse_args()
 
 name = re.sub(r'^.*\.hackerrank\.com/challenges/([\w\d\-].*)/.*$', r'\1', args.name)
+if name is None and bool(re.match(r"[\da-z\-]+", args.name)):
+    name = args.name
 
 zip = os.path.join(os.path.dirname(__file__), "testcases2", "master", name + "-testcases.zip")
 
-if not os.path.exists(zip):
+if not os.path.exists(zip) or args.overwrite:
     print("create", zip)
     z = zipfile.ZipFile(zip, mode="w", compression=zipfile.ZIP_DEFLATED)
 else:

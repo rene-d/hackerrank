@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+# Tutorials > 10 Days of Javascript > Day 8: Create a Button
+# Create a button.
+#
+# https://www.hackerrank.com/challenges/js10-create-a-button/problem
+# challenge id: 21006
+#
+-->
+<html>
+    <head>
+        <style>
+#btn {
+    width: 96px;
+    height: 48px;
+    font-size: 24px;
+}
+        </style>
+    </head>
+
+    <body>
+        <button id="btn">0</button>
+        <script type="text/javascript">
+var btn = document.getElementById('btn');
+btn.onclick = function() { ++btn.innerHTML; }
+        </script>
+    </body>
+</html>

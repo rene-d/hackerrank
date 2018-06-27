@@ -8,7 +8,7 @@ The true test of problem solving: when one realizes that time and memory aren't 
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
-[Solve Me First](https://www.hackerrank.com/challenges/solve-me-first)|This is an easy challenge to help you start coding in your favorite languages!|[C++](warmup/solve-me-first.cpp)|Easy
+[Solve Me First](https://www.hackerrank.com/challenges/solve-me-first)|This is an easy challenge to help you start coding in your favorite languages!|[C++](warmup/solve-me-first.cpp) [Haskell](warmup/solve-me-first.hs) [Java](warmup/solve-me-first.java) [Javascript](warmup/solve-me-first.js) [Python](warmup/solve-me-first.py) [bash](warmup/solve-me-first.sh)|Easy
 [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum)|Calculate the sum of integers in an array.|[C++](warmup/simple-array-sum.cpp) [Python](warmup/simple-array-sum.py)|Easy
 [Compare the Triplets](https://www.hackerrank.com/challenges/compare-the-triplets)|Compare the elements in two triplets.|[C++](warmup/compare-the-triplets.cpp) [Python](warmup/compare-the-triplets.py)|Easy
 [A Very Big Sum](https://www.hackerrank.com/challenges/a-very-big-sum)|Calculate the sum of the values in an array that might exceed the range of int values.|[Python](warmup/a-very-big-sum.py)|Easy
@@ -146,6 +146,7 @@ Name | Preview | Code | Difficulty
 [Ice Cream Parlor](https://www.hackerrank.com/challenges/icecream-parlor)|Help Sunny and Johnny spend all their money during each trip to the Ice Cream Parlor.|[Python](search/icecream-parlor.py)|Easy
 [Missing Numbers](https://www.hackerrank.com/challenges/missing-numbers)|Find the numbers missing from a sequence given a permutation of the original sequence|[Python](search/missing-numbers.py)|Easy
 [Pairs](https://www.hackerrank.com/challenges/pairs)|Given N numbers, count the total pairs of numbers that have a difference of K.|[Python](search/pairs.py)|Medium
+[Sherlock and Array](https://www.hackerrank.com/challenges/sherlock-and-array)|Check whether there exists an element in the array such that sum of elements on its left is equal to the sum of elements on its right.|[Python](search/sherlock-and-array.py)|Easy
 
 #### [Greedy](https://www.hackerrank.com/domains/algorithms/greedy)
 
@@ -166,6 +167,12 @@ Name | Preview | Code | Difficulty
 [The Longest Increasing Subsequence](https://www.hackerrank.com/challenges/longest-increasing-subsequent)|Find the length of the longest increase subsequence in a given array.|[C++](dynamic-programming/longest-increasing-subsequent.cpp)|Advanced
 [Dorsey Thief](https://www.hackerrank.com/challenges/dorsey-thief)|standard knapsack problem|[C++](dynamic-programming/dorsey-thief.cpp)|Advanced
 
+#### [Constructive Algorithms](https://www.hackerrank.com/domains/algorithms/constructive-algorithms)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[New Year Chaos](https://www.hackerrank.com/challenges/new-year-chaos)|Determine how many bribes took place to get a queue into its current state.|[Python](constructive-algorithms/new-year-chaos.py)|Medium
+
 #### [Bit Manipulation](https://www.hackerrank.com/domains/algorithms/bit-manipulation)
 
 Name | Preview | Code | Difficulty
@@ -173,6 +180,8 @@ Name | Preview | Code | Difficulty
 [Lonely Integer](https://www.hackerrank.com/challenges/lonely-integer)|Find the unique element in an array of integer pairs.|[Python](bit-manipulation/lonely-integer.py)|Easy
 [Maximizing XOR](https://www.hackerrank.com/challenges/maximizing-xor)|Given two integers, L and R, find the maximal value of A xor B,  where A and B satisfy a condition.|[Python](bit-manipulation/maximizing-xor.py)|Easy
 [Counter game](https://www.hackerrank.com/challenges/counter-game)|Louise and Richard play a game, find the winner of the game.|[Python](bit-manipulation/counter-game.py)|Medium
+[The Great XOR](https://www.hackerrank.com/challenges/the-great-xor)|Count the number of non-negative integer a's that are less than some x where the bitwise XOR of a and x is greater than x.|[C++](bit-manipulation/the-great-xor.cpp)|Medium
+[Flipping bits](https://www.hackerrank.com/challenges/flipping-bits)|Flip bits in its binary representation.|[C++](bit-manipulation/flipping-bits.cpp)|Easy
 [A or B](https://www.hackerrank.com/challenges/aorb)|A or B = C|[Python](bit-manipulation/aorb.py)|Medium
 [Hamming Distance](https://www.hackerrank.com/challenges/hamming-distance)|You are given a string S, consisting of N small latin letters 'a'  and 'b'. Process the given M queries.|[C++](bit-manipulation/hamming-distance.cpp)|Expert
 

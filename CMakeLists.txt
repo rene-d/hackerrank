@@ -5,12 +5,39 @@ cmake_minimum_required(VERSION 3.5)
 
 project(hackerrank)
 
+
 #
 # Options
 #
 
 option(HACKERRANK_FP "Toggle Functional Programming" OFF)
 option(HACKERRANK_JAVA "Toggle Java" ON)
+option(HACKERRANK_JS "Toggle Javascript (Node.js)" ON)
+
+
+#
+# Check environment
+#
+
+if(HACKERRANK_JAVA)
+    find_program(JAVAC_BIN javac DOC "path to Java compiler")
+    if(NOT JAVAC_BIN)
+        set(HACKERRANK_JAVA OFF)
+        message(WARNING "Disabling Java: compiler not found")
+    else()
+        #message(STATUS "Java compiler: ${JAVAC_BIN}")
+    endif()
+endif()
+
+if(HACKERRANK_JS)
+    find_program(NODEJS_BIN node DOC "path to Node.js runtime")
+    if(NOT NODEJS_BIN)
+        set(HACKERRANK_JS OFF)
+        message(WARNING "Disabling Node.js: runtime not found")
+    else()
+        #message(STATUS "Node.js runtime: ${NODEJS_BIN}")
+    endif()
+endif()
 
 
 #
@@ -30,8 +57,12 @@ endif()
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_C_STANDARD 11)
-set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wconversion -Wno-unused-result")
-set(CMAKE_C_FLAGS "-Wall -Wextra -Wconversion -Wno-unused-result")
+
+if((CMAKE_CXX_COMPILER_ID MATCHES "Clang") OR (CMAKE_CXX_COMPILER_ID MATCHES "GNU"))
+    # enforce a clean code
+    set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wconversion -Wno-unused-result")
+    set(CMAKE_C_FLAGS "-Wall -Wextra -Wconversion -Wno-unused-result")
+endif()
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
     # clang doesn't have the handy gcc STL header file
@@ -121,6 +152,15 @@ function(add_hackerrank_java src)
     endif()
 endfunction()
 
+# add a Node.js challenge
+function(add_hackerrank_js name)
+    if(HACKERRANK_JS)
+        configure_file("${name}" "${name}" COPYONLY @ONLY)
+        add_test_hackerrank(${name})
+    endif()
+endfunction()
+
+
 
 #
 # Contests and domains
@@ -138,6 +178,7 @@ add_subdirectory(security)
 add_subdirectory(regex)
 add_subdirectory(tutorials)
 add_subdirectory(contests)
+add_subdirectory(interview-preparation-kit)
 
 if(HACKERRANK_FP)
     add_subdirectory(fp)

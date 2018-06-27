@@ -3,6 +3,29 @@
 
 
 
+#### [10 Days of Javascript](https://www.hackerrank.com/domains/tutorials/10-days-of-javascript)
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Day 0: Hello, World!](https://www.hackerrank.com/challenges/js10-hello-world)|Practice printing to stdout using JavaScript.|[Javascript](10-days-of-javascript/js10-hello-world.js)|Easy
+[Day 0: Data Types](https://www.hackerrank.com/challenges/js10-data-types)|Get started with JavaScript data types and practice using the + operator.|[Javascript](10-days-of-javascript/js10-data-types.js)|Easy
+[Day 1: Arithmetic Operators](https://www.hackerrank.com/challenges/js10-arithmetic-operators)|Learn arithmetic operators in JavaScript.|[Javascript](10-days-of-javascript/js10-arithmetic-operators.js)|Easy
+[Day 1: Functions](https://www.hackerrank.com/challenges/js10-function)|Practice writing JavaScript functions.|[Javascript](10-days-of-javascript/js10-function.js)|Easy
+[Day 1: Let and Const](https://www.hackerrank.com/challenges/js10-let-and-const)|The const declaration creates a read-only reference to a value.|[Javascript](10-days-of-javascript/js10-let-and-const.js)|Easy
+[Day 2: Conditional Statements: If-Else](https://www.hackerrank.com/challenges/js10-if-else)|Learning about conditional statements.|[Javascript](10-days-of-javascript/js10-if-else.js)|Easy
+[Day 2: Conditional Statements: Switch](https://www.hackerrank.com/challenges/js10-switch)|Practice using Switch statements.|[Javascript](10-days-of-javascript/js10-switch.js)|Easy
+[Day 2: Loops](https://www.hackerrank.com/challenges/js10-loops)|Learn For, While and Do-While loops in Javascript.|[Javascript](10-days-of-javascript/js10-loops.js)|Easy
+[Day 3: Arrays](https://www.hackerrank.com/challenges/js10-arrays)|Output the 2nd largest number in an array in JavaScript.|[Javascript](10-days-of-javascript/js10-arrays.js)|Easy
+[Day 3: Try, Catch, and Finally](https://www.hackerrank.com/challenges/js10-try-catch-and-finally)|Learn to use `try`, `catch`, and 'finally' in JavaScript.|[Javascript](10-days-of-javascript/js10-try-catch-and-finally.js)|Easy
+[Day 3: Throw](https://www.hackerrank.com/challenges/js10-throw)|Practice throwing errors` in JavaScript.|[Javascript](10-days-of-javascript/js10-throw.js)|Easy
+[Day 4: Create a Rectangle Object](https://www.hackerrank.com/challenges/js10-objects)|Create an object with certain properties in JavaScript.|[Javascript](10-days-of-javascript/js10-objects.js)|Easy
+[Day 4: Count Objects](https://www.hackerrank.com/challenges/js10-count-objects)|Iterate over the elements in an array and perform an action based on each element's properties.|[Javascript](10-days-of-javascript/js10-count-objects.js)|Easy
+[Day 4: Classes](https://www.hackerrank.com/challenges/js10-class)|Practice using JavaScript classes.|[Javascript](10-days-of-javascript/js10-class.js)|Easy
+[Day 5: Inheritance](https://www.hackerrank.com/challenges/js10-inheritance)|Practice using prototypes and implementing inheritance in JavaScript.|[Javascript](10-days-of-javascript/js10-inheritance.js)|Easy
+[Day 5: Template Literals](https://www.hackerrank.com/challenges/js10-template-literals)|JavaScript Template Strings|[Javascript](10-days-of-javascript/js10-template-literals.js)|Easy
+[Day 5: Arrow Functions](https://www.hackerrank.com/challenges/js10-arrows)|Practice using Arrow Functions in JavaScript.|[Javascript](10-days-of-javascript/js10-arrows.js)|Easy
+[Day 8: Create a Button](https://www.hackerrank.com/challenges/js10-create-a-button)|Create a button.|[HTML](10-days-of-javascript/js10-create-a-button.html)|Easy
+
 #### [10 Days of Statistics](https://www.hackerrank.com/domains/tutorials/10-days-of-statistics)
 
 Name | Preview | Code | Difficulty
@@ -77,7 +100,7 @@ Name | Preview | Code | Difficulty
 [Arrays: Left Rotation](https://www.hackerrank.com/challenges/ctci-array-left-rotation)|Given an array and a number, d, perform d left rotations on the array.|[Python](cracking-the-coding-interview/ctci-array-left-rotation.py)|Easy
 [Strings: Making Anagrams](https://www.hackerrank.com/challenges/ctci-making-anagrams)|How many characters should one delete to make two given strings anagrams of each other?|[Python](cracking-the-coding-interview/ctci-making-anagrams.py)|Easy
 [Hash Tables: Ransom Note](https://www.hackerrank.com/challenges/ctci-ransom-note)|Given two sets of dictionaries, tell if one of them is a subset of the other.|[C++](cracking-the-coding-interview/ctci-ransom-note.cpp)|Easy
-[Linked Lists: Detect a Cycle](https://www.hackerrank.com/challenges/ctci-linked-list-cycle)|Given a pointer to the head of a linked list, determine whether the linked list loops back onto itself (i.e., determine if the list ends in a circularly linked list).|[C++](cracking-the-coding-interview/ctci-linked-list-cycle.cpp)|Easy
+[Linked Lists: Detect a Cycle](https://www.hackerrank.com/challenges/ctci-linked-list-cycle)|Given a pointer to the head of a linked list, determine whether the list has a cycle.|[C++](cracking-the-coding-interview/ctci-linked-list-cycle.cpp)|Easy
 [Stacks: Balanced Brackets](https://www.hackerrank.com/challenges/ctci-balanced-brackets)|Given a string containing three types of brackets, determine if it is balanced.|[C++](cracking-the-coding-interview/ctci-balanced-brackets.cpp)|Medium
 [Queues: A Tale of Two Stacks](https://www.hackerrank.com/challenges/ctci-queue-using-two-stacks)|Create a queue data structure using two stacks.|[C++](cracking-the-coding-interview/ctci-queue-using-two-stacks.cpp)|Medium
 [Trees: Is This a Binary Search Tree?](https://www.hackerrank.com/challenges/ctci-is-binary-search-tree)|Given the root of a binary tree, determine if it's a binary search tree.|[Python](cracking-the-coding-interview/ctci-is-binary-search-tree.py)|Medium

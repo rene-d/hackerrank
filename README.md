@@ -1,10 +1,11 @@
 # [![HackerRank](https://hrcdn.net/hackerrank/assets/brand/h_mark_sm-30dc0e0cbd2dded63b294819ff853a90.svg)](https://www.hackerrank.com) HackerRank
 
-[![Build Status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank) [![740 solutions and counting](https://img.shields.io/badge/Challenges-740-blue.svg)](https://www.hackerrank.com/rene_d?hr_r=1)
+[![Build Status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank) [![774 solutions and counting](https://img.shields.io/badge/Challenges-774-blue.svg)](https://www.hackerrank.com/rene_d?hr_r=1)
 
 [HackerRank](https://www.hackerrank.com/dashboard) is a great place to learn, improve, play with your programming skills.
 
 All challenges are runnable, except SQL and multiple choice question ones. They are verified with their default testcase (usually Testcase 0).
+
 
 ## Solutions
 
@@ -21,23 +22,27 @@ All challenges are runnable, except SQL and multiple choice question ones. They 
 [![30 Days of Code](https://hrcdn.net/hackerrank/assets/dashboard/30-days-of-code-bf00cb8a1c6f38bf917f45ea7ab2bf6b.svg)](tutorials/30-days-of-code/)
 [![Cracking the Coding Interview](https://hrcdn.net/hackerrank/assets/dashboard/cracking-the-coding-interview-a56b2213a9c4f9393bfeb13261449c37.svg)](tutorials/cracking-the-coding-interview/)
 [![10 Days of Statistics](https://hrcdn.net/hackerrank/assets/dashboard/10-days-of-statistics-f45c998a5d47c9527eb61e620f35f5c0.svg)](tutorials/10-days-of-statistics/)
+[![10 Days of Javascript](https://hrcdn.net/hackerrank/assets/dashboard/10-days-of-javascript-bf50d09114e28b603041e791559003b6.svg)](tutorials/10-days-of-javascript/)
 &nbsp;&nbsp;&nbsp;
 [![Regex](https://hrcdn.net/hackerrank/assets/dashboard/regex-d83b1db79fe03650410202032d3b8afd.svg)](regex/)
 [![Security](https://hrcdn.net/hackerrank/assets/dashboard/security-ee10c8f654e78f4659d5dc6305768a63.svg)](security/)
 [![Databases](https://hrcdn.net/hackerrank/assets/dashboard/databases-0ff7fcc96c1e9516abc9ea327c9a0ef9.svg)](databases/)
 [![SQL](https://hrcdn.net/hackerrank/assets/dashboard/sql-be1ac821f4358a522d8eba7600e69549.svg)](sql/)
 
-and [ProjectEuler+](contests/projecteuler/) (See [here](https://github.com/rene-d/math/tree/master/projecteuler) my solutions of [Project Euler](https://projecteuler.net/))
+The curated challanges of [Interview Preparation Kit](interview-preparation-kit/).
+
+And [ProjectEuler+](contests/projecteuler/) (See [here](https://github.com/rene-d/math/tree/master/projecteuler) my solutions of [Project Euler](https://projecteuler.net/))
 
 ## Usage and tools
 
 ### Requirements
 
-- [Python 3.6](https://www.python.org) and some packages : [numpy](http://www.numpy.org), [sklearn](http://scikit-learn.org/), [requests](http://html.python-requests.org), [flake8](http://flake8.readthedocs.io/)
-- [CMake](https://cmake.org)
-- Modern [GCC](https://gcc.gnu.org) or [Clang](https://clang.llvm.org) that come with macOS or Linux. For Windows, you can use [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10), [Cygwin](https://www.cygwin.com) or [Visual Studio Comunity 2017](https://www.visualstudio.com/downloads/)
+- [Python 3.6](https://www.python.org) and some packages : [numpy](http://www.numpy.org), [scikit-learn](http://scikit-learn.org/), [requests](http://html.python-requests.org), [flake8](http://flake8.readthedocs.io/)
+- [CMake](https://cmake.org) to build and run tests
+- Modern [GCC](https://gcc.gnu.org) or [Clang](https://clang.llvm.org) that comes    with macOS or Linux. For Windows, you can use [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10), [Cygwin](https://www.cygwin.com) or [Visual Studio Comunity 2017](https://www.visualstudio.com/downloads/)
 - [Haskell](https://www.haskell.org) (functional programming only)
 - [Java](http://www.oracle.com/technetwork/java/javase/index.html) (some challenges and Java practice)
+- [Node.js](https://nodejs.org/)
 
 ### Compilation
 

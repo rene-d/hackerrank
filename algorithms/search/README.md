@@ -12,4 +12,5 @@ Name | Preview | Code | Difficulty
 [Ice Cream Parlor](https://www.hackerrank.com/challenges/icecream-parlor)|Help Sunny and Johnny spend all their money during each trip to the Ice Cream Parlor.|[Python](icecream-parlor.py)|Easy
 [Missing Numbers](https://www.hackerrank.com/challenges/missing-numbers)|Find the numbers missing from a sequence given a permutation of the original sequence|[Python](missing-numbers.py)|Easy
 [Pairs](https://www.hackerrank.com/challenges/pairs)|Given N numbers, count the total pairs of numbers that have a difference of K.|[Python](pairs.py)|Medium
+[Sherlock and Array](https://www.hackerrank.com/challenges/sherlock-and-array)|Check whether there exists an element in the array such that sum of elements on its left is equal to the sum of elements on its right.|[Python](sherlock-and-array.py)|Easy
 
