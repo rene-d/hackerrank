@@ -21,5 +21,8 @@ Name | Preview | Code | Difficulty
 [Day 4: Create a Rectangle Object](https://www.hackerrank.com/challenges/js10-objects)|Create an object with certain properties in JavaScript.|[Javascript](js10-objects.js)|Easy
 [Day 4: Count Objects](https://www.hackerrank.com/challenges/js10-count-objects)|Iterate over the elements in an array and perform an action based on each element's properties.|[Javascript](js10-count-objects.js)|Easy
 [Day 4: Classes](https://www.hackerrank.com/challenges/js10-class)|Practice using JavaScript classes.|[Javascript](js10-class.js)|Easy
+[Day 5: Inheritance](https://www.hackerrank.com/challenges/js10-inheritance)|Practice using prototypes and implementing inheritance in JavaScript.|[Javascript](js10-inheritance.js)|Easy
+[Day 5: Template Literals](https://www.hackerrank.com/challenges/js10-template-literals)|JavaScript Template Strings|[Javascript](js10-template-literals.js)|Easy
+[Day 5: Arrow Functions](https://www.hackerrank.com/challenges/js10-arrows)|Practice using Arrow Functions in JavaScript.|[Javascript](js10-arrows.js)|Easy
 [Day 8: Create a Button](https://www.hackerrank.com/challenges/js10-create-a-button)|Create a button.|[HTML](js10-create-a-button.html)|Easy
 
