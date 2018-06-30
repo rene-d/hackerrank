@@ -1,0 +1,7 @@
+# Distributed Systems > Multiple Choice > Distributed Objects - 5
+#
+# https://www.hackerrank.com/challenges/mcq-challenge-11/problem
+# challenge id: 8462
+#
+
+Pyro

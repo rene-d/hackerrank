@@ -1,0 +1,7 @@
+# Distributed Systems > Multiple Choice > Distributed Objects - 3
+#
+# https://www.hackerrank.com/challenges/mcq-challenge-9/problem
+# challenge id: 8460
+#
+
+Jt

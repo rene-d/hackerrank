@@ -1,6 +1,6 @@
 # [![HackerRank](https://hrcdn.net/hackerrank/assets/brand/h_mark_sm-30dc0e0cbd2dded63b294819ff853a90.svg)](https://www.hackerrank.com) HackerRank
 
-[![Build Status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank) [![774 solutions and counting](https://img.shields.io/badge/Challenges-774-blue.svg)](https://www.hackerrank.com/rene_d?hr_r=1)
+[![Build Status](https://travis-ci.org/rene-d/hackerrank.svg?branch=master)](https://travis-ci.org/rene-d/hackerrank) [![784 solutions and counting](https://img.shields.io/badge/Challenges-784-blue.svg)](https://www.hackerrank.com/rene_d?hr_r=1)
 
 [HackerRank](https://www.hackerrank.com/dashboard) is a great place to learn, improve, play with your programming skills.
 
@@ -64,13 +64,19 @@ A solution can be tested solely with `runtest.sh -t challenge-name [-n test-numb
 ### Tools
 
 - `hrinit.py` creates a new file for a given challenge based on the HackerRank model. Default language is [Python 3](https://wiki.python.org/moin/Python2orPython3).
-
 - `runtest.sh` is the script used by [CTest](https://cmake.org/Wiki/CMake/Testing_With_CTest) to verify the solution.
-
 - `compare.py` aims to fairly compare the program output with the except one. It is necessary since some challenges use decimal numbers : we cannot simply use `diff -qw`.
-
 - `tc2.py` can be used to download purchased testcases. Copy and paste the download links of input and output data.
 
+### Other (hacking) tools
+
+- `hr_github.sh` creates the testcases archive and sync the private repo to the public GitHub one
+- `hr_table.py` the program that automatically creates  `README.md` files with challenge lists (requires offline data)
+- `hr_count.py` counts challenges and testcases
+- `hr_offline.py` downloads the challenge catalogs
+- `hr_interview.py` gets the playlist of [Interview Preparation Kit](https://www.hackerrank.com/interview/interview-preparation-kit)
+- `hr_menu.py` displays a graphical menu to browse challenges and solve them when no Internet connection is available (requires offline data)
+- `hr_db.py` creates a SQLite database - used to understand how data is structured (or not!)
 
 ### IDE
 

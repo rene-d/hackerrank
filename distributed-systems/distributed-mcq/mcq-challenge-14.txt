@@ -1,0 +1,7 @@
+# Distributed Systems > Multiple Choice > MapReduce - 3
+#
+# https://www.hackerrank.com/challenges/mcq-challenge-14/problem
+# challenge id: 8465
+#
+
+False

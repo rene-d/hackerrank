@@ -1,0 +1,7 @@
+# Distributed Systems > Multiple Choice > Distributed Objects - 1
+#
+# https://www.hackerrank.com/challenges/mcq-challenge-7/problem
+# challenge id: 8458
+#
+
+DCOM
