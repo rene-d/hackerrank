@@ -351,6 +351,7 @@ class HackerRankParser():
 
 def main():
 
+    # grabbed from Javascript function we_are_hiring() in the www.hackerrank.com pages
     lines = [
         Colors.GREEN,
         "===============================================================================",

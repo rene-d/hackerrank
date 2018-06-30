@@ -27,5 +27,7 @@ Name | Preview | Code | Difficulty
 [Day 6: Bitwise Operators](https://www.hackerrank.com/challenges/js10-bitwise)|Apply everything we've learned in this bitwise AND challenge.|[Javascript](js10-bitwise.js)|Easy
 [Day 6: JavaScript Dates](https://www.hackerrank.com/challenges/js10-date)|Write a JavaScript function that retrieves the day of the week from a given date.|[Javascript](js10-date.js)|Easy
 [Day 7: Regular Expressions I](https://www.hackerrank.com/challenges/js10-regexp-1)|Get started with Regular Expressions in JavaScript.|[Javascript](js10-regexp-1.js)|Easy
+[Day 7: Regular Expressions II](https://www.hackerrank.com/challenges/js10-regexp-2)|Write a JavaScript RegExp to match a name satisfying certain criteria.|[Javascript](js10-regexp-2.js)|Easy
+[Day 7: Regular Expressions III](https://www.hackerrank.com/challenges/js10-regexp-3)|Regex|[Javascript](js10-regexp-3.js)|Easy
 [Day 8: Create a Button](https://www.hackerrank.com/challenges/js10-create-a-button)|Create a button.|[HTML](js10-create-a-button.html)|Easy
 

@@ -1,11 +1,8 @@
 .DS_Store
+.cache.db
 
 .vscode/.ropeproject/
-statements/
 testcases/
 testcases2/
 
 build/
-debug/
-work/
-wsl/
