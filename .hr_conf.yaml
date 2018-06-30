@@ -1,0 +1,23 @@
+# configuration file
+
+# how to load the file in Python:
+# domains = yaml.load(open(os.path.join(os.path.dirname(__file__), ".hr_conf.yaml")))["domains"]
+
+domains:
+  - algorithms
+  - data-structures
+  - mathematics
+  - cpp
+  - c
+  - python
+  - shell
+  - fp
+  - java
+  - tutorials
+  - contests
+  - security
+  - sql
+  - databases
+  - regex
+  - interview-preparation-kit
+  - distributed-systems

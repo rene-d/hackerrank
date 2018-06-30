@@ -1,0 +1,7 @@
+# Distributed Systems > Multiple Choice > Distributed Objects - 2
+#
+# https://www.hackerrank.com/challenges/mcq-challenge-8/problem
+# challenge id: 8459
+#
+
+DDObjects

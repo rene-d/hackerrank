@@ -1,0 +1,7 @@
+# Distributed Systems > Multiple Choice > Distributed Objects - 4
+#
+# https://www.hackerrank.com/challenges/mcq-challenge-10/problem
+# challenge id: 8461
+#
+
+JavaSpaces
