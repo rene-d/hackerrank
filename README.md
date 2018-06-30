@@ -29,7 +29,7 @@ All challenges are runnable, except SQL and multiple choice question ones. They 
 [![Databases](https://hrcdn.net/hackerrank/assets/dashboard/databases-0ff7fcc96c1e9516abc9ea327c9a0ef9.svg)](databases/)
 [![SQL](https://hrcdn.net/hackerrank/assets/dashboard/sql-be1ac821f4358a522d8eba7600e69549.svg)](sql/)
 
-The curated challanges of [Interview Preparation Kit](interview-preparation-kit/).
+The curated challenges of [Interview Preparation Kit](interview-preparation-kit/).
 
 And [ProjectEuler+](contests/projecteuler/) (See [here](https://github.com/rene-d/math/tree/master/projecteuler) my solutions of [Project Euler](https://projecteuler.net/))
 
@@ -71,7 +71,7 @@ A solution can be tested solely with `runtest.sh -t challenge-name [-n test-numb
 ### Other (hacking) tools
 
 - `hr_github.sh` creates the testcases archive and sync the private repo to the public GitHub one
-- `hr_table.py` the program that automatically creates  `README.md` files with challenge lists (requires offline data)
+- `hr_table.py` automatically creates `README.md` files with challenge lists (requires offline data)
 - `hr_count.py` counts challenges and testcases
 - `hr_offline.py` downloads the challenge catalogs
 - `hr_interview.py` gets the playlist of [Interview Preparation Kit](https://www.hackerrank.com/interview/interview-preparation-kit)
