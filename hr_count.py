@@ -31,6 +31,10 @@ for d in args.domain:
             continue
         filename = os.path.basename(f)
 
+        # pas encore trouvé de solution élégante pour exclure les répertoires solution
+        if "/js10-create-a-button/" in f or "/js10-buttons-container/" in f or '/js10-binary-calculator/' in f:  # noqa
+            continue
+
         contest = os.path.relpath(f, os.path.dirname(__file__)).split(os.path.sep)
         contest = contest[1] if contest[0] == "contests" else "master"
 

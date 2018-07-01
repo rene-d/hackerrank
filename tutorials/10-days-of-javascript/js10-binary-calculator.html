@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+# Tutorials > 10 Days of Javascript > Day 9: Binary Calculator
+# Create a calculator for base 2 arithmetic.
+#
+# https://www.hackerrank.com/challenges/js10-binary-calculator/problem
+# challenge id: 21008
+#
+-->
+<html>
+    <head>
+        <style>
+body {
+    width: 33%;
+}
+
+#res {
+    background-color: lightgray;
+    border: solid;
+    height: 48px;
+    font-size: 20px;
+}
+
+.btns button {
+    width: 25%;
+    height: 36px;
+    font-size: 18px;
+    margin: 0px;
+    float: left;
+}
+
+.dgt {
+    background-color: lightgreen;
+    color: brown;
+}
+
+.ctl {
+    background-color: darkgreen;
+    color: white;
+}
+
+.op {
+    background-color: black;
+    color: red;
+}
+        </style>
+   </head>
+    <body>
+        <div id="res"></div>
+        <div id="btns" class="btns">
+            <button id="btn0" class="dgt">0</button>
+            <button id="btn1" class="dgt">1</button>
+            <button id="btnClr" class="ctl">C</button>
+            <button id="btnEql" class="ctl">=</button>
+            <button id="btnSum" class="op">+</button>
+            <button id="btnSub" class="op">-</button>
+            <button id="btnMul" class="op">*</button>
+            <button id="btnDiv" class="op">/</button>
+        </div>
+        <script type="text/javascript">
+btnClr.onclick = function() {
+    res.innerHTML = "";
+}
+
+btnEql.onclick = function() {
+    let s = res.innerHTML;
+    s = Math.floor(eval(s.replace(/([01]+)/g, '0b$1'))).toString(2);
+    res.innerHTML = s;
+}
+
+btn0.onclick = function() {
+    res.innerHTML += "0";
+}
+btn1.onclick = function() {
+    res.innerHTML += "1";
+}
+btnSum.onclick = function() {
+    res.innerHTML += "+";
+}
+btnSub.onclick = function() {
+    res.innerHTML += "-";
+}
+btnMul.onclick = function() {
+    res.innerHTML += "*";
+}
+btnDiv.onclick = function() {
+    res.innerHTML += "/";
+}
+        </script>
+    </body>
+</html>

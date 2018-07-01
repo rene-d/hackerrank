@@ -31,6 +31,7 @@ Name | Preview | Code | Difficulty
 [Day 7: Regular Expressions III](https://www.hackerrank.com/challenges/js10-regexp-3)|Regex|[Javascript](10-days-of-javascript/js10-regexp-3.js)|Easy
 [Day 8: Create a Button](https://www.hackerrank.com/challenges/js10-create-a-button)|Create a button.|[HTML](10-days-of-javascript/js10-create-a-button.html)|Easy
 [Day 8: Buttons Container](https://www.hackerrank.com/challenges/js10-buttons-container)|Arrange buttons in a grid.|[HTML](10-days-of-javascript/js10-buttons-container.html)|Easy
+[Day 9: Binary Calculator](https://www.hackerrank.com/challenges/js10-binary-calculator)|Create a calculator for base 2 arithmetic.|[HTML](10-days-of-javascript/js10-binary-calculator.html)|Medium
 
 #### [10 Days of Statistics](https://www.hackerrank.com/domains/tutorials/10-days-of-statistics)
 

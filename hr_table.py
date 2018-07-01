@@ -66,9 +66,7 @@ def do_domain(domain):
     for i in glob.iglob(os.path.join(domain, "**/*"), recursive=True):
 
         # pas encore trouvé de solution élégante pour exclure les répertoires solution
-        if "/js10-create-a-button/" in i:
-            continue
-        if "/js10-buttons-container/" in i:
+        if "/js10-create-a-button/" in i or "/js10-buttons-container/" in i or '/js10-binary-calculator/' in i:  # noqa
             continue
 
         if os.path.isdir(i):
