@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 # update testcases archive and sync GitHub repo
 
@@ -144,7 +144,7 @@ cmd_rsync()
     rsync -av --delete --exclude .DS_Store --exclude="*.tmp" --exclude="*.nosync" --exclude="tests" \
         ${DOMAINS[*]} \
         coding-dojo \
-        .vscode CMakeLists.txt requirements.txt README.md stdc++.h.in runtest.sh compare.py hrinit.py tc2.py \
+        .vscode CMakeLists.txt requirements.txt README.md stdc++.h.in runtest.sh compare.py hrinit.py hrtc2.py \
         testcases.tar.xz \
         setup.cfg \
         .travis.yml _config.yml \

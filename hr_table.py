@@ -24,27 +24,32 @@ playlists = {}
 
 
 def get_models():
-    j = 0
+    """ charge les définitions des challenges """
 
+    # les playlists
     for i in glob.iglob(os.path.join("offline", "playlists", "*.json")):
         with open(i, "r") as f:
             data = json.load(f)
             playlists[data['slug']] = data
 
+    # les contests (y compris master_<domain>)
+    order = 0
     for i in glob.iglob(os.path.join("offline", "contests", "*.json")):
         with open(i, "r") as f:
             data = json.load(f)
 
+            # la description d'un contest
             if 'name' in data:
                 desc = (data['description'] or '').partition('<br')[0]
                 descriptions[data['slug']] = {'name': data['name'],
                                               'description': desc}
 
+        # pour tous les challenges dans un contest
         for m in data['models']:
             if 'contest_slug' not in m:
                 continue
-            j += 1
-            m['order'] = j        # ajoute un numéro pour maintenir l'ordre des chapters
+            order += 1
+            m['order'] = order        # ajoute un numéro pour maintenir l'ordre des chapters
             if m['contest_slug'] == 'projecteuler':
                 m['order'] -= 10000         # met le ProjectEuler+ en tête des contests
             models[(m['contest_slug'], m['slug'])] = m
@@ -55,12 +60,15 @@ def do_domain(domain):
     slugs = {}
 
     #
-    # STEP 1
+    # STEP 1 : analyse un répertoire à la recherche des challenges (récursivement)
     #
 
     for i in glob.iglob(os.path.join(domain, "**/*"), recursive=True):
 
+        # pas encore trouvé de solution élégante pour exclure les répertoires solution
         if "/js10-create-a-button/" in i:
+            continue
+        if "/js10-buttons-container/" in i:
             continue
 
         if os.path.isdir(i):
@@ -191,7 +199,7 @@ def do_domain(domain):
     order.sort()
 
     #
-    # STEP 2
+    # STEP 2 : crée l'index des challenges en respectant l'ordre
     #
     with io.StringIO() as out:
 
@@ -240,6 +248,9 @@ def do_domain(domain):
 
         md = out.getvalue()
 
+    #
+    # STEP 3 : met à jour le fichier README.md
+    #
     fn = os.path.join(domain, "README.md")
 
     if len(md.strip()) == 0:
