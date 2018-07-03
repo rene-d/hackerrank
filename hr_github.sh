@@ -140,13 +140,14 @@ cmd_build_test()
         ctest -j$(nproc) --output-on-failure
 
         success=$?
+        echo
         if [ $success -eq 0 ]; then
-            echo -n "${COLOR_LIGHT_GREEN}Hurrah! Everything's fine :)${COLOR_END}"
+            echo -e "${COLOR_LIGHT_GREEN}Hurrah! Everything's fine :)${COLOR_END}"
 
             cd "${gh_src}"
             [ "$1" = "commit" ] && git commit -a -m "auto commit $(date +'%h %d %H:%M')"
         else
-            echo -n "${COLOR_LIGHT_RED}Something goes wrong :(${COLOR_END}"
+            echo -e "${COLOR_LIGHT_RED}Something goes wrong :(${COLOR_END}"
         fi
     )
 }
