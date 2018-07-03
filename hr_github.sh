@@ -11,6 +11,8 @@ GITHUB_REPO=../GitHub/hackerrank
 
 DOMAINS=($(python3 -c 'import yaml;print(*yaml.load(open(".hr_conf.yaml"))["domains"])'))
 
+COLOR_LIGHT_RED="\033[1;31m"
+COLOR_LIGHT_GREEN="\033[1;32m"
 COLOR_LIGHT_PURPLE="\033[1;35m"
 COLOR_END="\033[0m"
 
@@ -117,6 +119,9 @@ cmd_build_test()
 {
     echo -e "${COLOR_LIGHT_PURPLE}Build and test...${COLOR_END}"
 
+    [ "$1" = "commit" ] && echo "Will git-commit if ok"
+    [ "$1" = "push" ] && echo "Will git-push if ok"
+
     if [ $(uname) = Darwin ] ; then
         nproc()
         {
@@ -133,6 +138,16 @@ cmd_build_test()
         make -j$(nproc)
         make extract-testcases
         ctest -j$(nproc) --output-on-failure
+
+        success=$?
+        if [ $success -eq 0 ]; then
+            echo -n "${COLOR_LIGHT_GREEN}Hurrah! Everything's fine :)${COLOR_END}"
+
+            cd "${gh_src}"
+            [ "$1" = "commit" ] && git commit -a -m "auto commit $(date +'%h %d %H:%M')"
+        else
+            echo -n "${COLOR_LIGHT_RED}Something goes wrong :(${COLOR_END}"
+        fi
     )
 }
 
@@ -175,11 +190,12 @@ opt_build=
 # extract options and their arguments into variables.
 for i ; do
     case "$i" in
-        -h|--help) cmd_usage ;;
+        -h|--help) cmd_usage ; shift ;;
         -t) opt_archive=1 ; shift ;;
         -b) opt_build=1 ; shift ;;
         -T) opt_archive=1 ; opt_build=1 ; shift ;;
-        -X) shift; $1 ; exit 0 ;;   # run individual command
+        -X) shift; $1; exit 0 ;;   # run individual command
+        --) shift; break ;;
     esac
 done
 
@@ -187,5 +203,5 @@ cmd_readme
 cmd_count ${DOMAINS[*]}
 [ $opt_archive ] && cmd_testcases_archive
 cmd_rsync
-[ $opt_build ] && cmd_build_test
+[ $opt_build ] && cmd_build_test $*
 echo
