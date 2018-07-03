@@ -13,6 +13,7 @@ DOMAINS=($(python3 -c 'import yaml;print(*yaml.load(open(".hr_conf.yaml"))["doma
 
 COLOR_LIGHT_RED="\033[1;31m"
 COLOR_LIGHT_GREEN="\033[1;32m"
+COLOR_YELLOW="\033[1;33m"
 COLOR_LIGHT_PURPLE="\033[1;35m"
 COLOR_END="\033[0m"
 
@@ -119,8 +120,7 @@ cmd_build_test()
 {
     echo -e "${COLOR_LIGHT_PURPLE}Build and test...${COLOR_END}"
 
-    [ "$1" = "commit" ] && echo "Will git-commit if ok"
-    [ "$1" = "push" ] && echo "Will git-push if ok"
+    [ "$1" = "commit" ] && echo -e "${COLOR_YELLOW}Will git-commit if ok${COLOR_END}"
 
     if [ $(uname) = Darwin ] ; then
         nproc()
