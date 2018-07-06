@@ -89,6 +89,8 @@ cmd_testcases_archive()
 }
 
 
+# count challenges and update the main README.md
+#
 cmd_count()
 {
     echo -e "${COLOR_LIGHT_PURPLE}Counting...${COLOR_END}"
@@ -109,6 +111,8 @@ cmd_count()
 }
 
 
+# generates all index README.md
+#
 cmd_readme()
 {
     echo -e "${COLOR_LIGHT_PURPLE}Generating README...${COLOR_END}"
@@ -116,6 +120,8 @@ cmd_readme()
 }
 
 
+# build and test challenges
+#
 cmd_build_test()
 {
     echo -e "${COLOR_LIGHT_PURPLE}Build and test...${COLOR_END}"
@@ -141,11 +147,19 @@ cmd_build_test()
 
         success=$?
         echo
-        if [ $success -eq 0 ]; then
+        if [ ${success} -eq 0 ]; then
             echo -e "${COLOR_LIGHT_GREEN}Hurrah! Everything's fine :)${COLOR_END}"
 
             cd "${gh_src}"
-            [ "$1" = "commit" ] && git commit -a -m "auto commit $(date +'%h %d %H:%M')"
+            if [ "$1" = "commit" ] ; then
+                if [ "$2" = "" ] ; then
+                    msg="auto commit $(date +'%h %d %H:%M')"
+                else
+                    msg="$2"
+                fi
+                echo
+                git commit -a -m "${msg}"
+            fi
         else
             echo -e "${COLOR_LIGHT_RED}Something goes wrong :(${COLOR_END}"
         fi
@@ -153,6 +167,8 @@ cmd_build_test()
 }
 
 
+# sync the current repo to the public one
+#
 cmd_rsync()
 {
     echo -e "${COLOR_LIGHT_PURPLE}Rsync...${COLOR_END}"
@@ -170,39 +186,42 @@ cmd_rsync()
 }
 
 
+# help/usage
+#
 cmd_usage()
 {
     echo "Usage: $0 [options]"
-    echo "  -h      help"
-    echo "  -t      make testcases archive"
-    echo "  -b      build and run tests"
-    echo "  -T      make archive then build and test"
+    echo "  -h                      help"
+    echo "  -t                      make testcases archive"
+    echo "  -b                      build and run tests"
+    echo "  -a [commit [<message>]] all: make archive then build and test, optionally git-commit"
+    echo
+    echo "Without option, update README.md files and sync repo."
     exit 0
 }
 
 
-ARGS=`getopt htbTX: $*`
-eval set -- "$ARGS"
-[ $? != 0 ] && usage 2
-
+# main
+#
 opt_archive=
 opt_build=
 
-# extract options and their arguments into variables.
-for i ; do
-    case "$i" in
-        -h|--help) cmd_usage ; shift ;;
-        -t) opt_archive=1 ; shift ;;
-        -b) opt_build=1 ; shift ;;
-        -T) opt_archive=1 ; opt_build=1 ; shift ;;
-        -X) shift; $1; exit 0 ;;   # run individual command
-        --) shift; break ;;
+while getopts "htbaX:" option; do
+    # echo option=$option OPTARG=$OPTARG OPTIND=$OPTIND OPTERR=$OPTERR OPTSTRING=$OPTSTRING
+    case "${option}" in
+        h|\?) cmd_usage ;;
+        t) opt_archive=1 ;;
+        b) opt_build=1 ;;
+        a) opt_archive=1 ; opt_build=1 ;;
+        X) shift $((OPTIND-1)) ; cmd_${OPTARG} "$@"; exit 0 ;;   # run individual command
     esac
 done
+
+shift $((OPTIND-1))
 
 cmd_readme
 cmd_count ${DOMAINS[*]}
 [ $opt_archive ] && cmd_testcases_archive
 cmd_rsync
-[ $opt_build ] && cmd_build_test $*
+[ $opt_build ] && cmd_build_test "$@"
 echo
