@@ -37,5 +37,6 @@ Name | Preview | Code | Difficulty
 [Easy math](https://www.hackerrank.com/challenges/easy-math)|Help Johnny in figuring out the value of Y|[Python](easy-math.py)|Medium
 [Binomial Coefficients](https://www.hackerrank.com/challenges/binomial-coefficients)|Calculate how many binomial coefficients of n become 0 after modulo by P.|[Python](binomial-coefficients.py)|Medium
 [Lucy and Flowers](https://www.hackerrank.com/challenges/lucy-and-flowers)|Help Lucy's father with a computation involving flowers|[C++](lucy-and-flowers.cpp)|Medium
+[Prime Sum](https://www.hackerrank.com/challenges/prime-sum)|Represent a number as sum of primes.|[Python](prime-sum.py)|Medium
 [nCr](https://www.hackerrank.com/challenges/ncr)|Given n and r, in how many ways can r items be chosen from n items?|[Python](ncr.py)|Expert
 

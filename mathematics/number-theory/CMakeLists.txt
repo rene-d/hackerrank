@@ -32,3 +32,4 @@ add_hackerrank_py(ncr.py)
 
 set_tests_properties(pairs-again PROPERTIES TIMEOUT 120)
 set_tests_properties(easy-math.py PROPERTIES TIMEOUT 120)
+add_hackerrank_py(prime-sum.py)
