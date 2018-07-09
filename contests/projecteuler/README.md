@@ -10,6 +10,9 @@ Name | Preview | Code | Difficulty
 [Project Euler #31: Coin sums](https://www.hackerrank.com/contests/projecteuler/challenges/euler031)|Currency Change|[Python](euler031.py)|Easy
 [Project Euler #28: Number spiral diagonals](https://www.hackerrank.com/contests/projecteuler/challenges/euler028)|Running around a matrix.|[Python](euler028.py)|Easy
 [Project Euler #16: Power digit sum](https://www.hackerrank.com/contests/projecteuler/challenges/euler016)|With more power comes more responsibility.|[Python](euler016.py)|Easy
+[Project Euler #13: Large sum](https://www.hackerrank.com/contests/projecteuler/challenges/euler013)|Summing up big things.|[Python](euler013.py)|Easy
+[Project Euler #12: Highly divisible triangular number](https://www.hackerrank.com/contests/projecteuler/challenges/euler012)|Find smallest triangular number with atleast N divisors.|[Python](euler012.py)|Easy
+[Project Euler #11: Largest product in a grid](https://www.hackerrank.com/contests/projecteuler/challenges/euler011)|Getting started with matrices.|[Python](euler011.py)|Easy
 [Project Euler #10: Summation of primes](https://www.hackerrank.com/contests/projecteuler/challenges/euler010)|More prime number fun.|[Python](euler010.py)|Medium
 [Project Euler #9: Special Pythagorean triplet](https://www.hackerrank.com/contests/projecteuler/challenges/euler009)|A what triplet, you say?|[C++](euler009.cpp) [Python](euler009.py)|Easy
 [Project Euler #8: Largest product in a series](https://www.hackerrank.com/contests/projecteuler/challenges/euler008)|Playing with really really long numbers.|[Python](euler008.py)|Easy

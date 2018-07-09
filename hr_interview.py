@@ -74,7 +74,7 @@ create table if not exists cache (
                     return r.headers[name] if name in r.headers else None
 
                 cur = self.db.cursor()
-                cur.execute("insert or replace into cache (url,data,dl_date,last_modified,expires) values (?,?,?,?,?)",
+                cur.execute("insert or replace into cache (url,data,dl_date,last_modified,expires) values (?,?,?,?,?)",  # noqa
                             (url, r.content,
                              _h('Date'), _h('last-modified'), _h('expires')))
                 cur.close()

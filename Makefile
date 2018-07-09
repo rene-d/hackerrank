@@ -14,7 +14,7 @@ github:
 	@./hr_github.sh -t
 
 test:
-	@./hr_github.sh -T
+	@./hr_github.sh -a
 
 clean:
 	rm -rf build
