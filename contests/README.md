@@ -9,7 +9,10 @@ Name | Preview | Code | Difficulty
 [Project Euler #74: Digit factorial chains](https://www.hackerrank.com/contests/projecteuler/challenges/euler074)|Project Euler #74: Digit factorial chains|[C++](projecteuler/euler074.cpp)|Easy
 [Project Euler #31: Coin sums](https://www.hackerrank.com/contests/projecteuler/challenges/euler031)|Currency Change|[Python](projecteuler/euler031.py)|Easy
 [Project Euler #28: Number spiral diagonals](https://www.hackerrank.com/contests/projecteuler/challenges/euler028)|Running around a matrix.|[Python](projecteuler/euler028.py)|Easy
+[Project Euler #18: Maximum path sum I](https://www.hackerrank.com/contests/projecteuler/challenges/euler018)|Find path with largest sum in a pyramid.|[Python](projecteuler/euler018.py)|Easy
+[Project Euler #17: Number to Words](https://www.hackerrank.com/contests/projecteuler/challenges/euler017)|Read the numbers|[Python](projecteuler/euler017.py)|Easy
 [Project Euler #16: Power digit sum](https://www.hackerrank.com/contests/projecteuler/challenges/euler016)|With more power comes more responsibility.|[Python](projecteuler/euler016.py)|Easy
+[Project Euler #15: Lattice paths](https://www.hackerrank.com/contests/projecteuler/challenges/euler015)|Walking on grids. And not slipping.|[Python](projecteuler/euler015.py)|Easy
 [Project Euler #13: Large sum](https://www.hackerrank.com/contests/projecteuler/challenges/euler013)|Summing up big things.|[Python](projecteuler/euler013.py)|Easy
 [Project Euler #12: Highly divisible triangular number](https://www.hackerrank.com/contests/projecteuler/challenges/euler012)|Find smallest triangular number with atleast N divisors.|[Python](projecteuler/euler012.py)|Easy
 [Project Euler #11: Largest product in a grid](https://www.hackerrank.com/contests/projecteuler/challenges/euler011)|Getting started with matrices.|[Python](projecteuler/euler011.py)|Easy
