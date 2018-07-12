@@ -1,3 +1,5 @@
+include(FindPythonInterp)
+
 add_hackerrank_py(s10-basic-statistics.py)
 add_hackerrank_py(s10-weighted-mean.py)
 add_hackerrank_py(s10-quartiles.py)
@@ -20,4 +22,8 @@ add_hackerrank_py(s10-the-central-limit-theorem-3.py)
 add_hackerrank_py(s10-pearson-correlation-coefficient.py)
 add_hackerrank_py(s10-spearman-rank-correlation-coefficient.py)
 add_hackerrank_py(s10-least-square-regression-line.py)
+
+# scikit-learn does not work with Python 3.7
+if(PYTHON_VERSION_STRING VERSION_LESS 3.7)
 add_hackerrank_py(s10-multiple-linear-regression.py)
+endif()

@@ -1,7 +1,8 @@
+pyyaml
+requests
+flake8
 numpy
 scipy
 scikit-learn
-requests
-flake8
 #cpp-coveralls
 #coveralls
