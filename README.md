@@ -91,3 +91,8 @@ A solution can be tested solely with `runtest.sh -t challenge-name [-n test-numb
 * [Compiler Explorer](https://godbolt.org) Run compilers interactively from your web browser and interact with the assembly ([opensource](https://github.com/mattgodbolt/compiler-explorer)).
 * [Ideone](https://ideone.com) Online compiler and debugging tool which allows youto compile source code and execute it online in more than 60 programming languages.
 * and many, many more...
+
+## License
+
+[Unlicense](http://unlicense.org) aka. Public Domain ;-)
+

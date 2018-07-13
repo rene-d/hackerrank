@@ -176,7 +176,8 @@ cmd_rsync()
     rsync -av --delete --exclude .DS_Store --exclude="*.tmp" --exclude="*.nosync" --exclude="tests" \
         ${DOMAINS[*]} \
         coding-dojo \
-        .vscode CMakeLists.txt requirements.txt README.md stdc++.h.in runtest.sh compare.py hrinit.py hrtc2.py \
+        LICENSE \
+	.vscode CMakeLists.txt requirements.txt README.md stdc++.h.in runtest.sh compare.py hrinit.py hrtc2.py \
         testcases.tar.xz \
         setup.cfg \
         .travis.yml _config.yml \
