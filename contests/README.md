@@ -5,6 +5,8 @@ HackerRank brings you the fun of solving Projecteuler challenges with hidden tes
 
 Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
+[Project Euler #110: Diophantine reciprocals II](https://www.hackerrank.com/contests/projecteuler/challenges/euler110)|euler 110|[Python](projecteuler/euler110.py)|Easy
+[Project Euler #108: Diophantine reciprocals I](https://www.hackerrank.com/contests/projecteuler/challenges/euler108)|Project Euler #108: Diophantine reciprocals I|[Python](projecteuler/euler108.py)|Easy
 [Project Euler #81: Path sum: two ways](https://www.hackerrank.com/contests/projecteuler/challenges/euler081)|Project Euler #81: Path sum: two ways|[C++](projecteuler/euler081.cpp)|Easy
 [Project Euler #74: Digit factorial chains](https://www.hackerrank.com/contests/projecteuler/challenges/euler074)|Project Euler #74: Digit factorial chains|[C++](projecteuler/euler074.cpp)|Easy
 [Project Euler #31: Coin sums](https://www.hackerrank.com/contests/projecteuler/challenges/euler031)|Currency Change|[Python](projecteuler/euler031.py)|Easy
