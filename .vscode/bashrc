@@ -3,9 +3,10 @@
 source /etc/profile
 source ~/.bash_profile
 
-PROJECT_HOME="$PWD"
+PATH="${workspaceFolder}":$PATH
+CDPATH=:"${workspaceFolder}"
 
-alias cdd='cd "${PROJECT_HOME}"'
+alias cdd='cd "${workspaceFolder}"'
 
 build()
 {
@@ -20,7 +21,7 @@ build()
 
     (
         set -e
-        cd "$PROJECT_HOME"
+        cd "${VSCODE_CWD}"
         mkdir -p build
         cd build
         cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=${type} ..
@@ -28,9 +29,10 @@ build()
     )
 }
 
-COLOR_GREEN="\033[0;32m"
+COLOR_WHITE_ON_GREEN="\033[37;42m"
+LIGHT_CYAN="\033[1;36m"
 COLOR_END="\033[0m"
 
-echo -e "${COLOR_GREEN}HackerRank${COLOR_END} ready."
+echo -e "${COLOR_WHITE_ON_GREEN}HackerRank${COLOR_END} on ${LIGHT_CYAN}$(uname)${COLOR_END} ready."
 
-unset COLOR_GREEN COLOR_END
+unset COLOR_WHITE_ON_GREEN LIGHT_CYAN COLOR_END

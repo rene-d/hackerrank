@@ -1,6 +1,6 @@
 {
     "files.associations": {
-        "bashrc.osx": "shellscript",
+        "bashrc": "shellscript",
         "cstdlib": "cpp",
         "ios": "cpp",
         "queue": "cpp",
@@ -57,22 +57,31 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "**/build/": true,
-        "**/build.nosync/": true
+        "**/build/": true
     },
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.env.osx": {
-        "PATH": "$PATH:${workspaceFolder}",
-        "CDPATH": ":${workspaceFolder}",
+        "workspaceFolder": "${workspaceFolder}"
     },
     "terminal.integrated.env.linux": {
-        "PATH": "$PATH:${workspaceFolder}",
-        "CDPATH": ":${workspaceFolder}",
+        "workspaceFolder": "${workspaceFolder}"
+    },
+    "terminal.integrated.env.windows": {
+        "workspaceFolder": "${workspaceFolder}"
     },
     "terminal.integrated.shell.osx": "/bin/bash",
     "terminal.integrated.shellArgs.osx": [
         "--rcfile",
-        ".vscode/bashrc.osx",
+        ".vscode/bashrc",
+    ],
+    "terminal.integrated.shell.windows":"C:/Program Files/Git/usr/bin/bash.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "--rcfile",
+        ".vscode/bashrc"
+    ],
+    "terminal.integrated.shellArgs.linux": [
+        "--rcfile",
+        ".vscode/bashrc"
     ],
     "python.linting.enabled": false,
     "editor.trimAutoWhitespace": true,
