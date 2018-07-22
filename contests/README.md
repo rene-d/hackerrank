@@ -9,6 +9,7 @@ Name | Preview | Code | Difficulty
 [Project Euler #108: Diophantine reciprocals I](https://www.hackerrank.com/contests/projecteuler/challenges/euler108)|Project Euler #108: Diophantine reciprocals I|[Python](projecteuler/euler108.py)|Easy
 [Project Euler #81: Path sum: two ways](https://www.hackerrank.com/contests/projecteuler/challenges/euler081)|Project Euler #81: Path sum: two ways|[C++](projecteuler/euler081.cpp)|Easy
 [Project Euler #74: Digit factorial chains](https://www.hackerrank.com/contests/projecteuler/challenges/euler074)|Project Euler #74: Digit factorial chains|[C++](projecteuler/euler074.cpp)|Easy
+[Project Euler #72: Counting fractions](https://www.hackerrank.com/contests/projecteuler/challenges/euler072)|Project Euler #72: Counting fractions|[Python](projecteuler/euler072.py)|Easy
 [Project Euler #31: Coin sums](https://www.hackerrank.com/contests/projecteuler/challenges/euler031)|Currency Change|[Python](projecteuler/euler031.py)|Easy
 [Project Euler #28: Number spiral diagonals](https://www.hackerrank.com/contests/projecteuler/challenges/euler028)|Running around a matrix.|[Python](projecteuler/euler028.py)|Easy
 [Project Euler #18: Maximum path sum I](https://www.hackerrank.com/contests/projecteuler/challenges/euler018)|Find path with largest sum in a pyramid.|[Python](projecteuler/euler018.py)|Easy
