@@ -12,6 +12,7 @@ Name | Preview | Code | Difficulty
 [Project Euler #72: Counting fractions](https://www.hackerrank.com/contests/projecteuler/challenges/euler072)|Project Euler #72: Counting fractions|[Python](euler072.py)|Easy
 [Project Euler #31: Coin sums](https://www.hackerrank.com/contests/projecteuler/challenges/euler031)|Currency Change|[Python](euler031.py)|Easy
 [Project Euler #28: Number spiral diagonals](https://www.hackerrank.com/contests/projecteuler/challenges/euler028)|Running around a matrix.|[Python](euler028.py)|Easy
+[Project Euler #20: Factorial digit sum](https://www.hackerrank.com/contests/projecteuler/challenges/euler020)|When complexities go from one extreme to the other.|[Python](euler020.py)|Easy
 [Project Euler #18: Maximum path sum I](https://www.hackerrank.com/contests/projecteuler/challenges/euler018)|Find path with largest sum in a pyramid.|[Python](euler018.py)|Easy
 [Project Euler #17: Number to Words](https://www.hackerrank.com/contests/projecteuler/challenges/euler017)|Read the numbers|[Python](euler017.py)|Easy
 [Project Euler #16: Power digit sum](https://www.hackerrank.com/contests/projecteuler/challenges/euler016)|With more power comes more responsibility.|[Python](euler016.py)|Easy

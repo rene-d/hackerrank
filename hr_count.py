@@ -6,11 +6,14 @@ import argparse
 import os
 import glob
 import yaml
+import pathlib
+import datetime
 
 
 domains = yaml.load(open(os.path.join(os.path.dirname(__file__), ".hr_conf.yaml")))["domains"]
 
 parser = argparse.ArgumentParser(description='Count challenges')
+parser.add_argument('--latest', help="check in testcases.tar.xz is up to date", action='store_true')
 parser.add_argument('-m', '--missing', help="print missing testcases", action='store_true')
 parser.add_argument('--copy', help="copy missing testcases", action='store_true')
 parser.add_argument('-x', '--extra', help="print extra testcases", action='store_true')
@@ -19,6 +22,37 @@ parser.add_argument('-v', '--verbose', help="verbose", action='store_true')
 parser.add_argument('domain', nargs='*', help="domain", default=domains)
 
 args = parser.parse_args()
+
+if args.latest:
+    # find the latest modification/creation into the testcases folders
+    latest_t = 0
+    latest_f = None
+    for folder in ['testcases', 'testcases2']:
+        path = os.path.join(os.path.dirname(__file__), folder)
+        for f in pathlib.Path(path).glob('**/*'):
+            # if f.is_dir(): continue
+            st = f.lstat()
+            t = max(st.st_ctime, st.st_mtime)
+            # t = st.st_mtime
+            if t > latest_t:
+                latest_t = t
+                latest_f = f
+
+    # get the modification time for the archive
+    tar_f = os.path.join(os.path.dirname(__file__), "testcases.tar.xz")
+    tar_t = os.lstat(tar_f).st_mtime
+
+    if args.verbose:
+        print("{} {}".format(datetime.datetime.fromtimestamp(latest_t).ctime(), latest_f))
+        print("{} {}".format(datetime.datetime.fromtimestamp(tar_t).ctime(), tar_f))
+
+    if tar_t < latest_t:
+        if args.verbose:
+            print("out of date")
+        exit(1)
+
+    exit(0)
+
 
 challenges = set()
 challenges_with_contest = set()
@@ -68,7 +102,6 @@ for d in args.domain:
                     if args.copy:
                         os.link("offline/testcases/{}/{}-testcases.zip".format(contest, slug),
                                 "testcases/{}/{}-testcases.zip".format(contest, slug))
-
 
 if args.extra:
     root = os.path.join(os.path.dirname(__file__), "testcases")
