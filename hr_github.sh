@@ -22,7 +22,7 @@ cmd_testcases_archive()
 {
     # do not rebuild the archive if no testcases have been downloaded since last build
     if python3 hr_count.py --latest; then
-        echo -e "${COLOR_LIGHT_PURPLE}Testcases up-to-date${COLOR_END}"
+        echo -e "${COLOR_LIGHT_PURPLE}Testcases archive is up-to-date${COLOR_END}"
         return
     fi
 

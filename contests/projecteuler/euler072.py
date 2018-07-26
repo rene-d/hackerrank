@@ -4,6 +4,8 @@
 # challenge id: 2698
 #
 
+# https://en.wikipedia.org/wiki/Farey_sequence
+
 
 def totients(n):
     """ retourne la liste des indicatrices d'Euler (ou totient) pour 2 <= i <= n """

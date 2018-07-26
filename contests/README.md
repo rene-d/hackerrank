@@ -10,6 +10,8 @@ Name | Preview | Code | Difficulty
 [Project Euler #81: Path sum: two ways](https://www.hackerrank.com/contests/projecteuler/challenges/euler081)|Project Euler #81: Path sum: two ways|[C++](projecteuler/euler081.cpp)|Easy
 [Project Euler #74: Digit factorial chains](https://www.hackerrank.com/contests/projecteuler/challenges/euler074)|Project Euler #74: Digit factorial chains|[C++](projecteuler/euler074.cpp)|Easy
 [Project Euler #72: Counting fractions](https://www.hackerrank.com/contests/projecteuler/challenges/euler072)|Project Euler #72: Counting fractions|[Python](projecteuler/euler072.py)|Easy
+[Project Euler #71: Ordered fractions](https://www.hackerrank.com/contests/projecteuler/challenges/euler071)|Project Euler #71: Ordered fractions|[Python](projecteuler/euler071.py)|Medium
+[Project Euler #54: Poker hands](https://www.hackerrank.com/contests/projecteuler/challenges/euler054)|Poker Hands|[Python](projecteuler/euler054.py)|Easy
 [Project Euler #31: Coin sums](https://www.hackerrank.com/contests/projecteuler/challenges/euler031)|Currency Change|[Python](projecteuler/euler031.py)|Easy
 [Project Euler #28: Number spiral diagonals](https://www.hackerrank.com/contests/projecteuler/challenges/euler028)|Running around a matrix.|[Python](projecteuler/euler028.py)|Easy
 [Project Euler #20: Factorial digit sum](https://www.hackerrank.com/contests/projecteuler/challenges/euler020)|When complexities go from one extreme to the other.|[Python](projecteuler/euler020.py)|Easy
