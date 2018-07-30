@@ -201,7 +201,7 @@ cmd_usage()
     echo "  -h                      help"
     echo "  -t                      make testcases archive"
     echo "  -b                      build and run tests"
-    echo "  -a [commit [<message>]] all: make archive then build and test, optionally git-commit"
+    echo "  -a [commit [<message>]] make archive then build and test, then optionally git-commit"
     echo
     echo "Without option, update README.md files and sync repo."
     exit 0

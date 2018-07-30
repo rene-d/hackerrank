@@ -2,10 +2,10 @@
 # some handy commands
 
 help:
-	@echo "make github  : sync github repo"
-	@echo "make test    : sync github, build and run the tests"
-	@echo "make clean   : remove"
-	@echo "make cloc"
+	@echo "make sync    : readme, count and sync GitHub repo"
+	@echo "make github  : sync + testcases"
+	@echo "make test    : github + run tests (for GitHub repo source tree)"
+	@echo "make cloc    : count lines of code"
 
 sync:
 	@./hr_github.sh
@@ -15,6 +15,9 @@ github:
 
 test:
 	@./hr_github.sh -a
+
+build:
+	@mkdir -p build && cd build && cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=Debug .. && make -j2
 
 clean:
 	rm -rf build

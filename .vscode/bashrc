@@ -1,17 +1,60 @@
 # init file for bash
 
+# mimics bash init behaviour
 source /etc/profile
-source ~/.bash_profile
+[ -f ~/.bash_profile ] && source ~/.bash_profile
+[ -f ~/.bashc -a ! -f ~/.bash_profile ] && source ~/.bashrc
+
+workspaceFolder=${workspaceFolder:-$(pwd)}
 
 PATH="${workspaceFolder}":$PATH
 CDPATH=:"${workspaceFolder}"
 
 alias cdd='cd "${workspaceFolder}"'
+alias cdb='cd "${workspaceFolder}/build"'
 
 build()
 {
     local nproc
-    local type=${1:-Release}
+    local option
+    local opt_verbose=${VERBOSE}
+    local opt_type=
+    local opt_dryrun=
+    local opt_target=
+    local OPTIND
+    local OPTARG
+
+    while getopts "hvdDrRcn" option; do
+        #echo option=$option OPTARG=$OPTARG OPTIND=$OPTIND OPTERR=$OPTERR OPTSTRING=$OPTSTRING
+        case "${option}" in
+            h|\?)
+               echo "Build challenges"
+               echo "Usage: build [options]"
+               echo "Options:"
+               echo "  -d -D     switch build type to Debug"
+               echo "  -r -R     switch build type to Release"
+               echo "  -c        rebuild cache"
+               echo "  -v        set verbose mode"
+               echo "  -n        dry run (do nothing)"
+               return
+               ;;
+            v) opt_verbose=1 ;;
+            d|D) opt_type=Debug ;;
+            r|R) opt_type=Release ;;
+            c) opt_target=rebuild_cache ;;
+            n) opt_dryrun=1 ;;
+        esac
+    done
+
+    shift $((OPTIND-1))
+
+    local build_dir=${1:-build}
+
+    # use the previous build type if none given on the command line
+    if [ "${opt_type}" = "" ]; then
+        previous_type=$(cd "${workspaceFolder}" && [ -d ${build_dir} ] && sed -n -e 's/CMAKE_BUILD_TYPE:STRING=\(.*\)/\1/p' ${build_dir}/CMakeCache.txt)
+        opt_type=${previous_type:-Debug}
+    fi
 
     if [ $(uname) = Darwin ] ; then
         nproc=$(sysctl -n hw.logicalcpu)
@@ -19,13 +62,27 @@ build()
         nproc=$(nproc)
     fi
 
+    # display a resume of options
+    echo -en "\033[1;36m======================== \033[37;42mHackerRank\033[0m "
+    echo -en "\033[1;36m~~\033[0m "
+    echo -en "${build_dir} "
+    echo -en "\033[1;36m~~\033[0m "
+    echo -en "\033[0;1;33m${opt_type} "
+    echo -en "\033[1;36m~~\033[0m "
+    [ ${opt_verbose} ] && echo -en "\033[1;35mVERBOSE\033[0m "
+    echo -en "(${nproc} cpu) "
+    echo -en "\033[1;36m=========================\033[0m"
+    echo
+
+    [ $opt_dryrun ] && return
+
     (
         set -e
-        cd "${VSCODE_CWD}"
-        mkdir -p build
-        cd build
-        cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=${type} ..
-        make -j${nproc}
+        cd "${workspaceFolder}"
+        mkdir -p ${build_dir}
+        cd ${build_dir}
+        cmake -DHACKERRANK_FP:BOOL=OFF -DCMAKE_BUILD_TYPE=${opt_type} "${workspaceFolder}"
+        VERBOSE=${opt_verbose} make -j${nproc} ${opt_target}
     )
 }
 
