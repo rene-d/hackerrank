@@ -37,7 +37,7 @@ And [ProjectEuler+](contests/projecteuler/) (See [here](https://github.com/rene-
 
 ### Requirements
 
-- [Python 3.6](https://www.python.org) and some packages : [numpy](http://www.numpy.org), [scikit-learn](http://scikit-learn.org/), [requests](http://html.python-requests.org), [flake8](http://flake8.readthedocs.io/)
+- [Python 3.6 or 3.7](https://www.python.org) and some packages : [numpy](http://www.numpy.org), [SciPy](https://www.scipy.org), [scikit-learn](http://scikit-learn.org/), [requests](http://html.python-requests.org), [flake8](http://flake8.readthedocs.io/), [PyYAML](https://pyyaml.org)
 - [CMake](https://cmake.org) to build and run tests
 - Modern [GCC](https://gcc.gnu.org) or [Clang](https://clang.llvm.org) that comes    with macOS or Linux. For Windows, you can use [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10), [Cygwin](https://www.cygwin.com) or [Visual Studio Comunity 2017](https://www.visualstudio.com/downloads/)
 - [Haskell](https://www.haskell.org) (functional programming only)
@@ -63,24 +63,24 @@ A solution can be tested solely with `runtest.sh -t challenge-name [-n test-numb
 
 ### Tools
 
-- `hrinit.py` creates a new file for a given challenge based on the HackerRank model. Default language is [Python 3](https://wiki.python.org/moin/Python2orPython3).
+- `hrinit.py` creates a new file for a given challenge based on the HackerRank template. Default choice for language is [Python 3](https://wiki.python.org/moin/Python2orPython3).
 - `runtest.sh` is the script used by [CTest](https://cmake.org/Wiki/CMake/Testing_With_CTest) to verify the solution.
-- `compare.py` aims to fairly compare the program output with the except one. It is necessary since some challenges use decimal numbers : we cannot simply use `diff -qw`.
-- `hrtc2.py` can be used to download purchased testcases. Copy and paste the download links of input and output data.
+- `compare.py` aims to fairly compare the program output with the excepted one. It is necessary since some challenges use decimal numbers : we cannot simply use `diff -qw`.
+- `hrtc2.py` can be used to download «purchased» testcases or to create new ones. Copy and paste the download links of input and output data.
 
 ### Other (hacking) tools
 
 - `hr_github.sh` creates the testcases archive and sync the private repo to the public GitHub one
 - `hr_table.py` automatically creates `README.md` files with challenge lists (requires offline data)
-- `hr_count.py` counts challenges and testcases
-- `hr_offline.py` downloads the challenge catalogs
+- `hr_count.py` counts challenges and testcases - used to update toplevel `README.md`
+- `hr_offline.py` downloads challenge catalogs and more
 - `hr_interview.py` gets the playlist of [Interview Preparation Kit](https://www.hackerrank.com/interview/interview-preparation-kit)
 - `hr_menu.py` displays a graphical menu to browse challenges and solve them when no Internet connection is available (requires offline data)
 - `hr_db.py` creates a SQLite database - used to understand how data is structured (or not!)
 
 ### IDE
 
-[Visual Studio Code](https://code.visualstudio.com) is a great free IDE that comes with many [plugins](https://marketplace.visualstudio.com/vscode). Some configuration files are provided.
+[Visual Studio Code](https://code.visualstudio.com) is a great free IDE that comes with many [plugins](https://marketplace.visualstudio.com/vscode). Some configuration files are provided and a [Bash](https://www.gnu.org/software/bash/) initialization file.
 
 ### Other online resources
 
@@ -94,5 +94,4 @@ A solution can be tested solely with `runtest.sh -t challenge-name [-n test-numb
 
 ## License
 
-[Unlicense](http://unlicense.org) aka. Public Domain ;-)
-
+[Unlicense](http://unlicense.org) aka. Public Domain &#x1F918;
