@@ -333,20 +333,29 @@ class HackerRankParser():
 
                         print("Download {}: {} bytes".format(dest_dir, len(r.content)))
                 else:
-                    print("{}: download error".format(dest_dir, self.key, r, r.text))
+                    print("{}: download error {} {} {}".format(dest_dir, self.key, r.status_code, r.text))
                     if r.status_code == 404:
                         with open(testcase_err, "w"):
                             pass
+                    testcase_file = None
+
+        return testcase_file
 
     def downloads(self, overwrite=False, testcases=True, statement=False):
+
+        testcases_file, statement_file = None, None
+
         if testcases:
-            self.download(overwrite=overwrite)
+            testcases_file = self.download(overwrite=overwrite)
+
         if statement:
-            self.download(dest_dir="statements",
-                          url="download_pdf?language=English",
-                          suffix=".pdf",
-                          content_type="application/pdf",
-                          overwrite=overwrite)
+            statement_file = self.download(dest_dir="statements",
+                                           url="download_pdf?language=English",
+                                           suffix=".pdf",
+                                           content_type="application/pdf",
+                                           overwrite=overwrite)
+
+        return testcases_file, statement_file
 
 
 def main():

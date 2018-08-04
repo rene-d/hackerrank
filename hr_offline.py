@@ -45,60 +45,74 @@ def get_path(m):
     return path
 
 
-def mirror(models, download_challenges=False):
-
-    for m in models:
-
-        # kind: code database
-        # if m.get('kind') != 'code':
-        #    print(m.get('kind'))
-        #    continue
-
-        # si manquant: video (cf. cracking the code interview)
-        if 'kind' not in m:
-            print(m)
-            continue
-
-        m["contest_slug"]           # master
-
-        m["slug"]                   # solve-me-first
-        m["name"]                   # Solve Me First
-        m["preview"]                # This is an easy challenge ...
-
-        if 'track' in m:
-            if m['track']:
-                m["track"]["track_slug"]    # algorithms
-                m["track"]["track_name"]    # Algorithms
-                m["track"]["slug"]          # warmup
-                m["track"]["name"]          # Warmup
-
-        if 'track' in m and m["track"]:
-            print("=======> ", m["track"]["track_name"], ">", m["track"]["name"], ">", m["name"])
-        else:
-            print("=======> ", m["name"])
-
-        if not download_challenges:
-            continue
-
-        path = get_path(m)
-
-        os.makedirs(path, exist_ok=True)
-
-        data = retrieve(m["contest_slug"], m["slug"], os.path.join(path, m["slug"] + ".json"))
-        if data is None:
-            print("NOT AVAILABLE")
-            continue
-
-        hr = HackerRankParser(rootdir=".")
-        hr.feed(data, True)
-        hr.downloads(statement=True, testcases=True)
 
 
 class hackerrank:
     def __init__(self, download_challenges=False, reload_catalogs=False):
-        self.download_challenges = download_challenges
         self.session = requests.Session()
+        self.download_challenges = download_challenges
         self.reload_catalogs = reload_catalogs
+        self.copy_testcases = False
+
+    def set_copy_testcases(self):
+        self.copy_testcases = True
+        self.download_challenges = True
+
+    ######
+    def mirror(self, models):
+        """ mirror challenges listed into models """
+
+        for m in models:
+
+            # kind: code database
+            # if m.get('kind') != 'code':
+            #    print(m.get('kind'))
+            #    continue
+
+            # si manquant: video (cf. cracking the code interview)
+            if 'kind' not in m:
+                print("missing kind", m)
+                continue
+
+            m["contest_slug"]           # master
+
+            m["slug"]                   # solve-me-first
+            m["name"]                   # Solve Me First
+            m["preview"]                # This is an easy challenge ...
+
+            if 'track' in m:
+                if m['track']:
+                    m["track"]["track_slug"]    # algorithms
+                    m["track"]["track_name"]    # Algorithms
+                    m["track"]["slug"]          # warmup
+                    m["track"]["name"]          # Warmup
+
+            if 'track' in m and m["track"]:
+                print("=======> ", m["track"]["track_name"], ">", m["track"]["name"], ">", m["name"])
+            else:
+                print("=======> ", m["name"])
+
+            if not self.download_challenges:
+                continue
+
+            path = get_path(m)
+
+            os.makedirs(path, exist_ok=True)
+
+            data = retrieve(m["contest_slug"], m["slug"], os.path.join(path, m["slug"] + ".json"))
+            if data is None:
+                print("NOT AVAILABLE", m["slug"], m["contest_slug"])
+                continue
+
+            hr = HackerRankParser(rootdir=".")
+            hr.feed(data, True)
+            testcases_file, _ = hr.downloads(statement=True, testcases=True)
+
+            if self.copy_testcases:
+                dest = os.path.join(os.path.dirname(__file__), testcases_file)
+                if os.path.exists(testcases_file) and not os.path.exists(dest):
+                    print("link", dest)
+                    os.link(testcases_file, dest)
 
     def get(self, url, cache_file):
         cache_file = os.path.join('cache', cache_file)
@@ -145,7 +159,7 @@ class hackerrank:
             with open(filename, "wt") as f:
                 json.dump(track, f)
 
-            mirror(track["models"], self.download_challenges)
+            self.mirror(track["models"])
 
     def get_chapter(self, contest, track, chapter):
         slug = chapter['slug']                      # warmup
@@ -189,7 +203,7 @@ class hackerrank:
             json.dump(track, f)
 
         print("====>", contest)
-        mirror(models, self.download_challenges)
+        self.mirror(models)
 
     def all_contests(self):
         archived = self.get("https://www.hackerrank.com/rest/contests/archived?offset=0&limit=500&contest_slug=active", "contests_archived.json")  # noqa
@@ -224,7 +238,7 @@ class hackerrank:
             if os.path.exists(fn):
                 os.unlink(fn)
             os.link(filename, fn)
-            mirror(data['models'], self.download_challenges)
+            self.mirror(data['models'])
 
     def interview(self):
 
@@ -240,7 +254,7 @@ class hackerrank:
                 d = self.get('https://www.hackerrank.com/rest/playlists/{}/challenges'.format(s), 'playlist_{}_challenges.json'.format(s))  # noqa
 
                 print("Interview:", d['name'])
-                mirror(d['challenges'], self.download_challenges)
+                self.mirror(d['challenges'])
 
                 x = d['challenges']
                 x.extend(models)
@@ -269,10 +283,14 @@ def offline():
     parser.add_argument('--tutorials', help="download tutorials", action='store_true')
     parser.add_argument('--interview', help="download interview-preparation-kit",
                         action='store_true')
+    parser.add_argument('--copy-testcases', help="copy testcases for archive", action='store_true')
 
     args = parser.parse_args()
 
     x = hackerrank(args.mirror, args.refresh)
+
+    if args.copy_testcases:
+        x.set_copy_testcases()
 
     if args.contests:
         x.all_contests()
@@ -307,5 +325,6 @@ def offline():
 
 
 if __name__ == '__main__':
+    __file__ = os.path.abspath(__file__)
     os.chdir(os.path.join(os.path.dirname(__file__), "offline"))
     offline()
