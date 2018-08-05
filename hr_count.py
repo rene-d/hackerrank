@@ -40,7 +40,10 @@ if args.latest:
 
     # get the modification time for the archive
     tar_f = os.path.join(os.path.dirname(__file__), "testcases.tar.xz")
-    tar_t = os.lstat(tar_f).st_mtime
+    if os.path.exists(tar_f):
+        tar_t = os.lstat(tar_f).st_mtime
+    else:
+        tar_t = 0
 
     if args.verbose:
         print("{} {}".format(datetime.datetime.fromtimestamp(latest_t).ctime(), latest_f))

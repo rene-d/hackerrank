@@ -76,6 +76,7 @@ Name | Preview | Code | Difficulty
 [Lucy and Flowers](https://www.hackerrank.com/challenges/lucy-and-flowers)|Help Lucy's father with a computation involving flowers|[C++](number-theory/lucy-and-flowers.cpp)|Medium
 [Prime Sum](https://www.hackerrank.com/challenges/prime-sum)|Represent a number as sum of primes.|[Python](number-theory/prime-sum.py)|Medium
 [nCr](https://www.hackerrank.com/challenges/ncr)|Given n and r, in how many ways can r items be chosen from n items?|[Python](number-theory/ncr.py)|Expert
+[Fibonacci GCD](https://www.hackerrank.com/challenges/fibonacci-gcd)|Find gcd for n fibonacci numbers.|[Python](number-theory/fibonacci-gcd.py)|Hard
 
 #### [Combinatorics](https://www.hackerrank.com/domains/mathematics/combinatorics)
 

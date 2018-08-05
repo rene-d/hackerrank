@@ -41,6 +41,14 @@ Name | Preview | Code | Difficulty
 ---- | ------- | ---- | ----------
 [ASCII Flower](https://www.hackerrank.com/contests/womens-codesprint-3/challenges/ascii-flower)|Help Julie design draw an ASCII flower pattern spanning a given number of rows and columns.|[Python](womens-codesprint-3/ascii-flower.py)|Easy
 
+### [Ad Infinitum 11 - Math Programming Contest](https://www.hackerrank.com/contests/infinitum11)
+Welcome to Ad Infinitum (To Infinity) a programming competition, purely in the mathematics domain.
+
+
+Name | Preview | Code | Difficulty
+---- | ------- | ---- | ----------
+[Fibonacci GCD Again](https://www.hackerrank.com/contests/infinitum11/challenges/fibonacci-gcd-again)|Compute GCDs involving Fibonacci numbers... again.|[C++](infinitum11/fibonacci-gcd-again.cpp) [Python](infinitum11/fibonacci-gcd-again.py)|Advanced
+
 ### [OpenBracket Delaware - Online Trials](https://www.hackerrank.com/contests/openbracket-2017)
 Participate and win in OpenBracket's CodeSprint to qualify for the championships!
 
