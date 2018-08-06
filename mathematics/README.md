@@ -71,6 +71,7 @@ Name | Preview | Code | Difficulty
 [Manasa loves Maths](https://www.hackerrank.com/challenges/manasa-loves-maths)|Find out if any permutation of the given number is divisible by 8.|[Python](number-theory/manasa-loves-maths.py)|Medium
 [Largest Non-Coprime Submatrix](https://www.hackerrank.com/challenges/largest-coprime-submatrix)|Given a matrix find the largest coprime submatrix.|[C++](number-theory/largest-coprime-submatrix.cpp)|Hard
 [John and GCD list](https://www.hackerrank.com/challenges/john-and-gcd-list)|Help John in making a list from GCD list|[Python](number-theory/john-and-gcd-list.py)|Easy
+[Divisor Exploration II](https://www.hackerrank.com/challenges/divisor-exploration-2)|Find the product of a sequence and then calculate the summation of its divisors.|[Python](number-theory/divisor-exploration-2.py)|Hard
 [Easy math](https://www.hackerrank.com/challenges/easy-math)|Help Johnny in figuring out the value of Y|[Python](number-theory/easy-math.py)|Medium
 [Binomial Coefficients](https://www.hackerrank.com/challenges/binomial-coefficients)|Calculate how many binomial coefficients of n become 0 after modulo by P.|[Python](number-theory/binomial-coefficients.py)|Medium
 [Lucy and Flowers](https://www.hackerrank.com/challenges/lucy-and-flowers)|Help Lucy's father with a computation involving flowers|[C++](number-theory/lucy-and-flowers.cpp)|Medium
