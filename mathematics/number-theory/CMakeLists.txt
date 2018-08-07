@@ -32,6 +32,8 @@ add_hackerrank_py(ncr.py)
 
 set_tests_properties(pairs-again PROPERTIES TIMEOUT 120)
 set_tests_properties(easy-math.py PROPERTIES TIMEOUT 120)
+
 add_hackerrank_py(prime-sum.py)
 add_hackerrank_py(fibonacci-gcd.py)
 add_hackerrank_py(divisor-exploration-2.py)
+add_hackerrank_py(strange-numbers.py)

@@ -35,6 +35,7 @@ Name | Preview | Code | Difficulty
 [Largest Non-Coprime Submatrix](https://www.hackerrank.com/challenges/largest-coprime-submatrix)|Given a matrix find the largest coprime submatrix.|[C++](largest-coprime-submatrix.cpp)|Hard
 [John and GCD list](https://www.hackerrank.com/challenges/john-and-gcd-list)|Help John in making a list from GCD list|[Python](john-and-gcd-list.py)|Easy
 [Divisor Exploration II](https://www.hackerrank.com/challenges/divisor-exploration-2)|Find the product of a sequence and then calculate the summation of its divisors.|[Python](divisor-exploration-2.py)|Hard
+[Strange numbers](https://www.hackerrank.com/challenges/strange-numbers)|How many strange numbers belong to interval [L, R]?|[Python](strange-numbers.py)|Hard
 [Easy math](https://www.hackerrank.com/challenges/easy-math)|Help Johnny in figuring out the value of Y|[Python](easy-math.py)|Medium
 [Binomial Coefficients](https://www.hackerrank.com/challenges/binomial-coefficients)|Calculate how many binomial coefficients of n become 0 after modulo by P.|[Python](binomial-coefficients.py)|Medium
 [Lucy and Flowers](https://www.hackerrank.com/challenges/lucy-and-flowers)|Help Lucy's father with a computation involving flowers|[C++](lucy-and-flowers.cpp)|Medium
