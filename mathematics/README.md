@@ -74,8 +74,10 @@ Name | Preview | Code | Difficulty
 [Divisor Exploration II](https://www.hackerrank.com/challenges/divisor-exploration-2)|Find the product of a sequence and then calculate the summation of its divisors.|[Python](number-theory/divisor-exploration-2.py)|Hard
 [Strange numbers](https://www.hackerrank.com/challenges/strange-numbers)|How many strange numbers belong to interval [L, R]?|[Python](number-theory/strange-numbers.py)|Hard
 [Easy math](https://www.hackerrank.com/challenges/easy-math)|Help Johnny in figuring out the value of Y|[Python](number-theory/easy-math.py)|Medium
+[Equations](https://www.hackerrank.com/challenges/equations)|Find the number of positive integral solutions for an equation.|[Python](number-theory/equations.py)|Medium
 [Binomial Coefficients](https://www.hackerrank.com/challenges/binomial-coefficients)|Calculate how many binomial coefficients of n become 0 after modulo by P.|[Python](number-theory/binomial-coefficients.py)|Medium
 [Lucy and Flowers](https://www.hackerrank.com/challenges/lucy-and-flowers)|Help Lucy's father with a computation involving flowers|[C++](number-theory/lucy-and-flowers.cpp)|Medium
+[Divisor Exploration 3](https://www.hackerrank.com/challenges/divisor-exploration-3)|Find the value given at the root of a tree constructing by the given rules.|[C++](number-theory/divisor-exploration-3.cpp) [Python](number-theory/divisor-exploration-3.py)|Hard
 [Prime Sum](https://www.hackerrank.com/challenges/prime-sum)|Represent a number as sum of primes.|[Python](number-theory/prime-sum.py)|Medium
 [nCr](https://www.hackerrank.com/challenges/ncr)|Given n and r, in how many ways can r items be chosen from n items?|[Python](number-theory/ncr.py)|Expert
 [Fibonacci GCD](https://www.hackerrank.com/challenges/fibonacci-gcd)|Find gcd for n fibonacci numbers.|[Python](number-theory/fibonacci-gcd.py)|Hard
