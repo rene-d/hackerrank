@@ -14,6 +14,7 @@ Name | Preview | Code | Difficulty
 [Project Euler #54: Poker hands](https://www.hackerrank.com/contests/projecteuler/challenges/euler054)|Poker Hands|[Python](projecteuler/euler054.py)|Easy
 [Project Euler #31: Coin sums](https://www.hackerrank.com/contests/projecteuler/challenges/euler031)|Currency Change|[Python](projecteuler/euler031.py)|Easy
 [Project Euler #28: Number spiral diagonals](https://www.hackerrank.com/contests/projecteuler/challenges/euler028)|Running around a matrix.|[Python](projecteuler/euler028.py)|Easy
+[Project Euler #21: Amicable numbers](https://www.hackerrank.com/contests/projecteuler/challenges/euler021)|Proper and improper divisions.|[C++](projecteuler/euler021.cpp)|Easy
 [Project Euler #20: Factorial digit sum](https://www.hackerrank.com/contests/projecteuler/challenges/euler020)|When complexities go from one extreme to the other.|[Python](projecteuler/euler020.py)|Easy
 [Project Euler #18: Maximum path sum I](https://www.hackerrank.com/contests/projecteuler/challenges/euler018)|Find path with largest sum in a pyramid.|[Python](projecteuler/euler018.py)|Easy
 [Project Euler #17: Number to Words](https://www.hackerrank.com/contests/projecteuler/challenges/euler017)|Read the numbers|[Python](projecteuler/euler017.py)|Easy
