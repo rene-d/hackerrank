@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
 
 import requests
+import requests_cache
 import os
 import subprocess
 import json
@@ -10,6 +11,7 @@ import re
 import email.utils
 import datetime
 import time
+import logging
 
 
 class Colors:
@@ -320,7 +322,9 @@ class HackerRankParser():
             else:
                 url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}/{}".format(self.contest, self.key, url)  # noqa
 
-                r = requests.get(url, allow_redirects=True)
+                # download resource (statement or testcases: no cache)
+                with requests_cache.disabled():
+                    r = requests.get(url, allow_redirects=True)
                 if r.status_code == 200:
                     if r.headers['content-type'] == content_type:
                         with open(testcase_file, "wb") as f:
@@ -358,6 +362,32 @@ class HackerRankParser():
         return testcases_file, statement_file
 
 
+def set_logging(verbose):
+    """ set up a colorized logger """
+    if sys.stdout.isatty():
+        logging.addLevelName(logging.DEBUG, "\033[0;32m%s\033[0m" % logging.getLevelName(logging.DEBUG))
+        logging.addLevelName(logging.INFO, "\033[1;33m%s\033[0m" % logging.getLevelName(logging.INFO))
+        logging.addLevelName(logging.WARNING, "\033[1;35m%s\033[1;0m" % logging.getLevelName(logging.WARNING))
+        logging.addLevelName(logging.ERROR, "\033[1;41m%s\033[1;0m" % logging.getLevelName(logging.ERROR))
+
+    if verbose:
+        logging.basicConfig(format='%(asctime)s:%(levelname)s:%(message)s', level=logging.DEBUG, datefmt='%H:%M:%S')
+    else:
+        logging.basicConfig(format='%(asctime)s:%(levelname)s:%(message)s', level=logging.ERROR, datefmt='%H:%M:%S')
+
+
+def set_cache(refresh=False):
+    """ install the static Requests cache """
+    if refresh:
+        expire_after = datetime.timedelta(seconds=0)
+    else:
+        expire_after = datetime.timedelta(days=30)
+    requests_cache.install_cache(
+            cache_name=os.path.join(os.path.dirname(__file__), "cache"),
+            allowable_methods=('GET', 'POST'), expire_after=expire_after)
+    requests_cache.core.remove_expired_responses()
+
+
 def main():
 
     # grabbed from Javascript function we_are_hiring() in the www.hackerrank.com pages
@@ -385,8 +415,14 @@ def main():
     parser.add_argument('-H', dest="force_hpp", help="Force C++ with include", action='store_true')
     parser.add_argument('-C', dest="force_c", help="Force C", action='store_true')
     parser.add_argument('-l', dest="lang", metavar="LANG", help="Language selection", default="*")
+    parser.add_argument('-R', "--refresh", help="force refresh cache", action='store_true')
+    parser.add_argument("--no-cache", help="disable Requests cache", action='store_true')
 
     args = parser.parse_args()
+
+    set_logger(args.verbose)
+    if not args.no_cache:
+        set_cache(args.refresh)
 
     if args.force_cpp or args.force_hpp:
         args.lang = "cpp14"

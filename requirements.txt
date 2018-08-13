@@ -1,5 +1,6 @@
 pyyaml
 requests
+requests_cache
 flake8
 numpy
 scipy

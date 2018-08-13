@@ -8,20 +8,10 @@ import os
 import requests
 from hrinit import HackerRankParser
 import argparse
-
-
-def retrieve(contest, challenge, filename):
-    if os.path.exists(filename):
-        with open(filename, "rb") as f:
-            # print("----> ", challenge, filename)
-            return f.read()
-
-    url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}".format(contest, challenge)
-    r = requests.get(url)
-    if r.status_code == 200:
-        with open(filename, "wb") as f:
-            f.write(r.content)
-        return r.content
+import requests_cache
+import sys
+import logging
+import datetime
 
 
 def get_path(m):
@@ -45,8 +35,6 @@ def get_path(m):
     return path
 
 
-
-
 class hackerrank:
     def __init__(self, download_challenges=False, reload_catalogs=False):
         self.session = requests.Session()
@@ -57,6 +45,20 @@ class hackerrank:
     def set_copy_testcases(self):
         self.copy_testcases = True
         self.download_challenges = True
+
+    #####
+    def retrieve(self, contest, challenge, filename):
+        if os.path.exists(filename):
+            with open(filename, "rb") as f:
+                # print("----> ", challenge, filename)
+                return f.read()
+        url = "https://www.hackerrank.com/rest/contests/{}/challenges/{}".format(contest, challenge)
+        with requests_cache.disabled():
+            r = self.session.get(url)
+        if r.status_code == 200:
+            with open(filename, "wb") as f:
+                f.write(r.content)
+            return r.content
 
     ######
     def mirror(self, models):
@@ -99,7 +101,7 @@ class hackerrank:
 
             os.makedirs(path, exist_ok=True)
 
-            data = retrieve(m["contest_slug"], m["slug"], os.path.join(path, m["slug"] + ".json"))
+            data = self.retrieve(m["contest_slug"], m["slug"], os.path.join(path, m["slug"] + ".json"))
             if data is None:
                 print("NOT AVAILABLE", m["slug"], m["contest_slug"])
                 continue
@@ -114,21 +116,25 @@ class hackerrank:
                     print("link", dest)
                     os.link(testcases_file, dest)
 
-    def get(self, url, cache_file):
-        cache_file = os.path.join('cache', cache_file)
-        os.makedirs(os.path.dirname(cache_file), exist_ok=True)
-        if not self.reload_catalogs and os.path.exists(cache_file):
-            with open(cache_file, "rb") as f:
-                return json.loads(f.read())
-        else:
-            print(">", url)
-            r = self.session.get(url)
-            if r.status_code == 200:
-                with open(cache_file, "wb") as f:
-                    f.write(r.content)
-                return json.loads(r.content)
-            else:
-                print("error", r, url)
+    def get(self, url, unused):
+        print(">", url)
+        return self.session.get(url).json()
+
+    # def get(self, url, cache_file):
+    #     cache_file = os.path.join('cache', cache_file)
+    #     os.makedirs(os.path.dirname(cache_file), exist_ok=True)
+    #     if not self.reload_catalogs and os.path.exists(cache_file):
+    #         with open(cache_file, "rb") as f:
+    #             return json.loads(f.read())
+    #     else:
+    #         print(">", url)
+    #         r = self.session.get(url)
+    #         if r.status_code == 200:
+    #             with open(cache_file, "wb") as f:
+    #                 f.write(r.content)
+    #             return json.loads(r.content)
+    #         else:
+    #             print("error", r, url)
 
     def get_tracks(self, contest, my_caterogies=None):
 
@@ -271,8 +277,35 @@ class hackerrank:
             json.dump(track, f)
 
 
+def set_logging(verbose):
+    """ set up a colorized logger """
+    if sys.stdout.isatty():
+        logging.addLevelName(logging.DEBUG, "\033[0;32m%s\033[0m" % logging.getLevelName(logging.DEBUG))
+        logging.addLevelName(logging.INFO, "\033[1;33m%s\033[0m" % logging.getLevelName(logging.INFO))
+        logging.addLevelName(logging.WARNING, "\033[1;35m%s\033[1;0m" % logging.getLevelName(logging.WARNING))
+        logging.addLevelName(logging.ERROR, "\033[1;41m%s\033[1;0m" % logging.getLevelName(logging.ERROR))
+
+    if verbose:
+        logging.basicConfig(format='%(asctime)s:%(levelname)s:%(message)s', level=logging.DEBUG, datefmt='%H:%M:%S')
+    else:
+        logging.basicConfig(format='%(asctime)s:%(levelname)s:%(message)s', level=logging.ERROR, datefmt='%H:%M:%S')
+
+
+def set_cache(refresh=False):
+    """ install the static Requests cache """
+    if refresh:
+        expire_after = datetime.timedelta(seconds=0)
+    else:
+        expire_after = datetime.timedelta(days=30)
+    requests_cache.install_cache(
+            cache_name=os.path.join(os.path.dirname(__file__), "cache"),
+            allowable_methods=('GET', 'POST'), expire_after=expire_after)
+    requests_cache.core.remove_expired_responses()
+
+
 def offline():
     parser = argparse.ArgumentParser(description='Offliner')
+    parser.add_argument("-v", "--verbose", help="increase verbosity", action='store_true')
     parser.add_argument('--contests', help="download all contests", action='store_true')
     parser.add_argument('--tracks', help="download all tracks", action='store_true')
     parser.add_argument('-c', '--contest', help="download contest")
@@ -286,6 +319,9 @@ def offline():
     parser.add_argument('--copy-testcases', help="copy testcases for archive", action='store_true')
 
     args = parser.parse_args()
+
+    set_logging(args.verbose)
+    set_cache(args.refresh)
 
     x = hackerrank(args.mirror, args.refresh)
 
