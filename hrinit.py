@@ -1,5 +1,6 @@
 #! /usr/bin/env python3
 
+import sys
 import requests
 import requests_cache
 import os
@@ -420,7 +421,7 @@ def main():
 
     args = parser.parse_args()
 
-    set_logger(args.verbose)
+    set_logging(args.verbose)
     if not args.no_cache:
         set_cache(args.refresh)
 
