@@ -5,6 +5,8 @@ import sqlite3
 import glob
 import json
 import os
+import sys
+import logging
 
 
 my_fields = ['id', 'slug', 'name',
@@ -35,6 +37,8 @@ class hr_db:
     def load_models(self):
         models = []
 
+        # load in memory models from offline tree
+        logging.debug("scanning files...")
         for i in glob.iglob(os.path.join(os.path.dirname(__file__),
                                          "offline", "models",  "**", "*.json"),
                             recursive=True):
@@ -43,11 +47,13 @@ class hr_db:
                 if data['status'] is True:
                     m = data['model']
                     models.append(m)
-                    # if len(models) > 2: break
+        logging.debug("%d models found", len(models))
 
+        # analyze models
         for m in models:
             self.analyse(m, "challenge")
 
+        # create the database tables
         c = self.conn.cursor()
         for name, fields in self.tables.items():
             sql = "drop table if exists `{}`".format(name)
@@ -67,11 +73,13 @@ class hr_db:
 
             self.ids[name] = set()
 
-            print("table:", name, len(fields))
+            logging.info("table: %s %d", name, len(fields))
 
         c.close()
         self.conn.commit()
 
+        # store models into the database
+        logging.debug("load models")
         c = self.conn.cursor()
         for m in models:
             self.charge(c, m, "challenge")
@@ -109,21 +117,28 @@ class hr_db:
 
     def analyse(self, values, tablename):
         if tablename not in self.tables:
-            print("discover table", tablename)
+            logging.debug("discover table %s", tablename)
             fields = self.tables[tablename] = collections.OrderedDict()
         else:
             fields = self.tables[tablename]
 
         for k, v in values.items():
-            t = ""
+
+            if k.endswith('_template') or k.endswith('_template_head') or k.endswith('_template_tail'): continue
+            if k.endswith('_skeliton_head') or k.endswith('_skeliton_tail'): continue
 
             if isinstance(v, str):
                 t = "text"
             elif isinstance(v, bool):
                 t = "boolean"
             elif isinstance(v, int):
-                t = "integer"
-                # if k == "id": t += " primary key not null"
+                # enforce type for these fields
+                if k in ["max_score", "factor", "success_ratio"]:
+                    t = "float"
+                else:
+                    t = "integer"
+                    if k == "id":
+                        t += " primary key not null"
 
             elif isinstance(v, float):
                 t = "float"
@@ -138,14 +153,31 @@ class hr_db:
                     k += "_refid"
                 else:
                     t = "text"
+            else:
+                logging.error("unknown type: %s", type(v))
 
             if k in fields:
                 if fields[k] != t:
-                    print("MISMATCH {:20} {} {}".format(k, fields[k], t))
+                    logging.warning("mismatch {:20} type={} found={} value={} of {}".format(k, fields[k], t, repr(v), tablename))
             else:
                 fields[k] = t
 
 
+def set_logging(verbose):
+    """ set up a colorized logger """
+    if sys.stdout.isatty():
+        logging.addLevelName(logging.DEBUG, "\033[0;32m%s\033[0m" % logging.getLevelName(logging.DEBUG))
+        logging.addLevelName(logging.INFO, "\033[1;33m%s\033[0m" % logging.getLevelName(logging.INFO))
+        logging.addLevelName(logging.WARNING, "\033[1;35m%s\033[1;0m" % logging.getLevelName(logging.WARNING))
+        logging.addLevelName(logging.ERROR, "\033[1;41m%s\033[1;0m" % logging.getLevelName(logging.ERROR))
+
+    if verbose:
+        logging.basicConfig(format='%(asctime)s:%(levelname)s:%(message)s', level=logging.DEBUG, datefmt='%H:%M:%S')
+    else:
+        logging.basicConfig(format='%(asctime)s:%(levelname)s:%(message)s', level=logging.ERROR, datefmt='%H:%M:%S')
+
+
 if __name__ == '__main__':
+    set_logging(True)
     menu = hr_db()
     menu.load_models()

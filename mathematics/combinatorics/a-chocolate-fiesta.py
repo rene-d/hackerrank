@@ -2,6 +2,7 @@
 # Find the number of even subsets in the given set of numbers.
 #
 # https://www.hackerrank.com/challenges/a-chocolate-fiesta/problem
+# https://www.hackerrank.com/contests/infinitum-mar14/challenges/a-chocolate-fiesta
 #
 
 input()

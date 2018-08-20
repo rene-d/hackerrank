@@ -43,6 +43,9 @@ Name | Preview | Code | Difficulty
 [Divisor Exploration 3](https://www.hackerrank.com/challenges/divisor-exploration-3)|Find the value given at the root of a tree constructing by the given rules.|[C++](divisor-exploration-3.cpp) [Python](divisor-exploration-3.py)|Hard
 [Superpowers of 2](https://www.hackerrank.com/challenges/superpowers)|Just another numbers problem...|[Python](superpowers.py)|Advanced
 [Divisibility of Power](https://www.hackerrank.com/challenges/divisibility-of-power)|Divisibility Test.|[Python](divisibility-of-power.py)|Medium
+[Devu Vs Police](https://www.hackerrank.com/challenges/devu-police)|Help Devu escape from police|[Python](devu-police.py)|Hard
+[Long Permutation](https://www.hackerrank.com/challenges/long-permutation)|Determine the n^th element of an infinite permutation!|[Python](long-permutation.py)|Hard
+[Megaprime Numbers](https://www.hackerrank.com/challenges/megaprime-numbers)|Count the number of primes in a given range that consist only of prime digits.|[Python](megaprime-numbers.py)|Medium
 [Prime Sum](https://www.hackerrank.com/challenges/prime-sum)|Represent a number as sum of primes.|[Python](prime-sum.py)|Medium
 [nCr](https://www.hackerrank.com/challenges/ncr)|Given n and r, in how many ways can r items be chosen from n items?|[Python](ncr.py)|Expert
 [Fibonacci GCD](https://www.hackerrank.com/challenges/fibonacci-gcd)|Find gcd for n fibonacci numbers.|[Python](fibonacci-gcd.py)|Hard
