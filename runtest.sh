@@ -29,6 +29,7 @@ set_colors()
         COLOR_YELLOW="\033[93m"
         COLOR_LIGHT_PURPLE="\033[94m"
         COLOR_PURPLE="\033[95m"
+        COLOR_CYAN="\033[0;36m"
         COLOR_END="\033[0m"
     else
         COLOR_RED=
@@ -163,41 +164,53 @@ else
     fi
 fi
 
+# the root folder for inputs, outputs and results
+testdir=${testsdir}/${testname}
+
 # si on n'a pas le répertoire des testcases, c'est une erreur
-if [ ! -d "${testsdir}/${testname}/input" ]; then
+if [ ! -d "${testdir}/input" ]; then
     echo -e "${COLOR_RED}MISSING TESTCASES${COLOR_END}"
     exit 1
 fi
 
 ##############################################################################
 
-
 failure=0
-for input in "${testsdir}/${testname}/input/input"*.txt; do
+for input in "${testdir}/input/input"*.txt; do
     n=${input##*input}
+    n=${n%%.txt}
 
     if [ ! -z "$number" -a "$number" != "a" ]; then
-        if [ "$number" -ne "${n%%.txt}" ]; then
+        if [ "$number" -ne "${n}" ]; then
             continue
         fi
     fi
 
     echo -e "${COLOR_YELLOW}${exe} < ${input}${COLOR_END}"
+
+    exec 3>&2                                   # fd 3 is stderr too
+    exec 2> "${testdir}/${result}${n}.time"     # time builtin will write to a file, not stderr
+    TIMEFORMAT="${COLOR_CYAN}(real %2R user %2U sys %2S)${COLOR_END}"
+
     if [ $quiet ]; then
-        ${exe} < "${input}" > "${testsdir}/$testname/${result}${n}"
+        time  ${exe} < "${input}" 2>&3 > "${testdir}/${result}${n}.txt"
     else
-        ${exe} < "${input}" | tee "${testsdir}/$testname/${result}${n}"
+        time  ${exe} < "${input}" 2>&3 | tee "${testdir}/${result}${n}.txt"
     fi
 
+    exec 2>&3       # restore stderr
+    exec 3<&-       # close fd 3
+    elapsed=$(< ${testdir}/${result}${n}.time)
+
     echo -ne "${COLOR_PURPLE}"
-    compare "${testsdir}/$testname/${result}${n}" "${testsdir}/$testname/output/output${n}"
+    compare "${testdir}/${result}${n}.txt" "${testdir}/output/output${n}.txt"
     rc=$?
     echo -ne "${COLOR_END}"
     [ $rc -ne 0 ] && failure=1
     if [ $rc -eq 0 ] ; then
-        echo -e "${COLOR_YELLOW}TESTCASE ${n%%.txt} : ${COLOR_GREEN}SUCCESS${COLOR_END}"
+        echo -e "${COLOR_YELLOW}TESTCASE ${n} : ${COLOR_GREEN}SUCCESS${COLOR_END} ${elapsed}"
     else
-        echo -e "${COLOR_YELLOW}TESTCASE ${n%%.txt} : ${COLOR_RED}FAILURE${COLOR_END}"
+        echo -e "${COLOR_YELLOW}TESTCASE ${n} : ${COLOR_RED}FAILURE${COLOR_END} ${elapsed}"
     fi
     echo
 done
