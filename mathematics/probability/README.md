@@ -13,6 +13,7 @@ Name | Preview | Code | Difficulty
 [Day 4: Normal Distribution #2](https://www.hackerrank.com/challenges/normal-distribution-2)|Problems based on basic statistical distributions.|[Python](normal-distribution-2.py)|Medium
 [Normal Distribution #3](https://www.hackerrank.com/challenges/normal-distribution-3)|Problems based on basic statistical distributions.|[Python](normal-distribution-3.py)|Hard
 [B'day Gift](https://www.hackerrank.com/challenges/bday-gift)|Whats the price Isaac has to pay for HackerPhone|[Python](bday-gift.py)|Easy
+[Extremely Dangerous Virus](https://www.hackerrank.com/challenges/extremely-dangerous-virus)|Estimate how large the virus will grow.|[Python](extremely-dangerous-virus.py)|Medium
 [Binomial Distribution #1](https://www.hackerrank.com/challenges/binomial-distribution-1)|Problems based on basic statistical distributions.|[Python](binomial-distribution-1.py)|Medium
 [Binomial Distribution #2](https://www.hackerrank.com/challenges/binomial-distribution-2)|Problems based on basic statistical distributions.|[Python](binomial-distribution-2.py)|Hard
 [Binomial Distribution #3](https://www.hackerrank.com/challenges/binomial-distribution-3)|Problems based on basic statistical distributions.|[Python](binomial-distribution-3.py)|Hard

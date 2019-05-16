@@ -189,13 +189,16 @@ for input in "${testdir}/input/input"*.txt; do
     echo -e "${COLOR_YELLOW}${exe} < ${input}${COLOR_END}"
 
     exec 3>&2                                   # fd 3 is stderr too
-    exec 2> "${testdir}/${result}${n}.time"     # time builtin will write to a file, not stderr
+    exec 2> "${testdir}/${result}${n}.time"     # builtin time will write to a file, not stderr
     TIMEFORMAT="${COLOR_CYAN}(real %2R user %2U sys %2S)${COLOR_END}"
 
+    # old templates use the environment variable OUTPUT_PATH
+    export OUTPUT_PATH=/dev/stdout
+
     if [ $quiet ]; then
-        time  ${exe} < "${input}" 2>&3 > "${testdir}/${result}${n}.txt"
+        time ${exe} < "${input}" 2>&3 > "${testdir}/${result}${n}.txt"
     else
-        time  ${exe} < "${input}" 2>&3 | tee "${testdir}/${result}${n}.txt"
+        time ${exe} < "${input}" 2>&3 | tee "${testdir}/${result}${n}.txt"
     fi
 
     exec 2>&3       # restore stderr

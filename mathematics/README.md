@@ -79,10 +79,12 @@ Name | Preview | Code | Difficulty
 [Lucy and Flowers](https://www.hackerrank.com/challenges/lucy-and-flowers)|Help Lucy's father with a computation involving flowers|[C++](number-theory/lucy-and-flowers.cpp)|Medium
 [Divisor Exploration 3](https://www.hackerrank.com/challenges/divisor-exploration-3)|Find the value given at the root of a tree constructing by the given rules.|[C++](number-theory/divisor-exploration-3.cpp) [Python](number-theory/divisor-exploration-3.py)|Hard
 [Superpowers of 2](https://www.hackerrank.com/challenges/superpowers)|Just another numbers problem...|[Python](number-theory/superpowers.py)|Advanced
+[Sherlock Puzzle](https://www.hackerrank.com/challenges/sherlock-puzzle)|Help Sherlock get close to his Arch Nemesis, Jim Moriarty.|[Python](number-theory/sherlock-puzzle.py)|Hard
 [Divisibility of Power](https://www.hackerrank.com/challenges/divisibility-of-power)|Divisibility Test.|[Python](number-theory/divisibility-of-power.py)|Medium
 [Devu Vs Police](https://www.hackerrank.com/challenges/devu-police)|Help Devu escape from police|[Python](number-theory/devu-police.py)|Hard
 [Long Permutation](https://www.hackerrank.com/challenges/long-permutation)|Determine the n^th element of an infinite permutation!|[Python](number-theory/long-permutation.py)|Hard
 [Megaprime Numbers](https://www.hackerrank.com/challenges/megaprime-numbers)|Count the number of primes in a given range that consist only of prime digits.|[Python](number-theory/megaprime-numbers.py)|Medium
+[Divisor Exploration](https://www.hackerrank.com/challenges/divisor-exploration)|Find and print the number of divisors for each dataset.|[Python](number-theory/divisor-exploration.py)|Hard
 [Prime Sum](https://www.hackerrank.com/challenges/prime-sum)|Represent a number as sum of primes.|[Python](number-theory/prime-sum.py)|Medium
 [nCr](https://www.hackerrank.com/challenges/ncr)|Given n and r, in how many ways can r items be chosen from n items?|[Python](number-theory/ncr.py)|Expert
 [Fibonacci GCD](https://www.hackerrank.com/challenges/fibonacci-gcd)|Find gcd for n fibonacci numbers.|[Python](number-theory/fibonacci-gcd.py)|Hard
@@ -142,6 +144,7 @@ Name | Preview | Code | Difficulty
 [Day 4: Normal Distribution #2](https://www.hackerrank.com/challenges/normal-distribution-2)|Problems based on basic statistical distributions.|[Python](probability/normal-distribution-2.py)|Medium
 [Normal Distribution #3](https://www.hackerrank.com/challenges/normal-distribution-3)|Problems based on basic statistical distributions.|[Python](probability/normal-distribution-3.py)|Hard
 [B'day Gift](https://www.hackerrank.com/challenges/bday-gift)|Whats the price Isaac has to pay for HackerPhone|[Python](probability/bday-gift.py)|Easy
+[Extremely Dangerous Virus](https://www.hackerrank.com/challenges/extremely-dangerous-virus)|Estimate how large the virus will grow.|[Python](probability/extremely-dangerous-virus.py)|Medium
 [Binomial Distribution #1](https://www.hackerrank.com/challenges/binomial-distribution-1)|Problems based on basic statistical distributions.|[Python](probability/binomial-distribution-1.py)|Medium
 [Binomial Distribution #2](https://www.hackerrank.com/challenges/binomial-distribution-2)|Problems based on basic statistical distributions.|[Python](probability/binomial-distribution-2.py)|Hard
 [Binomial Distribution #3](https://www.hackerrank.com/challenges/binomial-distribution-3)|Problems based on basic statistical distributions.|[Python](probability/binomial-distribution-3.py)|Hard

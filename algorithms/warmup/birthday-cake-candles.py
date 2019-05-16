@@ -8,7 +8,7 @@ import sys
 
 def birthdayCakeCandles(n, ar):
     # Complete this function
-    
+
     # en 1 passage
     nb = 0
     m = 0
@@ -19,7 +19,7 @@ def birthdayCakeCandles(n, ar):
             nb = 1
             m = i
     return nb
-            
+
     # plus lent (2 passages)
     #m = max(ar)
     #return sum(1 for i in ar if i == m)
